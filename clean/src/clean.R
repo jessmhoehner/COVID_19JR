@@ -9,12 +9,11 @@
 # -----------------------------------------------------------
 # COVID19/clean/src/clean.R
 
-pacman::p_load("tidyverse", "lubridate", "knitr", "here", "assertr", 
-               "incidence", "janitor", "forcats", "scales")
+pacman::p_load("tidyverse", "lubridate", 
+               "here", "assertr", "janitor")
 
 files <- list(input_data= here::here("COVID19/clean/input/full_data.csv"),
-              cleaned_data = here::here("COVID19/write/input/full_data_clean.csv"), 
-              count_data = here::here("COVID19/write/input/full_data_clean.csv"))
+              cleaned_data = here::here("COVID19/write/input/full_data_clean.csv"))
 
 stopifnot(length(files) == 2)
 
