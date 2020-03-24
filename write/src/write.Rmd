@@ -8,63 +8,50 @@ output:
     toc : false
 ---
 
-### Loading and cleaning data {-}
+### Loading data {-}
 
 Here I load in data from the "Our World in Data" Project from a csv file called "full_data.csv" on 23 March 2020. 
 
 ```{r load libs and data, message = FALSE, echo = FALSE}
 
-pacman::p_load("tidyverse", "lubridate", "knitr", "here", "assertr", 
-               "incidence", "janitor", "forcats", "scales")
+pacman::p_load("tidyverse", "knitr", "here", "assertr", 
+               "EpiCurve", "incidence", "scales", "forcats", "RColorBrewer")
 
-files <- list(cases = here::here("COVID19/input/full_data.csv"),
-              epicurve1 = here::here("COVID19/output/epicurve_1.png"))
+files <- list(cleaned_data = here::here("write/input/full_data_clean.csv"))
 
-
+data_OWD <- as.data.frame(read_delim(files$cleaned_data, delim="|"))
 
 ```
-#FIXME: add in missing dates with no cases, ex: no cases reported between 3/3-3/7/20
-# use this complete(year = seq.Date(min(year), max(year), by = "day")
-
 
 ### Calculating incidence {-}
 
 
-``` {r calc_inc, message = FALSE}
+``` {r world_inc, message = FALSE}
 
-counts_032320 <- count(cases_032320, date_rec) %>%
-  complete(date_rec = seq.Date(min(date_rec), max(date_rec), by = "day"))
+world_inc <- data_OWD, loc, date_rec) %>%
+  filter (loc == "World")
 
-counts_032320$n <- ifelse(is.na(counts_032320$n), 0, counts_032320$n) 
- %>%
-  stopifnot(cases_032320[1, 1] == "2019-12-31")
+plot(world_inc)
+  
 
-
-inc <- incidence(counts_032320$date_rec, interval = 1)
-
-plot <-
-  plot(inc, border = "black", show_cases =TRUE, 
-       ylab = "Reported Deaths", xlab= "Date") +
-  scale_x_date(labels = date_format("%d %b %Y")) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, color = "black")) +
-  coord_fixed(ratio=2)
-
-plot
 ```
 
 
-### Cases by code {-}
+### Cases by loc {-}
 
-#doesn't work yet, need to fix problems with date formatting
-#IDEA: It might be fun here to make the code something a user could input and obtain cases for just their code of interest
 
-```{r dates, message = FALSE}
+```{r afg_inc, message = FALSE}
 
-cases_AFG <- cases_032320 %>%
-  filter(code == "AFG") %>%
-  mutate(date_rec = seq(as.Date("2019-12-31"), as.Date("2020-03-23") -10, by = 1)) %>%
-  select(-c(year))
+afg_inc <- data_OWD %>%
+  filter(loc == "Afghanistan")
+
+EpiCurve(afg_inc,
+date = "date_rec",
+period = "day",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(world_inc$date_rec), max(world_inc$date_rec)),
+note = "Daily epidemic curve (Afghanistan)")
+  
 
 ```
 

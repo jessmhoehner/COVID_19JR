@@ -10,10 +10,10 @@
 # COVID19/clean/src/clean.R
 
 pacman::p_load("tidyverse", "lubridate", 
-               "here", "assertr", "janitor")
+               "here", "assertr", "janitor", "reshape2")
 
-files <- list(input_data= here::here("COVID19/clean/input/full_data.csv"),
-              cleaned_data = here::here("COVID19/write/input/full_data_clean.csv"))
+files <- list(input_data= here::here("clean/input/full_data.csv"),
+              cleaned_data = here::here("write/input/full_data_clean.csv"))
 
 stopifnot(length(files) == 2)
 
