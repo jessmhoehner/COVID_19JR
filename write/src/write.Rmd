@@ -10,195 +10,341 @@ output:
 
 ### Loading data {-}
 
-Here I load in data from the "Our World in Data" Project from a csv file called "full_data.csv" on 23 March 2020. 
+Here I load in data from the projects from which I have collected and cleaned data:
+
+Our World in Data's ECDC data
+New York Times data
+
 
 ```{r load libs and data, message = FALSE, echo = FALSE}
 
 pacman::p_load("tidyverse", "knitr", "here", "assertr", 
-               "EpiCurve", "incidence", "scales", "forcats", "RColorBrewer")
+               "EpiCurve", "scales", "forcats", "RColorBrewer")
 
-files <- list(cleaned_data = here::here("write/input/full_data_clean.csv"))
+files <- list(ecdc_data = here::here("COVID19/write/input/ecdc_clean.csv"),
+              nyt_data = here::here("COVID19/write/input/nyt_clean.csv"),
+              
+              fairfax = here::here("COVID19/write/output/epicurve_ffaxva.png"),
+              stafford = here::here("COVID19/write/output/epicurve_stafva.png"),
+              fulton = here::here("COVID19/write/output/epicurve_fultga.png"),
+              gwinnett = here::here("COVID19/write/output/epicurve_gwinga.png"),
+              manatee = here::here("COVID19/write/output/epicurve_mteefl.png"),
+              madison = here::here("COVID19/write/output/epicurve_msonny.png"),
+              taylor = here::here("COVID19/write/output/epicurve_taylortx.png"),
+              jones = here::here("COVID19/write/output/epicurve_jonestx.png"),
+              randolph = here::here("COVID19/write/output/epicurve_randnc.png"))
 
-data_OWD <- as.data.frame(read_delim(files$cleaned_data, delim="|"))
+ecdc_cases <- as.data.frame(read_delim(files$ecdc_data, delim="|"))
+
+nyt_cases <- as.data.frame(read_delim(files$nyt_data, delim="|"))
 
 ```
 
-### Calculating incidence {-}
+### Cases by source {-}
+
+Cases reported by ECDC
 
 
-``` {r world_inc, message = FALSE}
+```{r epi_ecdc, fig.height=45, fig.width=50, message=FALSE}
 
-world_inc <- data_OWD, loc, date_rec) %>%
-  filter (loc == "World")
+us_inc <- ecdc_cases %>%
+  filter(loc == "United States")
 
-plot(world_inc)
-  
-
-```
-
-
-### Cases by loc {-}
-
-
-```{r afg_inc, message = FALSE}
-
-afg_inc <- data_OWD %>%
-  filter(loc == "Afghanistan")
-
-EpiCurve(afg_inc,
+EpiCurve(us_inc,
 date = "date_rec",
 period = "day",
 color = "#313695",
-xlabel=sprintf("From %s to %s", min(world_inc$date_rec), max(world_inc$date_rec)),
-note = "Daily epidemic curve (Afghanistan)")
-  
+xlabel=sprintf("From %s to %s", min(us_inc$date_rec), max(us_inc$date_rec)),
+note = "Daily epidemic curve from ECDC (United States)")
+
 
 ```
 
+Cases reported by NYT (#FIXME: use state level dataset)
 
-```{r exploratory pca, fig.height=5, fig.width=5, echo = FALSE}
-vst_dds <- vst(dds, blind=FALSE)
+#```{r epi_nyt, fig.height=5, fig.width=5, echo = FALSE}
 
-pca_coords <- plotPCA(vst_dds, 
-                      intgroup=c("condition"), 
-                      returnData = TRUE)
+#EpiCurve(nyt_cases,
+#         date = "date_rec",
+#         period = "day",
+#         freq = "cases",
+#         color = "#313695",
+#         xlabel=sprintf("From %s to %s", min(nyt_cases$date_rec), max(nyt_cases$date_rec)),
+#         note = "Daily epidemic curve from NYT (United States)")
+#
+#```
 
-plotPCA(vst_dds, intgroup=c("condition"))
+Cases reported by NYT in Fairfax County
 
-```
+```{r epi_fair, echo=, fig.height=20, fig.width=25}
 
-We would interpret this as the samples being somewhat clustered clearly by group and interpret the percentage on the x-axis as 58% of the variability between these samples is due to them being treated or untreated. I might also say that the within-group variability between samples in the treated group is probably contributing some noise to our ability to detect differences between the treated and untreated groups. The y-axis tells us how much variability between these samples is due to other factors in our model or if we have none, sources of variability we may not have accounted for like sex or ethnicity which are often leading contributors of variability between samples and should be accounted for in experimental design if you wish to control for their effects. 
+fx_inc <- nyt_cases %>%
+  filter(state == "Virginia" & county == "Fairfax")
 
+EpiCurve(fx_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(fx_inc$date_rec), max(fx_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Fairfax County, VA)")
 
-### Testing {-}
+ggsave(
+  files$fairfax,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 25,
+  height = 20,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
 
-DESeq2's analysis step is almost deceptively user-friendly compared to the analysis steps of edgeR and baySeq. It will tell you the steps it is taking with your data and you have the option to ask for additional output and customization but it keeps necessary user input to a minimum for most simple experiments.
-
-The default analysis explained here is the use of the Wald test. DESeq2 also offers the option of the Likelihood Ratio test. Both of these tests rely on the assumption that your count data follow a negative binomial distribution which means that we assume that most counts are very low and that there are more non-DE genes between the groups than there are DE genes. Which test we choose will depend on your experimental design and properties of your data. Our summary presentations for clients typically include information on the model we chose, justification, and the null and alternative hypotheses of that model.
-
-Since we want to be especially sure we are comparing our treated group to the untreated group (and not the over way around) we use the resultsNames function (not shown) to identify the comparisons available and select the one we'd like to see. In this case, based on condition, we want to see the results of the treated vs untreated. If we had other groups, we would see other options in the place of the "treated" group but since we set our reference group to "untreated" all comparisons would have that group listed second. This avoids having to re-run the DESeq function at every new comparison desired.
-
-Next, we create our results with the results function, use the summary function to see a tabular summary of them, and save them as a data frame for further manipulation. In the results function we also specify that we would like to set the FDR to 0.05. By setting the FDR here, we can experiment with different cut-offs based on what we're willing to accept. 
-
-The summary gives you information about the total number of genes with non-zero read counts, the FDR specified above, the exact number and total percentage of the up and down regulated DE genes, the presence of any outliers, and the removal of any additional genes with low counts.
-
-``` {r test, message = FALSE, echo = FALSE}
-
-dds <- DESeq(dds)
-
-res <- results(dds, 
-               alpha=0.05, 
-               name = "condition_treated_vs_untreated")
-
-summary(res)
-
-```
-### Results {-}
-
-In this example we see that while controlling the adjusted p/FDR threshold at <0.05, we have 838 DE genes between these groups, 406 are more expressed in the treated samples or up-regulated and 432 are more expressed in the untreated samples or down-regulated. Up and down regulation refers to the group you have set as the control or reference group. In this case, we are comparing the treated samples to the untreated samples so the untreated samples are our reference group and we say genes are up or down regulated in comparison to this group.
-
-In our walkthorugh of edgeR we use the same example dataset and found that while controlling the adjusted p/FDR threshold at <0.05, we found no differentially expressed genes between these groups. 
-
-Different analytical tools will often give you slightly different results and edgeR may be better for projects which have specified genes of interest in mind rather than exploratory projects since edgeR is much more strict with potential false positive results. While DESeq2 may allow more false positives into your significant results it also provides additional tools for evaluating their veracity before following up with a lab test.
-
-As part of our results output from DESeq2 we also provide the s-values. S-values provide an additional estimate of uncertainty by acting as a likelihood of whether the genes identified as differentially expressed are false positives. This helps our clients figure out if the DE genes they are seeing are worth confirming biologically. An s-value can be interpreted as s(genexyz)*100 = genexyz is x% likely to be a false positive finding. Here we obtain the s-values by performing log fold change (LFC) shrinkage on the dds object while specifying our comparison of interest and setting the s-values argument to TRUE. Briefly, LFC shrinkage makes the differences in the genes between groups comparable. Since genes can have a very small p-value even when the LFC is very small, this scales all of the LFCs by their p-values while preserving those truly large LFCs. We also use the apeglm estimator since it is the best available as of writing this and allows us to compute s-values. This is a much more complicated aspect of the analysis than we will cover here and for more detail on LFC shrinkage and s-values, please see the DESeq2 documentation [here](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html).
-
-We check that the data frame was created successfully by using the informal unit test of dimension with the expected number of rows and columns and telling the program to stop if the file does not have these dimensions. After this runs successfully we would typically export them as a .csv file for you.
-
-``` {r results, message = FALSE, echo = FALSE}
-
-LFC_dds <-as.data.frame(lfcShrink(dds, 
-                                  coef="condition_treated_vs_untreated", 
-                                  type = "apeglm", svalue = TRUE)) %>%
-  arrange(log2FoldChange)
-
-res_df <- as.data.frame(res) %>%
-  arrange(log2FoldChange) %>%
-  mutate(svals = LFC_dds$svalue) %>%
-  mutate(ID = as.factor(row.names(res))) %>%
-  arrange(padj)
-
-row.names(res_df) <- res_df$ID
-stopifnot(nrow(res_df) == 14599 & ncol(res_df) == 8)
-```
-
-### Visualizing {-}
-
-We now perform additional data visualizations. Typically we provide a PCA plot, heat maps, and volcano plots. We would be happy to work with you to customize these for publication. Please see our Data Visualization [menu](https://github.com/EmoryIntegratedComputationalCore/Methods/blob/master/DataVisualizationMenu.pdf) for more options and examples from previous projects.
-
-For our heat maps, we typically show the mean normalized counts of the samples. Next, we put the samples in the order of treated to untreated and select only the 20 genes with the lowest adjusted p-values be displayed so that we can see the gene names. It is possible to keep all DE genes on a heat map but after 20 it becomes nearly impossible to read each of the individual gene name and depending on the number of DE genes, it can be difficult to see the differences between groups with 100-200 genes on a plot setup this way. The first graph shows 20 genes and the second graph shows 200 genes. 
-
-```{r visualize, echo= FALSE, fig.height=3.5, fig.width=3.5, message=FALSE}
-vst_df <- as.data.frame(assays(vst_dds))
-
-vst_df <- vst_df[c("treated1", "treated2", "treated3",
-                   "untreated1", "untreated2", "untreated3", "untreated4")]
-
-res_heat <- as.data.frame(res)
-sel_padj20 <- order(res_heat$padj, 
-                    decreasing = FALSE)[1:20]
-
-annotation <- as.data.frame(colData(dds)["condition"])
-
-pheatmap(vst_df[sel_padj20, ],
-         cluster_rows= FALSE,
-         show_rownames = TRUE,
-         cluster_cols = FALSE,
-         annotation_col = annotation,
-         width = 1)
-
-sel_padj200 <- order(res_heat$padj, decreasing = FALSE)[1:200]
-
-pheatmap(vst_df[sel_padj200, ],
-         cluster_rows= TRUE,
-         show_rownames = FALSE,
-         cluster_cols = TRUE,
-         annotation_col = annotation,
-         width = 1)
 
 ```
 
-Here we see the differences in mean-normalized counts between the samples in the treated vs untreated groups in the genes sorted by smallest adjusted p-value. Please note that these are sorted for convenience but the gene at the top of the list is no more significant than the gene at the bottom of the list. As is the case with nominal p-values, a smaller adjusted p-value does not make a gene more statistically significant than one with a larger adjusted p-value. If the genes are below the threshold, they are all equally statistically significantly differentially expressed. These are sorted for convenience but the gene at the top of the list is no more significant than the gene at the bottom of the list. 
+Cases reported by NYT in Stafford County
 
-We also typically provide clients with an initial volcano plot created with the EnhancedVolcano R library. Similar to the PCA plot and heat map, this is a highly customizable graph and we would like to work with you to design graphs which best tell the story of your results. 
+```{r epi_staff, echo=, fig.height=5, fig.width=10}
 
-A volcano plot is technically a scatter plot where the x-axis has the log2 transformed fold changes between the compared samples and the y axis has the local adjusted p-values for each gene, also called the q-value. Here we have also labelled the genes with FDR < 0.1 as that is where we set our threshold when we generated our results. The points in red are those which meet the threshold for statistical significance with a q value  less than or equal to 0.1 and a log2 fold change of 1.0 or greater. Points in green are those with only log2 fold changes >1.0 and those in blue have claques < 0.1. The points in grey are non statistically significant by any measure. All of these parameters can be adjusted based on your cutoffs and thresholds. 
+st_inc <- nyt_cases %>%
+  filter(state == "Virginia" & county == "Stafford")
 
-```{r volcano, echo= FALSE, fig.height=5, fig.width=5, message=FALSE}
+EpiCurve(st_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(st_inc$date_rec), max(st_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Stafford County, VA)")
 
-EnhancedVolcano(res,
-                lab = rownames(res),
-                x = "log2FoldChange",
-                y = "padj",
-                xlim = c(-6, 6),
-                title= NULL,
-                subtitle= "Log(2) Fold Change vs -log(10) q values",
-                FCcutoff = 1.0,
-                pLabellingCutoff = 0.05,
-                pCutoff = 0.05,
-                legendPosition = "bottom",
-                legend=c("NS", "Log2 fold-change", "adj P-value",
-                         "adj P-value & Log2 fold-change"))
+
+ggsave(
+  files$stafford,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 10,
+  height = 5,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
 
 ```
 
-There are many more functions and many more specifications to functions than are used here in order to show a simplified example of one of the tools we use for differential expression analysis. Obtaining specific, actionable, and publication quality results from analysis requires a deeper understanding of your specific data set and we would love the opportunity to discuss these options with you.
+Cases reported by NYT in Fulton County
 
-While we encourage clients to reach out prior to sequencing so that we can collaborate to design the experiment to answer your specific questions, we look forward to hearing from you at any stage of your RNA-seq project. Please find our contact information available on our [website](https://www.cores.emory.edu/eicc/about/index.html) and check out some of the graphs we've made for previous clients [here](https://github.com/EmoryIntegratedComputationalCore/Methods/blob/master/DataVisualizationMenu.pdf).
+```{r epi_fult, echo=, fig.height=45, fig.width=50}
 
+ft_inc <- nyt_cases %>%
+  filter(state == "Georgia" & county == "Fulton")
+
+EpiCurve(ft_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(ft_inc$date_rec), max(ft_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Fulton County, GA)")
+
+ggsave(
+  files$fulton,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 50,
+  height = 45,
+  units = "in",
+  dpi = 300,
+  limitsize = FALSE)
+
+```
+
+Cases reported by NYT in Gwinnett County
+
+```{r epi_gwin, echo=, fig.height=25, fig.width=30}
+
+gt_inc <- nyt_cases %>%
+  filter(state == "Georgia" & county == "Gwinnett")
+
+EpiCurve(gt_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(gt_inc$date_rec), max(gt_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Gwinnett County, GA)")
+
+ggsave(
+  files$gwinnett,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 30,
+  height = 25,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+```
+
+Cases reported by NYT in Manatee County
+
+```{r epi_mana, echo=, fig.height=10, fig.width=15}
+
+mt_inc <- nyt_cases %>%
+  filter(state == "Florida" & county == "Manatee")
+
+EpiCurve(mt_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(mt_inc$date_rec), max(mt_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Manatee County, FL)")
+
+ggsave(
+  files$manatee,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 15,
+  height = 10,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+```
+
+Cases reported by NYT in Madison County
+
+```{r epi_madis, echo=, fig.height=5, fig.width=10}
+
+md_inc <- nyt_cases %>%
+  filter(state == "New York" & county == "Madison")
+
+EpiCurve(md_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(md_inc$date_rec), max(md_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Madison County, NY)")
+
+ggsave(
+  files$madison,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 10,
+  height = 5,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+```
+
+Cases reported by NYT in Taylor County
+
+```{r epi_tx, echo=, fig.height=5, fig.width=10}
+
+ty_inc <- nyt_cases %>%
+  filter(state == "Texas" & county == "Taylor")
+
+EpiCurve(ty_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(ty_inc$date_rec), max(ty_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Taylor County, TX)")
+
+ggsave(
+  files$taylor,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 25,
+  height = 20,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+#no cases reported in Jones county yet
+
+#jn_inc <- nyt_cases %>%
+#  filter(state == "Texas" & county == "Jones")
+
+#EpiCurve(jn_inc,
+#date = "date_rec",
+#period = "day",
+#freq = "cases",
+#color = "#313695",
+#xlabel=sprintf("From %s to %s", min(jn_inc$date_rec), max(jn_inc$date_rec)),
+#ylabel = "Reported Cases",
+#note = "Daily epidemic curve from NYT (JOnes County, TX)")
+
+#ggsave(
+#  files$jones,
+#  plot = last_plot(),
+#  device = NULL,
+#  path = NULL,
+#  scale = 1,
+#  width = 25,
+#  height = 20,
+#  units = "in",
+#  dpi = 300,
+#  limitsize = TRUE)
+#
+```
+
+Cases reported by NYT in Randolph County
+
+```{r epi_rand, echo=, fig.height=5, fig.width=10}
+
+rd_inc <- nyt_cases %>%
+  filter(state == "North Carolina" & county == "Randolph")
+
+EpiCurve(rd_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(rd_inc$date_rec), max(rd_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Randolph County, NC)")
+
+ggsave(
+  files$randolph,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 10,
+  height = 5,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+```
 ### Session information and References {-}
 
 ```{r sessioninfo, message = FALSE, echo = FALSE}
 date()
 sessionInfo()
-citation("bookdown")
-citation("readr")
-citation("dplyr")
-citation("knitr")
-citation("ggplot2")
-citation("DESeq2")
-citation("vsn")
-citation("pheatmap")
-citation("EnhancedVolcano")
 ```
 <!---- done ---->

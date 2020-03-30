@@ -1,6 +1,5 @@
-
 #!/usr/bin/env Rscript --vanilla
-# set expandtab ft=R ts=4 sw=4 ai fileencoding=utf-8
+# set expandtab ft=R ts=4 sw=4 ai fileencoding=utf-7
 #
 # Author: JR
 # Maintainer(s): JR
@@ -10,37 +9,73 @@
 # COVID19/clean/src/clean.R
 
 pacman::p_load("tidyverse", "lubridate", 
-               "here", "assertr", "janitor", "reshape2")
+               "here", "assertr", "janitor", "forcats")
 
-files <- list(input_data= here::here("clean/input/full_data.csv"),
-              cleaned_data = here::here("write/input/full_data_clean.csv"))
+files <- list(
+  ecdc_data = here("COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv"),
+  NYT_data = here("COVID19/NYTimes/covid-19-data/us-counties.csv"),
+  clean_ecdc_data = here("COVID19/write/input/ecdc_clean.csv"), 
+  clean_nyt_data = here("COVID19/write/input/nyt_clean.csv"))
 
-stopifnot(length(files) == 2)
+stopifnot(length(files) == 4)
 
-# clean up full data set
+### ECDC data from Our World in Data
+
 # shorten location to loc
 # change reserved word date to date_rec to indicate date recorded
 # keep all counts of cases and deaths in new dataframe
 # populate missing dates and add in counts of 0 
-#   (ex: in Afghanistan, no dates between from 03 March 20 -- 08 March 2020 were recorded)
+#  (ex: in Afghanistan, no dates between from 
+#   03 March 20 -- 08 March 2020 were recorded)
 #   and are now listed as having 0 cases or deaths on these dates
 
-cases_032320 <- as.data.frame(readr::read_delim(files$input_data, delim = ",")) %>%
+ecdc_cases <- as.data.frame(readr::read_delim(files$ecdc_data, 
+                                              delim = ",")) %>%
   clean_names() %>%
   transmute(loc = as.factor(location),
-         date_rec = as.Date(date, "%Y/%m/%d"), 
-         new_cases = as.double(new_cases), 
-         new_deaths = as.double(new_deaths), 
-         total_cases = as.double(total_cases), 
-         total_deaths = as.double(total_deaths)) %>%
+            date_rec = as.Date(date, "%Y/%m/%d"), 
+            new_cases = as.double(new_cases), 
+            new_deaths = as.double(new_deaths), 
+            total_cases = as.double(total_cases), 
+            total_deaths = as.double(total_deaths)) %>%
   group_by(loc) %>% 
   complete(loc, date_rec = seq(min(date_rec), max(date_rec), by = 'day')) %>%
-  replace(., is.na(.), 0)
+  replace(., is.na(.), 0) %>%
+  arrange(date_rec)
 
-cases_032320  <- cases_032320 %>%
-  verify(ncol(cases_032320) == 6 & (nrow(cases_032320) == 1266656)) %>%
+pre_cases <- as.Date("2019-12-31")
+#add in unit test to make sure dates are not reported prior to this date
+
+ecdc_cases %>%
+  verify(ncol(ecdc_cases) == 6 & (nrow(ecdc_cases) == 1266656)) %>%
   verify(is.factor(loc) & is.Date(date_rec)) %>%
   verify(is.na(new_cases) == FALSE)%>% 
-  write_delim(files$cleaned_data, delim = "|")
+  write_delim(files$clean_ecdc_data, delim = "|")
+
+### NYT data at US State and County Level
+
+# FIPS = fips code/geographic identifier
+# earliest date = 01/21/2020
+# change reserved word date to date_rec to indicate date recorded
+
+nyt_data <-
+    as.data.frame(readr::read_delim(files$NYT_data, delim = ","), 
+                  na.rm = FALSE) %>%
+    clean_names() %>%
+    mutate(date_rec = as.Date(parse_date_time(date, "ymd")), 
+           county = as.factor(county),
+           state = as.factor(state), 
+           fips = as.double(fips),
+           cases = as.double(cases),
+           deaths = as.double(deaths)) %>%
+  arrange(date_rec)
+
+#add unit tests for dates ocurring at earliest date
+
+nyt_data <- nyt_data %>%
+   verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 17731)) %>%
+   verify(is.na(date_rec) == FALSE) %>%
+  write_delim(files$clean_nyt_data, delim = "|")
+
 
 ###done###
