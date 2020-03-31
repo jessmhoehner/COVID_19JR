@@ -10,7 +10,8 @@ output:
 
 ### Loading data {-}
 
-Here I load in data from the projects from which I have collected and cleaned data:
+Here I load in data from the projects from which I have 
+collected and cleaned data:
 
 Our World in Data's ECDC data
 New York Times data
@@ -33,7 +34,8 @@ files <- list(ecdc_data = here::here("write/input/ecdc_clean.csv"),
               madison = here::here("write/output/epicurve_msonny.png"),
               taylor = here::here("write/output/epicurve_taylortx.png"),
               jones = here::here("write/output/epicurve_jonestx.png"),
-              randolph = here::here("write/output/epicurve_randnc.png"))
+              randolph = here::here("write/output/epicurve_randnc.png"),
+              genesee = here::here("write/output/epicurve_genmi.png"))
 
 ecdc_cases <- as.data.frame(read_delim(files$ecdc_data, delim="|"))
 
@@ -43,10 +45,10 @@ nyt_cases <- as.data.frame(read_delim(files$nyt_data, delim="|"))
 
 ### Cases by source {-}
 
-Cases reported by ECDC
+Cases reported in United States by European Centers for Disease Control (OWD)
 
 
-```{r epi_ecdc, fig.height=45, fig.width=50, message=FALSE}
+```{r epi_ecdc, echo=FALSE, fig.height=60, fig.width=55, message=FALSE, warning=FALSE}
 
 us_inc <- ecdc_cases %>%
   filter(loc == "United States")
@@ -61,9 +63,9 @@ note = "Daily epidemic curve from ECDC (United States)")
 
 ```
 
-Cases reported by NYT in Fairfax County
+Cases reported by NYT in Fairfax County, VA
 
-```{r epi_fair, echo=FALSE, fig.height=20, fig.width=25}
+```{r epi_fair, echo=FALSE, fig.height=45, fig.width=30}
 
 fx_inc <- nyt_cases %>%
   filter(state == "Virginia" & county == "Fairfax")
@@ -83,15 +85,15 @@ ggsave(
   device = NULL,
   path = NULL,
   scale = 1,
-  width = 25,
-  height = 20,
+  width = 30,
+  height = 45,
   units = "in",
   dpi = 300,
   limitsize = TRUE)
 
 ```
 
-Cases reported by NYT in Stafford County
+Cases reported by NYT in Stafford County, VA
 
 ```{r epi_staff, echo=FALSE, fig.height=5, fig.width=10}
 
@@ -121,9 +123,10 @@ ggsave(
   limitsize = TRUE)
 
 ```
+
 Cases reported by NYT in Washington DC
 
-```{r epi_dc, echo=FALSE, fig.height=5, fig.width=10}
+```{r epi_dc, echo=FALSE, fig.height=100, fig.width=100}
 
 dc_inc <- nyt_cases %>%
   filter(state == "District of Columbia" & county == "District of Columbia")
@@ -144,15 +147,15 @@ ggsave(
   device = NULL,
   path = NULL,
   scale = 1,
-  width = 10,
-  height = 5,
+  width = 45,
+  height = 30,
   units = "in",
   dpi = 300,
-  limitsize = TRUE)
+  limitsize = FALSE)
 
 ```
 
-Cases reported by NYT in Fulton County
+Cases reported by NYT in Fulton County, GA
 
 ```{r epi_fult, echo=FALSE, fig.height=45, fig.width=50}
 
@@ -182,7 +185,7 @@ ggsave(
 
 ```
 
-Cases reported by NYT in Gwinnett County
+Cases reported by NYT in Gwinnett County, GA
 
 ```{r epi_gwin, echo=FALSE, fig.height=25, fig.width=30}
 
@@ -212,7 +215,7 @@ ggsave(
 
 ```
 
-Cases reported by NYT in Manatee County
+Cases reported by NYT in Manatee County, FL
 
 ```{r epi_mana, echo=FALSE, fig.height=10, fig.width=15}
 
@@ -242,7 +245,7 @@ ggsave(
 
 ```
 
-Cases reported by NYT in Madison County
+Cases reported by NYT in Madison County, NY
 
 ```{r epi_madis, echo=FALSE, fig.height=5, fig.width=10}
 
@@ -272,7 +275,7 @@ ggsave(
 
 ```
 
-Cases reported by NYT in Taylor County
+Cases reported by NYT in Taylor County, TX
 
 ```{r epi_tx, echo=FALSE, fig.height=5, fig.width=10}
 
@@ -328,7 +331,7 @@ ggsave(
 #
 ```
 
-Cases reported by NYT in Randolph County
+Cases reported by NYT in Randolph County, NC
 
 ```{r epi_rand, echo=FALSE, fig.height=5, fig.width=10}
 
@@ -357,6 +360,36 @@ ggsave(
   limitsize = TRUE)
 
 ```
+Cases reported by NYT in Genesee County, MI
+
+```{r epi_genmi, echo=FALSE, fig.height=5, fig.width=10}
+
+gen_inc <- nyt_cases %>%
+  filter(state == "Michigan" & county == "Genesee")
+
+EpiCurve(rd_inc,
+date = "date_rec",
+period = "day",
+freq = "cases",
+color = "#313695",
+xlabel=sprintf("From %s to %s", min(gen_inc$date_rec), max(gen_inc$date_rec)),
+ylabel = "Reported Cases",
+note = "Daily epidemic curve from NYT (Genesee County, MI)")
+
+ggsave(
+  files$genesee,
+  plot = last_plot(),
+  device = NULL,
+  path = NULL,
+  scale = 1,
+  width = 10,
+  height = 5,
+  units = "in",
+  dpi = 300,
+  limitsize = TRUE)
+
+```
+
 ### Session information and References {-}
 
 ```{r sessioninfo, message = FALSE, echo=FALSE}

@@ -11,8 +11,8 @@
 HERE := $(shell git rev-parse --show-toplevel)
 
 clean_data = \
-		$(HERE)/clean/output/WHO_sit_rep_clean.csv \
-		$(HERE)/clean/output/nga_cv19_clean.csv 
+		$(HERE)/write/input/ecdc_clean.csv \
+		$(HERE)/write/input/nyt_clean.csv 
 
 .PHONY:	all clean
 
@@ -22,9 +22,9 @@ clean:
 			-rm -r output/*
 		
 output/: \
-			src/clean.R \
-			$(HERE)/clean/input/WHO_sit_rep.csv \
-			$(HERE)/clean/input/NGA_COVID_19_JR.csv
+		src/clean.R \
+	$(HERE)/owid/covid-19-data/public/data/ecdc/full_data.csv" \
+	$(HERE)/NYTimes/covid-19-data/us-counties.csv
 	Rscript --vanilla $<
 	
 # done.
