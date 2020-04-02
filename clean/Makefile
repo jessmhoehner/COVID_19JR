@@ -19,9 +19,9 @@ clean_data = \
 all: $(clean_data)
 
 clean:
-			-rm -r output/*
+			-rm -r $(HERE)/write/input/*
 		
-output/: \
+$(HERE)/write/input/: \
 		src/clean.R \
 	$(HERE)/owid/covid-19-data/public/data/ecdc/full_data.csv" \
 	$(HERE)/NYTimes/covid-19-data/us-counties.csv

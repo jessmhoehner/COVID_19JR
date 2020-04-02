@@ -73,7 +73,7 @@ nyt_data <-
 #add unit tests for dates ocurring at earliest date
 
 nyt_data <- nyt_data %>%
-   verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 17731)) %>%
+   verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 21799)) %>%
    verify(is.na(date_rec) == FALSE) %>%
   write_delim(files$clean_nyt_data, delim = "|")
 
