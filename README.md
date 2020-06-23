@@ -5,12 +5,11 @@ Project structure
 
 1. bring in data from outside repos (currently NYT, OWID)
 2. clean
-      - input (csv file datasets)
-      - src (clean.R script)
+      - src (clean.R script to clean data)
 3. graph
-      - input (csv files after clean task)
-      - output (graphs)
-      - src ( graph.R script to make graphs)
+      - input (cleaned csv files after clean task)
+      - output (graphs and datasets used for graphing)
+      - src (graph.R script to make graphs)
       
 currently : [Our World in Data](https://covid.ourworldindata.org/), [New York Times](https://github.com/nytimes/covid-19-data)
 
