@@ -11,8 +11,8 @@
 pacman::p_load("tidyverse", "knitr", "here", "assertr",
                "scales", "forcats")
 
-files <- list(ecdc_data = here::here("graph/input/ecdc_clean.csv"),
-              nyt_data = here::here("graph/input/nyt_clean.csv"))
+files <- list(ecdc_data = here("COVID19/graph/input/ecdc_clean.csv"),
+              nyt_data = here("COVID19/graph/input/nyt_clean.csv"))
 
 ecdc_cases <- as.data.frame(read_delim(files$ecdc_data, delim="|"))
 
@@ -81,7 +81,7 @@ for (i in seq_along(locs)){
   
   df <- df %>%
     write_excel_csv(quote = FALSE, path = 
-                      here(paste("graph/output/datasets/", 
+                      here(paste("COVID19/graph/output/datasets/", 
                                  names(locs)[i],"_obscases.csv", 
                                  sep = "")))
   
@@ -90,15 +90,15 @@ for (i in seq_along(locs)){
                " has exported successfully."))
   
   #plot observed cases
-  plot <-  ggplot(df) +
+  ggplot(df) +
     geom_col(aes(date_rec, cases), color = "#f7f7f7", fill = "#053061") +
-       labs(x ="Time (Days)", y = "Cases", 
-            title = "Cases of COVID-19 by day in , names(locs)[i],") +
-    ylim(c(0, (max(df$cases, na.rm=TRUE) + 2000))) +
-    theme_minimal()
+       labs(x ="Time (Days)", y = "Cases", title = names(locs)[i]) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle=90)) +
+    ylim(c(0, (max(df$cases, na.rm=TRUE) + 2000)))
   
   # save each graph individually
-  ggsave(filename = here(paste("graph/output/plots/", names(locs)[i],
+  ggsave(filename = here(paste("COVID19/graph/output/plots/", names(locs)[i],
                                "_casesbyday.png", sep = "")), 
          plot = last_plot(),
          device = "png",
@@ -108,3 +108,5 @@ for (i in seq_along(locs)){
   print(paste0("Plot for ",names(locs)[i], " created successfully"))
   
 }
+
+# done

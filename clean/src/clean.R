@@ -12,8 +12,8 @@ pacman::p_load("tidyverse", "lubridate",
                "here", "assertr", "janitor", "forcats")
 
 files <- list(
-  ecdc_data = here("COVID19/input/owid/covid-19-data/public/data/ecdc/full_data.csv"),
-  NYT_data = here("COVID19/input/NYTimes/us-counties.csv"),
+  ecdc_data = here("COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv"),
+  NYT_data = here("COVID19/NYTimes/us-counties.csv"),
   clean_ecdc_data = here("COVID19/graph/input/ecdc_clean.csv"), 
   clean_nyt_data = here("COVID19/graph/input/nyt_clean.csv"))
 
