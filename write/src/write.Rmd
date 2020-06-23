@@ -1,5 +1,5 @@
 ---
-title: 'Exploratory Data Analysis of COVID-19 Cases 23 March 2020'
+title: 'Exploratory Data Analysis of COVID-19 Cases'
 author: "Jessica Randall"
 output:
   bookdown::pdf_document2:
@@ -48,7 +48,7 @@ nyt_cases <- as.data.frame(read_delim(files$nyt_data, delim="|"))
 Cases reported in United States by European Centers for Disease Control (OWD)
 
 
-```{r epi_ecdc, echo=FALSE, fig.height=60, fig.width=55, message=FALSE, warning=FALSE}
+```{r epi_ecdc, echo=FALSE, fig.height=80, fig.width=100, message=FALSE, warning=FALSE}
 
 us_inc <- ecdc_cases %>%
   filter(loc == "United States")
@@ -69,15 +69,13 @@ Cases reported by NYT in Fairfax County, VA
 
 fx_inc <- nyt_cases %>%
   filter(state == "Virginia" & county == "Fairfax")
-
-EpiCurve(fx_inc,
-date = "date_rec",
-period = "day",
-freq = "cases",
-color = "#313695",
-xlabel = sprintf("From %s to %s", min(fx_inc$date_rec), max(fx_inc$date_rec)),
-ylabel = "Reported Cases",
-note = "Daily epidemic curve from NYT (Fairfax County, VA)")
+(ffx_plot = ggplot(fx_inc) +
+    theme_minimal() + 
+    geom_col(aes(x = date_rec, y = cases), 
+             color = "#053061", fill = "#053061" ) +
+    labs(x ="Time (Days)", y = "Cases", 
+         title = "Cases of COVID-19 in Fairfax County VA") +
+    ylim(0, 20000))
 
 ggsave(
   files$fairfax,
@@ -85,11 +83,9 @@ ggsave(
   device = NULL,
   path = NULL,
   scale = 1,
-  width = 30,
-  height = 45,
-  units = "in",
+ units = "in",
   dpi = 300,
-  limitsize = TRUE)
+  limitsize = FALSE)
 
 ```
 

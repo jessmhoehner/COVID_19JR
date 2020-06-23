@@ -13,7 +13,7 @@ pacman::p_load("tidyverse", "lubridate",
 
 files <- list(
   ecdc_data = here("COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv"),
-  NYT_data = here("COVID19/NYTimes/covid-19-data/us-counties.csv"),
+  NYT_data = here("COVID19/NYTimes/us-counties.csv"),
   clean_ecdc_data = here("COVID19/write/input/ecdc_clean.csv"), 
   clean_nyt_data = here("COVID19/write/input/nyt_clean.csv"))
 
@@ -47,8 +47,9 @@ pre_cases <- as.Date("2019-12-31")
 #add in unit test to make sure dates are not reported prior to this date
 
 ecdc_cases %>%
-  verify(ncol(ecdc_cases) == 6 & (nrow(ecdc_cases) == 1266656)) %>%
+  verify(ncol(ecdc_cases) == 6 & (nrow(ecdc_cases) == 1823270)) %>%
   verify(is.factor(loc) & is.Date(date_rec)) %>%
+  verify(sum(total_cases) == 3686829354) %>%
   verify(is.na(new_cases) == FALSE)%>% 
   write_delim(files$clean_ecdc_data, delim = "|")
 
@@ -73,9 +74,9 @@ nyt_data <-
 #add unit tests for dates ocurring at earliest date
 
 nyt_data <- nyt_data %>%
-   verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 21799)) %>%
-   verify(is.na(date_rec) == FALSE) %>%
+  verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 261070)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 111375905) %>%
   write_delim(files$clean_nyt_data, delim = "|")
-
 
 ###done###

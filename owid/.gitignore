@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.vscode
+env/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+tmp/
+~$*.xls*
+*.log

@@ -1,0 +1,65 @@
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #!/usr/bin/env Rscript --vanilla
+> # set expandtab ft=R ts=4 sw=4 ai fileencoding=utf-7
+> #
+> # Author: JR
+> # Maintainer(s): JR
+> # License: ?
+> #
+> # -----------------------------------------------------------
+> # COVID19/clean/src/clean.R
+> 
+> pacman::p_load("tidyverse", "lubridate", 
++                "here", "assertr", "janitor", "forcats")
+> 
+> files <- list(
++   ecdc_data = here("COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv"),
++   NYT_data = here("COVID19/NYTimes/covid-19-data/us-counties.csv"),
++   clean_ecdc_data = here("COVID19/write/input/ecdc_clean.csv"), 
++   clean_nyt_data = here("COVID19/write/input/nyt_clean.csv"))
+> 
+> stopifnot(length(files) == 4)
+> 
+> ### ECDC data from Our World in Data
+> 
+> # shorten location to loc
+> # change reserved word date to date_rec to indicate date recorded
+> # keep all counts of cases and deaths in new dataframe
+> # populate missing dates and add in counts of 0 
+> #  (ex: in Afghanistan, no dates between from 
+> #   03 March 20 -- 08 March 2020 were recorded)
+> #   and are now listed as having 0 cases or deaths on these dates
+> 
+> ecdc_cases <- as.data.frame(readr::read_delim(files$ecdc_data, 
++                                               delim = ",")) %>%
++   clean_names() %>%
++   transmute(loc = as.factor(location),
++             date_rec = as.Date(date, "%Y/%m/%d"), 
++             new_cases = as.double(new_cases), 
++             new_deaths = as.double(new_deaths), 
++             total_cases = as.double(total_cases), 
++             total_deaths = as.double(total_deaths)) %>%
++   group_by(loc) %>% 
++   complete(loc, date_rec = seq(min(date_rec), max(date_rec), by = 'day')) %>%
++   replace(., is.na(.), 0) %>%
++   arrange(date_rec)
+Error: '/mnt/c/Users/Jessica/Documents/COVID19/COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv' does not exist.
+Execution halted
