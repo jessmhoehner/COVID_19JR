@@ -11,8 +11,8 @@
 pacman::p_load("tidyverse", "knitr", "here", "assertr",
                "scales", "forcats")
 
-files <- list(ecdc_data = here("COVID19/graph/input/ecdc_clean.csv"),
-              nyt_data = here("COVID19/graph/input/nyt_clean.csv"))
+files <- list(ecdc_data = here("graph/input/ecdc_clean.csv"),
+              nyt_data = here("graph/input/nyt_clean.csv"))
 
 ecdc_cases <- as.data.frame(read_delim(files$ecdc_data, delim="|"))
 
@@ -81,7 +81,7 @@ for (i in seq_along(locs)){
   
   df <- df %>%
     write_excel_csv(quote = FALSE, path = 
-                      here(paste("COVID19/graph/output/datasets/", 
+                      here(paste("graph/output/datasets/", 
                                  names(locs)[i],"_obscases.csv", 
                                  sep = "")))
   
@@ -98,7 +98,7 @@ for (i in seq_along(locs)){
     ylim(c(0, (max(df$cases, na.rm=TRUE) + 2000)))
   
   # save each graph individually
-  ggsave(filename = here(paste("COVID19/graph/output/plots/", names(locs)[i],
+  ggsave(filename = here(paste("graph/output/plots/", names(locs)[i],
                                "_casesbyday.png", sep = "")), 
          plot = last_plot(),
          device = "png",
