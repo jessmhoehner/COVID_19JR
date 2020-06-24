@@ -2,7 +2,7 @@
 #
 #Author: JR
 #Maintainer: JR
-#License:  2019, EICC, GPL v2 or later
+#License:  2020, EICC, GPL v3 or later
 # 
 #COVID19/clean/Makefile
 #----------------------------------------------------
@@ -11,8 +11,8 @@
 HERE := $(shell Rscript --vanilla -e 'write(here::here(), stdout())')
 
 clean_data = \
-			$(HERE)/write/input/ecdc_clean.csv \
-			$(HERE)/write/input/nyt_clean.csv
+			$(HERE)/graph/input/ecdc_clean.csv \
+			$(HERE)/graph/input/nyt_clean.csv
 		
 .PHONY:	all clean
 
@@ -24,8 +24,8 @@ clean:
 		
 $(clean_data): \
 			$(HERE)/clean/src/clean.R \
-			$(HERE)/owid/covid-19-data/public/data/ecdc/full_data.csv" \
-			$(HERE)/NYTimes/covid-19-data/us-counties.csv
+			$(HERE)/owid/covid-19-data/public/data/ecdc/full_data.csv \
+			$(HERE)/NYTimes/us-counties.csv 
 		Rscript --vanilla $<
 	
 # done.

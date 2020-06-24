@@ -3,7 +3,7 @@
 #
 # Author: JR
 # Maintainer(s): JR
-# License: ?
+# License:  2020, EICC, GPL v3 or later
 #
 # -----------------------------------------------------------
 # COVID19/clean/src/clean.R
@@ -12,10 +12,10 @@ pacman::p_load("tidyverse", "lubridate",
                "here", "assertr", "janitor", "forcats")
 
 files <- list(
-  ecdc_data = here("COVID19/owid/covid-19-data/public/data/ecdc/full_data.csv"),
-  NYT_data = here("COVID19/NYTimes/us-counties.csv"),
-  clean_ecdc_data = here("COVID19/graph/input/ecdc_clean.csv"), 
-  clean_nyt_data = here("COVID19/graph/input/nyt_clean.csv"))
+  ecdc_data = here("owid/covid-19-data/public/data/ecdc/full_data.csv"),
+  NYT_data = here("NYTimes/us-counties.csv"),
+  clean_ecdc_data = here("graph/input/ecdc_clean.csv"), 
+  clean_nyt_data = here("graph/input/nyt_clean.csv"))
 
 stopifnot(length(files) == 4)
 
