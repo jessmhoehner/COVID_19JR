@@ -14,13 +14,10 @@ pacman::p_load("tidyverse", "lubridate", "readr",
 files <- list(
   ecdc_data = here("owid/covid-19-data/public/data/ecdc/full_data.csv"),
   NYT_data = here("NYTimes/us-counties.csv"),
-  cvt_data = here("covid-public-api/v1/states/daily.csv"),
-  
-  clean_ecdc_data = here("graph/input/ecdc_clean.csv"), 
-  clean_nyt_data = here("graph/input/nyt_clean.csv"), 
-  clean_cvt_data = here("graph/input/cvt_clean.csv"))
+  cvt_data = here("covid-public-api/v1/states/daily.csv"))
 
-stopifnot(length(files) == 6)
+# export the _state_data and _inc csvs
+stopifnot(length(files) == 3)
 
 ### ECDC data from Our World in Data
 
@@ -46,15 +43,16 @@ ecdc_df <- as.data.frame(read_delim(files$ecdc_data,
   replace(., is.na(.), 0) %>%
   arrange(date_rec)
 
-pre_cases <- as.Date("2019-12-31")
-#add in unit test to make sure dates are not reported prior to this date
+# unit tests
 
-ecdc_cases %>%
-  verify(ncol(ecdc_cases) == 6 & (nrow(ecdc_cases) == 1823270)) %>%
+index_ecdc <- as.Date("2019-12-31")
+
+ecdc_df <- ecdc_df %>%
+  verify(ncol(ecdc_df) == 6 & (nrow(ecdc_df) == 1823270)) %>%
   verify(is.factor(loc) & is.Date(date_rec)) %>%
   verify(sum(total_cases) == 3686829354) %>%
-  verify(is.na(new_cases) == FALSE)%>% 
-  write_delim(files$clean_ecdc_data, delim = "|")
+  verify(is.na(new_cases) == FALSE) %>%
+  verify(min(date_rec) == index_ecdc)
 
 ### NYT data at US State and County Level
 
@@ -66,29 +64,26 @@ nyt_df <-
     as.data.frame(read_delim(files$NYT_data, delim = ","), 
                   na.rm = FALSE) %>%
     clean_names() %>%
-    mutate(date_rec = as.Date(parse_date_time(date, "ymd")), 
-           county = as.factor(county),
-           state = as.factor(state), 
-           fips = as.double(fips),
-           cases = as.double(cases),
-           deaths = as.double(deaths)) %>%
+    mutate(date_rec = as.Date(parse_date_time(date, "ymd"))) %>%
+    mutate_at(vars(county, state), as.factor) %>%
+    mutate_at(vars(cases, deaths), as.integer) %>%
   arrange(date_rec)
 
-
-#add unit tests for dates ocurring at earliest date
+# unit tests
+index_nyt <- as.Date("2020-01-21")
 
 nyt_df <- nyt_df %>%
   verify(ncol(nyt_df) == 7 & (nrow(nyt_df) == 261070)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 111375905) %>%
-  write_delim(files$clean_nyt_data, delim = "|")
+  verify(min(date_rec) == index_nyt)
 
 ## COVID tracking Project by The Atlantic data at the state level ##
 # format date and data_quality_grade, 
 # set some dbls of interest to integers, set other dbls of interest
 # to factors, sort by date_rec var, remove data with low quality grade
 
-first_case <- as.Date("2020-03-23")
+index_cvt <- as.Date("2020-03-23")
 
 good_grades <- c("A+","A","B","C")
 
@@ -112,16 +107,157 @@ cvt_df <-
   filter(dgq %in% good_grades)
 
 # unit tests
-# will break when new data are added
-# will break if data with quality < C get through the filter
-# will break if cases get added with dates before 3/23/2020
 
 cvt_df <- cvt_df %>%
   verify(ncol(cvt_df) == 41 & (nrow(cvt_df) == 4943)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(total) == 3694345) %>%
   verify(dgq %in% good_grades) %>%
-  verify(min(date_rec) == first_case) %>%
-  write_delim(files$clean_cvt_data, delim = "|")
+  verify(min(date_rec) == index_cvt)
+
+# create graphing specific datasets
+
+# create state level data sets from nyt and ppos data from filtered cvt
+
+cvt_filt <- cvt_df %>%
+  mutate(p_pos = round(((positive/total)*100), digits = 2),
+         p_pend = round(((pending/total)*100), digits = 2)) %>%
+  select(date_rec, state, dgq, hash, p_pos, 
+         positive, negative, pending, 
+         p_pend, total)
+
+nyt_inc <- nyt_df %>%
+  select(date_rec, state, cases, deaths)
+
+###############################################################
+
+# would love to make these a loop eventually but not sure how to filter by 
+# a looping value 
+
+# states_full <- as.list("Virginia", "Georgia", "New York", 
+#                  "Texas", "Florida", "Michigan", 
+#                  "North Carolina")
+
+# state_ab <- as.list("VA", "GA", "NY", "TX", "FL", "MI", "NC")
+
+#################################################################
+
+# VA
+va_inc <- nyt_inc %>%
+  filter(state == "Virginia")
+
+va_ppos <- cvt_filt %>%
+  filter(state == "VA")
+
+va_state_data <- left_join(va_inc, va_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# GA
+
+ga_inc <- nyt_inc %>%
+  filter(state == "Georgia")
+
+ga_ppos <- cvt_filt %>%
+  filter(state == "GA")
+
+ga_state_data <- left_join(ga_inc, ga_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# NY
+
+ny_inc <- nyt_inc %>%
+  filter(state == "New York")
+
+ny_ppos <- cvt_filt %>%
+  filter(state == "NY")
+
+ny_state_data <- left_join(ny_inc, ny_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# FL
+
+fl_inc <- nyt_inc %>%
+  filter(state == "Florida")
+
+fl_ppos <- cvt_filt %>%
+  filter(state == "FL")
+
+fl_state_data <- left_join(fl_inc, fl_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# TX
+
+tx_inc <- nyt_inc %>%
+  filter(state == "Texas")
+
+tx_ppos <- cvt_filt %>%
+  filter(state == "TX")
+
+tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# TX
+
+tx_inc <- nyt_inc %>%
+  filter(state == "Texas")
+
+tx_ppos <- cvt_filt %>%
+  filter(state == "TX")
+
+tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+### create county level lists for counties of interest
+
+#dc 
+dc_inc <- nyt_df %>%
+  filter(state == "District of Columbia" & county == "District of Columbia")
+
+# va
+fx_inc <- nyt_df %>%
+  filter(state == "Virginia" & county == "Fairfax")
+
+st_inc <- nyt_df %>%
+  filter(state == "Virginia" & county == "Stafford")
+
+#ga
+ft_inc <- nyt_df %>%
+  filter(state == "Georgia" & county == "Fulton")
+
+gt_inc <- nyt_df %>%
+  filter(state == "Georgia" & county == "Gwinnett")
+
+# fl
+mt_inc <- nyt_df %>%
+  filter(state == "Florida" & county == "Manatee")
+
+# ny 
+md_inc <- nyt_df %>%
+  filter(state == "New York" & county == "Madison")
+
+#tx 
+ty_inc <- nyt_df %>%
+  filter(state == "Texas" & county == "Taylor")
+
+# nc
+rd_inc <- nyt_df %>%
+  filter(state == "North Carolina" & county == "Randolph")
+
+# mi 
+gen_inc <- nyt_df %>%
+  filter(state == "Michigan" & county == "Genesee")
+
 
 ###done###

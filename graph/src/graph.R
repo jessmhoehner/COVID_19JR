@@ -9,54 +9,19 @@
 # COVID19/graph/src/graph.R
 
 pacman::p_load("tidyverse", "knitr", "here", "assertr",
-               "scales", "forcats")
+               "scales", "forcats", "readr", "janitor")
+
+# pull in _state_data and _inc datasets
 
 files <- list(ecdc_data = here("graph/input/ecdc_clean.csv"),
-              nyt_data = here("graph/input/nyt_clean.csv"))
+              nyt_data = here("graph/input/nyt_clean.csv"), 
+              cvt_data = here("graph/input/cvt_clean.csv"))
 
-ecdc_cases <- as.data.frame(read_delim(files$ecdc_data, delim="|"))
 
-nyt_cases <- as.data.frame(read_delim(files$nyt_data, delim="|"))
 
-### create scalable list of nyt cases for areas of interest 
 
-#dc 
-dc_inc <- nyt_cases %>%
-  filter(state == "District of Columbia" & county == "District of Columbia")
 
-# va
-fx_inc <- nyt_cases %>%
-  filter(state == "Virginia" & county == "Fairfax")
-
-st_inc <- nyt_cases %>%
-  filter(state == "Virginia" & county == "Stafford")
-
-#ga
-ft_inc <- nyt_cases %>%
-  filter(state == "Georgia" & county == "Fulton")
-
-gt_inc <- nyt_cases %>%
-  filter(state == "Georgia" & county == "Gwinnett")
-
-# fl
-mt_inc <- nyt_cases %>%
-  filter(state == "Florida" & county == "Manatee")
-
-# ny 
-md_inc <- nyt_cases %>%
-  filter(state == "New York" & county == "Madison")
-
-#tx 
-ty_inc <- nyt_cases %>%
-  filter(state == "Texas" & county == "Taylor")
-
-# nc
-rd_inc <- nyt_cases %>%
-  filter(state == "North Carolina" & county == "Randolph")
-
-# mi 
-gen_inc <- nyt_cases %>%
-  filter(state == "Michigan" & county == "Genesee")
+# only pull in _state_data and _inc datasets
 
 # locations of interest as a list
 locs <- list(dc_inc, fx_inc, st_inc, 
