@@ -13,64 +13,147 @@ pacman::p_load("tidyverse", "knitr", "here", "assertr",
 
 # pull in _state_data and _inc datasets
 
-files <- list(ecdc_data = here("graph/input/ecdc_clean.csv"),
-              nyt_data = here("graph/input/nyt_clean.csv"), 
-              cvt_data = here("graph/input/cvt_clean.csv"))
+files <- list(ga = here("graph/input/ga_stlev.csv"),
+              ny = here("graph/input/ny_stlev.csv"),
+              fl = here("graph/input/fl_stlev.csv"),
+              va = here("graph/input/va_stlev.csv"),
+              mi = here("graph/input/mi_stlev.csv"),
+              nc = here("graph/input/nc_stlev.csv"),
+              tx = here("graph/input/tx_stlev.csv"),
+              ga_ft = here("graph/input/ga_fulton.csv"),
+              ga_gw = here("graph/input/ga_gwinnett.csv"),
+              va_fx = here("graph/input/va_fairfax.csv"),
+              va_st = here("graph/input/va_stafford.csv"),
+              fl_mt = here("graph/input/fl_manatee.csv"),
+              mi_gn = here("graph/input/mi_genesee.csv"),
+              nc_rn = here("graph/input/nc_randolph.csv"),
+              tx_ty = here("graph/input/tx_taylor.csv"),
+              dc_dc = here("graph/input/dc_dc.csv"),
+              ny_md = here("graph/input/ny_madison.csv"),
+              cvt_data = here("graph/input/cvt_filtered.csv"),
+              
+              ppos_facetplot = here("graph/output/plots/multistate_ppos.png")
+)
 
+locs <- list(files$ga,files$ny, files$fl,files$va, files$mi,files$nc,files$tx, 
+               files$ga_ft, files$ga_gw, files$va_fx, files$va_st, files$fl_mt, 
+               files$mi_gn, files$nc_rn, files$tx_ty, files$dc_dc, files$ny_md, 
+             files$cvt_data)
 
+stopifnot(length(locs) == 18)
+stopifnot(locs %in% files == TRUE)
 
+# creates a list called cleandfs, containing dataframes created from clean data
+dfs <- lapply(locs, function(x) {
+  
+  df_a <- as.data.frame(read_delim(x, delim = "|")) %>%
+    clean_names()
+  
+})
 
+# add names for each df in the list corresponding to appropriate names for each
+# spreadheet
 
-# only pull in _state_data and _inc datasets
+names(dfs) <-  c("Georgia", "New_York", "Florida", "Virginia", "Michigan", 
+                 "North_Carolina", "Texas", "Fulton_GA", "Gwinnett_GA", 
+                 "Fairfax_VA","Stafford_VA", "Manatee_FL", "Genesee_MI", 
+                 "Randolph_NC", "Taylor_TX","Washington_DC", "Madison_NY", 
+                 "Full_Set")
 
-# locations of interest as a list
-locs <- list(dc_inc, fx_inc, st_inc, 
-             ft_inc, gt_inc, mt_inc, 
-             md_inc, ty_inc, rd_inc, gen_inc)
+# faceted plot of percentage of positive cases for states of interest
 
-names(locs) <- c("WashingtonDC", "Fairfax_VA","Stafford_VA",
-                 "Fulton_GA", "Gwinnett_GA", "Manatee_FL", 
-                 "Madison_NY", "Randolph_NC", "Taylor_TX", "Genesee_MI")
+state_abbs <- c("GA", "NY", "FL", "VA", "NC", "TX", "MI", "CA")
 
-# initialize empty df
-df <- data.frame(matrix(0, 200, 7))
+full <- as.data.frame(pluck(dfs, 18)) %>%
+  filter(state %in% state_abbs) %>%
+  mutate(state_fct = as.factor(state))
 
-# loop to graph each loc of interest and export
+labs <- c("California (N = 117,092,611)", "Florida (N = 62,536,788)", 
+          "Georgia (N = 27,692,108)", "Michigan (N = 36,661,684)", 
+          "North Carolina (N = 25,399,116)", "New York (N = 133,026,236)", 
+          "Texas (N = 56,839,328)", "Virginia (N = 18,756,128)")
 
-for (i in seq_along(locs)){
+levels(full$state_fct) <- labs
+
+#plot observed cases
+(fct_plot <- ggplot(full) +
+  geom_line(aes(date_rec, p_pos), color = "#b2182b", size = 1) +
+  facet_wrap( ~state_fct, ncol = 4) +
+  labs(x ="Time (Months)", y = "Percentage of Positive Cases", 
+       title = "Percentage of Positive Cases Over Time", 
+       subtitle = "N = Total Cases Tested") +
+  theme_minimal() +
+  ylim(c(0, 100)))
+
+# save each graph individually
+ggsave(filename = files$ppos_facetplot, 
+       plot = last_plot(),
+       device = "png",
+       dpi = 600)
+
+# subset list of clean data frames
+
+states <- dfs[1:7]
+counties <- dfs[8:17]
+
+### state level cases/day with percent positive tests ###
+
+for (j in seq_along(states)){
   
   #messages for the user to keep them aware of model progress
-  print(paste0("Creating plotting dataset for ",names(locs)[i]))
+  print(paste0("Creating plot for ",names(states)[j]))
   
-  df <- as.data.frame(pluck(locs, i))
-  
-  df <- df %>%
-    write_excel_csv(quote = FALSE, path = 
-                      here(paste("graph/output/datasets/", 
-                                 names(locs)[i],"_obscases.csv", 
-                                 sep = "")))
-  
+  df_b <- as.data.frame(pluck(states, j))
+
+  #plot observed cases
+  ggplot(df_b) +
+    geom_line(aes(date_rec, p_pos), 
+              color = "#b2182b", 
+              size = 2, 
+              show.legend = TRUE) +
+    labs(x ="Time (Days)", y = "Percentage of Cases", 
+         title = names(states)[j]) +
+    theme_minimal() +
+    ylim(c(0, 100))
+
+  # save each graph individually
+  ggsave(filename = here(paste0("graph/output/plots/", names(states)[j],
+                                "_ppos.png", sep = "")), 
+         plot = last_plot(),
+         device = "png",
+         dpi = 600)
+
   #message to let the user know that each iteration has completed
-  print(paste0("Dataset for ", names(locs)[i],
-               " has exported successfully."))
+  print(paste0("Plot for ",names(states)[j], " created successfully"))
+
+}
+
+### county level cases by day ###
+
+for (i in seq_along(counties)){
+  
+  #messages for the user to keep them aware of model progress
+  print(paste0("Creating plot for ",names(counties)[i]))
+  
+  df_c <- as.data.frame(pluck(counties, i))
   
   #plot observed cases
-  ggplot(df) +
+  ggplot(df_c) +
     geom_col(aes(date_rec, cases), color = "#f7f7f7", fill = "#053061") +
-       labs(x ="Time (Days)", y = "Cases", title = names(locs)[i]) +
+       labs(x ="Time (Days)", y = "Cases", title = names(counties)[i]) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle=90)) +
-    ylim(c(0, (max(df$cases, na.rm=TRUE) + 2000)))
+    ylim(c(0, (max(df_c$cases, na.rm=TRUE) + 2000)))
   
   # save each graph individually
-  ggsave(filename = here(paste("graph/output/plots/", names(locs)[i],
+  ggsave(filename = here(paste0("graph/output/plots/", names(counties)[i],
                                "_casesbyday.png", sep = "")), 
          plot = last_plot(),
          device = "png",
          dpi = 600)
   
   #message to let the user know that each iteration has completed
-  print(paste0("Plot for ",names(locs)[i], " created successfully"))
+  print(paste0("Plot for ",names(counties)[i], " created successfully"))
   
 }
 

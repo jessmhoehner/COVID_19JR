@@ -33,10 +33,12 @@ files <- list(
   nc_rn = here("graph/input/nc_randolph.csv"),
   tx_ty = here("graph/input/tx_taylor.csv"),
   dc_dc = here("graph/input/dc_dc.csv"),
-  ny_md = here("graph/input/ny_madison.csv")
+  ny_md = here("graph/input/ny_madison.csv"), 
+  
+  clean_cvt = here("graph/input/cvt_filtered.csv")
 )
 
-stopifnot(length(files) == 20)
+stopifnot(length(files) == 19)
 
 ### ECDC data from Our World in Data
 
@@ -139,7 +141,8 @@ cvt_filt <- cvt_filt %>%
   verify(ncol(cvt_filt) == 8 & (nrow(cvt_filt) == 4943)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(total_daily_cases_cvt) == 3694345) %>%
-  verify(min(date_rec) == index_cvt)
+  verify(min(date_rec) == index_cvt) %>%
+  write_delim(files$clean_cvt, delim = "|")
 
 # create graphing specific datasets #############################
 
