@@ -8,16 +8,19 @@
 # -----------------------------------------------------------
 # COVID19/clean/src/clean.R
 
-pacman::p_load("tidyverse", "lubridate", 
+pacman::p_load("tidyverse", "lubridate", "readr", 
                "here", "assertr", "janitor", "forcats")
 
 files <- list(
   ecdc_data = here("owid/covid-19-data/public/data/ecdc/full_data.csv"),
   NYT_data = here("NYTimes/us-counties.csv"),
+  cvt_data = here("covid-public-api/v1/states/daily.csv"),
+  
   clean_ecdc_data = here("graph/input/ecdc_clean.csv"), 
-  clean_nyt_data = here("graph/input/nyt_clean.csv"))
+  clean_nyt_data = here("graph/input/nyt_clean.csv"), 
+  clean_cvt_data = here("graph/input/cvt_clean.csv"))
 
-stopifnot(length(files) == 4)
+stopifnot(length(files) == 6)
 
 ### ECDC data from Our World in Data
 
@@ -29,7 +32,7 @@ stopifnot(length(files) == 4)
 #   03 March 20 -- 08 March 2020 were recorded)
 #   and are now listed as having 0 cases or deaths on these dates
 
-ecdc_cases <- as.data.frame(readr::read_delim(files$ecdc_data, 
+ecdc_df <- as.data.frame(read_delim(files$ecdc_data, 
                                               delim = ",")) %>%
   clean_names() %>%
   transmute(loc = as.factor(location),
@@ -59,8 +62,8 @@ ecdc_cases %>%
 # earliest date = 01/21/2020
 # change reserved word date to date_rec to indicate date recorded
 
-nyt_data <-
-    as.data.frame(readr::read_delim(files$NYT_data, delim = ","), 
+nyt_df <-
+    as.data.frame(read_delim(files$NYT_data, delim = ","), 
                   na.rm = FALSE) %>%
     clean_names() %>%
     mutate(date_rec = as.Date(parse_date_time(date, "ymd")), 
@@ -71,12 +74,54 @@ nyt_data <-
            deaths = as.double(deaths)) %>%
   arrange(date_rec)
 
+
 #add unit tests for dates ocurring at earliest date
 
-nyt_data <- nyt_data %>%
-  verify(ncol(nyt_data) == 7 & (nrow(nyt_data) == 261070)) %>%
+nyt_df <- nyt_df %>%
+  verify(ncol(nyt_df) == 7 & (nrow(nyt_df) == 261070)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 111375905) %>%
   write_delim(files$clean_nyt_data, delim = "|")
+
+## COVID tracking Project by The Atlantic data at the state level ##
+# format date and data_quality_grade, 
+# set some dbls of interest to integers, set other dbls of interest
+# to factors, sort by date_rec var, remove data with low quality grade
+
+first_case <- as.Date("2020-03-23")
+
+good_grades <- c("A+","A","B","C")
+
+cvt_df <-
+  as.data.frame(read_delim(files$cvt_data, delim = ","), 
+                na.rm = FALSE) %>%
+  clean_names() %>%
+  mutate(date_rec = as.Date(parse_date_time(date, "ymd")), 
+         dgq = as.factor(data_quality_grade)) %>%
+  mutate_at(vars(positive, negative, pending, hospitalized_currently, 
+                  hospitalized_cumulative, in_icu_currently, in_icu_cumulative, 
+                  on_ventilator_currently, on_ventilator_cumulative, 
+                  recovered, death, hospitalized, total_tests_viral, 
+                  positive_tests_viral, negative_tests_viral, 
+                  positive_cases_viral, positive_increase, 
+                  negative_increase, total, total_test_results, 
+                  total_test_results_increase, pos_neg, death_increase, 
+                  hospitalized_increase), as.integer, na.rm = TRUE) %>%
+  mutate_at(vars(state, fips), as.factor) %>%
+  arrange(date_rec) %>%
+  filter(dgq %in% good_grades)
+
+# unit tests
+# will break when new data are added
+# will break if data with quality < C get through the filter
+# will break if cases get added with dates before 3/23/2020
+
+cvt_df <- cvt_df %>%
+  verify(ncol(cvt_df) == 41 & (nrow(cvt_df) == 4943)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(max(total) == 3694345) %>%
+  verify(dgq %in% good_grades) %>%
+  verify(min(date_rec) == first_case) %>%
+  write_delim(files$clean_cvt_data, delim = "|")
 
 ###done###
