@@ -29,14 +29,12 @@ clean_data = \
 			$(HERE)/graph/input/nc_randoplh.csv \
 			$(HERE)/graph/input/mi_genessee.csv
 			
-		
 .PHONY:	all clean
 
 all: $(clean_data)
 
 clean:
-
-	rm write/input/*
+	rm $(HERE)/graph/input/*
 		
 $(clean_data): \
 			$(HERE)/clean/src/clean.R \

@@ -79,14 +79,13 @@ ecdc_df <- ecdc_df %>%
 # earliest date = 01/21/2020
 # change reserved word date to date_rec to indicate date recorded
 
-nyt_df <-
-    as.data.frame(read_delim(files$NYT_data, delim = ","), 
-                  na.rm = FALSE) %>%
+nyt_df <-as.data.frame(read_delim(files$NYT_data, delim = ","),na.rm = FALSE) %>%
     clean_names() %>%
     mutate(date_rec = as.Date(parse_date_time(date, "ymd"))) %>%
     mutate_at(vars(county, state), as.factor) %>%
     mutate_at(vars(cases, deaths), as.integer) %>%
-  arrange(date_rec)
+  arrange(date_rec) %>%
+  group_by(date_rec)
 
 # unit tests
 index_nyt <- as.Date("2020-01-21")
@@ -106,7 +105,7 @@ index_cvt <- as.Date("2020-03-23")
 
 good_grades <- c("A+","A","B","C")
 
-cvt_df <-
+cvt_filt <-
   as.data.frame(read_delim(files$cvt_data, delim = ","), 
                 na.rm = FALSE) %>%
   clean_names() %>%
@@ -123,27 +122,28 @@ cvt_df <-
                   hospitalized_increase), as.integer, na.rm = TRUE) %>%
   mutate_at(vars(state, fips), as.factor) %>%
   arrange(date_rec) %>%
-  filter(dgq %in% good_grades)
+  filter(dgq %in% good_grades) %>%
+  group_by(state, date_rec) %>%
+  summarise_at(vars(positive, negative, pending, total), 
+               list(daily_cases_cvt = sum)) %>%
+  mutate(p_pos = round(((positive_daily_cases_cvt/total_daily_cases_cvt)*100), 
+                       digits = 2),
+         p_pend = round(((pending_daily_cases_cvt/total_daily_cases_cvt)*100), 
+                        digits = 2)) %>%
+  select(date_rec, state, p_pos, positive_daily_cases_cvt, negative_daily_cases_cvt, 
+         pending_daily_cases_cvt, p_pend, total_daily_cases_cvt)
 
 # unit tests
 
-cvt_df <- cvt_df %>%
-  verify(ncol(cvt_df) == 41 & (nrow(cvt_df) == 4943)) %>%
+cvt_filt <- cvt_filt %>%
+  verify(ncol(cvt_filt) == 8 & (nrow(cvt_filt) == 4943)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(max(total) == 3694345) %>%
-  verify(dgq %in% good_grades) %>%
+  verify(max(total_daily_cases_cvt) == 3694345) %>%
   verify(min(date_rec) == index_cvt)
 
 # create graphing specific datasets #############################
 
-# create state level data sets from nyt and ppos data from filtered cvt
-
-cvt_filt <- cvt_df %>%
-  mutate(p_pos = round(((positive/total)*100), digits = 2),
-         p_pend = round(((pending/total)*100), digits = 2)) %>%
-  select(date_rec, state, dgq, hash, p_pos, 
-         positive, negative, pending, 
-         p_pend, total)
+# create state level data sets from nyt and ppos data from cvt
 
 nyt_inc <- nyt_df %>%
   select(date_rec, state, cases, deaths)
@@ -163,48 +163,56 @@ nyt_inc <- nyt_df %>%
 
 # VA
 va_inc <- nyt_inc %>%
-  filter(state == "Virginia")
+  filter(state == "Virginia") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 va_ppos <- cvt_filt %>%
   filter(state == "VA")
 
 va_state_data <- left_join(va_inc, va_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_va <- as.Date("2020-03-07")
+max_date <- as.Date("2020-06-22")
 
 va_state_data  <- va_state_data  %>%
-  verify(ncol(va_state_data ) == 12 & (nrow(va_state_data ) == 11351)) %>%
+  verify(ncol(va_state_data ) == 9 & (nrow(va_state_data ) == 108)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 2313600) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_va)%>%
   write_delim(files$va, delim = "|")
 
 # GA
 
 ga_inc <- nyt_inc %>%
-  filter(state == "Georgia")
+  filter(state == "Georgia") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 ga_ppos <- cvt_filt %>%
   filter(state == "GA")
 
 ga_state_data <- left_join(ga_inc, ga_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
-
 index_ga <- as.Date("2020-03-02")
 
 ga_state_data  <- ga_state_data  %>%
-  verify(ncol(ga_state_data ) == 12 & (nrow(ga_state_data ) == 14489)) %>%
+  verify(ncol(ga_state_data ) == 9 & (nrow(ga_state_data ) == 113)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 2755663) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ga)%>%
   write_delim(files$ga, delim = "|")
 
@@ -213,120 +221,140 @@ ga_state_data  <- ga_state_data  %>%
 # NY
 
 ny_inc <- nyt_inc %>%
-  filter(state == "New York")
+  filter(state == "New York") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 ny_ppos <- cvt_filt %>%
   filter(state == "NY")
 
 ny_state_data <- left_join(ny_inc, ny_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_ny <- as.Date("2020-03-01")
 
 ny_state_data  <- ny_state_data  %>%
-  verify(ncol(ny_state_data ) == 12 & (nrow(ny_state_data ) == 5669)) %>%
+  verify(ncol(ny_state_data ) == 9 & (nrow(ny_state_data ) == 114)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 26134161) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ny)%>%
   write_delim(files$ny, delim = "|")
 
 # FL
 
 fl_inc <- nyt_inc %>%
-  filter(state == "Florida")
+  filter(state == "Florida") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 fl_ppos <- cvt_filt %>%
   filter(state == "FL")
 
 fl_state_data <- left_join(fl_inc, fl_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_fl <- as.Date("2020-03-01")
 
 fl_state_data  <- fl_state_data  %>%
-  verify(ncol(fl_state_data ) == 12 & (nrow(fl_state_data ) == 6450)) %>%
+  verify(ncol(fl_state_data ) == 9 & (nrow(fl_state_data ) == 114)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 3718582) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_fl)%>%
   write_delim(files$fl, delim = "|")
 
 # nc
 
 nc_inc <- nyt_inc %>%
-  filter(state == "North Carolina")
+  filter(state == "North Carolina") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 nc_ppos <- cvt_filt %>%
   filter(state == "NC")
 
-nc_state_data <- left_join(nc_inc, nc_ppos, by = "date_rec") %>%
+nc_state_data <- left_join(nc_inc, nc_ppos, by = "date_rec")  %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_nc <- as.Date("2020-03-03")
 
 nc_state_data  <- nc_state_data  %>%
-  verify(ncol(nc_state_data ) == 12 & (nrow(nc_state_data ) == 8808)) %>%
+  verify(ncol(nc_state_data ) == 9 & (nrow(nc_state_data ) == 112)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 1653003) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_nc)%>%
   write_delim(files$nc, delim = "|")
 
 # TX
 
 tx_inc <- nyt_inc %>%
-  filter(state == "Texas")
+  filter(state == "Texas") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 tx_ppos <- cvt_filt %>%
   filter(state == "TX")
 
 tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_tx <- as.Date("2020-02-12")
 
 tx_state_data  <- tx_state_data  %>%
-  verify(ncol(tx_state_data ) == 12 & (nrow(tx_state_data ) == 18746)) %>%
+  verify(ncol(tx_state_data ) == 9 & (nrow(tx_state_data ) == 132)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 3906892) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_tx)%>%
   write_delim(files$tx, delim = "|")
 
 # mi
 
 mi_inc <- nyt_inc %>%
-  filter(state == "Michigan")
+  filter(state == "Michigan") %>%
+  group_by(date_rec) %>%
+  summarise_at(vars(cases, deaths), 
+               list(daily_nyt = sum)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  select(-c("cases_daily_nyt"))
 
 mi_ppos <- cvt_filt %>%
   filter(state == "MI")
 
 mi_state_data <- left_join(mi_inc, mi_ppos, by = "date_rec") %>%
   clean_names() %>%
-  mutate(state = as.character(state_x))%>%
-  select(-c("state_x", "state_y"))
+  select(-c("state"))
 
 # unit tests
 
 index_mi <- as.Date("2020-03-10")
 
 mi_state_data  <- mi_state_data  %>%
-  verify(ncol(mi_state_data ) == 12 & (nrow(mi_state_data ) == 7251)) %>%
+  verify(ncol(mi_state_data ) == 9 & (nrow(mi_state_data ) == 105)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 3840989) %>%
+  verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_mi)%>%
   write_delim(files$mi, delim = "|")
 
@@ -411,14 +439,14 @@ ty_inc <- ty_inc  %>%
   write_delim(files$tx_ty, delim = "|")
 
 # nc
-rd_inc <- nyt_df %>%
+rn_inc <- nyt_df %>%
   filter(state == "North Carolina" & county == "Randolph")
 
-rd_inc <- rd_inc  %>%
-  verify(ncol(rd_inc) == 7 & (nrow(rd_inc) == 91)) %>%
+rn_inc <- rn_inc  %>%
+  verify(ncol(rn_inc) == 7 & (nrow(rn_inc) == 91)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 34863) %>%
-  write_delim(files$nc_rd, delim = "|")
+  write_delim(files$nc_rn, delim = "|")
 
 # mi 
 gn_inc <- nyt_df %>%
