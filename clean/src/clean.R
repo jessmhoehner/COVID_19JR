@@ -14,10 +14,29 @@ pacman::p_load("tidyverse", "lubridate", "readr",
 files <- list(
   ecdc_data = here("owid/covid-19-data/public/data/ecdc/full_data.csv"),
   NYT_data = here("NYTimes/us-counties.csv"),
-  cvt_data = here("covid-public-api/v1/states/daily.csv"))
+  cvt_data = here("covid-public-api/v1/states/daily.csv"), 
+  
+  ga = here("graph/input/ga_stlev.csv"),
+  ny = here("graph/input/ny_stlev.csv"),
+  fl = here("graph/input/fl_stlev.csv"),
+  va = here("graph/input/va_stlev.csv"),
+  mi = here("graph/input/mi_stlev.csv"),
+  nc = here("graph/input/nc_stlev.csv"),
+  tx = here("graph/input/tx_stlev.csv"),
+  
+  ga_ft = here("graph/input/ga_fulton.csv"),
+  ga_gw = here("graph/input/ga_gwinnett.csv"),
+  va_fx = here("graph/input/va_fairfax.csv"),
+  va_st = here("graph/input/va_stafford.csv"),
+  fl_mt = here("graph/input/fl_manatee.csv"),
+  mi_gn = here("graph/input/mi_genesee.csv"),
+  nc_rn = here("graph/input/nc_randolph.csv"),
+  tx_ty = here("graph/input/tx_taylor.csv"),
+  dc_dc = here("graph/input/dc_dc.csv"),
+  ny_md = here("graph/input/ny_madison.csv")
+)
 
-# export the _state_data and _inc csvs
-stopifnot(length(files) == 3)
+stopifnot(length(files) == 20)
 
 ### ECDC data from Our World in Data
 
@@ -115,7 +134,7 @@ cvt_df <- cvt_df %>%
   verify(dgq %in% good_grades) %>%
   verify(min(date_rec) == index_cvt)
 
-# create graphing specific datasets
+# create graphing specific datasets #############################
 
 # create state level data sets from nyt and ppos data from filtered cvt
 
@@ -154,6 +173,17 @@ va_state_data <- left_join(va_inc, va_ppos, by = "date_rec") %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
 
+# unit tests
+
+index_va <- as.Date("2020-03-07")
+
+va_state_data  <- va_state_data  %>%
+  verify(ncol(va_state_data ) == 12 & (nrow(va_state_data ) == 11351)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 2313600) %>%
+  verify(min(date_rec) == index_va)%>%
+  write_delim(files$va, delim = "|")
+
 # GA
 
 ga_inc <- nyt_inc %>%
@@ -166,6 +196,19 @@ ga_state_data <- left_join(ga_inc, ga_ppos, by = "date_rec") %>%
   clean_names() %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
+
+# unit tests
+
+index_ga <- as.Date("2020-03-02")
+
+ga_state_data  <- ga_state_data  %>%
+  verify(ncol(ga_state_data ) == 12 & (nrow(ga_state_data ) == 14489)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 2755663) %>%
+  verify(min(date_rec) == index_ga)%>%
+  write_delim(files$ga, delim = "|")
+
+# unit tests
 
 # NY
 
@@ -180,6 +223,17 @@ ny_state_data <- left_join(ny_inc, ny_ppos, by = "date_rec") %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
 
+# unit tests
+
+index_ny <- as.Date("2020-03-01")
+
+ny_state_data  <- ny_state_data  %>%
+  verify(ncol(ny_state_data ) == 12 & (nrow(ny_state_data ) == 5669)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 26134161) %>%
+  verify(min(date_rec) == index_ny)%>%
+  write_delim(files$ny, delim = "|")
+
 # FL
 
 fl_inc <- nyt_inc %>%
@@ -193,6 +247,41 @@ fl_state_data <- left_join(fl_inc, fl_ppos, by = "date_rec") %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
 
+# unit tests
+
+index_fl <- as.Date("2020-03-01")
+
+fl_state_data  <- fl_state_data  %>%
+  verify(ncol(fl_state_data ) == 12 & (nrow(fl_state_data ) == 6450)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 3718582) %>%
+  verify(min(date_rec) == index_fl)%>%
+  write_delim(files$fl, delim = "|")
+
+# nc
+
+nc_inc <- nyt_inc %>%
+  filter(state == "North Carolina")
+
+nc_ppos <- cvt_filt %>%
+  filter(state == "NC")
+
+nc_state_data <- left_join(nc_inc, nc_ppos, by = "date_rec") %>%
+  clean_names() %>%
+  mutate(state = as.character(state_x))%>%
+  select(-c("state_x", "state_y"))
+
+# unit tests
+
+index_nc <- as.Date("2020-03-03")
+
+nc_state_data  <- nc_state_data  %>%
+  verify(ncol(nc_state_data ) == 12 & (nrow(nc_state_data ) == 8808)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 1653003) %>%
+  verify(min(date_rec) == index_nc)%>%
+  write_delim(files$nc, delim = "|")
+
 # TX
 
 tx_inc <- nyt_inc %>%
@@ -206,18 +295,40 @@ tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
 
-# TX
+# unit tests
 
-tx_inc <- nyt_inc %>%
-  filter(state == "Texas")
+index_tx <- as.Date("2020-02-12")
 
-tx_ppos <- cvt_filt %>%
-  filter(state == "TX")
+tx_state_data  <- tx_state_data  %>%
+  verify(ncol(tx_state_data ) == 12 & (nrow(tx_state_data ) == 18746)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 3906892) %>%
+  verify(min(date_rec) == index_tx)%>%
+  write_delim(files$tx, delim = "|")
 
-tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
+# mi
+
+mi_inc <- nyt_inc %>%
+  filter(state == "Michigan")
+
+mi_ppos <- cvt_filt %>%
+  filter(state == "MI")
+
+mi_state_data <- left_join(mi_inc, mi_ppos, by = "date_rec") %>%
   clean_names() %>%
   mutate(state = as.character(state_x))%>%
   select(-c("state_x", "state_y"))
+
+# unit tests
+
+index_mi <- as.Date("2020-03-10")
+
+mi_state_data  <- mi_state_data  %>%
+  verify(ncol(mi_state_data ) == 12 & (nrow(mi_state_data ) == 7251)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 3840989) %>%
+  verify(min(date_rec) == index_mi)%>%
+  write_delim(files$mi, delim = "|")
 
 ### create county level lists for counties of interest
 
@@ -225,39 +336,98 @@ tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
 dc_inc <- nyt_df %>%
   filter(state == "District of Columbia" & county == "District of Columbia")
 
+dc_inc <- dc_inc  %>%
+  verify(ncol(dc_inc) == 7 & (nrow(dc_inc) == 108)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 499158) %>%
+  write_delim(files$dc_dc, delim = "|")
+
 # va
 fx_inc <- nyt_df %>%
   filter(state == "Virginia" & county == "Fairfax")
 
+fx_inc <- fx_inc  %>%
+  verify(ncol(fx_inc) == 7 & (nrow(fx_inc) == 108)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 555345) %>%
+  write_delim(files$va_fx, delim = "|")
+
 st_inc <- nyt_df %>%
   filter(state == "Virginia" & county == "Stafford")
+
+st_inc <- st_inc  %>%
+  verify(ncol(st_inc) == 7 & (nrow(st_inc) == 99)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 36684) %>%
+  write_delim(files$va_st, delim = "|")
 
 #ga
 ft_inc <- nyt_df %>%
   filter(state == "Georgia" & county == "Fulton")
 
+ft_inc <- ft_inc  %>%
+  verify(ncol(ft_inc) == 7 & (nrow(ft_inc) == 113)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 284413) %>%
+  write_delim(files$ga_ft, delim = "|")
+
 gt_inc <- nyt_df %>%
   filter(state == "Georgia" & county == "Gwinnett")
+
+gt_inc <- gt_inc  %>%
+  verify(ncol(gt_inc) == 7 & (nrow(gt_inc) == 108)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 224822) %>%
+  write_delim(files$ga_gw, delim = "|")
 
 # fl
 mt_inc <- nyt_df %>%
   filter(state == "Florida" & county == "Manatee")
 
+mt_inc <- mt_inc  %>%
+  verify(ncol(mt_inc) == 7 & (nrow(mt_inc) == 114)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 66239) %>%
+  write_delim(files$fl_mt, delim = "|")
+
 # ny 
 md_inc <- nyt_df %>%
   filter(state == "New York" & county == "Madison")
+
+md_inc <- md_inc  %>%
+  verify(ncol(md_inc) == 7 & (nrow(md_inc) == 93)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 18575) %>%
+  write_delim(files$ny_md, delim = "|")
 
 #tx 
 ty_inc <- nyt_df %>%
   filter(state == "Texas" & county == "Taylor")
 
+ty_inc <- ty_inc  %>%
+  verify(ncol(ty_inc) == 7 & (nrow(ty_inc) == 88)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 22392) %>%
+  write_delim(files$tx_ty, delim = "|")
+
 # nc
 rd_inc <- nyt_df %>%
   filter(state == "North Carolina" & county == "Randolph")
 
+rd_inc <- rd_inc  %>%
+  verify(ncol(rd_inc) == 7 & (nrow(rd_inc) == 91)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 34863) %>%
+  write_delim(files$nc_rd, delim = "|")
+
 # mi 
-gen_inc <- nyt_df %>%
+gn_inc <- nyt_df %>%
   filter(state == "Michigan" & county == "Genesee")
 
+gn_inc <- gn_inc  %>%
+  verify(ncol(gn_inc) == 7 & (nrow(gn_inc) == 96)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 143328) %>%
+  write_delim(files$mi_gn, delim = "|")
 
 ###done###
