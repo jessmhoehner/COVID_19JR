@@ -11,5 +11,6 @@ Project structure
       - output (graphs and datasets used for graphing)
       - src (graph.R script to make graphs)
       
-currently : [Our World in Data](https://covid.ourworldindata.org/), [New York Times](https://github.com/nytimes/covid-19-data), [COVID19 Tracking Project (The Atlantic)](https://github.com/COVID19Tracking/covid-tracking-data)
+currently : [New York Times](https://github.com/nytimes/covid-19-data), [COVID19 Tracking Project (The Atlantic)](https://github.com/COVID19Tracking/covid-tracking-data), 
+[Georgia Department of Public Health](https://dph.georgia.gov/covid-19-daily-status-report)
 
