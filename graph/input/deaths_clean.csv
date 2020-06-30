@@ -1,0 +1,979 @@
+county|sex|age_gp|race|chronic_condition|n|n_deaths
+Appling|Female|18-64|White|Yes|1|1
+Appling|Female|65 and older|White|Yes|1|1
+Appling|Male|65 and older|African-American/ Black|Unknown|1|1
+Appling|Male|65 and older|African-American/ Black|Yes|3|3
+Appling|Male|65 and older|White|Unknown|4|4
+Appling|Male|65 and older|White|Yes|4|4
+Atkinson|Female|65 and older|African-American/ Black|Yes|1|1
+Atkinson|Male|65 and older|African-American/ Black|Unknown|1|1
+Bacon|Female|18-64|African-American/ Black|Yes|1|1
+Bacon|Female|18-64|White|No|1|1
+Bacon|Male|65 and older|White|Yes|2|2
+Baker|Female|18-64|African-American/ Black|No|1|1
+Baker|Male|65 and older|African-American/ Black|Unknown|1|1
+Baker|Male|65 and older|African-American/ Black|Yes|1|1
+Baldwin|Female|18-64|African-American/ Black|Yes|1|1
+Baldwin|Female|65 and older|African-American/ Black|No|1|1
+Baldwin|Female|65 and older|African-American/ Black|Yes|1|1
+Baldwin|Male|18-64|African-American/ Black|Yes|3|3
+Baldwin|Male|18-64|White|Unknown|3|3
+Baldwin|Male|18-64|White|Yes|1|1
+Baldwin|Male|65 and older|African-American/ Black|Unknown|1|1
+Baldwin|Male|65 and older|African-American/ Black|Yes|5|5
+Baldwin|Male|65 and older|White|No|3|3
+Baldwin|Male|65 and older|White|Unknown|8|8
+Baldwin|Male|65 and older|White|Yes|6|6
+Barrow|Female|65 and older|African-American/ Black|Unknown|1|1
+Barrow|Female|65 and older|African-American/ Black|Yes|2|2
+Barrow|Female|65 and older|White|No|4|4
+Barrow|Female|65 and older|White|Unknown|3|3
+Barrow|Female|65 and older|White|Yes|8|8
+Barrow|Male|18-64|White|Yes|1|1
+Barrow|Male|65 and older|American Indian/ Alaska Native|Yes|1|1
+Barrow|Male|65 and older|White|No|1|1
+Barrow|Male|65 and older|White|Yes|4|4
+Bartow|Female|18-64|White|Yes|1|1
+Bartow|Female|65 and older|African-American/ Black|Yes|3|3
+Bartow|Female|65 and older|White|Yes|13|13
+Bartow|Male|18-64|African-American/ Black|Yes|1|1
+Bartow|Male|18-64|White|Yes|1|1
+Bartow|Male|65 and older|African-American/ Black|Yes|3|3
+Bartow|Male|65 and older|Other|Yes|1|1
+Bartow|Male|65 and older|White|Yes|19|19
+Ben Hill|Male|65 and older|African-American/ Black|Yes|1|1
+Bibb|Female|18-64|African-American/ Black|No|1|1
+Bibb|Female|18-64|African-American/ Black|Yes|3|3
+Bibb|Female|18-64|White|Yes|1|1
+Bibb|Female|65 and older|African-American/ Black|No|1|1
+Bibb|Female|65 and older|African-American/ Black|Unknown|1|1
+Bibb|Female|65 and older|African-American/ Black|Yes|9|9
+Bibb|Female|65 and older|White|Unknown|1|1
+Bibb|Female|65 and older|White|Yes|4|4
+Bibb|Male|18-64|African-American/ Black|No|1|1
+Bibb|Male|18-64|African-American/ Black|Yes|1|1
+Bibb|Male|65 and older|African-American/ Black|No|1|1
+Bibb|Male|65 and older|African-American/ Black|Unknown|1|1
+Bibb|Male|65 and older|African-American/ Black|Yes|6|6
+Bibb|Male|65 and older|White|No|1|1
+Bibb|Male|65 and older|White|Yes|6|6
+Bleckley|Female|18-64|African-American/ Black|Yes|1|1
+Brantley|Female|65 and older|White|Unknown|1|1
+Brantley|Female|65 and older|White|Yes|1|1
+Brooks|Female|65 and older|African-American/ Black|Unknown|1|1
+Brooks|Female|65 and older|White|Unknown|2|2
+Brooks|Male|18-64|White|Yes|1|1
+Brooks|Male|65 and older|African-American/ Black|Yes|2|2
+Brooks|Male|65 and older|White|No|2|2
+Brooks|Male|65 and older|White|Unknown|1|1
+Brooks|Male|65 and older|White|Yes|2|2
+Bryan|Female|18-64|White|Yes|1|1
+Bryan|Female|65 and older|African-American/ Black|Yes|1|1
+Bryan|Female|65 and older|White|Yes|1|1
+Bryan|Male|18-64|White|Yes|2|2
+Bulloch|Female|18-64|African-American/ Black|Yes|1|1
+Bulloch|Female|65 and older|White|No|1|1
+Bulloch|Female|65 and older|White|Unknown|1|1
+Bulloch|Male|65 and older|White|Unknown|1|1
+Burke|Female|18-64|African-American/ Black|No|1|1
+Burke|Female|65 and older|African-American/ Black|Yes|1|1
+Burke|Female|65 and older|White|Unknown|1|1
+Burke|Female|65 and older|White|Yes|1|1
+Burke|Male|65 and older|African-American/ Black|Yes|1|1
+Burke|Male|65 and older|White|Yes|1|1
+Butts|Female|18-64|African-American/ Black|No|1|1
+Butts|Female|65 and older|African-American/ Black|No|3|3
+Butts|Female|65 and older|African-American/ Black|Unknown|6|6
+Butts|Female|65 and older|White|No|2|2
+Butts|Female|65 and older|White|Unknown|5|5
+Butts|Female|65 and older|White|Yes|2|2
+Butts|Male|18-64|African-American/ Black|Unknown|1|1
+Butts|Male|18-64|White|No|1|1
+Butts|Male|18-64|White|Unknown|1|1
+Butts|Male|65 and older|African-American/ Black|Unknown|2|2
+Butts|Male|65 and older|African-American/ Black|Yes|1|1
+Butts|Male|65 and older|White|No|2|2
+Butts|Male|65 and older|White|Unknown|6|6
+Calhoun|Female|18-64|African-American/ Black|Unknown|1|1
+Calhoun|Female|18-64|African-American/ Black|Yes|3|3
+Calhoun|Male|18-64|White|No|1|1
+Camden|Male|18-64|African-American/ Black|No|1|1
+Camden|Male|18-64|White|Yes|1|1
+Carroll|Female|18-64|African-American/ Black|Unknown|1|1
+Carroll|Female|65 and older|African-American/ Black|Yes|2|2
+Carroll|Female|65 and older|White|No|4|4
+Carroll|Female|65 and older|White|Unknown|5|5
+Carroll|Female|65 and older|White|Yes|6|6
+Carroll|Male|18-64|African-American/ Black|No|2|2
+Carroll|Male|18-64|African-American/ Black|Yes|2|2
+Carroll|Male|18-64|Other|Unknown|1|1
+Carroll|Male|18-64|White|No|1|1
+Carroll|Male|18-64|White|Yes|1|1
+Carroll|Male|65 and older|African-American/ Black|Yes|2|2
+Carroll|Male|65 and older|White|Unknown|4|4
+Carroll|Male|65 and older|White|Yes|8|8
+Catoosa|Female|18-64|White|Yes|1|1
+Catoosa|Female|65 and older|White|Yes|3|3
+Catoosa|Male|18-64|White|Unknown|1|1
+Catoosa|Male|18-64|White|Yes|1|1
+Catoosa|Male|65 and older|White|Yes|1|1
+Charlton|Female|65 and older|African-American/ Black|Yes|1|1
+Charlton|Male|65 and older|African-American/ Black|Yes|1|1
+Chatham|Female|18-64|White|Unknown|1|1
+Chatham|Female|18-64|White|Yes|1|1
+Chatham|Female|65 and older|African-American/ Black|Yes|4|4
+Chatham|Female|65 and older|White|Yes|6|6
+Chatham|Male|18-64|African-American/ Black|Unknown|1|1
+Chatham|Male|18-64|African-American/ Black|Yes|4|4
+Chatham|Male|18-64|White|Yes|2|2
+Chatham|Male|65 and older|African-American/ Black|No|1|1
+Chatham|Male|65 and older|African-American/ Black|Yes|7|7
+Chatham|Male|65 and older|White|No|1|1
+Chatham|Male|65 and older|White|Yes|9|9
+Chattooga|Male|65 and older|White|Yes|2|2
+Cherokee|Female|18-64|African-American/ Black|Yes|1|1
+Cherokee|Female|65 and older|African-American/ Black|Yes|1|1
+Cherokee|Female|65 and older|White|No|1|1
+Cherokee|Female|65 and older|White|Yes|23|23
+Cherokee|Male|18-64|White|Yes|2|2
+Cherokee|Male|65 and older|African-American/ Black|Yes|1|1
+Cherokee|Male|65 and older|Unknown|Unknown|1|1
+Cherokee|Male|65 and older|White|No|1|1
+Cherokee|Male|65 and older|White|Unknown|1|1
+Cherokee|Male|65 and older|White|Yes|12|12
+Clarke|Female|65 and older|African-American/ Black|No|2|2
+Clarke|Female|65 and older|White|No|1|1
+Clarke|Female|65 and older|White|Unknown|1|1
+Clarke|Female|65 and older|White|Yes|2|2
+Clarke|Male|18-64|African-American/ Black|Yes|1|1
+Clarke|Male|65 and older|African-American/ Black|No|1|1
+Clarke|Male|65 and older|African-American/ Black|Yes|3|3
+Clarke|Male|65 and older|White|Unknown|2|2
+Clarke|Male|65 and older|White|Yes|2|2
+Clay|Male|18-64|African-American/ Black|Yes|1|1
+Clay|Male|65 and older|African-American/ Black|Yes|1|1
+Clayton|Female|18-64|African-American/ Black|No|5|5
+Clayton|Female|18-64|African-American/ Black|Unknown|1|1
+Clayton|Female|18-64|African-American/ Black|Yes|2|2
+Clayton|Female|18-64|Other|Unknown|1|1
+Clayton|Female|18-64|Other|Yes|1|1
+Clayton|Female|18-64|White|Unknown|1|1
+Clayton|Female|65 and older|African-American/ Black|No|3|3
+Clayton|Female|65 and older|African-American/ Black|Unknown|13|13
+Clayton|Female|65 and older|African-American/ Black|Yes|5|5
+Clayton|Female|65 and older|Asian|Unknown|1|1
+Clayton|Female|65 and older|Other|Unknown|1|1
+Clayton|Female|65 and older|White|No|3|3
+Clayton|Female|65 and older|White|Unknown|2|2
+Clayton|Male|18-64|African-American/ Black|No|4|4
+Clayton|Male|18-64|African-American/ Black|Unknown|4|4
+Clayton|Male|18-64|African-American/ Black|Yes|6|6
+Clayton|Male|18-64|Other|Unknown|1|1
+Clayton|Male|18-64|Other|Yes|1|1
+Clayton|Male|18-64|White|No|1|1
+Clayton|Male|18-64|White|Yes|2|2
+Clayton|Male|65 and older|African-American/ Black|No|7|7
+Clayton|Male|65 and older|African-American/ Black|Unknown|5|5
+Clayton|Male|65 and older|African-American/ Black|Yes|4|4
+Clayton|Male|65 and older|White|No|2|2
+Clayton|Male|65 and older|White|Unknown|2|2
+Clayton|Male|65 and older|White|Yes|1|1
+Clinch|Male|65 and older|White|Unknown|2|2
+Clinch|Male|65 and older|White|Yes|1|1
+Cobb|Female|18-64|African-American/ Black|No|1|1
+Cobb|Female|18-64|African-American/ Black|Unknown|1|1
+Cobb|Female|18-64|African-American/ Black|Yes|7|7
+Cobb|Female|18-64|White|No|1|1
+Cobb|Female|18-64|White|Yes|2|2
+Cobb|Female|65 and older|African-American/ Black|No|2|2
+Cobb|Female|65 and older|African-American/ Black|Unknown|5|5
+Cobb|Female|65 and older|African-American/ Black|Yes|28|28
+Cobb|Female|65 and older|Asian|Yes|1|1
+Cobb|Female|65 and older|Other|Unknown|1|1
+Cobb|Female|65 and older|Other|Yes|1|1
+Cobb|Female|65 and older|White|No|10|10
+Cobb|Female|65 and older|White|Unknown|15|15
+Cobb|Female|65 and older|White|Yes|45|45
+Cobb|Male|18-64|African-American/ Black|Yes|2|2
+Cobb|Male|18-64|Other|Yes|2|2
+Cobb|Male|18-64|White|No|1|1
+Cobb|Male|18-64|White|Unknown|3|3
+Cobb|Male|18-64|White|Yes|6|6
+Cobb|Male|65 and older|African-American/ Black|No|3|3
+Cobb|Male|65 and older|African-American/ Black|Unknown|4|4
+Cobb|Male|65 and older|African-American/ Black|Yes|27|27
+Cobb|Male|65 and older|Native Hawaiian/ Pacific Islander|Yes|1|1
+Cobb|Male|65 and older|Other|Yes|2|2
+Cobb|Male|65 and older|Unknown|Yes|1|1
+Cobb|Male|65 and older|White|No|5|5
+Cobb|Male|65 and older|White|Unknown|7|7
+Cobb|Male|65 and older|White|Yes|55|55
+Cobb|Unknown|65 and older|Unknown|Yes|1|1
+Coffee|Female|18-64|African-American/ Black|Yes|2|2
+Coffee|Female|65 and older|African-American/ Black|Yes|3|3
+Coffee|Female|65 and older|White|Unknown|3|3
+Coffee|Female|65 and older|White|Yes|2|2
+Coffee|Male|18-64|African-American/ Black|Yes|1|1
+Coffee|Male|65 and older|African-American/ Black|No|1|1
+Coffee|Male|65 and older|African-American/ Black|Yes|2|2
+Coffee|Male|65 and older|White|No|1|1
+Coffee|Male|65 and older|White|Unknown|2|2
+Colquitt|Female|18-64|White|No|1|1
+Colquitt|Female|18-64|White|Unknown|1|1
+Colquitt|Female|65 and older|African-American/ Black|No|1|1
+Colquitt|Female|65 and older|African-American/ Black|Unknown|1|1
+Colquitt|Female|65 and older|African-American/ Black|Yes|1|1
+Colquitt|Female|65 and older|White|Unknown|1|1
+Colquitt|Male|18-64|African-American/ Black|Yes|4|4
+Colquitt|Male|18-64|White|No|1|1
+Colquitt|Male|18-64|White|Yes|1|1
+Colquitt|Male|65 and older|African-American/ Black|No|1|1
+Colquitt|Male|65 and older|African-American/ Black|Unknown|1|1
+Colquitt|Male|65 and older|Other|No|1|1
+Colquitt|Male|65 and older|White|Unknown|2|2
+Colquitt|Male|65 and older|White|Yes|1|1
+Columbia|Female|18-64|White|No|1|1
+Columbia|Female|65 and older|White|Unknown|1|1
+Columbia|Female|65 and older|White|Yes|1|1
+Columbia|Male|18-64|White|Unknown|2|2
+Columbia|Male|18-64|White|Yes|1|1
+Columbia|Male|65 and older|African-American/ Black|Unknown|1|1
+Columbia|Male|65 and older|White|Unknown|1|1
+Columbia|Male|65 and older|White|Yes|1|1
+Cook|Male|65 and older|African-American/ Black|Yes|1|1
+Coweta|Female|18-64|African-American/ Black|Unknown|2|2
+Coweta|Female|18-64|African-American/ Black|Yes|1|1
+Coweta|Female|18-64|White|Unknown|1|1
+Coweta|Female|65 and older|African-American/ Black|No|1|1
+Coweta|Female|65 and older|African-American/ Black|Unknown|2|2
+Coweta|Female|65 and older|African-American/ Black|Yes|1|1
+Coweta|Female|65 and older|White|Unknown|2|2
+Coweta|Male|65 and older|African-American/ Black|No|1|1
+Coweta|Male|65 and older|African-American/ Black|Unknown|1|1
+Coweta|Male|65 and older|White|No|1|1
+Coweta|Male|65 and older|White|Unknown|1|1
+Coweta|Male|65 and older|White|Yes|1|1
+Crisp|Female|18-64|African-American/ Black|No|2|2
+Crisp|Female|65 and older|African-American/ Black|Yes|1|1
+Crisp|Female|65 and older|White|Unknown|1|1
+Crisp|Male|18-64|African-American/ Black|Unknown|1|1
+Crisp|Male|65 and older|African-American/ Black|Unknown|1|1
+Crisp|Male|65 and older|African-American/ Black|Yes|4|4
+Crisp|Male|65 and older|Unknown|Unknown|1|1
+Crisp|Male|65 and older|White|Yes|1|1
+Dade|Female|65 and older|White|Yes|1|1
+Dawson|Female|65 and older|White|Yes|1|1
+Dawson|Male|65 and older|White|No|1|1
+Dawson|Male|65 and older|White|Yes|1|1
+Decatur|Female|18-64|White|Yes|1|1
+Decatur|Female|65 and older|African-American/ Black|Yes|4|4
+Decatur|Male|18-64|African-American/ Black|Unknown|1|1
+Decatur|Male|18-64|African-American/ Black|Yes|1|1
+Decatur|Male|18-64|White|Unknown|1|1
+DeKalb|Female|18-64|African-American/ Black|Unknown|2|2
+DeKalb|Female|18-64|African-American/ Black|Yes|6|6
+DeKalb|Female|18-64|Other|No|1|1
+DeKalb|Female|18-64|White|Unknown|2|2
+DeKalb|Female|18-64|White|Yes|2|2
+DeKalb|Female|65 and older|African-American/ Black|No|3|3
+DeKalb|Female|65 and older|African-American/ Black|Unknown|8|8
+DeKalb|Female|65 and older|African-American/ Black|Yes|24|24
+DeKalb|Female|65 and older|Asian|Yes|4|4
+DeKalb|Female|65 and older|White|No|2|2
+DeKalb|Female|65 and older|White|Unknown|8|8
+DeKalb|Female|65 and older|White|Yes|16|16
+DeKalb|Male|18-64|African-American/ Black|No|1|1
+DeKalb|Male|18-64|African-American/ Black|Unknown|5|5
+DeKalb|Male|18-64|African-American/ Black|Yes|12|12
+DeKalb|Male|18-64|Asian|Yes|1|1
+DeKalb|Male|18-64|Other|No|3|3
+DeKalb|Male|18-64|Other|Unknown|2|2
+DeKalb|Male|18-64|Other|Yes|1|1
+DeKalb|Male|18-64|Unknown|Unknown|1|1
+DeKalb|Male|18-64|White|No|4|4
+DeKalb|Male|18-64|White|Yes|2|2
+DeKalb|Male|65 and older|African-American/ Black|No|2|2
+DeKalb|Male|65 and older|African-American/ Black|Unknown|11|11
+DeKalb|Male|65 and older|African-American/ Black|Yes|26|26
+DeKalb|Male|65 and older|Asian|No|2|2
+DeKalb|Male|65 and older|Asian|Unknown|2|2
+DeKalb|Male|65 and older|Asian|Yes|1|1
+DeKalb|Male|65 and older|Native Hawaiian/ Pacific Islander|Unknown|1|1
+DeKalb|Male|65 and older|White|No|1|1
+DeKalb|Male|65 and older|White|Unknown|5|5
+DeKalb|Male|65 and older|White|Yes|10|10
+Dodge|Female|18-64|White|Yes|1|1
+Dodge|Female|65 and older|White|Yes|1|1
+Dooly|Female|18-64|African-American/ Black|No|1|1
+Dooly|Female|18-64|African-American/ Black|Yes|1|1
+Dooly|Female|65 and older|African-American/ Black|Unknown|1|1
+Dooly|Female|65 and older|African-American/ Black|Yes|2|2
+Dooly|Male|65 and older|African-American/ Black|Yes|6|6
+Dooly|Male|65 and older|White|No|1|1
+Dougherty|Female|18-64|African-American/ Black|No|3|3
+Dougherty|Female|18-64|African-American/ Black|Unknown|1|1
+Dougherty|Female|18-64|African-American/ Black|Yes|14|14
+Dougherty|Female|18-64|White|No|1|1
+Dougherty|Female|18-64|White|Unknown|1|1
+Dougherty|Female|18-64|White|Yes|3|3
+Dougherty|Female|65 and older|African-American/ Black|No|2|2
+Dougherty|Female|65 and older|African-American/ Black|Unknown|17|17
+Dougherty|Female|65 and older|African-American/ Black|Yes|28|28
+Dougherty|Female|65 and older|White|No|1|1
+Dougherty|Female|65 and older|White|Unknown|9|9
+Dougherty|Female|65 and older|White|Yes|7|7
+Dougherty|Male|18-64|African-American/ Black|No|1|1
+Dougherty|Male|18-64|African-American/ Black|Unknown|4|4
+Dougherty|Male|18-64|African-American/ Black|Yes|10|10
+Dougherty|Male|18-64|Other|Yes|1|1
+Dougherty|Male|65 and older|African-American/ Black|No|3|3
+Dougherty|Male|65 and older|African-American/ Black|Unknown|12|12
+Dougherty|Male|65 and older|African-American/ Black|Yes|26|26
+Dougherty|Male|65 and older|White|No|2|2
+Dougherty|Male|65 and older|White|Unknown|4|4
+Dougherty|Male|65 and older|White|Yes|4|4
+Douglas|Female|18-64|African-American/ Black|Yes|1|1
+Douglas|Female|18-64|White|Yes|2|2
+Douglas|Female|65 and older|African-American/ Black|Unknown|1|1
+Douglas|Female|65 and older|African-American/ Black|Yes|3|3
+Douglas|Female|65 and older|White|Unknown|1|1
+Douglas|Female|65 and older|White|Yes|7|7
+Douglas|Male|18-64|African-American/ Black|Yes|4|4
+Douglas|Male|18-64|Other|Yes|1|1
+Douglas|Male|65 and older|African-American/ Black|Unknown|1|1
+Douglas|Male|65 and older|African-American/ Black|Yes|6|6
+Douglas|Male|65 and older|White|No|1|1
+Douglas|Male|65 and older|White|Unknown|1|1
+Douglas|Male|65 and older|White|Yes|7|7
+Early|Female|18-64|African-American/ Black|No|1|1
+Early|Female|18-64|African-American/ Black|Unknown|3|3
+Early|Female|18-64|African-American/ Black|Yes|1|1
+Early|Female|65 and older|African-American/ Black|Unknown|6|6
+Early|Female|65 and older|African-American/ Black|Yes|2|2
+Early|Female|65 and older|White|Unknown|4|4
+Early|Female|65 and older|White|Yes|1|1
+Early|Male|18-64|African-American/ Black|No|1|1
+Early|Male|18-64|White|Unknown|1|1
+Early|Male|65 and older|African-American/ Black|Unknown|5|5
+Early|Male|65 and older|White|Unknown|5|5
+Early|Male|65 and older|White|Yes|1|1
+Effingham|Male|18-64|White|Yes|1|1
+Emanuel|Female|65 and older|White|Yes|1|1
+Emanuel|Male|65 and older|African-American/ Black|Yes|1|1
+Emanuel|Male|65 and older|Other|Yes|1|1
+Fannin|Female|65 and older|White|Yes|1|1
+Fayette|Female|18-64|African-American/ Black|Yes|1|1
+Fayette|Female|65 and older|African-American/ Black|Unknown|1|1
+Fayette|Female|65 and older|White|No|1|1
+Fayette|Female|65 and older|White|Yes|2|2
+Fayette|Male|18-64|African-American/ Black|Unknown|1|1
+Fayette|Male|65 and older|African-American/ Black|No|2|2
+Fayette|Male|65 and older|African-American/ Black|Unknown|1|1
+Fayette|Male|65 and older|African-American/ Black|Yes|3|3
+Fayette|Male|65 and older|White|No|1|1
+Fayette|Male|65 and older|White|Yes|4|4
+Floyd|Female|18-64|White|Yes|1|1
+Floyd|Female|65 and older|African-American/ Black|Yes|1|1
+Floyd|Female|65 and older|White|Unknown|1|1
+Floyd|Female|65 and older|White|Yes|5|5
+Floyd|Male|18-64|White|Yes|2|2
+Floyd|Male|65 and older|White|Yes|5|5
+Forsyth|Female|65 and older|African-American/ Black|Yes|1|1
+Forsyth|Female|65 and older|Asian|No|1|1
+Forsyth|Female|65 and older|White|Unknown|1|1
+Forsyth|Female|65 and older|White|Yes|4|4
+Forsyth|Male|18-64|Asian|Yes|1|1
+Forsyth|Male|18-64|Other|No|1|1
+Forsyth|Male|18-64|Other|Unknown|1|1
+Forsyth|Male|65 and older|Asian|Yes|1|1
+Forsyth|Male|65 and older|White|No|1|1
+Forsyth|Male|65 and older|White|Unknown|1|1
+Forsyth|Male|65 and older|White|Yes|2|2
+Franklin|Male|65 and older|African-American/ Black|Yes|1|1
+Fulton|Female|18-64|African-American/ Black|No|2|2
+Fulton|Female|18-64|African-American/ Black|Unknown|5|5
+Fulton|Female|18-64|African-American/ Black|Yes|14|14
+Fulton|Female|18-64|Other|Yes|1|1
+Fulton|Female|18-64|White|Unknown|1|1
+Fulton|Female|18-64|White|Yes|2|2
+Fulton|Female|65 and older|African-American/ Black|No|14|14
+Fulton|Female|65 and older|African-American/ Black|Unknown|14|14
+Fulton|Female|65 and older|African-American/ Black|Yes|54|54
+Fulton|Female|65 and older|Asian|No|1|1
+Fulton|Female|65 and older|Other|Unknown|1|1
+Fulton|Female|65 and older|Other|Yes|1|1
+Fulton|Female|65 and older|White|No|1|1
+Fulton|Female|65 and older|White|Unknown|6|6
+Fulton|Female|65 and older|White|Yes|25|25
+Fulton|Male|17 and younger|African-American/ Black|Yes|1|1
+Fulton|Male|18-64|African-American/ Black|No|2|2
+Fulton|Male|18-64|African-American/ Black|Unknown|11|11
+Fulton|Male|18-64|African-American/ Black|Yes|15|15
+Fulton|Male|18-64|Other|No|2|2
+Fulton|Male|18-64|Other|Yes|1|1
+Fulton|Male|18-64|White|No|1|1
+Fulton|Male|18-64|White|Yes|3|3
+Fulton|Male|65 and older|African-American/ Black|No|11|11
+Fulton|Male|65 and older|African-American/ Black|Unknown|28|28
+Fulton|Male|65 and older|African-American/ Black|Yes|57|57
+Fulton|Male|65 and older|Asian|Yes|1|1
+Fulton|Male|65 and older|Other|Yes|3|3
+Fulton|Male|65 and older|Unknown|No|1|1
+Fulton|Male|65 and older|White|No|5|5
+Fulton|Male|65 and older|White|Unknown|9|9
+Fulton|Male|65 and older|White|Yes|19|19
+Gilmer|Female|65 and older|White|Unknown|1|1
+Gilmer|Male|18-64|White|Yes|1|1
+Glynn|Female|65 and older|White|Yes|1|1
+Glynn|Male|65 and older|African-American/ Black|Yes|1|1
+Glynn|Male|65 and older|White|Yes|2|2
+Gordon|Female|65 and older|White|Unknown|1|1
+Gordon|Female|65 and older|White|Yes|7|7
+Gordon|Male|18-64|White|Yes|2|2
+Gordon|Male|65 and older|White|Yes|8|8
+Grady|Female|18-64|African-American/ Black|Unknown|1|1
+Grady|Female|65 and older|White|Unknown|1|1
+Grady|Male|18-64|African-American/ Black|Unknown|1|1
+Grady|Male|18-64|African-American/ Black|Yes|1|1
+Greene|Female|18-64|African-American/ Black|Yes|1|1
+Greene|Female|65 and older|African-American/ Black|Unknown|1|1
+Greene|Female|65 and older|White|No|1|1
+Greene|Male|18-64|African-American/ Black|Yes|2|2
+Greene|Male|65 and older|African-American/ Black|No|1|1
+Greene|Male|65 and older|White|No|1|1
+Greene|Male|65 and older|White|Unknown|1|1
+Greene|Male|65 and older|White|Yes|1|1
+Gwinnett|Female|18-64|African-American/ Black|Unknown|2|2
+Gwinnett|Female|18-64|African-American/ Black|Yes|4|4
+Gwinnett|Female|18-64|Other|Unknown|1|1
+Gwinnett|Female|18-64|Other|Yes|1|1
+Gwinnett|Female|18-64|Unknown|Unknown|1|1
+Gwinnett|Female|18-64|White|Yes|3|3
+Gwinnett|Female|65 and older|African-American/ Black|No|1|1
+Gwinnett|Female|65 and older|African-American/ Black|Unknown|1|1
+Gwinnett|Female|65 and older|African-American/ Black|Yes|16|16
+Gwinnett|Female|65 and older|Asian|Yes|2|2
+Gwinnett|Female|65 and older|Native Hawaiian/ Pacific Islander|Yes|2|2
+Gwinnett|Female|65 and older|Other|Yes|2|2
+Gwinnett|Female|65 and older|Unknown|Yes|2|2
+Gwinnett|Female|65 and older|White|No|2|2
+Gwinnett|Female|65 and older|White|Unknown|4|4
+Gwinnett|Female|65 and older|White|Yes|53|53
+Gwinnett|Male|18-64|African-American/ Black|Yes|5|5
+Gwinnett|Male|18-64|Asian|No|3|3
+Gwinnett|Male|18-64|Asian|Unknown|1|1
+Gwinnett|Male|18-64|Asian|Yes|1|1
+Gwinnett|Male|18-64|Other|No|3|3
+Gwinnett|Male|18-64|Other|Unknown|2|2
+Gwinnett|Male|18-64|Other|Yes|1|1
+Gwinnett|Male|18-64|White|Unknown|2|2
+Gwinnett|Male|18-64|White|Yes|2|2
+Gwinnett|Male|65 and older|African-American/ Black|Yes|12|12
+Gwinnett|Male|65 and older|Asian|No|1|1
+Gwinnett|Male|65 and older|Asian|Yes|7|7
+Gwinnett|Male|65 and older|Other|Yes|2|2
+Gwinnett|Male|65 and older|White|No|4|4
+Gwinnett|Male|65 and older|White|Unknown|5|5
+Gwinnett|Male|65 and older|White|Yes|22|22
+Habersham|Female|18-64|Asian|Yes|1|1
+Habersham|Female|18-64|Other|No|1|1
+Habersham|Female|18-64|White|No|1|1
+Habersham|Female|18-64|White|Yes|1|1
+Habersham|Female|65 and older|White|Unknown|6|6
+Habersham|Female|65 and older|White|Yes|15|15
+Habersham|Male|18-64|Asian|No|1|1
+Habersham|Male|65 and older|Other|Yes|1|1
+Habersham|Male|65 and older|White|No|1|1
+Habersham|Male|65 and older|White|Yes|7|7
+Hall|Female|18-64|African-American/ Black|Yes|1|1
+Hall|Female|18-64|Other|Yes|1|1
+Hall|Female|18-64|White|Unknown|1|1
+Hall|Female|18-64|White|Yes|3|3
+Hall|Female|65 and older|White|No|2|2
+Hall|Female|65 and older|White|Unknown|1|1
+Hall|Female|65 and older|White|Yes|15|15
+Hall|Male|18-64|African-American/ Black|Yes|1|1
+Hall|Male|18-64|Asian|No|1|1
+Hall|Male|18-64|Other|Unknown|2|2
+Hall|Male|18-64|Other|Yes|1|1
+Hall|Male|18-64|White|No|4|4
+Hall|Male|18-64|White|Unknown|1|1
+Hall|Male|18-64|White|Yes|1|1
+Hall|Male|65 and older|African-American/ Black|Yes|5|5
+Hall|Male|65 and older|Asian|Yes|1|1
+Hall|Male|65 and older|Other|Yes|1|1
+Hall|Male|65 and older|White|Unknown|2|2
+Hall|Male|65 and older|White|Yes|15|15
+Hancock|Female|18-64|African-American/ Black|No|1|1
+Hancock|Female|18-64|African-American/ Black|Yes|3|3
+Hancock|Female|18-64|White|No|1|1
+Hancock|Female|65 and older|African-American/ Black|No|1|1
+Hancock|Female|65 and older|African-American/ Black|Unknown|4|4
+Hancock|Female|65 and older|African-American/ Black|Yes|3|3
+Hancock|Female|65 and older|White|Unknown|1|1
+Hancock|Female|65 and older|White|Yes|2|2
+Hancock|Male|18-64|African-American/ Black|Unknown|1|1
+Hancock|Male|18-64|African-American/ Black|Yes|2|2
+Hancock|Male|65 and older|African-American/ Black|Unknown|3|3
+Hancock|Male|65 and older|African-American/ Black|Yes|3|3
+Hancock|Male|65 and older|White|Unknown|3|3
+Hancock|Male|65 and older|White|Yes|4|4
+Haralson|Female|65 and older|White|Yes|1|1
+Haralson|Male|65 and older|White|Yes|4|4
+Harris|Female|18-64|African-American/ Black|Yes|1|1
+Harris|Female|65 and older|African-American/ Black|Yes|2|2
+Harris|Female|65 and older|Asian|Unknown|1|1
+Harris|Female|65 and older|Unknown|Unknown|1|1
+Harris|Female|65 and older|White|Yes|1|1
+Harris|Male|18-64|African-American/ Black|Yes|1|1
+Harris|Male|65 and older|White|Unknown|1|1
+Harris|Male|65 and older|White|Yes|1|1
+Heard|Female|65 and older|African-American/ Black|Unknown|1|1
+Heard|Female|65 and older|White|No|1|1
+Heard|Female|65 and older|White|Yes|1|1
+Henry|Female|18-64|African-American/ Black|No|1|1
+Henry|Female|18-64|African-American/ Black|Yes|2|2
+Henry|Female|65 and older|African-American/ Black|Unknown|2|2
+Henry|Female|65 and older|White|No|1|1
+Henry|Female|65 and older|White|Unknown|4|4
+Henry|Female|65 and older|White|Yes|1|1
+Henry|Male|18-64|African-American/ Black|No|1|1
+Henry|Male|18-64|African-American/ Black|Unknown|2|2
+Henry|Male|18-64|African-American/ Black|Yes|1|1
+Henry|Male|18-64|American Indian/ Alaska Native|Yes|1|1
+Henry|Male|18-64|Asian|Unknown|1|1
+Henry|Male|18-64|White|Yes|1|1
+Henry|Male|65 and older|African-American/ Black|No|2|2
+Henry|Male|65 and older|African-American/ Black|Unknown|1|1
+Henry|Male|65 and older|African-American/ Black|Yes|1|1
+Henry|Male|65 and older|Asian|Unknown|1|1
+Henry|Male|65 and older|Asian|Yes|1|1
+Henry|Male|65 and older|White|Unknown|8|8
+Henry|Male|65 and older|White|Yes|1|1
+Houston|Female|18-64|African-American/ Black|Unknown|1|1
+Houston|Female|18-64|White|Yes|1|1
+Houston|Female|65 and older|African-American/ Black|Yes|3|3
+Houston|Female|65 and older|White|Yes|2|2
+Houston|Male|18-64|African-American/ Black|Yes|3|3
+Houston|Male|18-64|White|Yes|1|1
+Houston|Male|65 and older|African-American/ Black|Yes|5|5
+Houston|Male|65 and older|Asian|Yes|2|2
+Houston|Male|65 and older|White|No|1|1
+Houston|Male|65 and older|White|Yes|4|4
+Irwin|Female|65 and older|African-American/ Black|Yes|1|1
+Jackson|Female|18-64|African-American/ Black|No|1|1
+Jackson|Female|18-64|White|Yes|1|1
+Jackson|Female|65 and older|White|No|2|2
+Jackson|Female|65 and older|White|Yes|3|3
+Jackson|Male|65 and older|White|Unknown|3|3
+Jasper|Female|18-64|African-American/ Black|Yes|1|1
+Jeff Davis|Female|65 and older|African-American/ Black|Unknown|1|1
+Jeff Davis|Female|65 and older|White|Yes|1|1
+Jefferson|Female|18-64|African-American/ Black|Yes|1|1
+Jenkins|Female|18-64|African-American/ Black|No|1|1
+Jenkins|Female|18-64|African-American/ Black|Yes|1|1
+Jenkins|Female|18-64|White|Yes|1|1
+Jenkins|Female|65 and older|African-American/ Black|Yes|1|1
+Jenkins|Female|65 and older|White|Unknown|1|1
+Jenkins|Female|65 and older|White|Yes|2|2
+Jenkins|Male|65 and older|African-American/ Black|Yes|1|1
+Jenkins|Male|65 and older|White|Yes|3|3
+Johnson|Male|65 and older|African-American/ Black|Yes|1|1
+Johnson|Male|65 and older|White|Unknown|1|1
+Lamar|Female|65 and older|White|No|3|3
+Lamar|Female|65 and older|White|Yes|1|1
+Lamar|Male|65 and older|White|No|1|1
+Lamar|Male|65 and older|White|Unknown|1|1
+Lanier|Female|65 and older|White|Yes|1|1
+Lanier|Male|65 and older|White|Yes|2|2
+Laurens|Male|65 and older|African-American/ Black|Yes|1|1
+Lee|Female|18-64|African-American/ Black|No|1|1
+Lee|Female|18-64|African-American/ Black|Unknown|1|1
+Lee|Female|18-64|African-American/ Black|Yes|3|3
+Lee|Female|65 and older|African-American/ Black|Unknown|2|2
+Lee|Female|65 and older|African-American/ Black|Yes|2|2
+Lee|Female|65 and older|White|Unknown|3|3
+Lee|Male|18-64|African-American/ Black|Yes|5|5
+Lee|Male|18-64|White|Yes|2|2
+Lee|Male|65 and older|African-American/ Black|No|1|1
+Lee|Male|65 and older|White|Unknown|1|1
+Lee|Male|65 and older|White|Yes|1|1
+Liberty|Male|65 and older|Native Hawaiian/ Pacific Islander|Yes|1|1
+Lincoln|Male|65 and older|African-American/ Black|Yes|1|1
+Long|Male|65 and older|African-American/ Black|Yes|1|1
+Lowndes|Female|65 and older|Unknown|Unknown|1|1
+Lowndes|Female|65 and older|White|No|1|1
+Lowndes|Female|65 and older|White|Unknown|2|2
+Lowndes|Female|65 and older|White|Yes|2|2
+Lowndes|Male|18-64|African-American/ Black|No|1|1
+Lowndes|Male|65 and older|African-American/ Black|Yes|1|1
+Lowndes|Male|65 and older|Unknown|Unknown|1|1
+Lumpkin|Female|65 and older|White|Yes|2|2
+Lumpkin|Male|18-64|White|Yes|1|1
+Macon|Female|65 and older|African-American/ Black|Yes|1|1
+Macon|Male|18-64|African-American/ Black|Unknown|2|2
+Macon|Male|18-64|African-American/ Black|Yes|2|2
+Macon|Male|18-64|White|Unknown|1|1
+Macon|Male|65 and older|African-American/ Black|Unknown|1|1
+Macon|Male|65 and older|African-American/ Black|Yes|2|2
+Madison|Female|65 and older|African-American/ Black|No|1|1
+Madison|Female|65 and older|White|Unknown|1|1
+Madison|Male|65 and older|African-American/ Black|Yes|1|1
+Madison|Male|65 and older|White|No|1|1
+Marion|Female|65 and older|White|Yes|1|1
+Marion|Male|18-64|White|No|1|1
+McDuffie|Female|18-64|African-American/ Black|Yes|1|1
+McDuffie|Female|65 and older|African-American/ Black|Unknown|1|1
+McDuffie|Female|65 and older|African-American/ Black|Yes|2|2
+McDuffie|Male|18-64|African-American/ Black|Yes|1|1
+McDuffie|Male|65 and older|African-American/ Black|Yes|1|1
+McIntosh|Female|18-64|White|Yes|1|1
+Meriwether|Male|18-64|White|Yes|1|1
+Meriwether|Male|65 and older|White|Unknown|1|1
+Mitchell|Female|18-64|African-American/ Black|No|2|2
+Mitchell|Female|18-64|African-American/ Black|Yes|3|3
+Mitchell|Female|18-64|Other|Yes|1|1
+Mitchell|Female|65 and older|African-American/ Black|No|1|1
+Mitchell|Female|65 and older|African-American/ Black|Unknown|4|4
+Mitchell|Female|65 and older|African-American/ Black|Yes|5|5
+Mitchell|Female|65 and older|White|No|1|1
+Mitchell|Female|65 and older|White|Yes|2|2
+Mitchell|Male|18-64|African-American/ Black|No|2|2
+Mitchell|Male|18-64|Asian|No|1|1
+Mitchell|Male|18-64|White|No|1|1
+Mitchell|Male|18-64|White|Yes|1|1
+Mitchell|Male|65 and older|African-American/ Black|No|1|1
+Mitchell|Male|65 and older|African-American/ Black|Unknown|2|2
+Mitchell|Male|65 and older|African-American/ Black|Yes|6|6
+Mitchell|Male|65 and older|White|Unknown|2|2
+Mitchell|Male|65 and older|White|Yes|3|3
+Monroe|Female|18-64|African-American/ Black|Yes|1|1
+Monroe|Female|65 and older|African-American/ Black|Yes|2|2
+Monroe|Female|65 and older|White|No|2|2
+Monroe|Female|65 and older|White|Unknown|3|3
+Monroe|Female|65 and older|White|Yes|3|3
+Monroe|Male|18-64|African-American/ Black|No|1|1
+Monroe|Male|18-64|African-American/ Black|Yes|1|1
+Monroe|Male|18-64|White|Yes|1|1
+Monroe|Male|65 and older|African-American/ Black|Unknown|1|1
+Monroe|Male|65 and older|White|Unknown|1|1
+Monroe|Male|65 and older|White|Yes|1|1
+Murray|Female|65 and older|White|Yes|1|1
+Murray|Male|65 and older|White|Yes|1|1
+Muscogee|Female|18-64|African-American/ Black|No|1|1
+Muscogee|Female|18-64|African-American/ Black|Yes|4|4
+Muscogee|Female|18-64|White|Yes|1|1
+Muscogee|Female|65 and older|African-American/ Black|No|1|1
+Muscogee|Female|65 and older|African-American/ Black|Unknown|1|1
+Muscogee|Female|65 and older|African-American/ Black|Yes|6|6
+Muscogee|Female|65 and older|White|No|1|1
+Muscogee|Female|65 and older|White|Unknown|1|1
+Muscogee|Female|65 and older|White|Yes|4|4
+Muscogee|Male|18-64|African-American/ Black|No|2|2
+Muscogee|Male|18-64|African-American/ Black|Yes|4|4
+Muscogee|Male|18-64|Other|Unknown|1|1
+Muscogee|Male|65 and older|African-American/ Black|No|2|2
+Muscogee|Male|65 and older|African-American/ Black|Unknown|2|2
+Muscogee|Male|65 and older|African-American/ Black|Yes|3|3
+Muscogee|Male|65 and older|White|No|1|1
+Muscogee|Male|65 and older|White|Unknown|2|2
+Muscogee|Male|65 and older|White|Yes|6|6
+Newton|Female|18-64|African-American/ Black|Unknown|1|1
+Newton|Female|65 and older|African-American/ Black|Unknown|2|2
+Newton|Male|18-64|African-American/ Black|Yes|2|2
+Newton|Male|65 and older|African-American/ Black|Unknown|1|1
+Newton|Male|65 and older|African-American/ Black|Yes|2|2
+Newton|Male|65 and older|White|Yes|3|3
+Non-Georgia Resident|Female|18-64|African-American/ Black|Yes|2|2
+Non-Georgia Resident|Female|18-64|White|No|2|2
+Non-Georgia Resident|Female|18-64|White|Unknown|1|1
+Non-Georgia Resident|Female|65 and older|African-American/ Black|No|1|1
+Non-Georgia Resident|Female|65 and older|African-American/ Black|Unknown|7|7
+Non-Georgia Resident|Female|65 and older|African-American/ Black|Yes|4|4
+Non-Georgia Resident|Female|65 and older|White|Unknown|1|1
+Non-Georgia Resident|Female|65 and older|White|Yes|4|4
+Non-Georgia Resident|Male|18-64|African-American/ Black|No|2|2
+Non-Georgia Resident|Male|18-64|African-American/ Black|Unknown|1|1
+Non-Georgia Resident|Male|18-64|African-American/ Black|Yes|4|4
+Non-Georgia Resident|Male|18-64|White|Unknown|1|1
+Non-Georgia Resident|Male|18-64|White|Yes|1|1
+Non-Georgia Resident|Male|65 and older|African-American/ Black|Unknown|2|2
+Non-Georgia Resident|Male|65 and older|African-American/ Black|Yes|1|1
+Non-Georgia Resident|Male|65 and older|Asian|Yes|1|1
+Non-Georgia Resident|Male|65 and older|Unknown|Unknown|2|2
+Non-Georgia Resident|Male|65 and older|White|No|1|1
+Non-Georgia Resident|Male|65 and older|White|Unknown|3|3
+Non-Georgia Resident|Male|65 and older|White|Yes|4|4
+Oconee|Female|65 and older|African-American/ Black|No|1|1
+Oconee|Female|65 and older|African-American/ Black|Yes|1|1
+Oconee|Female|65 and older|White|No|1|1
+Oconee|Female|65 and older|White|Yes|1|1
+Oconee|Male|18-64|White|Yes|1|1
+Oconee|Male|65 and older|African-American/ Black|No|1|1
+Oconee|Male|65 and older|White|No|1|1
+Oconee|Male|65 and older|White|Yes|3|3
+Oglethorpe|Female|65 and older|White|Yes|1|1
+Oglethorpe|Male|65 and older|African-American/ Black|Unknown|1|1
+Oglethorpe|Male|65 and older|White|Unknown|3|3
+Oglethorpe|Male|65 and older|White|Yes|2|2
+Paulding|Female|18-64|Unknown|Yes|1|1
+Paulding|Female|18-64|White|Yes|2|2
+Paulding|Female|65 and older|African-American/ Black|Yes|1|1
+Paulding|Female|65 and older|Other|Yes|1|1
+Paulding|Female|65 and older|White|Unknown|1|1
+Paulding|Female|65 and older|White|Yes|2|2
+Paulding|Male|18-64|White|Yes|1|1
+Paulding|Male|65 and older|White|Yes|6|6
+Peach|Female|18-64|African-American/ Black|Yes|4|4
+Peach|Female|65 and older|African-American/ Black|Yes|5|5
+Pickens|Female|65 and older|White|Yes|2|2
+Pickens|Male|65 and older|White|No|1|1
+Pickens|Male|65 and older|White|Yes|2|2
+Pierce|Female|18-64|White|No|1|1
+Pierce|Female|65 and older|White|No|1|1
+Pierce|Male|18-64|White|Unknown|1|1
+Pierce|Male|65 and older|White|Unknown|1|1
+Pike|Male|18-64|African-American/ Black|Yes|1|1
+Pike|Male|18-64|White|No|1|1
+Pike|Male|65 and older|African-American/ Black|No|1|1
+Polk|Male|65 and older|Other|No|1|1
+Pulaski|Female|18-64|African-American/ Black|Yes|1|1
+Pulaski|Male|18-64|African-American/ Black|Yes|1|1
+Putnam|Female|65 and older|African-American/ Black|No|2|2
+Putnam|Female|65 and older|African-American/ Black|Yes|1|1
+Putnam|Female|65 and older|White|Unknown|1|1
+Putnam|Male|18-64|African-American/ Black|Yes|2|2
+Putnam|Male|18-64|White|Yes|1|1
+Putnam|Male|65 and older|African-American/ Black|Unknown|2|2
+Putnam|Male|65 and older|Other|Yes|1|1
+Putnam|Male|65 and older|White|Yes|2|2
+Quitman|Male|18-64|African-American/ Black|Yes|1|1
+Rabun|Female|18-64|White|No|1|1
+Rabun|Female|65 and older|White|Yes|1|1
+Rabun|Male|65 and older|White|Yes|1|1
+Randolph|Female|18-64|African-American/ Black|Unknown|2|2
+Randolph|Female|65 and older|African-American/ Black|No|6|6
+Randolph|Female|65 and older|African-American/ Black|Yes|3|3
+Randolph|Female|65 and older|American Indian/ Alaska Native|Unknown|1|1
+Randolph|Female|65 and older|White|No|1|1
+Randolph|Female|65 and older|White|Unknown|3|3
+Randolph|Male|18-64|African-American/ Black|No|1|1
+Randolph|Male|18-64|African-American/ Black|Unknown|2|2
+Randolph|Male|65 and older|African-American/ Black|No|1|1
+Randolph|Male|65 and older|African-American/ Black|Unknown|2|2
+Randolph|Male|65 and older|African-American/ Black|Yes|1|1
+Randolph|Male|65 and older|White|Unknown|1|1
+Randolph|Male|65 and older|White|Yes|1|1
+Richmond|Female|18-64|African-American/ Black|Yes|3|3
+Richmond|Female|18-64|White|Yes|1|1
+Richmond|Female|65 and older|African-American/ Black|Unknown|3|3
+Richmond|Female|65 and older|African-American/ Black|Yes|6|6
+Richmond|Female|65 and older|White|Unknown|2|2
+Richmond|Female|65 and older|White|Yes|4|4
+Richmond|Male|18-64|African-American/ Black|Yes|2|2
+Richmond|Male|65 and older|African-American/ Black|No|2|2
+Richmond|Male|65 and older|African-American/ Black|Yes|7|7
+Richmond|Male|65 and older|Other|No|1|1
+Richmond|Male|65 and older|White|No|7|7
+Richmond|Male|65 and older|White|Unknown|3|3
+Richmond|Male|65 and older|White|Yes|7|7
+Rockdale|Female|18-64|African-American/ Black|No|1|1
+Rockdale|Female|18-64|African-American/ Black|Yes|3|3
+Rockdale|Female|65 and older|African-American/ Black|Yes|1|1
+Rockdale|Female|65 and older|White|Yes|2|2
+Rockdale|Male|18-64|African-American/ Black|Yes|2|2
+Rockdale|Male|18-64|White|Yes|1|1
+Rockdale|Male|65 and older|White|Yes|1|1
+Schley|Male|18-64|African-American/ Black|Yes|1|1
+Screven|Female|65 and older|African-American/ Black|No|1|1
+Screven|Female|65 and older|African-American/ Black|Yes|1|1
+Screven|Female|65 and older|White|Yes|3|3
+Screven|Male|65 and older|Unknown|Yes|1|1
+Seminole|Female|65 and older|African-American/ Black|Yes|1|1
+Seminole|Female|65 and older|White|Unknown|1|1
+Spalding|Female|65 and older|African-American/ Black|Unknown|3|3
+Spalding|Female|65 and older|White|No|2|2
+Spalding|Female|65 and older|White|Unknown|12|12
+Spalding|Female|65 and older|White|Yes|2|2
+Spalding|Male|18-64|African-American/ Black|No|2|2
+Spalding|Male|18-64|African-American/ Black|Unknown|2|2
+Spalding|Male|65 and older|African-American/ Black|Unknown|1|1
+Spalding|Male|65 and older|White|No|2|2
+Spalding|Male|65 and older|White|Unknown|2|2
+Spalding|Male|65 and older|White|Yes|4|4
+Stephens|Female|65 and older|White|Unknown|1|1
+Stephens|Female|65 and older|White|Yes|1|1
+Stephens|Male|65 and older|African-American/ Black|Yes|1|1
+Stephens|Male|65 and older|White|Unknown|1|1
+Stephens|Male|65 and older|White|Yes|2|2
+Stewart|Female|18-64|African-American/ Black|No|1|1
+Stewart|Male|18-64|Other|Unknown|1|1
+Stewart|Male|18-64|Other|Yes|1|1
+Sumter|Female|18-64|African-American/ Black|No|1|1
+Sumter|Female|18-64|African-American/ Black|Yes|1|1
+Sumter|Female|65 and older|African-American/ Black|No|2|2
+Sumter|Female|65 and older|African-American/ Black|Unknown|1|1
+Sumter|Female|65 and older|African-American/ Black|Yes|7|7
+Sumter|Female|65 and older|White|No|1|1
+Sumter|Female|65 and older|White|Unknown|3|3
+Sumter|Female|65 and older|White|Yes|4|4
+Sumter|Male|18-64|African-American/ Black|No|1|1
+Sumter|Male|18-64|African-American/ Black|Unknown|1|1
+Sumter|Male|18-64|African-American/ Black|Yes|4|4
+Sumter|Male|18-64|Other|Unknown|1|1
+Sumter|Male|18-64|White|Unknown|2|2
+Sumter|Male|65 and older|African-American/ Black|No|2|2
+Sumter|Male|65 and older|African-American/ Black|Unknown|5|5
+Sumter|Male|65 and older|African-American/ Black|Yes|6|6
+Sumter|Male|65 and older|White|No|1|1
+Sumter|Male|65 and older|White|Unknown|3|3
+Sumter|Male|65 and older|White|Yes|4|4
+Talbot|Male|18-64|White|Yes|1|1
+Talbot|Male|65 and older|African-American/ Black|No|1|1
+Taylor|Female|18-64|African-American/ Black|Yes|1|1
+Taylor|Female|65 and older|African-American/ Black|Yes|1|1
+Telfair|Female|65 and older|African-American/ Black|No|1|1
+Telfair|Male|18-64|White|No|1|1
+Telfair|Male|65 and older|White|Yes|1|1
+Terrell|Female|18-64|African-American/ Black|No|1|1
+Terrell|Female|18-64|African-American/ Black|Yes|4|4
+Terrell|Female|65 and older|African-American/ Black|No|1|1
+Terrell|Female|65 and older|African-American/ Black|Unknown|2|2
+Terrell|Female|65 and older|African-American/ Black|Yes|4|4
+Terrell|Female|65 and older|White|Unknown|1|1
+Terrell|Female|65 and older|White|Yes|1|1
+Terrell|Male|18-64|African-American/ Black|Unknown|1|1
+Terrell|Male|18-64|African-American/ Black|Yes|1|1
+Terrell|Male|18-64|White|No|1|1
+Terrell|Male|65 and older|African-American/ Black|Unknown|4|4
+Terrell|Male|65 and older|African-American/ Black|Yes|4|4
+Terrell|Male|65 and older|White|Yes|2|2
+Thomas|Female|65 and older|African-American/ Black|Unknown|1|1
+Thomas|Female|65 and older|White|No|1|1
+Thomas|Female|65 and older|White|Unknown|9|9
+Thomas|Female|65 and older|White|Yes|6|6
+Thomas|Male|18-64|African-American/ Black|Yes|3|3
+Thomas|Male|65 and older|African-American/ Black|Unknown|1|1
+Thomas|Male|65 and older|African-American/ Black|Yes|4|4
+Thomas|Male|65 and older|White|Unknown|2|2
+Thomas|Male|65 and older|White|Yes|5|5
+Tift|Female|18-64|African-American/ Black|Yes|3|3
+Tift|Female|18-64|Other|Yes|1|1
+Tift|Female|65 and older|African-American/ Black|Unknown|1|1
+Tift|Female|65 and older|African-American/ Black|Yes|5|5
+Tift|Female|65 and older|Other|Yes|1|1
+Tift|Female|65 and older|White|Yes|4|4
+Tift|Male|18-64|African-American/ Black|Yes|1|1
+Tift|Male|18-64|White|Yes|2|2
+Tift|Male|65 and older|African-American/ Black|Yes|3|3
+Tift|Male|65 and older|White|No|1|1
+Tift|Male|65 and older|White|Yes|4|4
+Toombs|Female|65 and older|African-American/ Black|Yes|2|2
+Toombs|Female|65 and older|White|No|1|1
+Toombs|Male|65 and older|African-American/ Black|Yes|1|1
+Toombs|Male|65 and older|White|Yes|1|1
+Towns|Female|18-64|White|Yes|1|1
+Treutlen|Male|18-64|White|Yes|1|1
+Troup|Female|18-64|African-American/ Black|No|4|4
+Troup|Female|18-64|African-American/ Black|Unknown|1|1
+Troup|Female|18-64|African-American/ Black|Yes|2|2
+Troup|Female|65 and older|African-American/ Black|Yes|7|7
+Troup|Female|65 and older|White|Unknown|4|4
+Troup|Female|65 and older|White|Yes|6|6
+Troup|Male|18-64|African-American/ Black|Unknown|1|1
+Troup|Male|65 and older|African-American/ Black|No|1|1
+Troup|Male|65 and older|African-American/ Black|Unknown|1|1
+Troup|Male|65 and older|African-American/ Black|Yes|2|2
+Troup|Male|65 and older|White|Unknown|1|1
+Troup|Unknown|65 and older|Unknown|Unknown|1|1
+Turner|Female|65 and older|African-American/ Black|Yes|2|2
+Turner|Female|65 and older|White|Unknown|1|1
+Turner|Female|65 and older|White|Yes|1|1
+Turner|Male|18-64|African-American/ Black|No|1|1
+Turner|Male|18-64|African-American/ Black|Unknown|3|3
+Turner|Male|18-64|African-American/ Black|Yes|1|1
+Turner|Male|65 and older|African-American/ Black|Unknown|2|2
+Turner|Male|65 and older|African-American/ Black|Yes|1|1
+Turner|Male|65 and older|White|No|1|1
+Turner|Male|65 and older|White|Yes|3|3
+Twiggs|Male|18-64|African-American/ Black|Yes|1|1
+Union|Female|65 and older|White|Yes|1|1
+Union|Male|65 and older|White|Unknown|1|1
+Union|Male|65 and older|White|Yes|1|1
+Unknown|Male|17 and younger|African-American/ Black|Unknown|1|1
+Unknown|Male|18-64|Unknown|Yes|1|1
+Upson|Female|18-64|African-American/ Black|Yes|1|1
+Upson|Female|18-64|White|Unknown|1|1
+Upson|Female|18-64|White|Yes|1|1
+Upson|Female|65 and older|African-American/ Black|Unknown|5|5
+Upson|Female|65 and older|African-American/ Black|Yes|1|1
+Upson|Female|65 and older|White|No|2|2
+Upson|Female|65 and older|White|Unknown|9|9
+Upson|Female|65 and older|White|Yes|2|2
+Upson|Male|18-64|African-American/ Black|No|2|2
+Upson|Male|18-64|African-American/ Black|Unknown|2|2
+Upson|Male|18-64|African-American/ Black|Yes|1|1
+Upson|Male|18-64|White|Unknown|1|1
+Upson|Male|18-64|White|Yes|1|1
+Upson|Male|65 and older|African-American/ Black|Unknown|6|6
+Upson|Male|65 and older|African-American/ Black|Yes|1|1
+Upson|Male|65 and older|White|No|3|3
+Upson|Male|65 and older|White|Unknown|3|3
+Upson|Male|65 and older|White|Yes|1|1
+Walker|Female|65 and older|White|Yes|5|5
+Walker|Male|65 and older|White|Yes|6|6
+Walton|Female|65 and older|African-American/ Black|No|1|1
+Walton|Female|65 and older|White|No|8|8
+Walton|Female|65 and older|White|Unknown|2|2
+Walton|Female|65 and older|White|Yes|3|3
+Walton|Male|18-64|African-American/ Black|Yes|1|1
+Walton|Male|18-64|White|No|1|1
+Walton|Male|65 and older|African-American/ Black|No|1|1
+Walton|Male|65 and older|African-American/ Black|Yes|1|1
+Walton|Male|65 and older|White|No|6|6
+Walton|Male|65 and older|White|Yes|4|4
+Ware|Female|18-64|African-American/ Black|Yes|2|2
+Ware|Female|65 and older|African-American/ Black|Yes|2|2
+Ware|Female|65 and older|White|Unknown|2|2
+Ware|Male|18-64|African-American/ Black|Yes|1|1
+Ware|Male|18-64|White|Unknown|1|1
+Ware|Male|65 and older|African-American/ Black|Unknown|2|2
+Ware|Male|65 and older|African-American/ Black|Yes|1|1
+Ware|Male|65 and older|White|Unknown|2|2
+Ware|Male|65 and older|White|Yes|2|2
+Washington|Male|65 and older|White|Yes|1|1
+Webster|Male|18-64|African-American/ Black|Yes|1|1
+White|Female|65 and older|White|Yes|1|1
+White|Male|18-64|White|No|1|1
+White|Male|65 and older|White|Yes|2|2
+Whitfield|Female|65 and older|White|Unknown|2|2
+Whitfield|Female|65 and older|White|Yes|1|1
+Whitfield|Male|18-64|White|No|1|1
+Whitfield|Male|65 and older|African-American/ Black|Yes|1|1
+Whitfield|Male|65 and older|White|Yes|5|5
+Wilcox|Female|18-64|African-American/ Black|Yes|1|1
+Wilcox|Female|18-64|White|Yes|1|1
+Wilcox|Female|65 and older|African-American/ Black|Yes|2|2
+Wilcox|Female|65 and older|White|Yes|2|2
+Wilcox|Male|65 and older|African-American/ Black|Unknown|1|1
+Wilcox|Male|65 and older|African-American/ Black|Yes|2|2
+Wilcox|Male|65 and older|White|Unknown|3|3
+Wilcox|Male|65 and older|White|Yes|3|3
+Wilkes|Female|18-64|White|Yes|1|1
+Wilkinson|Female|18-64|African-American/ Black|Yes|1|1
+Wilkinson|Female|65 and older|African-American/ Black|Unknown|1|1
+Wilkinson|Female|65 and older|African-American/ Black|Yes|1|1
+Wilkinson|Female|65 and older|White|Yes|2|2
+Wilkinson|Male|18-64|African-American/ Black|Yes|2|2
+Wilkinson|Male|65 and older|African-American/ Black|Yes|1|1
+Worth|Female|18-64|African-American/ Black|No|1|1
+Worth|Female|18-64|White|Yes|1|1
+Worth|Female|65 and older|African-American/ Black|Yes|4|4
+Worth|Female|65 and older|White|Unknown|2|2
+Worth|Female|65 and older|White|Yes|3|3
+Worth|Male|18-64|African-American/ Black|Unknown|1|1
+Worth|Male|18-64|African-American/ Black|Yes|2|2
+Worth|Male|18-64|White|Yes|1|1
+Worth|Male|65 and older|African-American/ Black|Unknown|2|2
+Worth|Male|65 and older|African-American/ Black|Yes|3|3
+Worth|Male|65 and older|White|Unknown|2|2
