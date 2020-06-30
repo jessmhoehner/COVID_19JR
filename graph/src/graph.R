@@ -3,7 +3,7 @@
 #
 # Author: JR
 # Maintainer(s): JR
-# License: ?
+# License: 2020, GPL v3 or later
 #
 # -----------------------------------------------------------
 # COVID19/graph/src/graph.R
@@ -30,7 +30,14 @@ files <- list(ga = here("graph/input/ga_stlev.csv"),
               tx_ty = here("graph/input/tx_taylor.csv"),
               dc_dc = here("graph/input/dc_dc.csv"),
               ny_md = here("graph/input/ny_madison.csv"),
+              va_mn = here("graph/input/va_manassas.csv"),
               cvt_data = here("graph/input/cvt_filtered.csv"),
+              nyt_clean = here("graph/input/nyt_df.csv"),
+              nyt_county_cfrs = here("graph/input/nyt_county_cfrs.csv"),
+              ga_cc_clean = here("graph/input/countycases_clean.csv"), 
+              ga_d_clean = here("graph/input/deaths_clean.csv"), 
+              ga_demo_clean = here("graph/input/demo_clean.csv"),
+              
               
               ppos_facetplot = here("graph/output/plots/multistate_ppos.png")
 )
@@ -38,9 +45,10 @@ files <- list(ga = here("graph/input/ga_stlev.csv"),
 locs <- list(files$ga,files$ny, files$fl,files$va, files$mi,files$nc,files$tx, 
                files$ga_ft, files$ga_gw, files$va_fx, files$va_st, files$fl_mt, 
                files$mi_gn, files$nc_rn, files$tx_ty, files$dc_dc, files$ny_md, 
-             files$cvt_data)
+             files$va_mn, files$cvt_data, files$nyt_clean, files$nyt_county_cfrs, 
+             files$ga_cc_clean, files$ga_d_clean, files$ga_demo_clean)
 
-stopifnot(length(locs) == 18)
+stopifnot(length(locs) == 24)
 stopifnot(locs %in% files == TRUE)
 
 # creates a list called cleandfs, containing dataframes created from clean data
@@ -58,13 +66,14 @@ names(dfs) <-  c("Georgia", "New_York", "Florida", "Virginia", "Michigan",
                  "North_Carolina", "Texas", "Fulton_GA", "Gwinnett_GA", 
                  "Fairfax_VA","Stafford_VA", "Manatee_FL", "Genesee_MI", 
                  "Randolph_NC", "Taylor_TX","Washington_DC", "Madison_NY", 
-                 "Full_Set")
+                 "Manassas_VA", "Full_Set", "NYT_cases", "NYT_CountyCFRs", 
+                 "GADPH_Cases_County", "GADPH_deaths", "GADPH_demography")
 
 # faceted plot of percentage of positive cases for states of interest
 
 state_abbs <- c("GA", "NY", "FL", "VA", "NC", "TX", "MI", "CA")
 
-full <- as.data.frame(pluck(dfs, 18)) %>%
+full <- as.data.frame(pluck(dfs, 19)) %>%
   filter(state %in% state_abbs) %>%
   mutate(state_fct = as.factor(state))
 
@@ -94,7 +103,7 @@ ggsave(filename = files$ppos_facetplot,
 # subset list of clean data frames
 
 states <- dfs[1:7]
-counties <- dfs[8:17]
+counties <- dfs[8:18]
 
 ### state level cases/day with percent positive tests ###
 
@@ -156,5 +165,88 @@ for (i in seq_along(counties)){
   print(paste0("Plot for ",names(counties)[i], " created successfully"))
   
 }
+
+# case fatality rates #########################################################
+
+# what are the county specific cfrs in known counties?
+cfr_df <- as.data.frame(pluck(dfs, 21)) %>%
+  filter(county != "Unknown")
+
+va_cfr <- cfr_df %>%
+  filter(state == "Virginia") %>%
+  filter(county == "Stafford" | county == "Fairfax" | county == "Manassas City" |
+           county == "Arlington") 
+
+(cfr_plot <- ggplot(va_cfr, aes(county, county_cfr, 
+                                color = county , 
+                                fill = county)) +
+  geom_dotplot(binaxis = "y", stackdir = "center") +
+  theme_minimal() +
+  labs(title = "Case-Fatality Rates by County"))
+  
+# how have cfrs changed over time for each state?
+cases_ga <- as.data.frame(pluck(dfs, 1))
+
+(ga_cfr_plot <- ggplot(cases_ga, aes(date_rec, daily_cfr)) +
+    geom_line(color = "red") +
+    theme_minimal() +
+    ylim(0, 5) +
+    labs(title = "Case-Fatality Rates Over Time (Georgia)"))
+
+cases_ny <- as.data.frame(pluck(dfs, 2))
+
+(ny_cfr_plot <- ggplot(cases_ny, aes(date_rec, daily_cfr)) +
+    geom_line(color = "red") +
+    theme_minimal() +
+    ylim(0, 10) +
+    labs(title = "Case-Fatality Rates Over Time (New York)"))
+
+
+
+# snippets
+
+ggplot(flt_dths_counts, aes(sex, cfr_fult, 
+                            color = race, 
+                            fill = race)) +
+  geom_jitter(width = 0.025) +
+  theme_minimal() + 
+  ylim(0, 2.0) +
+  labs(title = "Case-Fatality Ratios by Age Group and Race for Females in Fulton County")
+
+
+
+# what are the cfrs in each race by age group?
+ggplot(fult_fems, aes(age_gp, cfr_fult_fems, 
+                      color = race, 
+                      fill = race)) +
+  geom_jitter(width = 0.025) +
+  theme_minimal() + 
+  ylim(0, 2.0) +
+  labs(title = "Case-Fatality Rates by Age Group and Race for Females in Fulton County")
+
+# is possible that this is due to chronic condition status?
+
+# what are the cfrs in each race by chronic condition status?
+ggplot(fult_fems, aes(chronic_condition, cfr_fult_fems, 
+                      color = race, 
+                      fill = race)) + 
+  geom_jitter(width = 0.025) + 
+  theme_minimal() + 
+  ylim(0, 2.0) +
+  labs(title = "Case-Fatality Rates by Chronic Condition Status and Race for Females in Fulton County", 
+       ylab = "Case-Fatality Rate", 
+       xlab = "Chronic Condition Status")
+
+
+# what are the cfrs in each race by age group?
+ggplot(ga_demo_df, aes(ethnicity, logcfr_agg, 
+                       color = race, 
+                       fill = race)) +
+  geom_jitter(width = 0.15, size = 3) +
+  theme_minimal() + 
+  ylim(-5, 5) +
+  labs(title = "Case-Fatality Ratios by Ethnicity and Race in Georgia")
+
+
 
 # done
