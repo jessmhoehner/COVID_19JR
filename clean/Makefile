@@ -26,8 +26,10 @@ clean_data = \
 			$(HERE)/graph/input/fl_manatee.csv \
 			$(HERE)/graph/input/ny_madison.csv \
 			$(HERE)/graph/input/tx_taylor.csv \
-			$(HERE)/graph/input/nc_randoplh.csv \
-			$(HERE)/graph/input/mi_genessee.csv
+			$(HERE)/graph/input/nc_randolph.csv \
+			$(HERE)/graph/input/mi_genesee.csv \
+			$(HERE)/graph/input/va_manassas.csv \
+			$(HERE)/graph/input/cvt_filtered.csv
 			
 .PHONY:	all clean
 
