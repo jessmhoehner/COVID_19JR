@@ -40,7 +40,9 @@ clean:
 		
 $(clean_data): \
 			$(HERE)/clean/src/clean.R \
-			$(HERE)/owid/covid-19-data/public/data/ecdc/full_data.csv \
+			$(HERE)/clean/input/countycases.csv \
+			$(HERE)/clean/input/deaths.csv \
+			$(HERE)/clean/input/demographics.csv \
 			$(HERE)/NYTimes/us-counties.csv \
 			$(HERE)/covid-public-api/v1/states/daily.csv
 		Rscript --vanilla $<
