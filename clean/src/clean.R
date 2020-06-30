@@ -12,9 +12,11 @@ pacman::p_load("tidyverse", "lubridate", "readr",
                "here", "assertr", "janitor", "forcats")
 
 files <- list(
-  ecdc_data = here("owid/covid-19-data/public/data/ecdc/full_data.csv"),
   NYT_data = here("NYTimes/us-counties.csv"),
   cvt_data = here("covid-public-api/v1/states/daily.csv"), 
+  ga_countycases = here("clean/input/countycases.csv"), 
+  ga_deaths = here("clean/input/deaths.csv"), 
+  ga_demo = here("clean/input/demographics.csv"), 
   
   ga = here("graph/input/ga_stlev.csv"),
   ny = here("graph/input/ny_stlev.csv"),
@@ -34,46 +36,18 @@ files <- list(
   tx_ty = here("graph/input/tx_taylor.csv"),
   dc_dc = here("graph/input/dc_dc.csv"),
   ny_md = here("graph/input/ny_madison.csv"), 
+  va_mn = here("graph/input/va_manassas.csv"),
   
-  clean_cvt = here("graph/input/cvt_filtered.csv")
+  
+  clean_cvt = here("graph/input/cvt_filtered.csv"),
+  nyt_clean = here("graph/input/nyt_df.csv"),
+  nyt_county_cfrs = here("graph/input/nyt_county_cfrs.csv"),
+  ga_cc_clean = here("graph/input/countycases_clean.csv"), 
+  ga_d_clean = here("graph/input/deaths_clean.csv"), 
+  ga_demo_clean = here("graph/input/demo_clean.csv")
 )
 
-stopifnot(length(files) == 19)
-
-### ECDC data from Our World in Data
-
-# shorten location to loc
-# change reserved word date to date_rec to indicate date recorded
-# keep all counts of cases and deaths in new dataframe
-# populate missing dates and add in counts of 0 
-#  (ex: in Afghanistan, no dates between from 
-#   03 March 20 -- 08 March 2020 were recorded)
-#   and are now listed as having 0 cases or deaths on these dates
-
-ecdc_df <- as.data.frame(read_delim(files$ecdc_data, 
-                                              delim = ",")) %>%
-  clean_names() %>%
-  transmute(loc = as.factor(location),
-            date_rec = as.Date(date, "%Y/%m/%d"), 
-            new_cases = as.double(new_cases), 
-            new_deaths = as.double(new_deaths), 
-            total_cases = as.double(total_cases), 
-            total_deaths = as.double(total_deaths)) %>%
-  group_by(loc) %>% 
-  complete(loc, date_rec = seq(min(date_rec), max(date_rec), by = 'day')) %>%
-  replace(., is.na(.), 0) %>%
-  arrange(date_rec)
-
-# unit tests
-
-index_ecdc <- as.Date("2019-12-31")
-
-ecdc_df <- ecdc_df %>%
-  verify(ncol(ecdc_df) == 6 & (nrow(ecdc_df) == 1823270)) %>%
-  verify(is.factor(loc) & is.Date(date_rec)) %>%
-  verify(sum(total_cases) == 3686829354) %>%
-  verify(is.na(new_cases) == FALSE) %>%
-  verify(min(date_rec) == index_ecdc)
+stopifnot(length(files) == 29)
 
 ### NYT data at US State and County Level
 
@@ -92,11 +66,40 @@ nyt_df <-as.data.frame(read_delim(files$NYT_data, delim = ","),na.rm = FALSE) %>
 # unit tests
 index_nyt <- as.Date("2020-01-21")
 
+# unit tests
+index_nyt <- as.Date("2020-01-21")
+
 nyt_df <- nyt_df %>%
   verify(ncol(nyt_df) == 7 & (nrow(nyt_df) == 261070)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 111375905) %>%
-  verify(min(date_rec) == index_nyt)
+  verify(min(date_rec) == index_nyt) %>%
+  write_delim(files$nyt_clean, delim = "|")
+
+# obtain case fatality rates for each U.S. County according to NYT
+
+# removed data where CFR is "Inf"
+# state   county  cases deaths cfr
+#	Arizona	Unknown	  0   	52  	Inf
+#	Kansas	Unknown	  0	    28   	Inf
+#	Pennsylvania	Unknown	0	  3	  Inf
+#	South Dakota	Unknown	0	  10	Inf
+
+nyt_counts <- as.data.frame(count(nyt_df, county, state, 
+                                  cases, deaths, date_rec)) %>%
+  group_by(state, county) %>%
+  summarise(agg_cases = sum(cases), 
+            agg_deaths = sum(deaths)) %>%
+  mutate(county_cfr = as.numeric(round(((agg_deaths/agg_cases)*100), 
+                                       digits = 2))) %>%
+  filter(county_cfr != "Inf")
+
+# unit tests
+
+nyt_counts <- nyt_counts %>%
+  verify(ncol(nyt_counts) == 5 & (nrow(nyt_counts) == 3065)) %>%
+  verify(sum(agg_cases) == 111375905) %>%
+  write_delim(files$nyt_county_cfrs, delim = "|")
 
 ## COVID tracking Project by The Atlantic data at the state level ##
 # format date and data_quality_grade, 
@@ -170,7 +173,9 @@ va_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 va_ppos <- cvt_filt %>%
@@ -186,7 +191,7 @@ index_va <- as.Date("2020-03-07")
 max_date <- as.Date("2020-06-22")
 
 va_state_data  <- va_state_data  %>%
-  verify(ncol(va_state_data ) == 9 & (nrow(va_state_data ) == 108)) %>%
+  verify(ncol(va_state_data ) == 10 & (nrow(va_state_data ) == 108)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_va)%>%
@@ -199,7 +204,9 @@ ga_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 ga_ppos <- cvt_filt %>%
@@ -213,7 +220,7 @@ ga_state_data <- left_join(ga_inc, ga_ppos, by = "date_rec") %>%
 index_ga <- as.Date("2020-03-02")
 
 ga_state_data  <- ga_state_data  %>%
-  verify(ncol(ga_state_data ) == 9 & (nrow(ga_state_data ) == 113)) %>%
+  verify(ncol(ga_state_data ) == 10 & (nrow(ga_state_data ) == 113)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ga)%>%
@@ -228,7 +235,9 @@ ny_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 ny_ppos <- cvt_filt %>%
@@ -243,7 +252,7 @@ ny_state_data <- left_join(ny_inc, ny_ppos, by = "date_rec") %>%
 index_ny <- as.Date("2020-03-01")
 
 ny_state_data  <- ny_state_data  %>%
-  verify(ncol(ny_state_data ) == 9 & (nrow(ny_state_data ) == 114)) %>%
+  verify(ncol(ny_state_data ) == 10 & (nrow(ny_state_data ) == 114)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ny)%>%
@@ -256,7 +265,9 @@ fl_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 fl_ppos <- cvt_filt %>%
@@ -271,7 +282,7 @@ fl_state_data <- left_join(fl_inc, fl_ppos, by = "date_rec") %>%
 index_fl <- as.Date("2020-03-01")
 
 fl_state_data  <- fl_state_data  %>%
-  verify(ncol(fl_state_data ) == 9 & (nrow(fl_state_data ) == 114)) %>%
+  verify(ncol(fl_state_data ) == 10 & (nrow(fl_state_data ) == 114)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_fl)%>%
@@ -284,7 +295,9 @@ nc_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 nc_ppos <- cvt_filt %>%
@@ -299,7 +312,7 @@ nc_state_data <- left_join(nc_inc, nc_ppos, by = "date_rec")  %>%
 index_nc <- as.Date("2020-03-03")
 
 nc_state_data  <- nc_state_data  %>%
-  verify(ncol(nc_state_data ) == 9 & (nrow(nc_state_data ) == 112)) %>%
+  verify(ncol(nc_state_data ) == 10 & (nrow(nc_state_data ) == 112)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_nc)%>%
@@ -312,7 +325,9 @@ tx_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 tx_ppos <- cvt_filt %>%
@@ -327,7 +342,7 @@ tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
 index_tx <- as.Date("2020-02-12")
 
 tx_state_data  <- tx_state_data  %>%
-  verify(ncol(tx_state_data ) == 9 & (nrow(tx_state_data ) == 132)) %>%
+  verify(ncol(tx_state_data ) == 10 & (nrow(tx_state_data ) == 132)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_tx)%>%
@@ -340,7 +355,9 @@ mi_inc <- nyt_inc %>%
   group_by(date_rec) %>%
   summarise_at(vars(cases, deaths), 
                list(daily_nyt = sum)) %>%
-  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt)) %>%
+  mutate(positive_daily_cases_nyt = as.integer(cases_daily_nyt), 
+         daily_cfr = as.numeric(round(
+           ((deaths_daily_nyt/positive_daily_cases_nyt)*100),digits = 2))) %>%
   select(-c("cases_daily_nyt"))
 
 mi_ppos <- cvt_filt %>%
@@ -355,110 +372,193 @@ mi_state_data <- left_join(mi_inc, mi_ppos, by = "date_rec") %>%
 index_mi <- as.Date("2020-03-10")
 
 mi_state_data  <- mi_state_data  %>%
-  verify(ncol(mi_state_data ) == 9 & (nrow(mi_state_data ) == 105)) %>%
+  verify(ncol(mi_state_data ) == 10 & (nrow(mi_state_data ) == 105)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_mi)%>%
   write_delim(files$mi, delim = "|")
 
-### create county level lists for counties of interest
+### create county level lists for counties of interest #######################
 
 #dc 
 dc_inc <- nyt_df %>%
-  filter(state == "District of Columbia" & county == "District of Columbia")
+  filter(state == "District of Columbia" & county == "District of Columbia") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 dc_inc <- dc_inc  %>%
-  verify(ncol(dc_inc) == 7 & (nrow(dc_inc) == 108)) %>%
+  verify(ncol(dc_inc) == 8 & (nrow(dc_inc) == 108)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 499158) %>%
   write_delim(files$dc_dc, delim = "|")
 
 # va
 fx_inc <- nyt_df %>%
-  filter(state == "Virginia" & county == "Fairfax")
+  filter(state == "Virginia" & county == "Fairfax") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 fx_inc <- fx_inc  %>%
-  verify(ncol(fx_inc) == 7 & (nrow(fx_inc) == 108)) %>%
+  verify(ncol(fx_inc) == 8 & (nrow(fx_inc) == 108)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 555345) %>%
   write_delim(files$va_fx, delim = "|")
 
 st_inc <- nyt_df %>%
-  filter(state == "Virginia" & county == "Stafford")
+  filter(state == "Virginia" & county == "Stafford") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 st_inc <- st_inc  %>%
-  verify(ncol(st_inc) == 7 & (nrow(st_inc) == 99)) %>%
+  verify(ncol(st_inc) == 8 & (nrow(st_inc) == 99)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 36684) %>%
   write_delim(files$va_st, delim = "|")
 
+mn_inc <- nyt_df %>%
+  filter(state == "Virginia" & county == "Manassas city") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
+
+mn_inc <- mn_inc  %>%
+  verify(ncol(mn_inc) == 8 & (nrow(mn_inc) == 90)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(sum(cases) == 48767) %>%
+  write_delim(files$va_mn, delim = "|")
+
 #ga
 ft_inc <- nyt_df %>%
-  filter(state == "Georgia" & county == "Fulton")
+  filter(state == "Georgia" & county == "Fulton") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 ft_inc <- ft_inc  %>%
-  verify(ncol(ft_inc) == 7 & (nrow(ft_inc) == 113)) %>%
+  verify(ncol(ft_inc) == 8 & (nrow(ft_inc) == 113)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 284413) %>%
   write_delim(files$ga_ft, delim = "|")
 
 gt_inc <- nyt_df %>%
-  filter(state == "Georgia" & county == "Gwinnett")
+  filter(state == "Georgia" & county == "Gwinnett") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 gt_inc <- gt_inc  %>%
-  verify(ncol(gt_inc) == 7 & (nrow(gt_inc) == 108)) %>%
+  verify(ncol(gt_inc) == 8 & (nrow(gt_inc) == 108)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 224822) %>%
   write_delim(files$ga_gw, delim = "|")
 
 # fl
 mt_inc <- nyt_df %>%
-  filter(state == "Florida" & county == "Manatee")
+  filter(state == "Florida" & county == "Manatee") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 mt_inc <- mt_inc  %>%
-  verify(ncol(mt_inc) == 7 & (nrow(mt_inc) == 114)) %>%
+  verify(ncol(mt_inc) == 8 & (nrow(mt_inc) == 114)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 66239) %>%
   write_delim(files$fl_mt, delim = "|")
 
 # ny 
 md_inc <- nyt_df %>%
-  filter(state == "New York" & county == "Madison")
+  filter(state == "New York" & county == "Madison") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 md_inc <- md_inc  %>%
-  verify(ncol(md_inc) == 7 & (nrow(md_inc) == 93)) %>%
+  verify(ncol(md_inc) == 8 & (nrow(md_inc) == 93)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 18575) %>%
   write_delim(files$ny_md, delim = "|")
 
 #tx 
 ty_inc <- nyt_df %>%
-  filter(state == "Texas" & county == "Taylor")
+  filter(state == "Texas" & county == "Taylor") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 ty_inc <- ty_inc  %>%
-  verify(ncol(ty_inc) == 7 & (nrow(ty_inc) == 88)) %>%
+  verify(ncol(ty_inc) == 8 & (nrow(ty_inc) == 88)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 22392) %>%
   write_delim(files$tx_ty, delim = "|")
 
 # nc
 rn_inc <- nyt_df %>%
-  filter(state == "North Carolina" & county == "Randolph")
+  filter(state == "North Carolina" & county == "Randolph") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 rn_inc <- rn_inc  %>%
-  verify(ncol(rn_inc) == 7 & (nrow(rn_inc) == 91)) %>%
+  verify(ncol(rn_inc) == 8 & (nrow(rn_inc) == 91)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 34863) %>%
   write_delim(files$nc_rn, delim = "|")
 
 # mi 
 gn_inc <- nyt_df %>%
-  filter(state == "Michigan" & county == "Genesee")
+  filter(state == "Michigan" & county == "Genesee") %>%
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
+                                             digits = 2)))
 
 gn_inc <- gn_inc  %>%
-  verify(ncol(gn_inc) == 7 & (nrow(gn_inc) == 96)) %>%
+  verify(ncol(gn_inc) == 8 & (nrow(gn_inc) == 96)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(sum(cases) == 143328) %>%
   write_delim(files$mi_gn, delim = "|")
+
+
+# georgia data 
+# ga_data come from here https://dph.georgia.gov/covid-19-daily-status-report 
+#   Click on "Download the data(CSV)" to access these same files
+
+# FIXME: add unit tests for GA data
+
+# aggregated cases by county, keeping only real CFRs, 
+# 140 counties remain, kept in non-GA res and Unknown groups
+cc_df <- as.data.frame(read_delim(files$ga_countycases, 
+                                  delim = ",")) %>%
+  clean_names() %>%
+  rename(cases_per100k = case_rate, 
+         n_hosp = hospitalization, 
+         n_deaths = deaths, 
+         n_pos = positive, 
+         cnty_res = county_resident) %>%
+  mutate(cnty_cfr = as.numeric((n_deaths/n_pos) * 100), 
+         cnty_chr = as.numeric((n_hosp/n_pos)*100), 
+         log_cfr = as.numeric(log2(cnty_cfr)), 
+         log_chr = as.numeric(log2(cnty_chr))) %>%
+  filter(log_cfr != "-Inf") %>%
+  filter(log_chr != "-Inf")%>%
+  write_delim(files$ga_cc_clean, delim = "|")
+
+# individual deaths, each row is an individual
+# age, sex, race, county, chronic condition status
+# can do county level CFRs but 
+# can't do county level CFR for specific demographic groups because 
+# don't know denominator (at county level all case ages, ethnicity, race, etc)
+ga_deaths <- as.data.frame(read_delim(files$ga_deaths,
+                                      delim = ",")) %>%
+  clean_names() %>%
+  mutate(age_gp = if_else(age >= 65, "65 and older", "< 65"), 
+         age_gp = if_else(age_gp == "< 65" & age < 18, "17 and younger", "65 and older"), 
+         age_gp = if_else(age_gp == "65 and older" & age < 65, "18-64", age_gp)) %>%
+  mutate_at(vars(county, sex, age_gp, race, chronic_condition), as.factor) %>%
+  count(county, sex, age_gp, race, chronic_condition) %>%
+  mutate(n_deaths = as.numeric(n)) %>%
+  group_by(county, sex, race, age_gp) %>%
+  write_delim(files$ga_d_clean, delim = "|")
+
+# state level cases by ethnicity, race
+# can do state-level CFR by ethnicity and race
+ga_demo_df <- as.data.frame(read_delim(files$ga_demo,
+                                       delim = ",")) %>%
+  clean_names() %>%
+  mutate(logcfr_agg = as.numeric(log2(round((deaths/(confirmed_cases))*100, 
+                                            digits = 2)))) %>%
+  filter(logcfr_agg != "-Inf") %>%
+  write_delim(files$ga_demo_clean, delim = "|")
 
 ###done###
