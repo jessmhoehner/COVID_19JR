@@ -1,3066 +1,3094 @@
 state|county|agg_cases|agg_deaths|county_cfr
-Alabama|Autauga|11590|290|2.5
-Alabama|Baldwin|18424|476|2.58
-Alabama|Barbour|8021|55|0.69
-Alabama|Bibb|4488|46|1.02
-Alabama|Blount|4263|37|0.87
-Alabama|Bullock|8349|228|2.73
-Alabama|Butler|19369|773|3.99
-Alabama|Calhoun|10216|206|2.02
-Alabama|Chambers|25993|1625|6.25
-Alabama|Cherokee|2170|121|5.58
-Alabama|Chilton|6362|84|1.32
-Alabama|Choctaw|7160|325|4.54
-Alabama|Clarke|6922|125|1.81
-Alabama|Clay|1900|101|5.32
-Alabama|Cleburne|1179|65|5.51
-Alabama|Coffee|12775|45|0.35
-Alabama|Colbert|8794|186|2.12
-Alabama|Conecuh|2613|33|1.26
-Alabama|Coosa|2553|71|2.78
-Alabama|Covington|5424|63|1.16
-Alabama|Crenshaw|3900|104|2.67
-Alabama|Cullman|8645|39|0.45
-Alabama|Dale|5899|0|0
-Alabama|Dallas|14774|237|1.6
-Alabama|DeKalb|13555|198|1.46
-Alabama|Elmore|18956|395|2.08
-Alabama|Escambia|3862|177|4.58
-Alabama|Etowah|15665|766|4.89
-Alabama|Fayette|1174|5|0.43
-Alabama|Franklin|25565|322|1.26
-Alabama|Geneva|1821|0|0
-Alabama|Greene|5794|211|3.64
-Alabama|Hale|8528|401|4.7
-Alabama|Henry|3900|93|2.38
-Alabama|Houston|12271|291|2.37
-Alabama|Jackson|5446|186|3.42
-Alabama|Jefferson|114191|5456|4.78
-Alabama|Lamar|1570|3|0.19
-Alabama|Lauderdale|9060|219|2.42
-Alabama|Lawrence|2611|0|0
-Alabama|Lee|37419|2105|5.63
-Alabama|Limestone|7305|0|0
-Alabama|Lowndes|12535|546|4.36
-Alabama|Macon|4819|224|4.65
-Alabama|Madison|25668|335|1.31
-Alabama|Marengo|8553|373|4.36
-Alabama|Marion|7867|644|8.19
-Alabama|Marshall|40857|545|1.33
-Alabama|Mobile|126425|6449|5.1
-Alabama|Monroe|3119|117|3.75
-Alabama|Montgomery|88872|2150|2.42
-Alabama|Morgan|16932|53|0.31
-Alabama|Perry|2281|0|0
-Alabama|Pickens|6318|227|3.59
-Alabama|Pike|11024|34|0.31
-Alabama|Randolph|7644|459|6
-Alabama|Russell|9947|0|0
-Alabama|Shelby|33881|1183|3.49
-Alabama|St. Clair|8054|66|0.82
-Alabama|Sumter|10787|374|3.47
-Alabama|Talladega|7078|215|3.04
-Alabama|Tallapoosa|25790|3260|12.64
-Alabama|Tuscaloosa|42273|751|1.78
-Alabama|Unknown|126|0|0
-Alabama|Walker|19337|132|0.68
-Alabama|Washington|4078|290|7.11
-Alabama|Wilcox|8516|340|3.99
-Alabama|Winston|4190|16|0.38
-Alaska|Aleutians East Borough|22|0|0
-Alaska|Aleutians West Census Area|69|0|0
-Alaska|Anchorage|17693|354|2
-Alaska|Bethel Census Area|174|0|0
-Alaska|Bristol Bay Borough|61|0|0
-Alaska|Dillingham Census Area|23|0|0
-Alaska|Fairbanks North Star Borough|7084|153|2.16
-Alaska|Haines Borough|21|0|0
-Alaska|Juneau City and Borough|2371|0|0
-Alaska|Kenai Peninsula Borough|3492|48|1.37
-Alaska|Ketchikan Gateway Borough|1492|0|0
-Alaska|Kodiak Island Borough|115|0|0
-Alaska|Lake and Peninsula Borough|28|0|0
-Alaska|Matanuska-Susitna Borough|2044|70|3.42
-Alaska|Nome Census Area|162|0|0
-Alaska|North Slope Borough|37|0|0
-Alaska|Northwest Arctic Borough|91|0|0
-Alaska|Petersburg Borough|199|0|0
-Alaska|Prince of Wales-Hyder Census Area|147|0|0
-Alaska|Sitka City and Borough|204|0|0
-Alaska|Southeast Fairbanks Census Area|205|0|0
-Alaska|Unknown|89|0|0
-Alaska|Valdez-Cordova Census Area|293|0|0
-Alaska|Wrangell City and Borough|31|0|0
-Alaska|Yukon-Koyukuk Census Area|85|0|0
-Arizona|Apache|74865|1811|2.42
-Arizona|Cochise|6564|142|2.16
-Arizona|Coconino|64219|4585|7.14
-Arizona|Gila|2478|94|3.79
-Arizona|Graham|1854|52|2.8
-Arizona|Greenlee|367|22|5.99
-Arizona|La Paz|5595|138|2.47
-Arizona|Maricopa|683742|23237|3.4
-Arizona|Mohave|21441|2290|10.68
-Arizona|Navajo|105323|3408|3.24
-Arizona|Pima|160678|10662|6.64
-Arizona|Pinal|59280|1953|3.29
-Arizona|Santa Cruz|24006|184|0.77
-Arizona|Yavapai|16930|313|1.85
-Arizona|Yuma|75841|1049|1.38
-Arkansas|Arkansas|356|0|0
-Arkansas|Ashley|1684|12|0.71
-Arkansas|Baxter|626|0|0
-Arkansas|Benton|36542|149|0.41
-Arkansas|Boone|453|0|0
-Arkansas|Bradley|1360|71|5.22
-Arkansas|Carroll|1852|36|1.94
-Arkansas|Chicot|1453|21|1.45
-Arkansas|Clark|3005|0|0
-Arkansas|Clay|494|5|1.01
-Arkansas|Cleburne|6462|342|5.29
-Arkansas|Cleveland|1189|0|0
-Arkansas|Columbia|1287|104|8.08
-Arkansas|Conway|1064|104|9.77
-Arkansas|Craighead|12811|51|0.4
-Arkansas|Crawford|1664|0|0
-Arkansas|Crittenden|22204|525|2.36
-Arkansas|Cross|2912|6|0.21
-Arkansas|Dallas|135|0|0
-Arkansas|Desha|1302|0|0
-Arkansas|Drew|1367|74|5.41
-Arkansas|Faulkner|8267|194|2.35
-Arkansas|Franklin|259|0|0
-Arkansas|Fulton|312|0|0
-Arkansas|Garland|10142|48|0.47
-Arkansas|Grant|1266|0|0
-Arkansas|Greene|2916|0|0
-Arkansas|Hempstead|1157|75|6.48
-Arkansas|Hot Spring|2058|0|0
-Arkansas|Howard|1638|1|0.06
-Arkansas|Independence|1735|0|0
-Arkansas|Izard|855|21|2.46
-Arkansas|Jackson|330|0|0
-Arkansas|Jefferson|28057|1378|4.91
-Arkansas|Johnson|3517|0|0
-Arkansas|Lafayette|619|58|9.37
-Arkansas|Lawrence|4902|348|7.1
-Arkansas|Lee|6832|70|1.02
-Arkansas|Lincoln|58674|451|0.77
-Arkansas|Little River|632|0|0
-Arkansas|Logan|542|1|0.18
-Arkansas|Lonoke|3742|0|0
-Arkansas|Madison|2029|0|0
-Arkansas|Marion|97|0|0
-Arkansas|Miller|3385|69|2.04
-Arkansas|Mississippi|3971|68|1.71
-Arkansas|Monroe|350|0|0
-Arkansas|Montgomery|84|0|0
-Arkansas|Nevada|1475|11|0.75
-Arkansas|Newton|215|0|0
-Arkansas|Ouachita|713|0|0
-Arkansas|Perry|784|0|0
-Arkansas|Phillips|1249|75|6
-Arkansas|Pike|334|0|0
-Arkansas|Poinsett|2199|121|5.5
-Arkansas|Polk|1531|1|0.07
-Arkansas|Pope|8638|52|0.6
-Arkansas|Prairie|272|0|0
-Arkansas|Pulaski|58943|2026|3.44
-Arkansas|Randolph|1639|5|0.31
-Arkansas|Saline|7348|93|1.27
-Arkansas|Scott|136|0|0
-Arkansas|Searcy|551|0|0
-Arkansas|Sebastian|3834|33|0.86
-Arkansas|Sevier|10988|116|1.06
-Arkansas|Sharp|2039|114|5.59
-Arkansas|St. Francis|29540|50|0.17
-Arkansas|Stone|710|0|0
-Arkansas|Union|8499|361|4.25
-Arkansas|Unknown|15273|25|0.16
-Arkansas|Van Buren|2396|160|6.68
-Arkansas|Washington|40370|411|1.02
-Arkansas|White|3302|64|1.94
-Arkansas|Woodruff|133|0|0
-Arkansas|Yell|7585|70|0.92
-California|Alameda|200615|6006|2.99
-California|Alpine|137|0|0
-California|Amador|645|0|0
-California|Butte|2969|22|0.74
-California|Calaveras|1213|0|0
-California|Colusa|357|0|0
-California|Contra Costa|96795|2504|2.59
-California|Del Norte|1587|0|0
-California|El Dorado|5643|0|0
-California|Fresno|100625|1817|1.81
-California|Glenn|1001|0|0
-California|Humboldt|6375|113|1.77
-California|Imperial|112524|1539|1.37
-California|Inyo|1607|61|3.8
-California|Kern|130877|1942|1.48
-California|Kings|51176|256|0.5
-California|Lake|1167|0|0
-California|Lassen|215|0|0
-California|Los Angeles|3085794|131660|4.27
-California|Madera|8109|198|2.44
-California|Marin|32364|1113|3.44
-California|Mariposa|834|39|4.68
-California|Mendocino|1654|0|0
-California|Merced|17876|386|2.16
+Alabama|Autauga|15544|380|2.44
+Alabama|Baldwin|22783|552|2.42
+Alabama|Barbour|10487|63|0.6
+Alabama|Bibb|5724|54|0.94
+Alabama|Blount|5734|45|0.78
+Alabama|Bullock|11163|313|2.8
+Alabama|Butler|24130|989|4.1
+Alabama|Calhoun|12156|246|2.02
+Alabama|Chambers|30475|1841|6.04
+Alabama|Cherokee|2704|177|6.55
+Alabama|Chilton|7933|108|1.36
+Alabama|Choctaw|8671|421|4.86
+Alabama|Clarke|8913|164|1.84
+Alabama|Clay|2209|117|5.3
+Alabama|Cleburne|1381|73|5.29
+Alabama|Coffee|15487|54|0.35
+Alabama|Colbert|11546|226|1.96
+Alabama|Conecuh|3916|59|1.51
+Alabama|Coosa|2985|79|2.65
+Alabama|Covington|7715|101|1.31
+Alabama|Crenshaw|4891|128|2.62
+Alabama|Cullman|11600|63|0.54
+Alabama|Dale|7714|0|0
+Alabama|Dallas|20685|297|1.44
+Alabama|DeKalb|17664|238|1.35
+Alabama|Elmore|25088|498|1.99
+Alabama|Escambia|5535|225|4.07
+Alabama|Etowah|19918|868|4.36
+Alabama|Fayette|1706|13|0.76
+Alabama|Franklin|32156|410|1.28
+Alabama|Geneva|2281|0|0
+Alabama|Greene|7084|263|3.71
+Alabama|Hale|10747|556|5.17
+Alabama|Henry|4925|124|2.52
+Alabama|Houston|15560|335|2.15
+Alabama|Jackson|6976|210|3.01
+Alabama|Jefferson|143210|6523|4.55
+Alabama|Lamar|2092|8|0.38
+Alabama|Lauderdale|11926|252|2.11
+Alabama|Lawrence|3343|0|0
+Alabama|Lee|45868|2394|5.22
+Alabama|Limestone|10069|0|0
+Alabama|Lowndes|16071|691|4.3
+Alabama|Macon|6096|282|4.63
+Alabama|Madison|32842|388|1.18
+Alabama|Marengo|10647|461|4.33
+Alabama|Marion|9398|740|7.87
+Alabama|Marshall|51593|617|1.2
+Alabama|Mobile|153268|7532|4.91
+Alabama|Monroe|4576|133|2.91
+Alabama|Montgomery|117617|2895|2.46
+Alabama|Morgan|24055|74|0.31
+Alabama|Perry|3168|0|0
+Alabama|Pickens|7821|275|3.52
+Alabama|Pike|14136|71|0.5
+Alabama|Randolph|8891|531|5.97
+Alabama|Russell|13327|0|0
+Alabama|Shelby|41455|1366|3.3
+Alabama|St. Clair|10079|82|0.81
+Alabama|Sumter|12977|470|3.62
+Alabama|Talladega|8872|264|2.98
+Alabama|Tallapoosa|30154|3820|12.67
+Alabama|Tuscaloosa|56835|1047|1.84
+Alabama|Walker|25618|237|0.93
+Alabama|Washington|4873|339|6.96
+Alabama|Wilcox|10665|404|3.79
+Alabama|Winston|5887|35|0.59
+Alaska|Aleutians East Borough|38|0|0
+Alaska|Aleutians West Census Area|101|0|0
+Alaska|Anchorage|21196|402|1.9
+Alaska|Bethel Census Area|253|0|0
+Alaska|Bristol Bay Borough|186|0|0
+Alaska|Denali Borough|6|0|0
+Alaska|Dillingham Census Area|147|0|0
+Alaska|Fairbanks North Star Borough|8223|169|2.06
+Alaska|Haines Borough|61|0|0
+Alaska|Juneau City and Borough|2733|10|0.37
+Alaska|Kenai Peninsula Borough|4607|56|1.22
+Alaska|Ketchikan Gateway Borough|1718|0|0
+Alaska|Kodiak Island Borough|170|0|0
+Alaska|Lake and Peninsula Borough|49|0|0
+Alaska|Matanuska-Susitna Borough|2616|78|2.98
+Alaska|Nome Census Area|225|0|0
+Alaska|North Slope Borough|69|0|0
+Alaska|Northwest Arctic Borough|123|0|0
+Alaska|Petersburg Borough|231|0|0
+Alaska|Prince of Wales-Hyder Census Area|171|0|0
+Alaska|Sitka City and Borough|323|0|0
+Alaska|Southeast Fairbanks Census Area|273|0|0
+Alaska|Unknown|187|0|0
+Alaska|Valdez-Cordova Census Area|441|0|0
+Alaska|Wrangell City and Borough|89|0|0
+Alaska|Yukon-Koyukuk Census Area|105|0|0
+Arizona|Apache|92908|2444|2.63
+Arizona|Cochise|10775|192|1.78
+Arizona|Coconino|78103|5316|6.81
+Arizona|Gila|4404|134|3.04
+Arizona|Graham|2491|68|2.73
+Arizona|Greenlee|505|30|5.94
+Arizona|La Paz|8095|175|2.16
+Arizona|Maricopa|1010603|29006|2.87
+Arizona|Mohave|28968|2947|10.17
+Arizona|Navajo|132544|4353|3.28
+Arizona|Pima|216650|12779|5.9
+Arizona|Pinal|84169|2430|2.89
+Arizona|Santa Cruz|37283|316|0.85
+Arizona|Yavapai|21983|374|1.7
+Arizona|Yuma|120393|1691|1.4
+Arkansas|Arkansas|555|0|0
+Arkansas|Ashley|2203|20|0.91
+Arkansas|Baxter|768|0|0
+Arkansas|Benton|56180|278|0.49
+Arkansas|Boone|616|8|1.3
+Arkansas|Bradley|1702|87|5.11
+Arkansas|Carroll|3100|72|2.32
+Arkansas|Chicot|2370|42|1.77
+Arkansas|Clark|3441|0|0
+Arkansas|Clay|906|29|3.2
+Arkansas|Cleburne|7115|374|5.26
+Arkansas|Cleveland|1389|0|0
+Arkansas|Columbia|1873|128|6.83
+Arkansas|Conway|1414|128|9.05
+Arkansas|Craighead|16258|99|0.61
+Arkansas|Crawford|2730|1|0.04
+Arkansas|Crittenden|27686|611|2.21
+Arkansas|Cross|3586|14|0.39
+Arkansas|Dallas|195|0|0
+Arkansas|Desha|1626|1|0.06
+Arkansas|Drew|1785|82|4.59
+Arkansas|Faulkner|11419|218|1.91
+Arkansas|Franklin|388|0|0
+Arkansas|Fulton|399|0|0
+Arkansas|Garland|11870|56|0.47
+Arkansas|Grant|1533|0|0
+Arkansas|Greene|3775|0|0
+Arkansas|Hempstead|1537|83|5.4
+Arkansas|Hot Spring|5188|0|0
+Arkansas|Howard|2259|6|0.27
+Arkansas|Independence|2142|0|0
+Arkansas|Izard|1015|29|2.86
+Arkansas|Jackson|538|0|0
+Arkansas|Jefferson|33470|1602|4.79
+Arkansas|Johnson|5067|0|0
+Arkansas|Lafayette|740|66|8.92
+Arkansas|Lawrence|5689|420|7.38
+Arkansas|Lee|11872|81|0.68
+Arkansas|Lincoln|66967|539|0.8
+Arkansas|Little River|932|0|0
+Arkansas|Logan|875|1|0.11
+Arkansas|Lonoke|4702|5|0.11
+Arkansas|Madison|3441|0|0
+Arkansas|Marion|126|0|0
+Arkansas|Miller|4221|85|2.01
+Arkansas|Mississippi|5119|92|1.8
+Arkansas|Monroe|432|0|0
+Arkansas|Montgomery|112|0|0
+Arkansas|Nevada|2265|28|1.24
+Arkansas|Newton|252|0|0
+Arkansas|Ouachita|865|0|0
+Arkansas|Perry|990|0|0
+Arkansas|Phillips|2184|99|4.53
+Arkansas|Pike|396|0|0
+Arkansas|Poinsett|2644|145|5.48
+Arkansas|Polk|2096|1|0.05
+Arkansas|Pope|11777|75|0.64
+Arkansas|Prairie|424|0|0
+Arkansas|Pulaski|73125|2467|3.37
+Arkansas|Randolph|1988|13|0.65
+Arkansas|Saline|9266|109|1.18
+Arkansas|Scott|211|0|0
+Arkansas|Searcy|607|0|0
+Arkansas|Sebastian|6809|60|0.88
+Arkansas|Sevier|16179|169|1.04
+Arkansas|Sharp|2460|146|5.93
+Arkansas|St. Francis|35975|74|0.21
+Arkansas|Stone|816|0|0
+Arkansas|Union|10428|465|4.46
+Arkansas|Unknown|20705|6|0.03
+Arkansas|Van Buren|2656|176|6.63
+Arkansas|Washington|65390|619|0.95
+Arkansas|White|3954|72|1.82
+Arkansas|Woodruff|181|0|0
+Arkansas|Yell|11821|94|0.8
+California|Alameda|244971|7038|2.87
+California|Alpine|145|0|0
+California|Amador|793|0|0
+California|Butte|4120|36|0.87
+California|Calaveras|1460|0|0
+California|Colusa|530|0|0
+California|Contra Costa|118617|3077|2.59
+California|Del Norte|1984|0|0
+California|El Dorado|6942|0|0
+California|Fresno|135383|2390|1.77
+California|Glenn|1704|0|0
+California|Humboldt|7390|145|1.96
+California|Imperial|159436|2151|1.35
+California|Inyo|1830|69|3.77
+California|Kern|165633|2494|1.51
+California|Kings|69657|442|0.63
+California|Lake|1537|0|0
+California|Lassen|1345|0|0
+California|Los Angeles|3845811|157834|4.1
+California|Madera|11485|238|2.07
+California|Marin|46635|1257|2.7
+California|Mariposa|1018|47|4.62
+California|Mendocino|2259|0|0
+California|Merced|24262|471|1.94
 California|Modoc|2|0|0
-California|Mono|2533|84|3.32
-California|Monterey|33458|577|1.72
-California|Napa|7960|214|2.69
-California|Nevada|3675|81|2.2
-California|Orange|362737|8306|2.29
-California|Placer|17481|669|3.83
-California|Plumas|329|0|0
-California|Riverside|475793|18252|3.84
-California|Sacramento|101196|3958|3.91
-California|San Benito|6010|179|2.98
-California|San Bernardino|298590|10867|3.64
-California|San Diego|447364|16161|3.61
-California|San Francisco|160540|2599|1.62
-California|San Joaquin|66504|2433|3.66
-California|San Luis Obispo|19097|80|0.42
-California|San Mateo|131625|5060|3.84
-California|Santa Barbara|93237|816|0.88
-California|Santa Clara|202535|9778|4.83
-California|Santa Cruz|13792|193|1.4
-California|Shasta|2989|316|10.57
-California|Sierra|32|0|0
-California|Siskiyou|666|0|0
-California|Solano|32955|1010|3.06
-California|Sonoma|33497|275|0.82
-California|Stanislaus|47519|1544|3.25
-California|Sutter|3550|169|4.76
-California|Tehama|433|58|13.39
-California|Trinity|104|0|0
-California|Tulare|107502|4589|4.27
-California|Tuolumne|318|0|0
-California|Unknown|23|1|4.35
-California|Ventura|69805|1990|2.85
-California|Yolo|14748|1413|9.58
-California|Yuba|2001|79|3.95
-Colorado|Adams|183249|7042|3.84
-Colorado|Alamosa|3983|163|4.09
-Colorado|Arapahoe|257097|16284|6.33
-Colorado|Archuleta|609|0|0
-Colorado|Baca|922|0|0
-Colorado|Bent|93|0|0
-Colorado|Boulder|59889|3724|6.22
-Colorado|Broomfield|14886|1344|9.03
-Colorado|Chaffee|5086|1153|22.67
-Colorado|Cheyenne|226|0|0
-Colorado|Clear Creek|1195|63|5.27
-Colorado|Conejos|155|0|0
-Colorado|Costilla|465|0|0
-Colorado|Crowley|2696|96|3.56
-Colorado|Custer|163|0|0
-Colorado|Delta|3956|76|1.92
-Colorado|Denver|329286|17683|5.37
-Colorado|Douglas|47455|2546|5.37
-Colorado|Eagle|46514|611|1.31
-Colorado|El Paso|103797|6257|6.03
-Colorado|Elbert|3095|122|3.94
-Colorado|Fremont|1692|0|0
-Colorado|Garfield|9611|160|1.66
-Colorado|Gilpin|210|0|0
-Colorado|Grand|704|0|0
-Colorado|Gunnison|13544|404|2.98
-Colorado|Hinsdale|236|0|0
-Colorado|Huerfano|199|0|0
-Colorado|Jefferson|136647|9038|6.61
-Colorado|Kit Carson|1794|169|9.42
-Colorado|La Plata|5478|45|0.82
-Colorado|Lake|1851|0|0
-Colorado|Larimer|36336|1637|4.51
-Colorado|Las Animas|329|0|0
-Colorado|Lincoln|230|0|0
-Colorado|Logan|29983|196|0.65
-Colorado|Mesa|4123|0|0
-Colorado|Mineral|170|0|0
-Colorado|Moffat|515|0|0
-Colorado|Montezuma|2479|199|8.03
-Colorado|Montrose|10307|790|7.66
-Colorado|Morgan|34781|2064|5.93
-Colorado|Otero|1043|60|5.75
-Colorado|Ouray|503|75|14.91
-Colorado|Park|1276|0|0
-Colorado|Phillips|739|0|0
-Colorado|Pitkin|5041|175|3.47
-Colorado|Prowers|650|0|0
-Colorado|Pueblo|16298|1021|6.26
-Colorado|Rio Blanco|88|0|0
-Colorado|Rio Grande|1646|5|0.3
-Colorado|Routt|4570|365|7.99
-Colorado|Saguache|2805|42|1.5
-Colorado|San Juan|50|0|0
-Colorado|San Miguel|1624|0|0
-Colorado|Summit|13546|137|1.01
-Colorado|Teller|2364|166|7.02
-Colorado|Unknown|6875|33|0.48
-Colorado|Washington|1599|0|0
-Colorado|Weld|156643|8345|5.33
-Colorado|Yuma|1585|0|0
-Connecticut|Fairfield|1001535|75041|7.49
-Connecticut|Hartford|585520|68480|11.7
-Connecticut|Litchfield|85757|7639|8.91
-Connecticut|Middlesex|65639|8394|12.79
-Connecticut|New Haven|689438|53518|7.76
-Connecticut|New London|60702|4511|7.43
-Connecticut|Tolland|47221|3614|7.65
-Connecticut|Unknown|27326|146|0.53
-Connecticut|Windham|22284|675|3.03
-Delaware|Kent|80222|3474|4.33
-Delaware|New Castle|209307|8650|4.13
-Delaware|Sussex|230762|7122|3.09
-Delaware|Unknown|2191|15|0.68
-District of Columbia|District of Columbia|499158|25058|5.02
-Florida|Alachua|27645|408|1.48
-Florida|Baker|2051|239|11.65
-Florida|Bay|7116|223|3.13
-Florida|Bradford|3611|139|3.85
-Florida|Brevard|28836|767|2.66
-Florida|Broward|493078|19027|3.86
-Florida|Calhoun|2698|146|5.41
-Florida|Charlotte|26631|3124|11.73
-Florida|Citrus|8888|832|9.36
-Florida|Clay|25183|1741|6.91
-Florida|Collier|95471|2614|2.74
-Florida|Columbia|8448|118|1.4
-Florida|DeSoto|10293|480|4.66
-Florida|Dixie|2159|73|3.38
-Florida|Duval|107601|2758|2.56
-Florida|Escambia|51664|1650|3.19
-Florida|Flagler|11532|265|2.3
-Florida|Franklin|163|0|0
-Florida|Gadsden|13740|116|0.84
-Florida|Gilchrist|1175|0|0
-Florida|Glades|2753|84|3.05
-Florida|Gulf|221|0|0
-Florida|Hamilton|9403|28|0.3
-Florida|Hardee|5784|7|0.12
-Florida|Hendry|21033|727|3.46
-Florida|Hernando|8547|328|3.84
-Florida|Highlands|8766|601|6.86
-Florida|Hillsborough|155205|4224|2.72
-Florida|Holmes|1253|0|0
-Florida|Indian River|10511|598|5.69
-Florida|Jackson|11258|31|0.28
-Florida|Jefferson|2084|177|8.49
-Florida|Lafayette|468|0|0
-Florida|Lake|23183|961|4.15
-Florida|Lee|125511|5931|4.73
-Florida|Leon|23816|370|1.55
-Florida|Levy|3049|24|0.79
-Florida|Liberty|10089|21|0.21
-Florida|Madison|4482|184|4.11
-Florida|Manatee|66239|5645|8.52
-Florida|Marion|16797|417|2.48
-Florida|Martin|39116|655|1.67
-Florida|Miami-Dade|1190647|39419|3.31
-Florida|Monroe|7769|268|3.45
-Florida|Nassau|5213|52|1
-Florida|Okaloosa|15799|354|2.24
-Florida|Okeechobee|5043|0|0
-Florida|Orange|151083|2688|1.78
-Florida|Osceola|48158|1087|2.26
-Florida|Palm Beach|379115|20479|5.4
-Florida|Pasco|26993|763|2.83
-Florida|Pinellas|95403|4741|4.97
-Florida|Polk|63473|3137|4.94
-Florida|Putnam|9808|267|2.72
-Florida|Santa Rosa|15646|631|4.03
-Florida|Sarasota|39761|4451|11.19
-Florida|Seminole|38781|732|1.89
-Florida|St. Johns|19871|386|1.94
-Florida|St. Lucie|33317|1937|5.81
-Florida|Sumter|17502|1127|6.44
-Florida|Suwannee|11445|1090|9.52
-Florida|Taylor|1335|0|0
-Florida|Union|1454|29|1.99
-Florida|Unknown|4236|45|1.06
-Florida|Volusia|47675|2273|4.77
-Florida|Wakulla|2100|72|3.43
-Florida|Walton|6627|326|4.92
-Florida|Washington|2777|201|7.24
-Georgia|Appling|8448|655|7.75
-Georgia|Atkinson|2410|96|3.98
-Georgia|Bacon|5904|139|2.35
-Georgia|Baker|2211|187|8.46
-Georgia|Baldwin|20900|1241|5.94
-Georgia|Banks|4184|19|0.45
-Georgia|Barrow|18080|831|4.6
-Georgia|Bartow|32338|2510|7.76
-Georgia|Ben Hill|4071|40|0.98
-Georgia|Berrien|2553|4|0.16
-Georgia|Bibb|28404|1372|4.83
-Georgia|Bleckley|2280|8|0.35
-Georgia|Brantley|2974|144|4.84
-Georgia|Brooks|4752|547|11.51
-Georgia|Bryan|4824|297|6.16
-Georgia|Bulloch|4335|152|3.51
-Georgia|Burke|7381|299|4.05
-Georgia|Butts|13185|1217|9.23
-Georgia|Calhoun|8541|357|4.18
-Georgia|Camden|3739|61|1.63
-Georgia|Candler|823|0|0
-Georgia|Carroll|34348|1589|4.63
-Georgia|Catoosa|7599|36|0.47
-Georgia|Charlton|1654|50|3.02
-Georgia|Chatham|29595|1295|4.38
-Georgia|Chattahoochee|5828|5|0.09
-Georgia|Chattooga|1585|133|8.39
-Georgia|Cherokee|51906|1759|3.39
-Georgia|Clarke|17101|1081|6.32
-Georgia|Clay|2508|167|6.66
-Georgia|Clayton|75737|3046|4.02
-Georgia|Clinch|2916|67|2.3
-Georgia|Cobb|181559|10177|5.61
-Georgia|Coffee|15687|746|4.76
-Georgia|Colquitt|25577|862|3.37
-Georgia|Columbia|15575|383|2.46
-Georgia|Cook|2895|98|3.39
-Georgia|Coweta|24320|513|2.11
-Georgia|Crawford|1612|0|0
-Georgia|Crisp|14395|438|3.04
-Georgia|Dade|1891|81|4.28
-Georgia|Dawson|6374|111|1.74
-Georgia|Decatur|10181|256|2.51
-Georgia|DeKalb|219941|6359|2.89
-Georgia|Dodge|2958|96|3.25
-Georgia|Dooly|10880|741|6.81
-Georgia|Dougherty|129241|9984|7.73
-Georgia|Douglas|33673|1345|3.99
-Georgia|Early|16987|1803|10.61
-Georgia|Echols|4575|0|0
-Georgia|Effingham|4119|79|1.92
-Georgia|Elbert|3702|0|0
-Georgia|Emanuel|1987|81|4.08
-Georgia|Evans|398|0|0
-Georgia|Fannin|2966|58|1.96
-Georgia|Fayette|15960|886|5.55
-Georgia|Floyd|17309|942|5.44
-Georgia|Forsyth|30937|787|2.54
-Georgia|Franklin|4251|54|1.27
-Georgia|Fulton|284413|13374|4.7
-Georgia|Gilmer|7635|30|0.39
-Georgia|Glascock|56|0|0
-Georgia|Glynn|7928|91|1.15
-Georgia|Gordon|10783|1009|9.36
-Georgia|Grady|6434|245|3.81
-Georgia|Greene|4712|373|7.92
-Georgia|Gwinnett|224822|7317|3.25
-Georgia|Habersham|28606|1176|4.11
-Georgia|Hall|142820|2454|1.72
-Georgia|Hancock|9179|934|10.18
-Georgia|Haralson|2888|163|5.64
-Georgia|Harris|7120|274|3.85
-Georgia|Hart|1706|0|0
-Georgia|Heard|1696|142|8.37
-Georgia|Henry|46708|1325|2.84
-Georgia|Houston|23464|1196|5.1
-Georgia|Irwin|1873|62|3.31
-Georgia|Jackson|11025|279|2.53
-Georgia|Jasper|2384|33|1.38
-Georgia|Jeff Davis|2169|75|3.46
-Georgia|Jefferson|2184|75|3.43
-Georgia|Jenkins|1784|161|9.02
-Georgia|Johnson|4702|134|2.85
-Georgia|Jones|2538|0|0
-Georgia|Lamar|3857|130|3.37
-Georgia|Lanier|1976|117|5.92
-Georgia|Laurens|6460|74|1.15
-Georgia|Lee|26430|1641|6.21
-Georgia|Liberty|4376|21|0.48
-Georgia|Lincoln|1078|21|1.95
-Georgia|Long|789|33|4.18
-Georgia|Lowndes|22173|300|1.35
-Georgia|Lumpkin|5482|68|1.24
-Georgia|Macon|6329|339|5.36
-Georgia|Madison|2991|107|3.58
-Georgia|Marion|3360|109|3.24
-Georgia|McDuffie|4181|321|7.68
-Georgia|McIntosh|795|24|3.02
-Georgia|Meriwether|5801|92|1.59
-Georgia|Miller|2651|0|0
-Georgia|Mitchell|26492|2298|8.67
-Georgia|Monroe|5575|497|8.91
-Georgia|Montgomery|632|0|0
-Georgia|Morgan|2419|0|0
-Georgia|Murray|5192|53|1.02
-Georgia|Muscogee|39534|1098|2.78
-Georgia|Newton|21064|632|3
-Georgia|Oconee|6746|275|4.08
-Georgia|Oglethorpe|4010|341|8.5
-Georgia|Paulding|19851|716|3.61
-Georgia|Peach|4768|292|6.12
-Georgia|Pickens|3001|232|7.73
-Georgia|Pierce|6281|237|3.77
-Georgia|Pike|3604|156|4.33
-Georgia|Polk|6994|28|0.4
-Georgia|Pulaski|2549|108|4.24
-Georgia|Putnam|4964|474|9.55
-Georgia|Quitman|652|69|10.58
-Georgia|Rabun|1320|78|5.91
-Georgia|Randolph|12693|1371|10.8
-Georgia|Richmond|36340|1533|4.22
-Georgia|Rockdale|18514|557|3.01
-Georgia|Schley|1275|78|6.12
-Georgia|Screven|2403|136|5.66
-Georgia|Seminole|2811|138|4.91
-Georgia|Spalding|17590|1149|6.53
-Georgia|Stephens|7664|147|1.92
-Georgia|Stewart|2876|26|0.9
-Georgia|Sumter|31888|2583|8.1
-Georgia|Talbot|2359|99|4.2
-Georgia|Taliaferro|62|0|0
-Georgia|Tattnall|1604|0|0
-Georgia|Taylor|1472|155|10.53
-Georgia|Telfair|2387|49|2.05
-Georgia|Terrell|14823|1681|11.34
-Georgia|Thomas|19336|1831|9.47
-Georgia|Tift|16291|862|5.29
-Georgia|Toombs|4006|264|6.59
-Georgia|Towns|1649|56|3.4
-Georgia|Treutlen|587|5|0.85
-Georgia|Troup|23162|702|3.03
-Georgia|Turner|7221|742|10.28
-Georgia|Twiggs|905|23|2.54
-Georgia|Union|2686|100|3.72
-Georgia|Unknown|90633|166|0.18
-Georgia|Upson|18132|1910|10.53
-Georgia|Walker|8100|40|0.49
-Georgia|Walton|14081|756|5.37
-Georgia|Ware|13513|868|6.42
-Georgia|Warren|1154|0|0
-Georgia|Washington|4281|68|1.59
-Georgia|Wayne|1374|0|0
-Georgia|Webster|804|75|9.33
-Georgia|Wheeler|792|0|0
-Georgia|White|6054|134|2.21
-Georgia|Whitfield|20128|482|2.39
-Georgia|Wilcox|6655|755|11.34
-Georgia|Wilkes|2098|41|1.95
-Georgia|Wilkinson|3616|281|7.77
-Georgia|Worth|14574|1139|7.82
-Guam|Unknown|81780|485|0.59
-Hawaii|Hawaii|5677|0|0
-Hawaii|Honolulu|34723|764|2.2
-Hawaii|Kauai|1789|0|0
-Hawaii|Maui|8976|406|4.52
-Hawaii|Unknown|193|3|1.55
-Idaho|Ada|61104|1450|2.37
-Idaho|Adams|260|0|0
-Idaho|Bannock|2040|22|1.08
-Idaho|Benewah|443|0|0
-Idaho|Bingham|744|0|0
-Idaho|Blaine|41578|408|0.98
-Idaho|Bonner|410|0|0
-Idaho|Bonneville|3192|9|0.28
-Idaho|Camas|84|0|0
-Idaho|Canyon|21959|464|2.11
-Idaho|Caribou|171|0|0
-Idaho|Cassia|3907|84|2.15
-Idaho|Custer|173|0|0
-Idaho|Elmore|2321|123|5.3
-Idaho|Franklin|304|0|0
-Idaho|Fremont|240|0|0
-Idaho|Gem|1165|0|0
-Idaho|Gooding|2271|8|0.35
-Idaho|Idaho|251|0|0
-Idaho|Jefferson|565|0|0
-Idaho|Jerome|8671|162|1.87
-Idaho|Kootenai|5709|5|0.09
-Idaho|Latah|438|0|0
-Idaho|Lemhi|67|0|0
-Idaho|Lincoln|2164|0|0
-Idaho|Madison|1419|0|0
-Idaho|Minidoka|2897|0|0
-Idaho|Nez Perce|5268|1264|23.99
-Idaho|Owyhee|668|0|0
-Idaho|Payette|1557|124|7.96
-Idaho|Power|349|0|0
-Idaho|Teton|813|0|0
-Idaho|Twin Falls|23074|1210|5.24
-Idaho|Unknown|64|0|0
-Idaho|Valley|195|0|0
-Idaho|Washington|1885|0|0
-Illinois|Adams|3039|53|1.74
-Illinois|Alexander|593|0|0
-Illinois|Bond|685|68|9.93
-Illinois|Boone|21048|923|4.39
-Illinois|Brown|467|0|0
-Illinois|Bureau|1102|49|4.45
-Illinois|Calhoun|79|0|0
-Illinois|Carroll|953|148|15.53
-Illinois|Cass|3806|0|0
-Illinois|Champaign|30479|487|1.6
-Illinois|Christian|2564|390|15.21
-Illinois|Clark|635|0|0
-Illinois|Clay|134|0|0
-Illinois|Clinton|10523|766|7.28
-Illinois|Coles|5576|543|9.74
-Illinois|Cook|4297314|196890|4.58
-Illinois|Crawford|801|0|0
-Illinois|Cumberland|520|0|0
-Illinois|De Witt|252|0|0
-Illinois|DeKalb|19877|374|1.88
-Illinois|Douglas|1812|0|0
-Illinois|DuPage|405732|20294|5
-Illinois|Edgar|51|0|0
-Illinois|Edwards|82|0|0
-Illinois|Effingham|475|75|15.79
-Illinois|Fayette|1363|162|11.89
-Illinois|Ford|1115|77|6.91
-Illinois|Franklin|742|0|0
-Illinois|Fulton|511|2|0.39
-Illinois|Gallatin|149|0|0
-Illinois|Greene|314|0|0
-Illinois|Grundy|5547|85|1.53
-Illinois|Hamilton|130|0|0
-Illinois|Hancock|835|21|2.51
-Illinois|Hardin|63|0|0
-Illinois|Henderson|431|0|0
-Illinois|Henry|4210|11|0.26
-Illinois|Iroquois|6496|190|2.92
-Illinois|Jackson|13860|710|5.12
-Illinois|Jasper|2919|389|13.33
-Illinois|Jefferson|6123|890|14.54
-Illinois|Jersey|1362|59|4.33
-Illinois|Jo Daviess|1691|20|1.18
-Illinois|Johnson|565|0|0
-Illinois|Kane|302198|9299|3.08
-Illinois|Kankakee|58522|2978|5.09
-Illinois|Kendall|40650|1130|2.78
-Illinois|Knox|5218|0|0
-Illinois|Lake|446812|16419|3.67
-Illinois|LaSalle|8149|598|7.34
-Illinois|Lawrence|264|0|0
-Illinois|Lee|4323|41|0.95
-Illinois|Livingston|2088|97|4.65
-Illinois|Logan|630|0|0
-Illinois|Macon|11009|1114|10.12
-Illinois|Macoupin|2750|81|2.95
-Illinois|Madison|34672|2903|8.37
-Illinois|Marion|3089|0|0
-Illinois|Marshall|334|0|0
-Illinois|Mason|1012|0|0
-Illinois|Massac|416|0|0
-Illinois|McDonough|4131|420|10.17
-Illinois|McHenry|84179|4073|4.84
-Illinois|McLean|12391|568|4.58
-Illinois|Menard|1093|0|0
-Illinois|Mercer|921|0|0
-Illinois|Monroe|6242|742|11.89
-Illinois|Montgomery|2370|3|0.13
-Illinois|Morgan|3132|100|3.19
-Illinois|Moultrie|603|0|0
-Illinois|Ogle|11700|178|1.52
-Illinois|Peoria|13829|609|4.4
-Illinois|Perry|2211|0|0
-Illinois|Piatt|709|0|0
-Illinois|Pike|91|0|0
-Illinois|Pope|46|0|0
-Illinois|Pulaski|2615|0|0
-Illinois|Putnam|40|0|0
-Illinois|Randolph|14877|224|1.51
-Illinois|Richland|223|0|0
-Illinois|Rock Island|39387|1317|3.34
-Illinois|Saline|409|0|0
-Illinois|Sangamon|19377|1595|8.23
-Illinois|Schuyler|529|0|0
-Illinois|Shelby|880|55|6.25
-Illinois|St. Clair|67951|5009|7.37
-Illinois|Stark|144|0|0
-Illinois|Stephenson|9469|130|1.37
-Illinois|Tazewell|4580|317|6.92
-Illinois|Union|6955|457|6.57
-Illinois|Unknown|19326|2797|14.47
-Illinois|Vermilion|2150|61|2.84
-Illinois|Wabash|337|0|0
-Illinois|Warren|6398|0|0
-Illinois|Washington|1073|0|0
-Illinois|Wayne|429|40|9.32
-Illinois|White|130|0|0
-Illinois|Whiteside|8252|658|7.97
-Illinois|Will|308490|15936|5.17
-Illinois|Williamson|3742|95|2.54
-Illinois|Winnebago|105928|3150|2.97
-Illinois|Woodford|1380|97|7.03
-Indiana|Adams|1048|78|7.44
-Indiana|Allen|84989|4672|5.5
-Indiana|Bartholomew|28373|2116|7.46
-Indiana|Benton|1460|0|0
-Indiana|Blackford|1319|96|7.28
-Indiana|Boone|20273|2242|11.06
-Indiana|Brown|1996|77|3.86
-Indiana|Carroll|4697|120|2.55
-Indiana|Cass|88741|431|0.49
-Indiana|Clark|29939|2474|8.26
-Indiana|Clay|2563|102|3.98
-Indiana|Clinton|10458|152|1.45
-Indiana|Crawford|1651|72|4.36
-Indiana|Daviess|5354|1048|19.57
-Indiana|Dearborn|10555|1139|10.79
-Indiana|Decatur|16993|2290|13.48
-Indiana|DeKalb|3168|154|4.86
-Indiana|Delaware|20149|1865|9.26
-Indiana|Dubois|8804|136|1.54
-Indiana|Elkhart|69652|1547|2.22
-Indiana|Fayette|5760|396|6.88
-Indiana|Floyd|19230|2194|11.41
-Indiana|Fountain|1180|150|12.71
-Indiana|Franklin|8559|670|7.83
-Indiana|Fulton|2666|54|2.03
-Indiana|Gibson|968|64|6.61
-Indiana|Grant|15018|1313|8.74
-Indiana|Greene|9576|1370|14.31
-Indiana|Hamilton|75295|5875|7.8
-Indiana|Hancock|21056|1538|7.3
-Indiana|Harrison|11875|1128|9.5
-Indiana|Hendricks|71782|4965|6.92
-Indiana|Henry|8707|440|5.05
-Indiana|Howard|21501|1599|7.44
-Indiana|Huntington|1800|144|8
-Indiana|Jackson|20737|120|0.58
-Indiana|Jasper|3918|90|2.3
-Indiana|Jay|2558|0|0
-Indiana|Jefferson|2788|40|1.43
-Indiana|Jennings|8361|402|4.81
-Indiana|Johnson|66466|6617|9.96
-Indiana|Knox|1953|0|0
-Indiana|Kosciusko|8672|161|1.86
-Indiana|LaGrange|7027|145|2.06
-Indiana|Lake|206423|11123|5.39
-Indiana|LaPorte|23815|1110|4.66
-Indiana|Lawrence|10057|1421|14.13
-Indiana|Madison|38410|4582|11.93
-Indiana|Marion|590416|35699|6.05
-Indiana|Marshall|7785|97|1.25
-Indiana|Martin|720|0|0
-Indiana|Miami|8539|55|0.64
-Indiana|Monroe|11518|823|7.15
-Indiana|Montgomery|11733|723|6.16
-Indiana|Morgan|17074|1296|7.59
-Indiana|Newton|4804|660|13.74
-Indiana|Noble|12554|1241|9.89
-Indiana|Ohio|667|0|0
-Indiana|Orange|7474|1260|16.86
-Indiana|Owen|2317|74|3.19
-Indiana|Parke|1340|0|0
-Indiana|Perry|2788|63|2.26
-Indiana|Pike|276|0|0
-Indiana|Porter|29504|1335|4.52
-Indiana|Posey|1100|0|0
-Indiana|Pulaski|2381|17|0.71
-Indiana|Putnam|8111|432|5.33
-Indiana|Randolph|3630|185|5.1
-Indiana|Ripley|8114|418|5.15
-Indiana|Rush|3680|151|4.1
-Indiana|Scott|6482|225|3.47
-Indiana|Shelby|28191|1729|6.13
-Indiana|Spencer|1108|52|4.69
-Indiana|St. Joseph|72495|2476|3.42
-Indiana|Starke|2231|163|7.31
-Indiana|Steuben|4595|121|2.63
-Indiana|Sullivan|1904|34|1.79
-Indiana|Switzerland|1427|0|0
-Indiana|Tippecanoe|20938|245|1.17
-Indiana|Tipton|1650|95|5.76
-Indiana|Union|1304|0|0
-Indiana|Unknown|4|0|0
-Indiana|Vanderburgh|15745|176|1.12
-Indiana|Vermillion|676|0|0
-Indiana|Vigo|9090|560|6.16
-Indiana|Wabash|4345|113|2.6
-Indiana|Warren|887|84|9.47
-Indiana|Warrick|9652|1547|16.03
-Indiana|Washington|3601|48|1.33
-Indiana|Wayne|11651|317|2.72
-Indiana|Wells|1742|2|0.11
-Indiana|White|10900|331|3.04
-Indiana|Whitley|2525|148|5.86
-Iowa|Adair|426|0|0
-Iowa|Adams|225|0|0
-Iowa|Allamakee|7263|274|3.77
-Iowa|Appanoose|669|195|29.15
-Iowa|Audubon|632|42|6.65
-Iowa|Benton|2742|77|2.81
-Iowa|Black Hawk|96733|2154|2.23
-Iowa|Boone|3418|8|0.23
-Iowa|Bremer|4127|312|7.56
-Iowa|Buchanan|1841|18|0.98
-Iowa|Buena Vista|36091|122|0.34
-Iowa|Butler|962|38|3.95
-Iowa|Calhoun|420|0|0
-Iowa|Carroll|1058|19|1.8
-Iowa|Cass|455|0|0
-Iowa|Cedar|3138|47|1.5
-Iowa|Cerro Gordo|1905|33|1.73
-Iowa|Cherokee|1507|0|0
-Iowa|Chickasaw|621|0|0
-Iowa|Clarke|2523|22|0.87
-Iowa|Clay|1663|0|0
-Iowa|Clayton|1797|159|8.85
-Iowa|Clinton|4280|58|1.36
-Iowa|Crawford|22778|106|0.47
-Iowa|Dallas|47407|888|1.87
-Iowa|Davis|1078|15|1.39
-Iowa|Decatur|108|0|0
-Iowa|Delaware|958|32|3.34
-Iowa|Des Moines|3062|76|2.48
-Iowa|Dickinson|2762|10|0.36
-Iowa|Dubuque|17521|843|4.81
-Iowa|Emmet|932|0|0
-Iowa|Fayette|1605|0|0
-Iowa|Floyd|795|44|5.53
-Iowa|Franklin|1129|0|0
-Iowa|Fremont|166|0|0
-Iowa|Greene|840|0|0
-Iowa|Grundy|1142|0|0
-Iowa|Guthrie|2503|123|4.91
-Iowa|Hamilton|2903|0|0
-Iowa|Hancock|911|0|0
-Iowa|Hardin|1307|0|0
-Iowa|Harrison|1736|0|0
-Iowa|Henry|3821|106|2.77
-Iowa|Howard|724|0|0
-Iowa|Humboldt|933|22|2.36
-Iowa|Ida|543|0|0
-Iowa|Iowa|1948|0|0
-Iowa|Jackson|695|0|0
-Iowa|Jasper|14684|702|4.78
-Iowa|Jefferson|1414|0|0
-Iowa|Johnson|40495|475|1.17
-Iowa|Jones|2258|0|0
-Iowa|Keokuk|709|7|0.99
-Iowa|Kossuth|569|0|0
-Iowa|Lee|1457|13|0.89
-Iowa|Linn|59616|4404|7.39
-Iowa|Louisa|21504|437|2.03
-Iowa|Lucas|614|52|8.47
-Iowa|Lyon|1302|0|0
-Iowa|Madison|1285|97|7.55
-Iowa|Mahaska|3792|409|10.79
-Iowa|Marion|1619|0|0
-Iowa|Marshall|48706|610|1.25
-Iowa|Mills|880|0|0
-Iowa|Mitchell|312|0|0
-Iowa|Monona|1558|0|0
-Iowa|Monroe|1557|179|11.5
-Iowa|Montgomery|370|38|10.27
-Iowa|Muscatine|32803|1943|5.92
-Iowa|O'Brien|1983|14|0.71
-Iowa|Osceola|1806|0|0
-Iowa|Page|781|0|0
-Iowa|Palo Alto|340|0|0
-Iowa|Plymouth|6722|83|1.23
-Iowa|Pocahontas|725|3|0.41
-Iowa|Polk|208421|6197|2.97
-Iowa|Pottawattamie|14898|360|2.42
-Iowa|Poweshiek|5173|422|8.16
-Iowa|Ringgold|199|0|0
-Iowa|Sac|982|0|0
-Iowa|Scott|22253|547|2.46
-Iowa|Shelby|2020|0|0
-Iowa|Sioux|11754|0|0
-Iowa|Story|7943|78|0.98
-Iowa|Tama|24306|1278|5.26
-Iowa|Taylor|1988|0|0
-Iowa|Union|356|0|0
-Iowa|Unknown|1115|30|2.69
-Iowa|Van Buren|701|0|0
-Iowa|Wapello|25108|557|2.22
-Iowa|Warren|6755|24|0.36
-Iowa|Washington|12648|551|4.36
-Iowa|Wayne|105|0|0
-Iowa|Webster|2572|40|1.56
-Iowa|Winnebago|517|0|0
-Iowa|Winneshiek|1398|0|0
-Iowa|Woodbury|132517|1371|1.03
-Iowa|Worth|186|0|0
-Iowa|Wright|7495|0|0
-Kansas|Allen|8|0|0
-Kansas|Anderson|59|0|0
-Kansas|Atchison|1142|0|0
-Kansas|Barber|77|0|0
-Kansas|Barton|2097|66|3.15
-Kansas|Bourbon|574|77|13.41
-Kansas|Brown|292|0|0
-Kansas|Butler|1980|0|0
-Kansas|Chase|187|0|0
-Kansas|Chautauqua|301|0|0
-Kansas|Cherokee|759|0|0
-Kansas|Cheyenne|109|0|0
-Kansas|Clark|1368|0|0
-Kansas|Clay|347|63|18.16
-Kansas|Cloud|324|0|0
-Kansas|Coffey|3894|542|13.92
-Kansas|Comanche|57|0|0
-Kansas|Cowley|869|75|8.63
-Kansas|Crawford|1714|85|4.96
-Kansas|Dickinson|224|0|0
-Kansas|Doniphan|771|0|0
-Kansas|Douglas|4974|0|0
-Kansas|Edwards|267|0|0
-Kansas|Ellis|679|0|0
-Kansas|Ellsworth|109|0|0
-Kansas|Finney|69924|394|0.56
-Kansas|Ford|85467|268|0.31
-Kansas|Franklin|2255|0|0
-Kansas|Geary|1285|21|1.63
-Kansas|Gove|88|0|0
-Kansas|Grant|842|19|2.26
-Kansas|Gray|928|0|0
-Kansas|Greenwood|372|0|0
-Kansas|Hamilton|939|0|0
-Kansas|Harper|81|0|0
-Kansas|Harvey|854|73|8.55
-Kansas|Haskell|1004|0|0
-Kansas|Hodgeman|150|0|0
-Kansas|Jackson|3498|27|0.77
-Kansas|Jefferson|1182|0|0
-Kansas|Jewell|294|0|0
-Kansas|Johnson|53682|3935|7.33
-Kansas|Kearny|2172|35|1.61
-Kansas|Kiowa|132|0|0
-Kansas|Labette|1705|0|0
-Kansas|Lane|114|0|0
-Kansas|Leavenworth|56246|405|0.72
-Kansas|Linn|676|0|0
-Kansas|Lyon|23057|217|0.94
-Kansas|Marion|474|57|12.03
-Kansas|McPherson|2053|0|0
-Kansas|Meade|1322|0|0
-Kansas|Miami|524|0|0
-Kansas|Mitchell|275|0|0
-Kansas|Montgomery|1445|164|11.35
-Kansas|Morris|309|0|0
-Kansas|Morton|293|0|0
-Kansas|Nemaha|598|0|0
-Kansas|Neosho|275|0|0
-Kansas|Ness|98|0|0
-Kansas|Norton|117|0|0
-Kansas|Osage|521|0|0
-Kansas|Osborne|161|0|0
-Kansas|Ottawa|302|0|0
-Kansas|Pawnee|57|0|0
-Kansas|Phillips|113|0|0
-Kansas|Pottawatomie|1619|0|0
-Kansas|Pratt|132|0|0
-Kansas|Reno|3227|0|0
-Kansas|Republic|306|0|0
-Kansas|Rice|221|0|0
-Kansas|Riley|4386|68|1.55
-Kansas|Rooks|450|0|0
-Kansas|Saline|1949|150|7.7
-Kansas|Scott|600|0|0
-Kansas|Sedgwick|38700|1200|3.1
-Kansas|Seward|46384|66|0.14
-Kansas|Shawnee|17727|475|2.68
-Kansas|Sheridan|132|0|0
-Kansas|Sherman|354|0|0
-Kansas|Smith|144|0|0
-Kansas|Stafford|86|0|0
-Kansas|Stanton|496|0|0
-Kansas|Stevens|1437|0|0
-Kansas|Sumner|436|75|17.2
-Kansas|Thomas|10|0|0
-Kansas|Trego|32|0|0
-Kansas|Wabaunsee|1675|0|0
-Kansas|Washington|13|0|0
-Kansas|Wilson|67|0|0
-Kansas|Woodson|459|0|0
-Kansas|Wyandotte|84384|4706|5.58
-Kentucky|Adair|6242|992|15.89
-Kentucky|Allen|4066|127|3.12
-Kentucky|Anderson|1089|94|8.63
-Kentucky|Ballard|690|0|0
-Kentucky|Barren|2551|46|1.8
-Kentucky|Bath|485|54|11.13
-Kentucky|Bell|81|0|0
-Kentucky|Boone|23233|761|3.28
-Kentucky|Bourbon|942|99|10.51
-Kentucky|Boyd|2823|221|7.83
-Kentucky|Boyle|1618|0|0
-Kentucky|Bracken|767|0|0
-Kentucky|Breathitt|261|0|0
-Kentucky|Breckinridge|1033|69|6.68
-Kentucky|Bullitt|6542|254|3.88
-Kentucky|Butler|13060|542|4.15
-Kentucky|Caldwell|898|0|0
-Kentucky|Calloway|3166|77|2.43
-Kentucky|Campbell|10047|711|7.08
-Kentucky|Carlisle|230|53|23.04
-Kentucky|Carroll|614|0|0
-Kentucky|Carter|706|0|0
-Kentucky|Casey|266|0|0
-Kentucky|Christian|8265|222|2.69
-Kentucky|Clark|2845|0|0
-Kentucky|Clay|450|44|9.78
-Kentucky|Clinton|253|0|0
-Kentucky|Crittenden|369|64|17.34
-Kentucky|Cumberland|345|0|0
-Kentucky|Daviess|19682|415|2.11
-Kentucky|Edmonson|3228|427|13.23
-Kentucky|Elliott|42|0|0
-Kentucky|Estill|64|0|0
-Kentucky|Fayette|44383|939|2.12
-Kentucky|Fleming|219|0|0
-Kentucky|Floyd|1065|0|0
-Kentucky|Franklin|2994|41|1.37
-Kentucky|Fulton|343|0|0
-Kentucky|Gallatin|1350|142|10.52
-Kentucky|Garrard|344|0|0
-Kentucky|Grant|2533|234|9.24
-Kentucky|Graves|9811|1087|11.08
-Kentucky|Grayson|6761|457|6.76
-Kentucky|Green|120|6|5
-Kentucky|Greenup|927|0|0
-Kentucky|Hancock|559|0|0
-Kentucky|Hardin|5828|135|2.32
-Kentucky|Harlan|237|4|1.69
-Kentucky|Harrison|2243|0|0
-Kentucky|Hart|1326|0|0
-Kentucky|Henderson|6771|188|2.78
-Kentucky|Henry|1035|22|2.13
-Kentucky|Hickman|267|0|0
-Kentucky|Hopkins|14975|1900|12.69
-Kentucky|Jackson|4223|719|17.03
-Kentucky|Jefferson|151858|9678|6.37
-Kentucky|Jessamine|4166|0|0
-Kentucky|Johnson|309|0|0
-Kentucky|Kenton|32821|2014|6.14
-Kentucky|Knott|266|0|0
-Kentucky|Knox|547|0|0
-Kentucky|Larue|596|14|2.35
-Kentucky|Laurel|1614|142|8.8
-Kentucky|Lawrence|185|0|0
-Kentucky|Lee|26|0|0
-Kentucky|Leslie|350|0|0
-Kentucky|Letcher|289|0|0
-Kentucky|Lewis|517|0|0
-Kentucky|Lincoln|575|69|12
-Kentucky|Livingston|442|0|0
-Kentucky|Logan|6753|236|3.49
-Kentucky|Lyon|1127|217|19.25
-Kentucky|Madison|3552|79|2.22
-Kentucky|Magoffin|95|0|0
-Kentucky|Marion|1687|0|0
-Kentucky|Marshall|2451|93|3.79
-Kentucky|Martin|236|0|0
-Kentucky|Mason|709|0|0
-Kentucky|McCracken|5798|165|2.85
-Kentucky|McCreary|896|0|0
-Kentucky|McLean|1308|5|0.38
-Kentucky|Meade|1198|120|10.02
-Kentucky|Menifee|500|0|0
-Kentucky|Mercer|952|0|0
-Kentucky|Metcalfe|259|43|16.6
-Kentucky|Monroe|957|0|0
-Kentucky|Montgomery|1545|0|0
-Kentucky|Morgan|154|0|0
-Kentucky|Muhlenberg|26191|419|1.6
-Kentucky|Nelson|2414|24|0.99
-Kentucky|Nicholas|163|0|0
-Kentucky|Ohio|8188|0|0
-Kentucky|Oldham|4594|162|3.53
-Kentucky|Owen|125|0|0
-Kentucky|Owsley|148|0|0
-Kentucky|Pendleton|608|0|0
-Kentucky|Perry|1234|5|0.41
-Kentucky|Pike|1791|138|7.71
-Kentucky|Powell|132|0|0
-Kentucky|Pulaski|3977|155|3.9
-Kentucky|Rockcastle|940|0|0
-Kentucky|Rowan|454|0|0
-Kentucky|Russell|1670|238|14.25
-Kentucky|Scott|2869|0|0
-Kentucky|Shelby|8609|268|3.11
-Kentucky|Simpson|2993|188|6.28
-Kentucky|Spencer|1293|0|0
-Kentucky|Taylor|836|24|2.87
-Kentucky|Todd|1171|0|0
-Kentucky|Trigg|707|0|0
-Kentucky|Trimble|277|0|0
-Kentucky|Union|874|0|0
-Kentucky|Unknown|1176|40|3.4
-Kentucky|Warren|51999|282|0.54
-Kentucky|Washington|534|0|0
-Kentucky|Wayne|630|0|0
-Kentucky|Webster|2092|0|0
-Kentucky|Whitley|895|0|0
-Kentucky|Wolfe|37|0|0
-Kentucky|Woodford|2116|0|0
-Louisiana|Acadia|22440|1235|5.5
-Louisiana|Allen|10617|734|6.91
-Louisiana|Ascension|57059|3543|6.21
-Louisiana|Assumption|16765|667|3.98
-Louisiana|Avoyelles|8541|567|6.64
-Louisiana|Beauregard|5111|280|5.48
-Louisiana|Bienville|8170|1317|16.12
-Louisiana|Bossier|28312|1545|5.46
-Louisiana|Caddo|156313|10940|7
-Louisiana|Calcasieu|40409|2797|6.92
-Louisiana|Caldwell|3576|19|0.53
-Louisiana|Cameron|432|0|0
-Louisiana|Catahoula|6321|198|3.13
-Louisiana|Claiborne|4831|621|12.85
-Louisiana|Concordia|4611|303|6.57
-Louisiana|De Soto|17007|1060|6.23
-Louisiana|East Baton Rouge|217698|13861|6.37
-Louisiana|East Carroll|6554|0|0
-Louisiana|East Feliciana|12219|1561|12.78
-Louisiana|Evangeline|5738|54|0.94
-Louisiana|Franklin|18200|539|2.96
-Louisiana|Grant|2141|42|1.96
-Louisiana|Iberia|25218|2102|8.34
-Louisiana|Iberville|37505|2592|6.91
-Louisiana|Jackson|5950|577|9.7
-Louisiana|Jefferson|547318|30033|5.49
-Louisiana|Jefferson Davis|6250|453|7.25
-Louisiana|Lafayette|52611|1771|3.37
-Louisiana|Lafourche|57912|4239|7.32
-Louisiana|LaSalle|3120|3|0.1
-Louisiana|Lincoln|9735|817|8.39
-Louisiana|Livingston|25676|1600|6.23
-Louisiana|Madison|6201|42|0.68
-Louisiana|Morehouse|6985|337|4.82
-Louisiana|Natchitoches|9031|630|6.98
-Louisiana|Orleans|547942|35462|6.47
-Louisiana|Ouachita|78302|2477|3.16
-Louisiana|Plaquemines|15204|1228|8.08
-Louisiana|Pointe Coupee|11215|1327|11.83
-Louisiana|Rapides|44108|1586|3.6
-Louisiana|Red River|2807|420|14.96
-Louisiana|Richland|7464|115|1.54
-Louisiana|Sabine|2420|25|1.03
-Louisiana|St. Bernard|39540|1478|3.74
-Louisiana|St. Charles|46321|3085|6.66
-Louisiana|St. Helena|3063|68|2.22
-Louisiana|St. James|21697|1684|7.76
-Louisiana|St. John the Baptist|62302|5582|8.96
-Louisiana|St. Landry|18329|3299|18
-Louisiana|St. Martin|21201|1519|7.16
-Louisiana|St. Mary|19694|1818|9.23
-Louisiana|St. Tammany|116995|9704|8.29
-Louisiana|Tangipahoa|55221|2171|3.93
-Louisiana|Tensas|667|0|0
-Louisiana|Terrebonne|43057|3067|7.12
-Louisiana|Union|17130|925|5.4
-Louisiana|Unknown|12205|3881|31.8
-Louisiana|Vermilion|3976|203|5.11
-Louisiana|Vernon|2090|166|7.94
-Louisiana|Washington|27347|2166|7.92
-Louisiana|Webster|10680|434|4.06
-Louisiana|West Baton Rouge|10892|1836|16.86
-Louisiana|West Carroll|2782|35|1.26
-Louisiana|West Feliciana|12427|557|4.48
-Louisiana|Winn|7507|180|2.4
-Maine|Androscoggin|14292|154|1.08
-Maine|Aroostook|529|32|6.05
-Maine|Cumberland|67280|2799|4.16
-Maine|Franklin|2201|59|2.68
-Maine|Hancock|762|46|6.04
-Maine|Kennebec|8673|536|6.18
-Maine|Knox|1429|20|1.4
-Maine|Lincoln|1360|0|0
-Maine|Oxford|1787|0|0
-Maine|Penobscot|6337|61|0.96
-Maine|Piscataquis|68|0|0
-Maine|Sagadahoc|1930|4|0.21
-Maine|Somerset|1454|0|0
-Maine|Unknown|301|2|0.66
-Maine|Waldo|3624|882|24.34
-Maine|Washington|134|0|0
-Maine|York|23536|623|2.65
-Maryland|Allegany|10103|820|8.12
-Maryland|Anne Arundel|212298|9477|4.46
-Maryland|Baltimore|341844|17734|5.19
-Maryland|Baltimore city|296140|13617|4.6
-Maryland|Calvert|18563|974|5.25
-Maryland|Caroline|12585|36|0.29
-Maryland|Carroll|50671|5204|10.27
-Maryland|Cecil|21215|1188|5.6
-Maryland|Charles|62976|4173|6.63
-Maryland|Dorchester|7468|179|2.4
-Maryland|Frederick|107220|5792|5.4
-Maryland|Garrett|569|0|0
-Maryland|Harford|48300|2416|5
-Maryland|Howard|106786|3116|2.92
-Maryland|Kent|8997|885|9.84
-Maryland|Montgomery|607901|31576|5.19
-Maryland|Prince George's|818474|29128|3.56
-Maryland|Queen Anne's|8238|629|7.64
-Maryland|Somerset|3741|89|2.38
-Maryland|St. Mary's|24590|1226|4.99
-Maryland|Talbot|4992|143|2.86
-Maryland|Unknown|369|4812|1304.07
-Maryland|Washington|25614|761|2.97
-Maryland|Wicomico|48615|1394|2.87
-Maryland|Worcester|10676|553|5.18
-Massachusetts|Barnstable|85564|6040|7.06
-Massachusetts|Berkshire|39675|2809|7.08
-Massachusetts|Bristol|396161|22447|5.67
-Massachusetts|Dukes|2033|56|2.75
-Massachusetts|Essex|846434|50581|5.98
-Massachusetts|Franklin|22084|3165|14.33
-Massachusetts|Hampden|360409|34316|9.52
-Massachusetts|Hampshire|51238|4511|8.8
-Massachusetts|Middlesex|1310641|88763|6.77
-Massachusetts|Nantucket|967|0|0
-Massachusetts|Norfolk|520280|46981|9.03
-Massachusetts|Plymouth|475399|30353|6.38
-Massachusetts|Suffolk|1131905|50101|4.43
-Massachusetts|Unknown|35664|546|1.53
-Massachusetts|Worcester|615504|38377|6.24
-Michigan|Alcona|732|54|7.38
-Michigan|Alger|19|0|0
-Michigan|Allegan|12497|252|2.02
-Michigan|Alpena|5835|517|8.86
-Michigan|Antrim|867|1|0.12
-Michigan|Arenac|2015|67|3.33
-Michigan|Baraga|68|0|0
-Michigan|Barry|4052|103|2.54
-Michigan|Bay|17448|1079|6.18
-Michigan|Benzie|283|0|0
-Michigan|Berrien|38169|2430|6.37
-Michigan|Branch|55802|1383|2.48
-Michigan|Calhoun|23035|1295|5.62
-Michigan|Cass|4636|185|3.99
-Michigan|Charlevoix|1288|82|6.37
-Michigan|Cheboygan|1546|85|5.5
-Michigan|Chippewa|243|8|3.29
-Michigan|Clare|1155|124|10.74
-Michigan|Clinton|10845|698|6.44
-Michigan|Crawford|3843|295|7.68
-Michigan|Delta|1199|138|11.51
-Michigan|Dickinson|358|154|43.02
-Michigan|Eaton|12949|459|3.54
-Michigan|Emmet|1809|164|9.07
-Michigan|Genesee|143328|15965|11.14
-Michigan|Gladwin|1194|64|5.36
-Michigan|Gogebic|372|89|23.92
-Michigan|Grand Traverse|2073|375|18.09
-Michigan|Gratiot|3839|404|10.52
-Michigan|Hillsdale|11215|1500|13.37
-Michigan|Houghton|303|0|0
-Michigan|Huron|2661|55|2.07
-Michigan|Ingham|46134|1394|3.02
-Michigan|Ionia|8487|220|2.59
-Michigan|Iosco|4938|521|10.55
-Michigan|Iron|52|0|0
-Michigan|Isabella|5344|522|9.77
-Michigan|Jackson|99390|2908|2.93
-Michigan|Kalamazoo|46178|2776|6.01
-Michigan|Kalkaska|1673|164|9.8
-Michigan|Kent|195402|4666|2.39
-Michigan|Keweenaw|13|0|0
-Michigan|Lake|294|0|0
-Michigan|Lapeer|25476|2198|8.63
-Michigan|Leelanau|750|0|0
-Michigan|Lenawee|37676|366|0.97
-Michigan|Livingston|31998|1644|5.14
-Michigan|Luce|215|0|0
-Michigan|Mackinac|486|0|0
-Michigan|Macomb|471195|51691|10.97
-Michigan|Manistee|1311|14|1.07
-Michigan|Marquette|3722|669|17.97
-Michigan|Mason|1681|0|0
-Michigan|Mecosta|1421|139|9.78
-Michigan|Menominee|449|0|0
-Michigan|Midland|6425|485|7.55
-Michigan|Missaukee|1175|88|7.49
-Michigan|Monroe|31012|1192|3.84
-Michigan|Montcalm|4198|77|1.83
-Michigan|Montmorency|336|0|0
-Michigan|Muskegon|34033|1896|5.57
-Michigan|Newaygo|4752|0|0
-Michigan|Oakland|648866|62685|9.66
-Michigan|Oceana|4314|133|3.08
-Michigan|Ogemaw|1401|40|2.86
-Michigan|Osceola|886|0|0
-Michigan|Oscoda|441|46|10.43
-Michigan|Otsego|7564|627|8.29
-Michigan|Ottawa|39671|1870|4.71
-Michigan|Presque Isle|716|0|0
-Michigan|Roscommon|1425|0|0
-Michigan|Saginaw|62917|6046|9.61
-Michigan|Sanilac|2915|360|12.35
-Michigan|Schoolcraft|267|0|0
-Michigan|Shiawassee|14925|1271|8.52
-Michigan|St. Clair|29994|2198|7.33
-Michigan|St. Joseph|6849|125|1.83
-Michigan|Tuscola|11179|1393|12.46
-Michigan|Unknown|14406|304|2.11
-Michigan|Van Buren|8155|336|4.12
-Michigan|Washtenaw|115982|6249|5.39
-Michigan|Wayne|1435253|154243|10.75
-Michigan|Wexford|969|156|16.1
-Minnesota|Aitkin|396|0|0
-Minnesota|Anoka|64410|3203|4.97
-Minnesota|Becker|1900|0|0
-Minnesota|Beltrami|913|0|0
-Minnesota|Benton|7883|125|1.59
-Minnesota|Big Stone|388|0|0
-Minnesota|Blue Earth|7002|33|0.47
-Minnesota|Brown|930|114|12.26
-Minnesota|Carlton|4660|0|0
-Minnesota|Carver|9785|80|0.82
-Minnesota|Cass|659|88|13.35
-Minnesota|Chippewa|2037|28|1.37
-Minnesota|Chisago|2856|81|2.84
-Minnesota|Clay|21649|1408|6.5
-Minnesota|Clearwater|233|0|0
-Minnesota|Cook|10|0|0
-Minnesota|Cottonwood|4020|0|0
-Minnesota|Crow Wing|3407|204|5.99
-Minnesota|Dakota|61234|2472|4.04
-Minnesota|Dodge|2835|0|0
-Minnesota|Douglas|1767|0|0
-Minnesota|Faribault|1008|0|0
-Minnesota|Fillmore|1265|57|4.51
-Minnesota|Freeborn|7087|0|0
-Minnesota|Goodhue|3539|167|4.72
-Minnesota|Grant|180|0|0
-Minnesota|Hennepin|395399|31330|7.92
-Minnesota|Houston|201|0|0
-Minnesota|Hubbard|109|0|0
-Minnesota|Isanti|1662|0|0
-Minnesota|Itasca|2508|368|14.67
-Minnesota|Jackson|2114|0|0
-Minnesota|Kanabec|524|35|6.68
-Minnesota|Kandiyohi|23319|56|0.24
-Minnesota|Kittson|66|0|0
-Minnesota|Koochiching|335|0|0
-Minnesota|Lac qui Parle|182|0|0
-Minnesota|Lake|67|0|0
-Minnesota|Le Sueur|2894|42|1.45
-Minnesota|Lincoln|316|0|0
-Minnesota|Lyon|4734|39|0.82
-Minnesota|Mahnomen|291|48|16.49
-Minnesota|Marshall|519|0|0
-Minnesota|Martin|8156|372|4.56
-Minnesota|McLeod|1712|0|0
-Minnesota|Meeker|2101|17|0.81
-Minnesota|Mille Lacs|910|65|7.14
-Minnesota|Morrison|1910|12|0.63
-Minnesota|Mower|16909|57|0.34
-Minnesota|Murray|1947|0|0
-Minnesota|Nicollet|3596|388|10.79
-Minnesota|Nobles|79315|199|0.25
-Minnesota|Norman|764|0|0
-Minnesota|Olmsted|35636|648|1.82
-Minnesota|Otter Tail|3084|18|0.58
-Minnesota|Pennington|1048|0|0
-Minnesota|Pine|4930|0|0
-Minnesota|Pipestone|587|0|0
-Minnesota|Polk|3303|85|2.57
-Minnesota|Pope|372|0|0
-Minnesota|Ramsey|135849|6271|4.62
-Minnesota|Red Lake|178|0|0
-Minnesota|Redwood|326|0|0
-Minnesota|Renville|469|3|0.64
-Minnesota|Rice|20881|134|0.64
-Minnesota|Rock|1218|0|0
-Minnesota|Roseau|167|0|0
-Minnesota|Scott|19092|140|0.73
-Minnesota|Sherburne|10701|92|0.86
-Minnesota|Sibley|776|25|3.22
-Minnesota|St. Louis|7138|865|12.12
-Minnesota|Stearns|94168|618|0.66
-Minnesota|Steele|7054|0|0
-Minnesota|Stevens|31|0|0
-Minnesota|Swift|768|18|2.34
-Minnesota|Todd|11407|36|0.32
-Minnesota|Traverse|252|0|0
-Minnesota|Unknown|3826|714|18.66
-Minnesota|Wabasha|1165|0|0
-Minnesota|Wadena|381|0|0
-Minnesota|Waseca|1387|0|0
-Minnesota|Washington|30641|1522|4.97
-Minnesota|Watonwan|3456|0|0
-Minnesota|Wilkin|874|205|23.46
-Minnesota|Winona|5448|1018|18.69
-Minnesota|Wright|13799|96|0.7
-Minnesota|Yellow Medicine|422|0|0
-Mississippi|Adams|12116|892|7.36
-Mississippi|Alcorn|1168|55|4.71
-Mississippi|Amite|3317|72|2.17
-Mississippi|Attala|15196|709|4.67
-Mississippi|Benton|990|0|0
-Mississippi|Bolivar|10237|681|6.65
-Mississippi|Calhoun|4351|250|5.75
-Mississippi|Carroll|6223|451|7.25
-Mississippi|Chickasaw|8019|753|9.39
-Mississippi|Choctaw|2404|128|5.32
-Mississippi|Claiborne|4729|172|3.64
-Mississippi|Clarke|7431|846|11.38
-Mississippi|Clay|6516|226|3.47
-Mississippi|Coahoma|7230|241|3.33
-Mississippi|Copiah|16030|211|1.32
-Mississippi|Covington|8485|77|0.91
-Mississippi|DeSoto|33723|497|1.47
-Mississippi|Forrest|30192|1806|5.98
-Mississippi|Franklin|1679|91|5.42
-Mississippi|George|1571|85|5.41
-Mississippi|Greene|1301|90|6.92
-Mississippi|Grenada|5476|148|2.7
-Mississippi|Hancock|5989|687|11.47
-Mississippi|Harrison|17909|484|2.7
-Mississippi|Hinds|59709|1278|2.14
-Mississippi|Holmes|20646|1414|6.85
-Mississippi|Humphreys|3296|390|11.83
-Mississippi|Itawamba|5081|388|7.64
-Mississippi|Jackson|21766|846|3.89
-Mississippi|Jasper|7997|185|2.31
-Mississippi|Jefferson|2346|38|1.62
-Mississippi|Jefferson Davis|4049|133|3.28
-Mississippi|Jones|30346|1149|3.79
-Mississippi|Kemper|7459|502|6.73
-Mississippi|Lafayette|8806|248|2.82
-Mississippi|Lamar|13179|276|2.09
-Mississippi|Lauderdale|40375|3325|8.24
-Mississippi|Lawrence|5381|32|0.59
-Mississippi|Leake|22952|515|2.24
-Mississippi|Lee|10442|472|4.52
-Mississippi|Leflore|16142|1860|11.52
-Mississippi|Lincoln|15563|1364|8.76
-Mississippi|Lowndes|11214|384|3.42
-Mississippi|Madison|38606|1237|3.2
-Mississippi|Marion|6937|481|6.93
-Mississippi|Marshall|5266|193|3.67
-Mississippi|Monroe|14966|1368|9.14
-Mississippi|Montgomery|4576|84|1.84
-Mississippi|Neshoba|32469|1777|5.47
-Mississippi|Newton|13115|190|1.45
-Mississippi|Noxubee|9224|235|2.55
-Mississippi|Oktibbeha|11976|620|5.18
-Mississippi|Panola|4994|193|3.86
-Mississippi|Pearl River|14115|1722|12.2
-Mississippi|Perry|2932|153|5.22
-Mississippi|Pike|12993|621|4.78
-Mississippi|Pontotoc|2800|182|6.5
-Mississippi|Prentiss|3100|145|4.68
-Mississippi|Quitman|1887|0|0
-Mississippi|Rankin|24140|484|2
-Mississippi|Scott|34322|486|1.42
-Mississippi|Sharkey|462|0|0
-Mississippi|Simpson|5400|14|0.26
-Mississippi|Smith|8327|527|6.33
-Mississippi|Stone|1913|6|0.31
-Mississippi|Sunflower|5777|221|3.83
-Mississippi|Tallahatchie|1636|67|4.1
-Mississippi|Tate|5339|36|0.67
-Mississippi|Tippah|5483|752|13.72
-Mississippi|Tishomingo|1548|6|0.39
-Mississippi|Tunica|3534|173|4.9
-Mississippi|Union|4238|298|7.03
-Mississippi|Unknown|1544|20|1.3
-Mississippi|Walthall|3995|12|0.3
-Mississippi|Warren|9824|423|4.31
-Mississippi|Washington|10647|370|3.48
-Mississippi|Wayne|9914|123|1.24
-Mississippi|Webster|3558|215|6.04
-Mississippi|Wilkinson|5847|604|10.33
-Mississippi|Winston|6351|44|0.69
-Mississippi|Yalobusha|4957|204|4.12
-Mississippi|Yazoo|15344|219|1.43
-Missouri|Adair|2820|0|0
-Missouri|Andrew|1259|0|0
-Missouri|Atchison|192|0|0
-Missouri|Audrain|3262|26|0.8
-Missouri|Barry|627|0|0
-Missouri|Barton|101|0|0
-Missouri|Bates|624|71|11.38
-Missouri|Benton|678|0|0
-Missouri|Bollinger|425|0|0
-Missouri|Boone|10875|108|0.99
-Missouri|Buchanan|33283|133|0.4
-Missouri|Butler|2325|0|0
-Missouri|Caldwell|330|0|0
-Missouri|Callaway|2182|78|3.57
-Missouri|Camden|2908|87|2.99
-Missouri|Cape Girardeau|4889|133|2.72
-Missouri|Carroll|393|0|0
-Missouri|Carter|332|80|24.1
-Missouri|Cass|6021|524|8.7
-Missouri|Cedar|610|0|0
-Missouri|Chariton|440|0|0
-Missouri|Christian|1845|0|0
-Missouri|Clark|83|0|0
-Missouri|Clay|11217|179|1.6
-Missouri|Clinton|1226|0|0
-Missouri|Cole|4341|81|1.87
-Missouri|Cooper|629|0|0
-Missouri|Crawford|582|0|0
-Missouri|Dade|8|0|0
-Missouri|Dallas|242|0|0
-Missouri|Daviess|263|0|0
-Missouri|DeKalb|375|0|0
-Missouri|Dent|39|0|0
-Missouri|Douglas|59|0|0
-Missouri|Dunklin|2534|149|5.88
-Missouri|Franklin|10060|940|9.34
-Missouri|Gasconade|171|0|0
-Missouri|Gentry|1377|129|9.37
-Missouri|Greene|10641|683|6.42
-Missouri|Grundy|212|0|0
-Missouri|Harrison|573|0|0
-Missouri|Henry|752|150|19.95
-Missouri|Holt|74|0|0
-Missouri|Howard|190|0|0
-Missouri|Howell|701|0|0
-Missouri|Iron|139|0|0
-Missouri|Jackson|38729|1276|3.29
-Missouri|Jasper|3868|0|0
-Missouri|Jefferson|24028|915|3.81
-Missouri|Johnson|5197|0|0
-Missouri|Kansas City|74408|1541|2.07
-Missouri|Knox|26|0|0
-Missouri|Laclede|273|0|0
-Missouri|Lafayette|4686|118|2.52
-Missouri|Lawrence|354|0|0
-Missouri|Lewis|410|62|15.12
-Missouri|Lincoln|5030|76|1.51
-Missouri|Linn|523|71|13.58
-Missouri|Livingston|249|0|0
-Missouri|Macon|275|0|0
-Missouri|Madison|172|0|0
-Missouri|Maries|167|0|0
-Missouri|Marion|355|0|0
-Missouri|McDonald|2407|0|0
-Missouri|Mercer|91|0|0
-Missouri|Miller|246|0|0
-Missouri|Mississippi|3078|0|0
-Missouri|Moniteau|2957|38|1.29
-Missouri|Monroe|78|0|0
-Missouri|Montgomery|676|0|0
-Missouri|Morgan|497|0|0
-Missouri|New Madrid|1256|39|3.11
-Missouri|Newton|2578|68|2.64
-Missouri|Nodaway|611|0|0
-Missouri|Oregon|163|0|0
-Missouri|Osage|389|0|0
-Missouri|Ozark|3|0|0
-Missouri|Pemiscot|4446|227|5.11
-Missouri|Perry|4282|0|0
-Missouri|Pettis|4235|42|0.99
-Missouri|Phelps|242|0|0
-Missouri|Pike|1240|42|3.39
-Missouri|Platte|4371|82|1.88
-Missouri|Polk|218|0|0
-Missouri|Pulaski|3497|83|2.37
-Missouri|Putnam|23|0|0
-Missouri|Ralls|209|0|0
-Missouri|Randolph|717|0|0
-Missouri|Ray|1170|0|0
-Missouri|Reynolds|171|0|0
-Missouri|Ripley|537|0|0
-Missouri|Saline|15089|76|0.5
-Missouri|Schuyler|51|0|0
-Missouri|Scotland|382|13|3.4
-Missouri|Scott|6673|414|6.2
-Missouri|Shannon|128|0|0
-Missouri|Shelby|94|0|0
-Missouri|St. Charles|52177|3544|6.79
-Missouri|St. Clair|151|0|0
-Missouri|St. Francois|2551|116|4.55
-Missouri|St. Louis|305078|22562|7.4
-Missouri|St. Louis city|118824|6980|5.87
-Missouri|Ste. Genevieve|749|78|10.41
-Missouri|Stoddard|4325|179|4.14
-Missouri|Stone|365|0|0
-Missouri|Sullivan|2442|0|0
-Missouri|Taney|1045|128|12.25
-Missouri|Texas|28|0|0
-Missouri|Unknown|202|1|0.5
-Missouri|Vernon|505|0|0
-Missouri|Warren|1876|0|0
-Missouri|Washington|680|59|8.68
-Missouri|Wayne|3|0|0
-Missouri|Webster|1131|0|0
-Missouri|Worth|183|0|0
-Missouri|Wright|864|0|0
-Montana|Beaverhead|80|0|0
-Montana|Big Horn|1253|33|2.63
-Montana|Broadwater|356|0|0
-Montana|Carbon|490|0|0
-Montana|Cascade|1351|130|9.62
-Montana|Custer|159|0|0
-Montana|Dawson|3|0|0
-Montana|Deer Lodge|257|0|0
-Montana|Fergus|10|0|0
-Montana|Flathead|3074|133|4.33
-Montana|Gallatin|12934|56|0.43
-Montana|Glacier|422|0|0
-Montana|Golden Valley|207|0|0
-Montana|Hill|90|0|0
-Montana|Jefferson|222|0|0
-Montana|Lake|472|0|0
-Montana|Lewis and Clark|1461|0|0
-Montana|Liberty|84|0|0
-Montana|Lincoln|597|88|14.74
-Montana|Madison|690|85|12.32
-Montana|Meagher|89|0|0
-Montana|Missoula|3169|80|2.52
-Montana|Musselshell|86|0|0
-Montana|Park|641|0|0
-Montana|Pondera|134|0|0
-Montana|Ravalli|720|0|0
-Montana|Richland|242|0|0
-Montana|Roosevelt|511|0|0
-Montana|Rosebud|41|0|0
-Montana|Silver Bow|981|0|0
-Montana|Stillwater|99|0|0
-Montana|Toole|2264|445|19.66
-Montana|Valley|5|0|0
-Montana|Wheatland|60|0|0
-Montana|Yellowstone|7099|150|2.11
-Nebraska|Adams|15741|502|3.19
-Nebraska|Antelope|405|0|0
-Nebraska|Banner|14|0|0
-Nebraska|Boone|233|0|0
-Nebraska|Box Butte|119|0|0
-Nebraska|Boyd|22|0|0
-Nebraska|Buffalo|9406|84|0.89
-Nebraska|Burt|445|0|0
-Nebraska|Butler|2017|0|0
-Nebraska|Cass|2069|0|0
-Nebraska|Cedar|374|0|0
-Nebraska|Chase|30|0|0
-Nebraska|Cherry|80|0|0
-Nebraska|Cheyenne|584|0|0
-Nebraska|Clay|1184|0|0
-Nebraska|Colfax|28658|139|0.49
-Nebraska|Cuming|1410|0|0
-Nebraska|Custer|2309|250|10.83
-Nebraska|Dakota|86068|1040|1.21
-Nebraska|Dawes|51|0|0
-Nebraska|Dawson|45441|336|0.74
-Nebraska|Dixon|1511|17|1.13
-Nebraska|Dodge|21429|78|0.36
-Nebraska|Douglas|203492|2290|1.13
-Nebraska|Fillmore|340|22|6.47
-Nebraska|Franklin|361|0|0
-Nebraska|Frontier|55|0|0
-Nebraska|Furnas|397|13|3.27
-Nebraska|Gage|2987|239|8
-Nebraska|Garden|84|0|0
-Nebraska|Garfield|19|0|0
-Nebraska|Gosper|792|0|0
-Nebraska|Greeley|139|0|0
-Nebraska|Hall|89296|2379|2.66
-Nebraska|Hamilton|3637|652|17.93
-Nebraska|Harlan|7|0|0
-Nebraska|Hitchcock|54|0|0
-Nebraska|Holt|52|0|0
-Nebraska|Howard|2022|119|5.89
-Nebraska|Jefferson|360|0|0
-Nebraska|Johnson|360|0|0
-Nebraska|Kearney|639|0|0
-Nebraska|Keith|98|0|0
-Nebraska|Kimball|792|0|0
-Nebraska|Knox|531|0|0
-Nebraska|Lancaster|58267|395|0.68
-Nebraska|Lincoln|2988|141|4.72
-Nebraska|Madison|16459|245|1.49
-Nebraska|Merrick|1761|0|0
-Nebraska|Morrill|541|0|0
-Nebraska|Nance|230|0|0
-Nebraska|Nemaha|198|0|0
-Nebraska|Nuckolls|38|0|0
-Nebraska|Otoe|416|0|0
-Nebraska|Phelps|907|0|0
-Nebraska|Pierce|212|0|0
-Nebraska|Platte|27000|50|0.19
-Nebraska|Polk|640|0|0
-Nebraska|Red Willow|284|0|0
-Nebraska|Richardson|58|13|22.41
-Nebraska|Saline|24156|65|0.27
-Nebraska|Sarpy|30863|180|0.58
-Nebraska|Saunders|1989|53|2.66
-Nebraska|Scotts Bluff|5673|27|0.48
-Nebraska|Seward|1394|63|4.52
-Nebraska|Sherman|183|0|0
-Nebraska|Sioux|15|0|0
-Nebraska|Stanton|935|0|0
-Nebraska|Thayer|25|0|0
-Nebraska|Thomas|48|0|0
-Nebraska|Thurston|1981|11|0.56
-Nebraska|Unknown|2512|12|0.48
-Nebraska|Valley|210|0|0
-Nebraska|Washington|2301|71|3.09
-Nebraska|Wayne|732|0|0
-Nebraska|Webster|321|0|0
-Nebraska|York|1790|0|0
-Nevada|Carson City|5380|191|3.55
-Nevada|Churchill|450|64|14.22
-Nevada|Clark|432584|20587|4.76
-Nevada|Douglas|2086|0|0
-Nevada|Elko|1796|80|4.45
-Nevada|Humboldt|4553|221|4.85
-Nevada|Lander|1086|0|0
-Nevada|Lincoln|87|0|0
-Nevada|Lyon|3712|39|1.05
-Nevada|Mineral|232|0|0
-Nevada|Nye|3787|74|1.95
-Nevada|Pershing|94|0|0
-Nevada|Storey|36|0|0
-Nevada|Unknown|1874|216|11.53
-Nevada|Washoe|96662|3366|3.48
-Nevada|White Pine|221|0|0
-New Hampshire|Belknap|3919|11|0.28
-New Hampshire|Carroll|3233|0|0
-New Hampshire|Cheshire|3531|152|4.3
-New Hampshire|Coos|276|0|0
-New Hampshire|Grafton|5264|53|1.01
-New Hampshire|Hillsborough|131865|7331|5.56
-New Hampshire|Merrimack|19391|771|3.98
-New Hampshire|Rockingham|77359|3691|4.77
-New Hampshire|Strafford|15434|696|4.51
-New Hampshire|Sullivan|1229|83|6.75
-New Hampshire|Unknown|818|12|1.47
-New Jersey|Atlantic|117395|7528|6.41
-New Jersey|Bergen|1284010|98535|7.67
-New Jersey|Burlington|268136|16027|5.98
-New Jersey|Camden|369514|18296|4.95
-New Jersey|Cape May|34964|2729|7.81
-New Jersey|Cumberland|114658|3801|3.32
-New Jersey|Essex|1166437|102420|8.78
-New Jersey|Gloucester|128045|7241|5.66
-New Jersey|Hudson|1215036|70080|5.77
-New Jersey|Hunterdon|59343|3332|5.61
-New Jersey|Mercer|398564|25821|6.48
-New Jersey|Middlesex|1014681|57466|5.66
-New Jersey|Monmouth|542364|35055|6.46
-New Jersey|Morris|438550|37143|8.47
-New Jersey|Ocean|570155|41853|7.34
-New Jersey|Passaic|1043001|53051|5.09
-New Jersey|Salem|32428|2025|6.24
-New Jersey|Somerset|295889|24389|8.24
-New Jersey|Sussex|75076|8939|11.91
-New Jersey|Union|1042850|62563|6
-New Jersey|Unknown|108282|168|0.16
-New Jersey|Warren|74622|7550|10.12
-New Mexico|Bernalillo|88330|4033|4.57
-New Mexico|Catron|131|59|45.04
-New Mexico|Chaves|2824|109|3.86
-New Mexico|Cibola|7946|329|4.14
-New Mexico|Colfax|378|0|0
-New Mexico|Curry|3127|0|0
-New Mexico|Doña Ana|25364|184|0.73
-New Mexico|Eddy|1652|90|5.45
-New Mexico|Grant|1102|0|0
-New Mexico|Guadalupe|1078|0|0
-New Mexico|Harding|61|0|0
-New Mexico|Hidalgo|241|0|0
-New Mexico|Lea|1607|0|0
-New Mexico|Lincoln|229|0|0
-New Mexico|Los Alamos|460|0|0
-New Mexico|Luna|843|58|6.88
-New Mexico|McKinley|128047|5259|4.11
-New Mexico|Otero|16613|118|0.71
-New Mexico|Quay|297|64|21.55
-New Mexico|Rio Arriba|2608|26|1
-New Mexico|Roosevelt|1832|8|0.44
-New Mexico|San Juan|91233|6179|6.77
-New Mexico|San Miguel|683|0|0
-New Mexico|Sandoval|36377|1464|4.02
-New Mexico|Santa Fe|10096|130|1.29
-New Mexico|Sierra|98|0|0
-New Mexico|Socorro|3369|227|6.74
-New Mexico|Taos|1902|0|0
-New Mexico|Torrance|2276|47|2.07
-New Mexico|Union|218|0|0
-New Mexico|Unknown|222|19|8.56
-New Mexico|Valencia|4608|76|1.65
-New York|Albany|112278|7676|6.84
-New York|Allegany|3268|7|0.21
-New York|Broome|32081|2529|7.88
-New York|Cattaraugus|5163|139|2.69
-New York|Cayuga|5190|78|1.5
-New York|Chautauqua|4629|191|4.13
-New York|Chemung|9269|306|3.3
-New York|Chenango|8650|110|1.27
-New York|Clinton|6221|276|4.44
-New York|Columbia|22465|2088|9.29
-New York|Cortland|2639|0|0
-New York|Delaware|5437|6|0.11
-New York|Dutchess|258405|8282|3.21
-New York|Erie|355630|28545|8.03
-New York|Essex|2872|0|0
-New York|Franklin|1486|0|0
-New York|Fulton|10536|635|6.03
-New York|Genesee|12780|274|2.14
-New York|Greene|13848|205|1.48
-New York|Hamilton|372|0|0
-New York|Herkimer|6752|98|1.45
-New York|Jefferson|5280|0|0
-New York|Lewis|1126|0|0
-New York|Livingston|7077|233|3.29
-New York|Madison|18575|252|1.36
-New York|Monroe|169519|11850|6.99
-New York|Montgomery|5423|225|4.15
-New York|Nassau|2912922|171835|5.9
-New York|New York City|14523703|1419221|9.77
-New York|Niagara|55487|2582|4.65
-New York|Oneida|57175|2792|4.88
-New York|Onondaga|117053|6560|5.6
-New York|Ontario|11392|793|6.96
-New York|Orange|711232|22736|3.2
-New York|Orleans|11781|1281|10.87
-New York|Oswego|6837|14|0.2
-New York|Otsego|5204|402|7.72
-New York|Putnam|81299|3866|4.76
-New York|Rensselaer|28968|1891|6.53
-New York|Rockland|948226|29973|3.16
-New York|Saratoga|32057|263|0.82
-New York|Schenectady|43069|1975|4.59
-New York|Schoharie|3263|0|0
-New York|Schuyler|710|0|0
-New York|Seneca|3493|22|0.63
-New York|St. Lawrence|13693|144|1.05
-New York|Steuben|16972|1095|6.45
-New York|Suffolk|2774254|117056|4.22
-New York|Sullivan|82071|1598|1.95
-New York|Tioga|7444|873|11.73
-New York|Tompkins|11806|144|1.22
-New York|Ulster|108188|2223|2.05
-New York|Unknown|2128|4359|204.84
-New York|Warren|15095|1525|10.1
-New York|Washington|13666|527|3.86
-New York|Wayne|7257|48|0.66
-New York|Westchester|2433279|95934|3.94
-New York|Wyoming|5528|221|4
-New York|Yates|1938|273|14.09
-North Carolina|Alamance|21912|944|4.31
-North Carolina|Alexander|1678|0|0
-North Carolina|Alleghany|984|0|0
-North Carolina|Anson|3595|26|0.72
-North Carolina|Ashe|1661|13|0.78
-North Carolina|Avery|135|0|0
-North Carolina|Beaufort|2294|0|0
-North Carolina|Bertie|6121|208|3.4
-North Carolina|Bladen|6295|88|1.4
-North Carolina|Brunswick|7888|280|3.55
-North Carolina|Buncombe|16020|1042|6.5
-North Carolina|Burke|22832|866|3.79
-North Carolina|Cabarrus|31677|1224|3.86
-North Carolina|Caldwell|8101|110|1.36
-North Carolina|Camden|221|0|0
-North Carolina|Carteret|2673|220|8.23
-North Carolina|Caswell|3817|46|1.21
-North Carolina|Catawba|12798|300|2.34
-North Carolina|Chatham|35736|1395|3.9
-North Carolina|Cherokee|1560|84|5.38
-North Carolina|Chowan|889|0|0
-North Carolina|Clay|436|0|0
-North Carolina|Cleveland|6149|131|2.13
-North Carolina|Columbus|17550|1279|7.29
-North Carolina|Craven|9824|297|3.02
-North Carolina|Cumberland|36016|1059|2.94
-North Carolina|Currituck|713|0|0
-North Carolina|Dare|1318|81|6.15
-North Carolina|Davidson|24344|685|2.81
-North Carolina|Davie|5163|162|3.14
-North Carolina|Duplin|37745|653|1.73
-North Carolina|Durham|98949|2503|2.53
-North Carolina|Edgecombe|11391|459|4.03
-North Carolina|Forsyth|68275|795|1.16
-North Carolina|Franklin|10363|1267|12.23
-North Carolina|Gaston|19392|419|2.16
-North Carolina|Gates|1104|39|3.53
-North Carolina|Graham|169|0|0
-North Carolina|Granville|21616|604|2.79
-North Carolina|Greene|4215|80|1.9
-North Carolina|Guilford|72120|3722|5.16
-North Carolina|Halifax|9199|79|0.86
-North Carolina|Harnett|17758|1260|7.1
-North Carolina|Haywood|2284|0|0
-North Carolina|Henderson|20518|2349|11.45
-North Carolina|Hertford|5321|172|3.23
-North Carolina|Hoke|11953|43|0.36
-North Carolina|Hyde|91|0|0
-North Carolina|Iredell|16747|327|1.95
-North Carolina|Jackson|1959|49|2.5
-North Carolina|Johnston|28322|1319|4.66
-North Carolina|Jones|1439|162|11.26
-North Carolina|Lee|23270|179|0.77
-North Carolina|Lenoir|11177|369|3.3
-North Carolina|Lincoln|4745|0|0
-North Carolina|Macon|4254|77|1.81
-North Carolina|Madison|154|0|0
-North Carolina|Martin|3421|173|5.06
-North Carolina|McDowell|4485|59|1.32
-North Carolina|Mecklenburg|258337|5351|2.07
-North Carolina|Mitchell|713|0|0
-North Carolina|Montgomery|6572|218|3.32
-North Carolina|Moore|11800|513|4.35
-North Carolina|Nash|11853|221|1.86
-North Carolina|New Hanover|13133|249|1.9
-North Carolina|Northampton|9298|636|6.84
-North Carolina|Onslow|6516|144|2.21
-North Carolina|Orange|22726|2042|8.99
-North Carolina|Pamlico|711|0|0
-North Carolina|Pasquotank|5908|482|8.16
-North Carolina|Pender|4359|49|1.12
-North Carolina|Perquimans|1409|101|7.17
-North Carolina|Person|2928|55|1.88
-North Carolina|Pitt|18380|144|0.78
-North Carolina|Polk|2415|156|6.46
-North Carolina|Randolph|34863|665|1.91
-North Carolina|Richmond|8228|187|2.27
-North Carolina|Robeson|39107|1042|2.66
-North Carolina|Rockingham|4857|157|3.23
-North Carolina|Rowan|40726|2003|4.92
-North Carolina|Rutherford|11407|456|4
-North Carolina|Sampson|23389|130|0.56
-North Carolina|Scotland|4212|1|0.02
-North Carolina|Stanly|4959|278|5.61
-North Carolina|Stokes|3213|2|0.06
-North Carolina|Surry|9894|77|0.78
-North Carolina|Swain|897|0|0
-North Carolina|Transylvania|837|19|2.27
-North Carolina|Tyrrell|288|0|0
-North Carolina|Union|29811|1100|3.69
-North Carolina|Vance|15580|1148|7.37
-North Carolina|Wake|115816|1922|1.66
-North Carolina|Warren|3631|62|1.71
-North Carolina|Washington|1998|199|9.96
-North Carolina|Watauga|1488|0|0
-North Carolina|Wayne|66037|1025|1.55
-North Carolina|Wilkes|21991|219|1
-North Carolina|Wilson|20851|654|3.14
-North Carolina|Yadkin|8245|130|1.58
-North Carolina|Yancey|784|0|0
-North Dakota|Barnes|432|0|0
-North Dakota|Benson|85|0|0
-North Dakota|Billings|3|0|0
-North Dakota|Bottineau|104|0|0
-North Dakota|Bowman|77|0|0
-North Dakota|Burke|325|0|0
-North Dakota|Burleigh|8839|0|0
-North Dakota|Cass|84049|2480|2.95
-North Dakota|Cavalier|4|0|0
-North Dakota|Dickey|47|0|0
-North Dakota|Divide|87|0|0
-North Dakota|Dunn|767|0|0
-North Dakota|Eddy|217|0|0
-North Dakota|Emmons|187|77|41.18
-North Dakota|Foster|90|0|0
-North Dakota|Grand Forks|19524|151|0.77
-North Dakota|Grant|127|0|0
-North Dakota|Griggs|34|0|0
-North Dakota|Kidder|27|0|0
-North Dakota|LaMoure|125|0|0
-North Dakota|McHenry|138|85|61.59
-North Dakota|McIntosh|89|0|0
-North Dakota|McKenzie|1147|0|0
-North Dakota|McLean|460|0|0
-North Dakota|Mercer|241|0|0
-North Dakota|Morton|3537|156|4.41
-North Dakota|Mountrail|2885|0|0
-North Dakota|Nelson|71|0|0
-North Dakota|Oliver|85|0|0
-North Dakota|Pembina|318|0|0
-North Dakota|Pierce|244|0|0
-North Dakota|Ramsey|502|36|7.17
-North Dakota|Ransom|411|0|0
-North Dakota|Renville|101|0|0
-North Dakota|Richland|1177|0|0
-North Dakota|Rolette|278|0|0
-North Dakota|Sargent|189|0|0
-North Dakota|Sheridan|17|0|0
-North Dakota|Sioux|187|0|0
-North Dakota|Slope|236|0|0
-North Dakota|Stark|4323|149|3.45
-North Dakota|Steele|37|0|0
-North Dakota|Stutsman|1576|2|0.13
-North Dakota|Traill|525|0|0
-North Dakota|Unknown|100|98|98
-North Dakota|Walsh|764|0|0
-North Dakota|Ward|2649|72|2.72
-North Dakota|Wells|232|0|0
-North Dakota|Williams|1411|0|0
-Northern Mariana Islands|Unknown|1574|160|10.17
-Ohio|Adams|603|36|5.97
-Ohio|Allen|12015|1905|15.86
-Ohio|Ashland|1237|0|0
-Ohio|Ashtabula|17148|1761|10.27
-Ohio|Athens|873|85|9.74
-Ohio|Auglaize|3949|204|5.17
-Ohio|Belmont|21495|766|3.56
-Ohio|Brown|1628|84|5.16
-Ohio|Butler|46263|1367|2.95
-Ohio|Carroll|2014|129|6.41
-Ohio|Champaign|1634|74|4.53
-Ohio|Clark|14761|299|2.03
-Ohio|Clermont|11524|294|2.55
-Ohio|Clinton|2873|3|0.1
-Ohio|Columbiana|38009|2819|7.42
-Ohio|Coshocton|2272|0|0
-Ohio|Crawford|6100|160|2.62
-Ohio|Cuyahoga|257458|13362|5.19
-Ohio|Darke|9727|1293|13.29
-Ohio|Defiance|2106|94|4.46
-Ohio|Delaware|19624|625|3.18
-Ohio|Erie|8549|606|7.09
-Ohio|Fairfield|16652|339|2.04
-Ohio|Fayette|2146|0|0
-Ohio|Franklin|325461|13066|4.01
-Ohio|Fulton|2465|0|0
-Ohio|Gallia|564|91|16.13
-Ohio|Geauga|16595|1652|9.95
-Ohio|Greene|6101|342|5.61
-Ohio|Guernsey|1957|56|2.86
-Ohio|Hamilton|151668|8171|5.39
-Ohio|Hancock|3362|75|2.23
-Ohio|Hardin|3269|78|2.39
-Ohio|Harrison|519|3|0.58
-Ohio|Henry|815|0|0
-Ohio|Highland|1386|50|3.61
-Ohio|Hocking|3099|211|6.81
-Ohio|Holmes|2344|104|4.44
-Ohio|Huron|3524|86|2.44
-Ohio|Jackson|709|0|0
-Ohio|Jefferson|4107|110|2.68
-Ohio|Knox|1653|82|4.96
-Ohio|Lake|18404|733|3.98
-Ohio|Lawrence|2075|2|0.1
-Ohio|Licking|14742|576|3.91
-Ohio|Logan|2177|0|0
-Ohio|Lorain|42979|3283|7.64
-Ohio|Lucas|131249|13027|9.93
-Ohio|Madison|7803|392|5.02
-Ohio|Mahoning|86740|10075|11.62
-Ohio|Marion|164313|1250|0.76
-Ohio|Medina|19767|1418|7.17
-Ohio|Meigs|311|0|0
-Ohio|Mercer|9402|273|2.9
-Ohio|Miami|20926|2127|10.16
-Ohio|Monroe|3125|454|14.53
-Ohio|Montgomery|41222|960|2.33
-Ohio|Morgan|351|0|0
-Ohio|Morrow|5766|57|0.99
-Ohio|Muskingum|2560|21|0.82
-Ohio|Noble|377|0|0
-Ohio|Ottawa|5057|589|11.65
-Ohio|Paulding|799|0|0
-Ohio|Perry|1198|49|4.09
-Ohio|Pickaway|127061|1834|1.44
-Ohio|Pike|429|0|0
-Ohio|Portage|21332|3444|16.14
-Ohio|Preble|2344|76|3.24
-Ohio|Putnam|5240|754|14.39
-Ohio|Richland|11250|181|1.61
-Ohio|Ross|4091|94|2.3
-Ohio|Sandusky|4307|589|13.68
-Ohio|Scioto|981|0|0
-Ohio|Seneca|1403|123|8.77
-Ohio|Shelby|2870|120|4.18
-Ohio|Stark|42248|5151|12.19
-Ohio|Summit|78005|8300|10.64
-Ohio|Trumbull|34128|2830|8.29
-Ohio|Tuscarawas|17143|194|1.13
-Ohio|Union|2821|26|0.92
+California|Mono|2855|92|3.22
+California|Monterey|45285|679|1.5
+California|Napa|10178|246|2.42
+California|Nevada|4512|89|1.97
+California|Orange|461236|10828|2.35
+California|Placer|22308|754|3.38
+California|Plumas|377|0|0
+California|Riverside|602512|21761|3.61
+California|Sacramento|122870|4490|3.65
+California|San Benito|7635|195|2.55
+California|San Bernardino|388204|12843|3.31
+California|San Diego|549302|19006|3.46
+California|San Francisco|187873|2990|1.59
+California|San Joaquin|91054|2839|3.12
+California|San Luis Obispo|23214|88|0.38
+California|San Mateo|155737|5904|3.79
+California|Santa Barbara|114945|1038|0.9
+California|Santa Clara|234505|11026|4.7
+California|Santa Cruz|16551|217|1.31
+California|Shasta|3798|356|9.37
+California|Sierra|40|0|0
+California|Siskiyou|879|0|0
+California|Solano|41409|1196|2.89
+California|Sonoma|41970|319|0.76
+California|Stanislaus|64499|1856|2.88
+California|Sutter|4767|193|4.05
+California|Tehama|887|66|7.44
+California|Trinity|128|0|0
+California|Tulare|137378|5558|4.05
+California|Tuolumne|493|0|0
+California|Unknown|7|4|57.14
+California|Ventura|89523|2344|2.62
+California|Yolo|18314|1605|8.76
+California|Yuba|2473|87|3.52
+Colorado|Adams|215828|8276|3.83
+Colorado|Alamosa|5444|187|3.43
+Colorado|Arapahoe|297936|19023|6.38
+Colorado|Archuleta|674|0|0
+Colorado|Baca|1026|0|0
+Colorado|Bent|125|0|0
+Colorado|Boulder|70591|4293|6.08
+Colorado|Broomfield|17211|1578|9.17
+Colorado|Chaffee|5707|1308|22.92
+Colorado|Cheyenne|266|0|0
+Colorado|Clear Creek|1340|71|5.3
+Colorado|Conejos|255|0|0
+Colorado|Costilla|622|0|0
+Colorado|Crowley|3253|104|3.2
+Colorado|Custer|179|0|0
+Colorado|Delta|4609|84|1.82
+Colorado|Denver|384607|20670|5.37
+Colorado|Douglas|54761|2961|5.41
+Colorado|Eagle|51940|675|1.3
+Colorado|El Paso|121952|7213|5.91
+Colorado|Elbert|3541|138|3.9
+Colorado|Fremont|1961|0|0
+Colorado|Garfield|11716|176|1.5
+Colorado|Gilpin|264|0|0
+Colorado|Grand|855|2|0.23
+Colorado|Gunnison|15031|452|3.01
+Colorado|Hinsdale|260|0|0
+Colorado|Huerfano|231|0|0
+Colorado|Jackson|7|0|0
+Colorado|Jefferson|157623|10700|6.79
+Colorado|Kit Carson|2043|193|9.45
+Colorado|La Plata|6252|53|0.85
+Colorado|Lake|2250|0|0
+Colorado|Larimer|41988|1869|4.45
+Colorado|Las Animas|388|0|0
+Colorado|Lincoln|262|0|0
+Colorado|Logan|35071|236|0.67
+Colorado|Mesa|4837|0|0
+Colorado|Mineral|208|0|0
+Colorado|Moffat|596|0|0
+Colorado|Montezuma|3036|223|7.35
+Colorado|Montrose|11933|886|7.42
+Colorado|Morgan|39985|2432|6.08
+Colorado|Otero|1219|68|5.58
+Colorado|Ouray|584|83|14.21
+Colorado|Park|1491|0|0
+Colorado|Phillips|862|0|0
+Colorado|Pitkin|5774|191|3.31
+Colorado|Prowers|793|0|0
+Colorado|Pueblo|19301|1239|6.42
+Colorado|Rio Blanco|111|0|0
+Colorado|Rio Grande|2217|19|0.86
+Colorado|Routt|5132|413|8.05
+Colorado|Saguache|3609|58|1.61
+Colorado|San Juan|59|0|0
+Colorado|San Miguel|1902|0|0
+Colorado|Summit|15680|161|1.03
+Colorado|Teller|2690|182|6.77
+Colorado|Unknown|6823|35|0.51
+Colorado|Washington|1952|0|0
+Colorado|Weld|178820|9436|5.28
+Colorado|Yuma|1994|0|0
+Connecticut|Fairfield|1134301|86028|7.58
+Connecticut|Hartford|677837|79393|11.71
+Connecticut|Litchfield|97576|8728|8.94
+Connecticut|Middlesex|75922|9843|12.96
+Connecticut|New Haven|787640|62078|7.88
+Connecticut|New London|70594|5327|7.55
+Connecticut|Tolland|54458|4126|7.58
+Connecticut|Unknown|29260|137|0.47
+Connecticut|Windham|27072|787|2.91
+Delaware|Kent|93416|4186|4.48
+Delaware|New Castle|248247|10583|4.26
+Delaware|Sussex|267318|8530|3.19
+Delaware|Unknown|2373|15|0.63
+District of Columbia|District of Columbia|580807|29425|5.07
+Florida|Alachua|35533|501|1.41
+Florida|Baker|2452|271|11.05
+Florida|Bay|9479|255|2.69
+Florida|Bradford|4221|155|3.67
+Florida|Brevard|39909|903|2.26
+Florida|Broward|602278|22071|3.66
+Florida|Calhoun|3304|194|5.87
+Florida|Charlotte|32061|3731|11.64
+Florida|Citrus|10893|930|8.54
+Florida|Clay|30009|2010|6.7
+Florida|Collier|126026|3172|2.52
+Florida|Columbia|10518|142|1.35
+Florida|DeSoto|14716|560|3.81
+Florida|Dixie|2672|103|3.85
+Florida|Duval|144599|3266|2.26
+Florida|Escambia|64108|2000|3.12
+Florida|Flagler|13745|305|2.22
+Florida|Franklin|205|0|0
+Florida|Gadsden|16575|168|1.01
+Florida|Gilchrist|1910|0|0
+Florida|Glades|4004|92|2.3
+Florida|Gulf|370|0|0
+Florida|Hamilton|11964|44|0.37
+Florida|Hardee|8819|28|0.32
+Florida|Hendry|27979|923|3.3
+Florida|Hernando|10850|368|3.39
+Florida|Highlands|11249|687|6.11
+Florida|Hillsborough|223743|5260|2.35
+Florida|Holmes|2468|0|0
+Florida|Indian River|15068|724|4.8
+Florida|Jackson|14072|47|0.33
+Florida|Jefferson|2429|209|8.6
+Florida|Lafayette|681|0|0
+Florida|Lake|31516|1134|3.6
+Florida|Lee|163106|7151|4.38
+Florida|Leon|30193|434|1.44
+Florida|Levy|4362|32|0.73
+Florida|Liberty|11855|29|0.24
+Florida|Madison|5846|208|3.56
+Florida|Manatee|85999|6674|7.76
+Florida|Marion|21261|497|2.34
+Florida|Martin|53546|845|1.58
+Florida|Miami-Dade|1441418|46994|3.26
+Florida|Monroe|9417|300|3.19
+Florida|Nassau|6433|60|0.93
+Florida|Okaloosa|20191|402|1.99
+Florida|Okeechobee|7584|0|0
+Florida|Orange|216103|3121|1.44
+Florida|Osceola|60760|1278|2.1
+Florida|Palm Beach|480331|24421|5.08
+Florida|Pasco|38838|901|2.32
+Florida|Pinellas|138071|5903|4.28
+Florida|Polk|87752|3842|4.38
+Florida|Putnam|12148|315|2.59
+Florida|Santa Rosa|19205|703|3.66
+Florida|Sarasota|49938|5218|10.45
+Florida|Seminole|55201|860|1.56
+Florida|St. Johns|25646|442|1.72
+Florida|St. Lucie|45367|2294|5.06
+Florida|Sumter|20037|1263|6.3
+Florida|Suwannee|14630|1245|8.51
+Florida|Taylor|1917|0|0
+Florida|Union|1877|45|2.4
+Florida|Unknown|5312|45|0.85
+Florida|Volusia|61221|2706|4.42
+Florida|Wakulla|2486|80|3.22
+Florida|Walton|8303|398|4.79
+Florida|Washington|3620|294|8.12
+Georgia|Appling|10384|765|7.37
+Georgia|Atkinson|3385|112|3.31
+Georgia|Bacon|7667|171|2.23
+Georgia|Baker|2536|211|8.32
+Georgia|Baldwin|24692|1504|6.09
+Georgia|Banks|5196|19|0.37
+Georgia|Barrow|21809|1031|4.73
+Georgia|Bartow|37575|2837|7.55
+Georgia|Ben Hill|5240|48|0.92
+Georgia|Berrien|3423|4|0.12
+Georgia|Bibb|34118|1676|4.91
+Georgia|Bleckley|2728|16|0.59
+Georgia|Brantley|3647|160|4.39
+Georgia|Brooks|5844|635|10.87
+Georgia|Bryan|5740|337|5.87
+Georgia|Bulloch|6426|180|2.8
+Georgia|Burke|8493|348|4.1
+Georgia|Butts|15275|1481|9.7
+Georgia|Calhoun|9832|397|4.04
+Georgia|Camden|4632|73|1.58
+Georgia|Candler|1056|0|0
+Georgia|Carroll|39677|1901|4.79
+Georgia|Catoosa|9994|90|0.9
+Georgia|Charlton|2009|66|3.29
+Georgia|Chatham|38089|1586|4.16
+Georgia|Chattahoochee|8863|5|0.06
+Georgia|Chattooga|2025|149|7.36
+Georgia|Cherokee|61624|2105|3.42
+Georgia|Clarke|20819|1201|5.77
+Georgia|Clay|2960|183|6.18
+Georgia|Clayton|90331|3675|4.07
+Georgia|Clinch|3713|90|2.42
+Georgia|Cobb|217382|12084|5.56
+Georgia|Coffee|19662|878|4.47
+Georgia|Colquitt|32430|1006|3.1
+Georgia|Columbia|18816|454|2.41
+Georgia|Cook|3865|106|2.74
+Georgia|Coweta|29294|633|2.16
+Georgia|Crawford|1925|0|0
+Georgia|Crisp|16527|534|3.23
+Georgia|Dade|2393|89|3.72
+Georgia|Dawson|7426|135|1.82
+Georgia|Decatur|12170|320|2.63
+Georgia|DeKalb|262883|7716|2.94
+Georgia|Dodge|3636|112|3.08
+Georgia|Dooly|12477|837|6.71
+Georgia|Dougherty|144271|11214|7.77
+Georgia|Douglas|40446|1630|4.03
+Georgia|Early|19056|2051|10.76
+Georgia|Echols|6016|0|0
+Georgia|Effingham|5104|87|1.7
+Georgia|Elbert|4481|0|0
+Georgia|Emanuel|2747|105|3.82
+Georgia|Evans|545|0|0
+Georgia|Fannin|3707|66|1.78
+Georgia|Fayette|18517|1020|5.51
+Georgia|Floyd|21156|1062|5.02
+Georgia|Forsyth|37031|905|2.44
+Georgia|Franklin|5669|62|1.09
+Georgia|Fulton|335592|15844|4.72
+Georgia|Gilmer|9084|46|0.51
+Georgia|Glascock|97|0|0
+Georgia|Glynn|12125|121|1
+Georgia|Gordon|13524|1153|8.53
+Georgia|Grady|7865|277|3.52
+Georgia|Greene|5469|445|8.14
+Georgia|Gwinnett|284306|8657|3.04
+Georgia|Habersham|33866|1456|4.3
+Georgia|Hall|167500|2925|1.75
+Georgia|Hancock|10857|1190|10.96
+Georgia|Haralson|3433|201|5.85
+Georgia|Harris|9493|345|3.63
+Georgia|Hart|2139|0|0
+Georgia|Heard|2076|166|8
+Georgia|Henry|55566|1583|2.85
+Georgia|Houston|28009|1374|4.91
+Georgia|Irwin|2293|70|3.05
+Georgia|Jackson|13772|352|2.56
+Georgia|Jasper|2910|41|1.41
+Georgia|Jeff Davis|2868|91|3.17
+Georgia|Jefferson|2864|83|2.9
+Georgia|Jenkins|2526|245|9.7
+Georgia|Johnson|5383|150|2.79
+Georgia|Jones|3012|0|0
+Georgia|Lamar|4717|178|3.77
+Georgia|Lanier|2973|141|4.74
+Georgia|Laurens|7659|80|1.04
+Georgia|Lee|29516|1817|6.16
+Georgia|Liberty|5285|29|0.55
+Georgia|Lincoln|1337|29|2.17
+Georgia|Long|1079|41|3.8
+Georgia|Lowndes|30906|368|1.19
+Georgia|Lumpkin|6528|92|1.41
+Georgia|Macon|7232|411|5.68
+Georgia|Madison|3681|139|3.78
+Georgia|Marion|3982|126|3.16
+Georgia|McDuffie|4878|367|7.52
+Georgia|McIntosh|1039|32|3.08
+Georgia|Meriwether|7179|108|1.5
+Georgia|Miller|3021|0|0
+Georgia|Mitchell|30044|2602|8.66
+Georgia|Monroe|6772|627|9.26
+Georgia|Montgomery|871|0|0
+Georgia|Morgan|2797|0|0
+Georgia|Murray|6722|67|1
+Georgia|Muscogee|51380|1435|2.79
+Georgia|Newton|25486|720|2.83
+Georgia|Oconee|7896|355|4.5
+Georgia|Oglethorpe|4709|397|8.43
+Georgia|Paulding|24171|834|3.45
+Georgia|Peach|5550|364|6.56
+Georgia|Pickens|3700|272|7.35
+Georgia|Pierce|7534|269|3.57
+Georgia|Pike|4300|180|4.19
+Georgia|Polk|8590|37|0.43
+Georgia|Pulaski|2936|124|4.22
+Georgia|Putnam|6036|568|9.41
+Georgia|Quitman|774|77|9.95
+Georgia|Rabun|1641|102|6.22
+Georgia|Randolph|14271|1571|11.01
+Georgia|Richmond|43038|1917|4.45
+Georgia|Rockdale|21900|642|2.93
+Georgia|Schley|1464|86|5.87
+Georgia|Screven|3110|181|5.82
+Georgia|Seminole|3207|154|4.8
+Georgia|Spalding|20583|1405|6.83
+Georgia|Stephens|9261|195|2.11
+Georgia|Stewart|3730|50|1.34
+Georgia|Sumter|36263|2983|8.23
+Georgia|Talbot|2900|115|3.97
+Georgia|Taliaferro|78|0|0
+Georgia|Tattnall|2523|0|0
+Georgia|Taylor|1688|171|10.13
+Georgia|Telfair|3096|71|2.29
+Georgia|Terrell|16606|1897|11.42
+Georgia|Thomas|22613|2090|9.24
+Georgia|Tift|21633|1064|4.92
+Georgia|Toombs|5750|304|5.29
+Georgia|Towns|1956|64|3.27
+Georgia|Treutlen|759|13|1.71
+Georgia|Troup|33408|945|2.83
+Georgia|Turner|8613|870|10.1
+Georgia|Twiggs|1095|31|2.83
+Georgia|Union|3211|124|3.86
+Georgia|Unknown|106240|179|0.17
+Georgia|Upson|20886|2254|10.79
+Georgia|Walker|10565|115|1.09
+Georgia|Walton|17088|976|5.71
+Georgia|Ware|16600|988|5.95
+Georgia|Warren|1310|0|0
+Georgia|Washington|5007|76|1.52
+Georgia|Wayne|1820|0|0
+Georgia|Webster|965|83|8.6
+Georgia|Wheeler|1144|0|0
+Georgia|White|7150|166|2.32
+Georgia|Whitfield|27733|562|2.03
+Georgia|Wilcox|7653|875|11.43
+Georgia|Wilkes|2516|49|1.95
+Georgia|Wilkinson|4214|345|8.19
+Georgia|Worth|16973|1310|7.72
+Guam|Unknown|91491|533|0.58
+Hawaii|Hawaii|6367|0|0
+Hawaii|Honolulu|39620|856|2.16
+Hawaii|Kauai|2061|0|0
+Hawaii|Maui|9954|454|4.56
+Hawaii|Unknown|193|4|2.07
+Idaho|Ada|75199|1597|2.12
+Idaho|Adams|341|0|0
+Idaho|Bannock|2807|30|1.07
+Idaho|Bear Lake|1|0|0
+Idaho|Benewah|611|0|0
+Idaho|Bingham|1031|0|0
+Idaho|Blaine|45805|448|0.98
+Idaho|Boise|14|0|0
+Idaho|Bonner|603|0|0
+Idaho|Bonneville|4052|17|0.42
+Idaho|Boundary|5|0|0
+Idaho|Camas|92|0|0
+Idaho|Canyon|27255|512|1.88
+Idaho|Caribou|274|0|0
+Idaho|Cassia|5555|92|1.66
+Idaho|Clearwater|5|0|0
+Idaho|Custer|201|0|0
+Idaho|Elmore|2726|139|5.1
+Idaho|Franklin|491|0|0
+Idaho|Fremont|280|0|0
+Idaho|Gem|1334|0|0
+Idaho|Gooding|2770|14|0.51
+Idaho|Idaho|277|0|0
+Idaho|Jefferson|702|0|0
+Idaho|Jerome|10533|191|1.81
+Idaho|Kootenai|7214|13|0.18
+Idaho|Latah|534|0|0
+Idaho|Lemhi|83|0|0
+Idaho|Lincoln|2452|0|0
+Idaho|Madison|1681|0|0
+Idaho|Minidoka|4115|0|0
+Idaho|Nez Perce|6010|1416|23.56
+Idaho|Oneida|2|0|0
+Idaho|Owyhee|942|0|0
+Idaho|Payette|2170|140|6.45
+Idaho|Power|483|0|0
+Idaho|Teton|936|0|0
+Idaho|Twin Falls|27481|1417|5.16
+Idaho|Unknown|196|0|0
+Idaho|Valley|261|0|0
+Idaho|Washington|2671|0|0
+Illinois|Adams|3651|61|1.67
+Illinois|Alexander|764|0|0
+Illinois|Bond|785|76|9.68
+Illinois|Boone|25619|1091|4.26
+Illinois|Brown|547|0|0
+Illinois|Bureau|1301|58|4.46
+Illinois|Calhoun|87|0|0
+Illinois|Carroll|1119|164|14.66
+Illinois|Cass|4775|6|0.13
+Illinois|Champaign|37134|583|1.57
+Illinois|Christian|2904|430|14.81
+Illinois|Clark|749|0|0
+Illinois|Clay|150|0|0
+Illinois|Clinton|12363|902|7.3
+Illinois|Coles|6835|679|9.93
+Illinois|Cook|5010774|233030|4.65
+Illinois|Crawford|945|0|0
+Illinois|Cumberland|604|0|0
+Illinois|De Witt|286|0|0
+Illinois|DeKalb|24351|518|2.13
+Illinois|Douglas|2184|0|0
+Illinois|DuPage|476869|24012|5.04
+Illinois|Edgar|119|0|0
+Illinois|Edwards|98|0|0
+Illinois|Effingham|565|83|14.69
+Illinois|Fayette|1547|186|12.02
+Illinois|Ford|1342|85|6.33
+Illinois|Franklin|846|0|0
+Illinois|Fulton|629|2|0.32
+Illinois|Gallatin|165|0|0
+Illinois|Greene|386|0|0
+Illinois|Grundy|6772|116|1.71
+Illinois|Hamilton|156|0|0
+Illinois|Hancock|979|29|2.96
+Illinois|Hardin|71|0|0
+Illinois|Henderson|495|0|0
+Illinois|Henry|4851|19|0.39
+Illinois|Iroquois|7713|230|2.98
+Illinois|Jackson|16486|861|5.22
+Illinois|Jasper|3287|445|13.54
+Illinois|Jefferson|6970|1026|14.72
+Illinois|Jersey|1636|67|4.1
+Illinois|Jo Daviess|2013|28|1.39
+Illinois|Johnson|725|0|0
+Illinois|Kane|363318|11393|3.14
+Illinois|Kankakee|69057|3488|5.05
+Illinois|Kendall|48543|1311|2.7
+Illinois|Knox|6201|0|0
+Illinois|Lake|523432|19716|3.77
+Illinois|LaSalle|9769|732|7.49
+Illinois|Lawrence|315|0|0
+Illinois|Lee|5095|57|1.12
+Illinois|Livingston|2419|113|4.67
+Illinois|Logan|735|0|0
+Illinois|Macon|12819|1290|10.06
+Illinois|Macoupin|3148|105|3.34
+Illinois|Madison|41812|3446|8.24
+Illinois|Marion|3604|0|0
+Illinois|Marshall|392|0|0
+Illinois|Mason|1183|0|0
+Illinois|Massac|491|0|0
+Illinois|McDonough|4934|540|10.94
+Illinois|McHenry|99994|4837|4.84
+Illinois|McLean|14436|672|4.66
+Illinois|Menard|1282|0|0
+Illinois|Mercer|1079|0|0
+Illinois|Monroe|7212|844|11.7
+Illinois|Montgomery|2702|3|0.11
+Illinois|Morgan|4130|124|3
+Illinois|Moultrie|734|0|0
+Illinois|Ogle|13720|210|1.53
+Illinois|Peoria|17562|826|4.7
+Illinois|Perry|2593|2|0.08
+Illinois|Piatt|858|0|0
+Illinois|Pike|107|0|0
+Illinois|Pope|54|0|0
+Illinois|Pulaski|3184|0|0
+Illinois|Putnam|48|0|0
+Illinois|Randolph|17113|280|1.64
+Illinois|Richland|255|0|0
+Illinois|Rock Island|46463|1543|3.32
+Illinois|Saline|477|0|0
+Illinois|Sangamon|22653|1860|8.21
+Illinois|Schuyler|633|0|0
+Illinois|Shelby|1014|63|6.21
+Illinois|St. Clair|83490|6104|7.31
+Illinois|Stark|168|0|0
+Illinois|Stephenson|11581|170|1.47
+Illinois|Tazewell|5540|375|6.77
+Illinois|Union|8422|605|7.18
+Illinois|Unknown|27096|4417|16.3
+Illinois|Vermilion|2610|77|2.95
+Illinois|Wabash|513|0|0
+Illinois|Warren|7460|0|0
+Illinois|Washington|1225|0|0
+Illinois|Wayne|526|48|9.13
+Illinois|White|160|0|0
+Illinois|Whiteside|9699|778|8.02
+Illinois|Will|360968|18468|5.12
+Illinois|Williamson|4590|127|2.77
+Illinois|Winnebago|129723|3872|2.98
+Illinois|Woodford|1650|113|6.85
+Indiana|Adams|1388|94|6.77
+Indiana|Allen|105536|5567|5.27
+Indiana|Bartholomew|33005|2488|7.54
+Indiana|Benton|1820|0|0
+Indiana|Blackford|1617|112|6.93
+Indiana|Boone|23678|2595|10.96
+Indiana|Brown|2295|85|3.7
+Indiana|Carroll|5545|136|2.45
+Indiana|Cass|101822|511|0.5
+Indiana|Clark|34884|2880|8.26
+Indiana|Clay|3023|134|4.43
+Indiana|Clinton|12672|169|1.33
+Indiana|Crawford|1879|80|4.26
+Indiana|Daviess|6438|1192|18.52
+Indiana|Dearborn|12128|1324|10.92
+Indiana|Decatur|19042|2570|13.5
+Indiana|DeKalb|4368|194|4.44
+Indiana|Delaware|23503|2253|9.59
+Indiana|Dubois|10851|184|1.7
+Indiana|Elkhart|93105|1901|2.04
+Indiana|Fayette|6887|452|6.56
+Indiana|Floyd|22082|2558|11.58
+Indiana|Fountain|1387|166|11.97
+Indiana|Franklin|9599|742|7.73
+Indiana|Fulton|3182|62|1.95
+Indiana|Gibson|1222|80|6.55
+Indiana|Grant|17969|1545|8.6
+Indiana|Greene|11086|1634|14.74
+Indiana|Hamilton|86801|6695|7.71
+Indiana|Hancock|24319|1824|7.5
+Indiana|Harrison|13520|1320|9.76
+Indiana|Hendricks|82773|5872|7.09
+Indiana|Henry|10503|560|5.33
+Indiana|Howard|25755|2045|7.94
+Indiana|Huntington|2327|160|6.88
+Indiana|Jackson|24313|152|0.63
+Indiana|Jasper|4738|106|2.24
+Indiana|Jay|3120|0|0
+Indiana|Jefferson|3280|48|1.46
+Indiana|Jennings|9708|491|5.06
+Indiana|Johnson|76427|7618|9.97
+Indiana|Knox|2397|0|0
+Indiana|Kosciusko|12255|185|1.51
+Indiana|LaGrange|10501|193|1.84
+Indiana|Lake|244044|13159|5.39
+Indiana|LaPorte|27918|1310|4.69
+Indiana|Lawrence|11749|1621|13.8
+Indiana|Madison|43552|5166|11.86
+Indiana|Marion|680537|41478|6.09
+Indiana|Marshall|10926|121|1.11
+Indiana|Martin|898|0|0
+Indiana|Miami|9985|71|0.71
+Indiana|Monroe|13342|1059|7.94
+Indiana|Montgomery|13989|885|6.33
+Indiana|Morgan|19643|1564|7.96
+Indiana|Newton|5542|748|13.5
+Indiana|Noble|15840|1472|9.29
+Indiana|Ohio|777|0|0
+Indiana|Orange|8552|1460|17.07
+Indiana|Owen|2650|82|3.09
+Indiana|Parke|1551|0|0
+Indiana|Perry|3795|116|3.06
+Indiana|Pike|324|0|0
+Indiana|Porter|34797|1639|4.71
+Indiana|Posey|1326|0|0
+Indiana|Pulaski|2833|25|0.88
+Indiana|Putnam|9443|496|5.25
+Indiana|Randolph|4428|217|4.9
+Indiana|Ripley|9010|474|5.26
+Indiana|Rush|4289|175|4.08
+Indiana|Scott|7731|282|3.65
+Indiana|Shelby|33213|1983|5.97
+Indiana|Spencer|1360|60|4.41
+Indiana|St. Joseph|86746|3008|3.47
+Indiana|Starke|2762|195|7.06
+Indiana|Steuben|5531|137|2.48
+Indiana|Sullivan|2268|42|1.85
+Indiana|Switzerland|1624|0|0
+Indiana|Tippecanoe|25646|317|1.24
+Indiana|Tipton|1891|111|5.87
+Indiana|Union|1533|0|0
+Indiana|Unknown|8|0|0
+Indiana|Vanderburgh|18828|224|1.19
+Indiana|Vermillion|788|0|0
+Indiana|Vigo|10833|632|5.83
+Indiana|Wabash|5176|129|2.49
+Indiana|Warren|1007|92|9.14
+Indiana|Warrick|11162|1795|16.08
+Indiana|Washington|4103|56|1.36
+Indiana|Wayne|14021|365|2.6
+Indiana|Wells|2401|10|0.42
+Indiana|White|12923|411|3.18
+Indiana|Whitley|3130|180|5.75
+Iowa|Adair|538|0|0
+Iowa|Adams|286|0|0
+Iowa|Allamakee|8244|306|3.71
+Iowa|Appanoose|829|219|26.42
+Iowa|Audubon|764|50|6.54
+Iowa|Benton|3184|85|2.67
+Iowa|Black Hawk|112810|2609|2.31
+Iowa|Boone|4448|16|0.36
+Iowa|Bremer|4813|360|7.48
+Iowa|Buchanan|2180|26|1.19
+Iowa|Buena Vista|49570|208|0.42
+Iowa|Butler|1290|54|4.19
+Iowa|Calhoun|709|3|0.42
+Iowa|Carroll|1664|27|1.62
+Iowa|Cass|587|0|0
+Iowa|Cedar|3699|55|1.49
+Iowa|Cerro Gordo|2563|41|1.6
+Iowa|Cherokee|2064|0|0
+Iowa|Chickasaw|807|0|0
+Iowa|Clarke|3466|38|1.1
+Iowa|Clay|2590|0|0
+Iowa|Clayton|2095|183|8.74
+Iowa|Clinton|4968|66|1.33
+Iowa|Crawford|28029|122|0.44
+Iowa|Dallas|56495|1120|1.98
+Iowa|Davis|1370|23|1.68
+Iowa|Decatur|181|0|0
+Iowa|Delaware|1264|40|3.16
+Iowa|Des Moines|3717|93|2.5
+Iowa|Dickinson|4617|26|0.56
+Iowa|Dubuque|21439|1019|4.75
+Iowa|Emmet|1497|0|0
+Iowa|Fayette|1852|0|0
+Iowa|Floyd|1261|58|4.6
+Iowa|Franklin|1695|0|0
+Iowa|Fremont|214|0|0
+Iowa|Greene|1064|0|0
+Iowa|Grundy|1371|0|0
+Iowa|Guthrie|3013|155|5.14
+Iowa|Hamilton|4336|2|0.05
+Iowa|Hancock|1256|0|0
+Iowa|Hardin|1790|0|0
+Iowa|Harrison|2119|0|0
+Iowa|Henry|4463|130|2.91
+Iowa|Howard|868|0|0
+Iowa|Humboldt|1297|30|2.31
+Iowa|Ida|712|0|0
+Iowa|Iowa|2305|0|0
+Iowa|Jackson|872|0|0
+Iowa|Jasper|17158|838|4.88
+Iowa|Jefferson|1817|0|0
+Iowa|Johnson|48360|541|1.12
+Iowa|Jones|2663|0|0
+Iowa|Keokuk|858|15|1.75
+Iowa|Kossuth|816|0|0
+Iowa|Lee|1819|22|1.21
+Iowa|Linn|68913|5055|7.34
+Iowa|Louisa|24366|541|2.22
+Iowa|Lucas|846|79|9.34
+Iowa|Lyon|1608|0|0
+Iowa|Madison|1572|113|7.19
+Iowa|Mahaska|4715|539|11.43
+Iowa|Marion|2073|0|0
+Iowa|Marshall|56714|754|1.33
+Iowa|Mills|1136|0|0
+Iowa|Mitchell|444|0|0
+Iowa|Monona|2095|0|0
+Iowa|Monroe|1957|227|11.6
+Iowa|Montgomery|450|54|12
+Iowa|Muscatine|37624|2293|6.09
+Iowa|O'Brien|2618|22|0.84
+Iowa|Osceola|2206|0|0
+Iowa|Page|937|0|0
+Iowa|Palo Alto|551|0|0
+Iowa|Plymouth|8969|115|1.28
+Iowa|Pocahontas|1185|11|0.93
+Iowa|Polk|255067|7587|2.97
+Iowa|Pottawattamie|20203|448|2.22
+Iowa|Poweshiek|5987|486|8.12
+Iowa|Ringgold|301|0|0
+Iowa|Sac|1429|0|0
+Iowa|Scott|26713|627|2.35
+Iowa|Shelby|2808|0|0
+Iowa|Sioux|15273|0|0
+Iowa|Story|12959|102|0.79
+Iowa|Tama|27799|1510|5.43
+Iowa|Taylor|2605|0|0
+Iowa|Union|519|0|0
+Iowa|Unknown|1155|10|0.87
+Iowa|Van Buren|843|0|0
+Iowa|Wapello|30664|788|2.57
+Iowa|Warren|8585|40|0.47
+Iowa|Washington|14407|623|4.32
+Iowa|Wayne|164|0|0
+Iowa|Webster|3738|50|1.34
+Iowa|Winnebago|681|0|0
+Iowa|Winneshiek|1605|0|0
+Iowa|Woodbury|157513|1719|1.09
+Iowa|Worth|269|0|0
+Iowa|Wright|10373|0|0
+Kansas|Allen|34|0|0
+Kansas|Anderson|85|0|0
+Kansas|Atchison|1368|0|0
+Kansas|Barber|85|0|0
+Kansas|Barton|2537|82|3.23
+Kansas|Bourbon|694|85|12.25
+Kansas|Brown|380|0|0
+Kansas|Butler|2421|0|0
+Kansas|Chase|219|0|0
+Kansas|Chautauqua|333|0|0
+Kansas|Cherokee|955|0|0
+Kansas|Cheyenne|125|0|0
+Kansas|Clark|1640|0|0
+Kansas|Clay|396|79|19.95
+Kansas|Cloud|413|0|0
+Kansas|Coffey|4318|606|14.03
+Kansas|Comanche|73|0|0
+Kansas|Cowley|1388|83|5.98
+Kansas|Crawford|3596|93|2.59
+Kansas|Dickinson|286|0|0
+Kansas|Doniphan|976|0|0
+Kansas|Douglas|5979|0|0
+Kansas|Edwards|315|0|0
+Kansas|Elk|5|0|0
+Kansas|Ellis|828|0|0
+Kansas|Ellsworth|133|0|0
+Kansas|Finney|82424|474|0.58
+Kansas|Ford|101280|348|0.34
+Kansas|Franklin|2795|0|0
+Kansas|Geary|1628|29|1.78
+Kansas|Gove|96|0|0
+Kansas|Grant|1152|27|2.34
+Kansas|Gray|1130|0|0
+Kansas|Greenwood|460|0|0
+Kansas|Hamilton|1194|0|0
+Kansas|Harper|97|0|0
+Kansas|Harvey|1097|89|8.11
+Kansas|Haskell|1188|0|0
+Kansas|Hodgeman|222|0|0
+Kansas|Jackson|4356|35|0.8
+Kansas|Jefferson|1383|0|0
+Kansas|Jewell|326|0|0
+Kansas|Johnson|65986|4604|6.98
+Kansas|Kearny|2554|43|1.68
+Kansas|Kiowa|161|0|0
+Kansas|Labette|2112|0|0
+Kansas|Lane|154|0|0
+Kansas|Leavenworth|65414|461|0.7
+Kansas|Lincoln|2|0|0
+Kansas|Linn|787|0|0
+Kansas|Logan|7|0|0
+Kansas|Lyon|26997|273|1.01
+Kansas|Marion|553|65|11.75
+Kansas|Marshall|7|0|0
+Kansas|McPherson|2549|0|0
+Kansas|Meade|1562|0|0
+Kansas|Miami|716|0|0
+Kansas|Mitchell|307|0|0
+Kansas|Montgomery|1679|188|11.2
+Kansas|Morris|349|0|0
+Kansas|Morton|346|6|1.73
+Kansas|Nemaha|787|0|0
+Kansas|Neosho|453|0|0
+Kansas|Ness|130|0|0
+Kansas|Norton|143|0|0
+Kansas|Osage|610|0|0
+Kansas|Osborne|177|0|0
+Kansas|Ottawa|341|0|0
+Kansas|Pawnee|81|0|0
+Kansas|Phillips|137|0|0
+Kansas|Pottawatomie|2102|0|0
+Kansas|Pratt|195|0|0
+Kansas|Reno|3779|0|0
+Kansas|Republic|359|0|0
+Kansas|Rice|253|0|0
+Kansas|Riley|5834|92|1.58
+Kansas|Rooks|509|0|0
+Kansas|Rush|2|0|0
+Kansas|Saline|2672|166|6.21
+Kansas|Scott|730|0|0
+Kansas|Sedgwick|47396|1420|3
+Kansas|Seward|54359|82|0.15
+Kansas|Shawnee|22375|551|2.46
+Kansas|Sheridan|159|0|0
+Kansas|Sherman|410|0|0
+Kansas|Smith|168|0|0
+Kansas|Stafford|94|0|0
+Kansas|Stanton|576|0|0
+Kansas|Stevens|1682|0|0
+Kansas|Sumner|521|83|15.93
+Kansas|Thomas|123|0|0
+Kansas|Trego|40|0|0
+Kansas|Wabaunsee|1945|0|0
+Kansas|Washington|21|0|0
+Kansas|Wilson|75|0|0
+Kansas|Woodson|511|0|0
+Kansas|Wyandotte|101778|5343|5.25
+Kentucky|Adair|7149|1144|16
+Kentucky|Allen|5369|174|3.24
+Kentucky|Anderson|1297|102|7.86
+Kentucky|Ballard|810|0|0
+Kentucky|Barren|3206|62|1.93
+Kentucky|Bath|584|62|10.62
+Kentucky|Bell|138|0|0
+Kentucky|Boone|27956|945|3.38
+Kentucky|Bourbon|1175|107|9.11
+Kentucky|Boyd|3284|245|7.46
+Kentucky|Boyle|1919|0|0
+Kentucky|Bracken|903|0|0
+Kentucky|Breathitt|318|0|0
+Kentucky|Breckinridge|1225|85|6.94
+Kentucky|Bullitt|7731|286|3.7
+Kentucky|Butler|15063|654|4.34
+Kentucky|Caldwell|1004|0|0
+Kentucky|Calloway|3779|85|2.25
+Kentucky|Campbell|11999|809|6.74
+Kentucky|Carlisle|270|61|22.59
+Kentucky|Carroll|887|0|0
+Kentucky|Carter|881|0|0
+Kentucky|Casey|388|0|0
+Kentucky|Christian|10015|252|2.52
+Kentucky|Clark|3614|37|1.02
+Kentucky|Clay|834|68|8.15
+Kentucky|Clinton|293|0|0
+Kentucky|Crittenden|434|72|16.59
+Kentucky|Cumberland|393|0|0
+Kentucky|Daviess|23048|479|2.08
+Kentucky|Edmonson|3864|515|13.33
+Kentucky|Elliott|65|0|0
+Kentucky|Estill|98|0|0
+Kentucky|Fayette|55679|1133|2.03
+Kentucky|Fleming|348|0|0
+Kentucky|Floyd|1279|0|0
+Kentucky|Franklin|3999|68|1.7
+Kentucky|Fulton|500|0|0
+Kentucky|Gallatin|1827|198|10.84
+Kentucky|Garrard|493|0|0
+Kentucky|Grant|2984|266|8.91
+Kentucky|Graves|11367|1255|11.04
+Kentucky|Grayson|7858|537|6.83
+Kentucky|Green|152|14|9.21
+Kentucky|Greenup|1138|0|0
+Kentucky|Hancock|694|0|0
+Kentucky|Hardin|6973|176|2.52
+Kentucky|Harlan|398|20|5.03
+Kentucky|Harrison|2779|0|0
+Kentucky|Hart|1694|0|0
+Kentucky|Henderson|8041|220|2.74
+Kentucky|Henry|1293|38|2.94
+Kentucky|Hickman|307|0|0
+Kentucky|Hopkins|16957|2172|12.81
+Kentucky|Jackson|5025|823|16.38
+Kentucky|Jefferson|182072|11287|6.2
+Kentucky|Jessamine|4993|0|0
+Kentucky|Johnson|389|0|0
+Kentucky|Kenton|38989|2310|5.92
+Kentucky|Knott|317|0|0
+Kentucky|Knox|870|0|0
+Kentucky|Larue|719|22|3.06
+Kentucky|Laurel|2245|165|7.35
+Kentucky|Lawrence|234|0|0
+Kentucky|Lee|34|0|0
+Kentucky|Leslie|414|0|0
+Kentucky|Letcher|402|0|0
+Kentucky|Lewis|672|0|0
+Kentucky|Lincoln|768|77|10.03
+Kentucky|Livingston|514|0|0
+Kentucky|Logan|8485|348|4.1
+Kentucky|Lyon|1276|241|18.89
+Kentucky|Madison|4455|87|1.95
+Kentucky|Magoffin|135|0|0
+Kentucky|Marion|2081|0|0
+Kentucky|Marshall|2886|109|3.78
+Kentucky|Martin|276|0|0
+Kentucky|Mason|937|0|0
+Kentucky|McCracken|7042|189|2.68
+Kentucky|McCreary|1031|0|0
+Kentucky|McLean|1508|5|0.33
+Kentucky|Meade|1399|136|9.72
+Kentucky|Menifee|599|0|0
+Kentucky|Mercer|1118|0|0
+Kentucky|Metcalfe|330|59|17.88
+Kentucky|Monroe|1232|5|0.41
+Kentucky|Montgomery|1948|0|0
+Kentucky|Morgan|217|0|0
+Kentucky|Muhlenberg|30303|483|1.59
+Kentucky|Nelson|2955|32|1.08
+Kentucky|Nicholas|203|0|0
+Kentucky|Ohio|9760|0|0
+Kentucky|Oldham|5611|210|3.74
+Kentucky|Owen|173|0|0
+Kentucky|Owsley|164|0|0
+Kentucky|Pendleton|732|0|0
+Kentucky|Perry|1681|13|0.77
+Kentucky|Pike|2373|154|6.49
+Kentucky|Powell|177|0|0
+Kentucky|Pulaski|4684|171|3.65
+Kentucky|Rockcastle|1090|0|0
+Kentucky|Rowan|615|0|0
+Kentucky|Russell|2010|270|13.43
+Kentucky|Scott|3516|0|0
+Kentucky|Shelby|11921|345|2.89
+Kentucky|Simpson|3569|212|5.94
+Kentucky|Spencer|1567|0|0
+Kentucky|Taylor|1146|32|2.79
+Kentucky|Todd|1368|0|0
+Kentucky|Trigg|897|0|0
+Kentucky|Trimble|328|0|0
+Kentucky|Union|1094|0|0
+Kentucky|Unknown|951|35|3.68
+Kentucky|Warren|63673|386|0.61
+Kentucky|Washington|708|0|0
+Kentucky|Wayne|737|0|0
+Kentucky|Webster|2411|0|0
+Kentucky|Whitley|1095|0|0
+Kentucky|Wolfe|53|0|0
+Kentucky|Woodford|2648|0|0
+Louisiana|Acadia|28722|1520|5.29
+Louisiana|Allen|12810|814|6.35
+Louisiana|Ascension|65971|4007|6.07
+Louisiana|Assumption|19489|779|4
+Louisiana|Avoyelles|10834|657|6.06
+Louisiana|Beauregard|6570|343|5.22
+Louisiana|Bienville|9888|1525|15.42
+Louisiana|Bossier|34576|1775|5.13
+Louisiana|Caddo|181459|12784|7.05
+Louisiana|Calcasieu|49489|3233|6.53
+Louisiana|Caldwell|4396|27|0.61
+Louisiana|Cameron|741|0|0
+Louisiana|Catahoula|7674|222|2.89
+Louisiana|Claiborne|5736|709|12.36
+Louisiana|Concordia|5466|346|6.33
+Louisiana|De Soto|19661|1204|6.12
+Louisiana|East Baton Rouge|256359|16002|6.24
+Louisiana|East Carroll|9826|6|0.06
+Louisiana|East Feliciana|14523|1825|12.57
+Louisiana|Evangeline|7041|62|0.88
+Louisiana|Franklin|21847|651|2.98
+Louisiana|Grant|2794|50|1.79
+Louisiana|Iberia|30080|2449|8.14
+Louisiana|Iberville|43041|2936|6.82
+Louisiana|Jackson|7593|705|9.28
+Louisiana|Jefferson|620855|33883|5.46
+Louisiana|Jefferson Davis|8678|515|5.93
+Louisiana|Lafayette|67474|2086|3.09
+Louisiana|Lafourche|66573|4919|7.39
+Louisiana|LaSalle|3847|3|0.08
+Louisiana|Lincoln|12149|961|7.91
+Louisiana|Livingston|32226|1893|5.87
+Louisiana|Madison|8884|58|0.65
+Louisiana|Morehouse|8794|398|4.53
+Louisiana|Natchitoches|10936|742|6.78
+Louisiana|Orleans|609530|39706|6.51
+Louisiana|Ouachita|95903|3053|3.18
+Louisiana|Plaquemines|17223|1364|7.92
+Louisiana|Pointe Coupee|13073|1543|11.8
+Louisiana|Rapides|55736|2037|3.65
+Louisiana|Red River|3260|484|14.85
+Louisiana|Richland|8813|147|1.67
+Louisiana|Sabine|3007|33|1.1
+Louisiana|St. Bernard|44387|1662|3.74
+Louisiana|St. Charles|52118|3470|6.66
+Louisiana|St. Helena|3781|76|2.01
+Louisiana|St. James|24470|1909|7.8
+Louisiana|St. John the Baptist|69856|6269|8.97
+Louisiana|St. Landry|22922|3755|16.38
+Louisiana|St. Martin|26308|1727|6.56
+Louisiana|St. Mary|23145|2118|9.15
+Louisiana|St. Tammany|134733|11090|8.23
+Louisiana|Tangipahoa|65154|2514|3.86
+Louisiana|Tensas|861|0|0
+Louisiana|Terrebonne|50572|3550|7.02
+Louisiana|Union|20375|1112|5.46
+Louisiana|Unknown|15214|6638|43.63
+Louisiana|Vermilion|5666|246|4.34
+Louisiana|Vernon|2945|220|7.47
+Louisiana|Washington|32403|2531|7.81
+Louisiana|Webster|13772|512|3.72
+Louisiana|West Baton Rouge|12850|2076|16.16
+Louisiana|West Carroll|3696|69|1.87
+Louisiana|West Feliciana|14362|669|4.66
+Louisiana|Winn|9399|220|2.34
+Maine|Androscoggin|18035|186|1.03
+Maine|Aroostook|705|40|5.67
+Maine|Cumberland|80385|3274|4.07
+Maine|Franklin|2513|67|2.67
+Maine|Hancock|887|54|6.09
+Maine|Kennebec|9817|610|6.21
+Maine|Knox|1621|28|1.73
+Maine|Lincoln|1537|0|0
+Maine|Oxford|2070|0|0
+Maine|Penobscot|7176|77|1.07
+Maine|Piscataquis|88|0|0
+Maine|Sagadahoc|2193|4|0.18
+Maine|Somerset|1669|0|0
+Maine|Unknown|305|1|0.33
+Maine|Waldo|4064|994|24.46
+Maine|Washington|150|0|0
+Maine|York|27468|711|2.59
+Maryland|Allegany|11713|956|8.16
+Maryland|Anne Arundel|252554|11111|4.4
+Maryland|Baltimore|404348|21448|5.3
+Maryland|Baltimore city|354951|16258|4.58
+Maryland|Calvert|21823|1180|5.41
+Maryland|Caroline|15056|60|0.4
+Maryland|Carroll|59475|6086|10.23
+Maryland|Cecil|24973|1420|5.69
+Maryland|Charles|73882|4861|6.58
+Maryland|Dorchester|8944|219|2.45
+Maryland|Frederick|126921|6724|5.3
+Maryland|Garrett|652|2|0.31
+Maryland|Harford|57026|2906|5.1
+Maryland|Howard|126664|3783|2.99
+Maryland|Kent|10574|1069|10.11
+Maryland|Montgomery|724094|37433|5.17
+Maryland|Prince George's|969020|34513|3.56
+Maryland|Queen Anne's|10004|760|7.6
+Maryland|Somerset|4426|113|2.55
+Maryland|St. Mary's|29531|1624|5.5
+Maryland|Talbot|5997|175|2.92
+Maryland|Unknown|393|5067|1289.31
+Maryland|Washington|30951|969|3.13
+Maryland|Wicomico|57080|1713|3
+Maryland|Worcester|12935|682|5.27
+Massachusetts|Barnstable|97803|7180|7.34
+Massachusetts|Berkshire|44416|3161|7.12
+Massachusetts|Bristol|461384|26957|5.84
+Massachusetts|Dukes|2408|56|2.33
+Massachusetts|Essex|974404|59328|6.09
+Massachusetts|Franklin|24992|3595|14.38
+Massachusetts|Hampden|414041|39571|9.56
+Massachusetts|Hampshire|58873|5384|9.15
+Massachusetts|Middlesex|1501194|103476|6.89
+Massachusetts|Nantucket|1083|3|0.28
+Massachusetts|Norfolk|593163|54381|9.17
+Massachusetts|Plymouth|544576|35617|6.54
+Massachusetts|Suffolk|1289678|58065|4.5
+Massachusetts|Unknown|37883|602|1.59
+Massachusetts|Worcester|713698|45718|6.41
+Michigan|Alcona|901|62|6.88
+Michigan|Alger|39|0|0
+Michigan|Allegan|14933|301|2.02
+Michigan|Alpena|6775|613|9.05
+Michigan|Antrim|1007|1|0.1
+Michigan|Arenac|2320|83|3.58
+Michigan|Baraga|93|0|0
+Michigan|Barry|4826|119|2.47
+Michigan|Bay|20527|1317|6.42
+Michigan|Benzie|342|0|0
+Michigan|Berrien|45595|2910|6.38
+Michigan|Branch|64184|1583|2.47
+Michigan|Calhoun|27213|1551|5.7
+Michigan|Cass|5707|219|3.84
+Michigan|Charlevoix|1513|98|6.48
+Michigan|Cheboygan|1761|101|5.74
+Michigan|Chippewa|286|8|2.8
+Michigan|Clare|1372|146|10.64
+Michigan|Clinton|12550|792|6.31
+Michigan|Crawford|4390|335|7.63
+Michigan|Delta|1370|159|11.61
+Michigan|Dickinson|414|170|41.06
+Michigan|Eaton|15384|515|3.35
+Michigan|Emmet|2026|180|8.88
+Michigan|Genesee|164809|18257|11.08
+Michigan|Gladwin|1403|72|5.13
+Michigan|Gogebic|424|97|22.88
+Michigan|Grand Traverse|2447|416|17
+Michigan|Gratiot|4625|508|10.98
+Michigan|Hillsdale|12742|1700|13.34
+Michigan|Houghton|391|0|0
+Michigan|Huron|3176|79|2.49
+Michigan|Ingham|53760|1626|3.02
+Michigan|Ionia|10061|252|2.5
+Michigan|Iosco|5836|601|10.3
+Michigan|Iron|90|4|4.44
+Michigan|Isabella|6309|586|9.29
+Michigan|Jackson|115980|3324|2.87
+Michigan|Kalamazoo|54558|3311|6.07
+Michigan|Kalkaska|1927|180|9.34
+Michigan|Kent|233665|5713|2.44
+Michigan|Keweenaw|21|0|0
+Michigan|Lake|351|0|0
+Michigan|Lapeer|30139|2502|8.3
+Michigan|Leelanau|879|0|0
+Michigan|Lenawee|45168|446|0.99
+Michigan|Livingston|36830|1876|5.09
+Michigan|Luce|247|0|0
+Michigan|Mackinac|551|0|0
+Michigan|Macomb|531199|58963|11.1
+Michigan|Manistee|1540|16|1.04
+Michigan|Marquette|4231|757|17.89
+Michigan|Mason|2039|0|0
+Michigan|Mecosta|1651|155|9.39
+Michigan|Menominee|560|0|0
+Michigan|Midland|7720|557|7.22
+Michigan|Missaukee|1387|96|6.92
+Michigan|Monroe|35791|1360|3.8
+Michigan|Montcalm|4895|85|1.74
+Michigan|Montmorency|376|0|0
+Michigan|Muskegon|40457|2293|5.67
+Michigan|Newaygo|6031|0|0
+Michigan|Oakland|743892|71360|9.59
+Michigan|Oceana|6259|157|2.51
+Michigan|Ogemaw|1659|56|3.38
+Michigan|Osceola|1099|0|0
+Michigan|Oscoda|556|54|9.71
+Michigan|Otsego|8627|707|8.2
+Michigan|Ottawa|47766|2278|4.77
+Michigan|Presque Isle|812|0|0
+Michigan|Roscommon|1633|0|0
+Michigan|Saginaw|72953|7029|9.63
+Michigan|Sanilac|3272|408|12.47
+Michigan|Schoolcraft|299|0|0
+Michigan|Shiawassee|17074|1488|8.72
+Michigan|St. Clair|34348|2591|7.54
+Michigan|St. Joseph|9032|151|1.67
+Michigan|Tuscola|13031|1601|12.29
+Michigan|Unknown|15804|316|2
+Michigan|Van Buren|9941|393|3.95
+Michigan|Washtenaw|133215|7159|5.37
+Michigan|Wayne|1615572|175895|10.89
+Michigan|Wexford|1165|181|15.54
+Minnesota|Aitkin|501|0|0
+Minnesota|Anoka|80466|4040|5.02
+Minnesota|Becker|2325|0|0
+Minnesota|Beltrami|1127|0|0
+Minnesota|Benton|9528|149|1.56
+Minnesota|Big Stone|500|0|0
+Minnesota|Blue Earth|9591|49|0.51
+Minnesota|Brown|1126|130|11.55
+Minnesota|Carlton|5308|0|0
+Minnesota|Carver|12347|88|0.71
+Minnesota|Cass|751|104|13.85
+Minnesota|Chippewa|2610|36|1.38
+Minnesota|Chisago|3576|89|2.49
+Minnesota|Clay|26034|1704|6.55
+Minnesota|Clearwater|288|0|0
+Minnesota|Cook|18|0|0
+Minnesota|Cottonwood|5055|0|0
+Minnesota|Crow Wing|4205|295|7.02
+Minnesota|Dakota|77805|3158|4.06
+Minnesota|Dodge|3418|0|0
+Minnesota|Douglas|2220|0|0
+Minnesota|Faribault|1362|0|0
+Minnesota|Fillmore|1458|57|3.91
+Minnesota|Freeborn|9246|0|0
+Minnesota|Goodhue|4442|231|5.2
+Minnesota|Grant|228|0|0
+Minnesota|Hennepin|486353|37432|7.7
+Minnesota|Houston|352|0|0
+Minnesota|Hubbard|149|0|0
+Minnesota|Isanti|2126|0|0
+Minnesota|Itasca|3010|464|15.42
+Minnesota|Jackson|2541|0|0
+Minnesota|Kanabec|630|43|6.83
+Minnesota|Kandiyohi|27828|64|0.23
+Minnesota|Kittson|79|0|0
+Minnesota|Koochiching|419|3|0.72
+Minnesota|Lac qui Parle|214|0|0
+Minnesota|Lake|111|0|0
+Minnesota|Le Sueur|3489|50|1.43
+Minnesota|Lincoln|374|0|0
+Minnesota|Lyon|7038|55|0.78
+Minnesota|Mahnomen|344|56|16.28
+Minnesota|Marshall|615|0|0
+Minnesota|Martin|9369|412|4.4
+Minnesota|McLeod|2328|0|0
+Minnesota|Meeker|2558|25|0.98
+Minnesota|Mille Lacs|1160|74|6.38
+Minnesota|Morrison|2365|20|0.85
+Minnesota|Mower|23901|73|0.31
+Minnesota|Murray|2333|0|0
+Minnesota|Nicollet|4583|484|10.56
+Minnesota|Nobles|92460|247|0.27
+Minnesota|Norman|915|0|0
+Minnesota|Olmsted|43500|768|1.77
+Minnesota|Otter Tail|3783|26|0.69
+Minnesota|Pennington|1448|0|0
+Minnesota|Pine|5717|0|0
+Minnesota|Pipestone|729|3|0.41
+Minnesota|Polk|3918|101|2.58
+Minnesota|Pope|452|0|0
+Minnesota|Ramsey|172136|8001|4.65
+Minnesota|Red Lake|202|0|0
+Minnesota|Redwood|436|0|0
+Minnesota|Renville|634|13|2.05
+Minnesota|Rice|27140|171|0.63
+Minnesota|Rock|1449|0|0
+Minnesota|Roseau|215|0|0
+Minnesota|Scott|24078|172|0.71
+Minnesota|Sherburne|12980|124|0.96
+Minnesota|Sibley|1084|41|3.78
+Minnesota|St. Louis|8359|977|11.69
+Minnesota|Stearns|111603|770|0.69
+Minnesota|Steele|8725|0|0
+Minnesota|Stevens|56|0|0
+Minnesota|Swift|928|26|2.8
+Minnesota|Todd|14570|52|0.36
+Minnesota|Traverse|292|0|0
+Minnesota|Unknown|4749|1008|21.23
+Minnesota|Wabasha|1399|0|0
+Minnesota|Wadena|499|0|0
+Minnesota|Waseca|1794|0|0
+Minnesota|Washington|38292|1837|4.8
+Minnesota|Watonwan|4945|0|0
+Minnesota|Wilkin|1034|229|22.15
+Minnesota|Winona|6318|1138|18.01
+Minnesota|Wright|17172|126|0.73
+Minnesota|Yellow Medicine|626|0|0
+Mississippi|Adams|14084|1036|7.36
+Mississippi|Alcorn|1559|63|4.04
+Mississippi|Amite|3955|88|2.23
+Mississippi|Attala|17946|893|4.98
+Mississippi|Benton|1188|0|0
+Mississippi|Bolivar|12163|785|6.45
+Mississippi|Calhoun|5219|282|5.4
+Mississippi|Carroll|7382|539|7.3
+Mississippi|Chickasaw|9835|896|9.11
+Mississippi|Choctaw|2956|157|5.31
+Mississippi|Claiborne|6354|250|3.93
+Mississippi|Clarke|8974|1025|11.42
+Mississippi|Clay|8364|285|3.41
+Mississippi|Coahoma|8626|289|3.35
+Mississippi|Copiah|20282|311|1.53
+Mississippi|Covington|10579|117|1.11
+Mississippi|DeSoto|42938|617|1.44
+Mississippi|Forrest|36333|2142|5.9
+Mississippi|Franklin|1946|107|5.5
+Mississippi|George|2085|109|5.23
+Mississippi|Greene|1934|140|7.24
+Mississippi|Grenada|7728|184|2.38
+Mississippi|Hancock|6897|791|11.47
+Mississippi|Harrison|22774|541|2.38
+Mississippi|Hinds|74578|1562|2.09
+Mississippi|Holmes|24688|1726|6.99
+Mississippi|Humphreys|4165|462|11.09
+Mississippi|Issaquena|31|4|12.9
+Mississippi|Itawamba|5999|452|7.53
+Mississippi|Jackson|25505|974|3.82
+Mississippi|Jasper|9820|233|2.37
+Mississippi|Jefferson|2945|61|2.07
+Mississippi|Jefferson Davis|4831|161|3.33
+Mississippi|Jones|38390|1534|4
+Mississippi|Kemper|8825|606|6.87
+Mississippi|Lafayette|11289|280|2.48
+Mississippi|Lamar|16193|332|2.05
+Mississippi|Lauderdale|47301|3948|8.35
+Mississippi|Lawrence|6529|40|0.61
+Mississippi|Leake|27161|654|2.41
+Mississippi|Lee|13935|592|4.25
+Mississippi|Leflore|19713|2244|11.38
+Mississippi|Lincoln|18873|1625|8.61
+Mississippi|Lowndes|14576|467|3.2
+Mississippi|Madison|47507|1491|3.14
+Mississippi|Marion|8700|566|6.51
+Mississippi|Marshall|6629|217|3.27
+Mississippi|Monroe|17635|1595|9.04
+Mississippi|Montgomery|5458|99|1.81
+Mississippi|Neshoba|39897|2289|5.74
+Mississippi|Newton|15734|256|1.63
+Mississippi|Noxubee|11096|292|2.63
+Mississippi|Oktibbeha|15629|795|5.09
+Mississippi|Panola|6813|237|3.48
+Mississippi|Pearl River|15985|1978|12.37
+Mississippi|Perry|3385|185|5.47
+Mississippi|Pike|15597|710|4.55
+Mississippi|Pontotoc|4296|207|4.82
+Mississippi|Prentiss|3809|169|4.44
+Mississippi|Quitman|2358|0|0
+Mississippi|Rankin|29880|580|1.94
+Mississippi|Scott|40108|600|1.5
+Mississippi|Sharkey|630|0|0
+Mississippi|Simpson|6947|35|0.5
+Mississippi|Smith|9926|615|6.2
+Mississippi|Stone|2295|14|0.61
+Mississippi|Sunflower|7565|268|3.54
+Mississippi|Tallahatchie|2320|80|3.45
+Mississippi|Tate|7147|80|1.12
+Mississippi|Tippah|6402|840|13.12
+Mississippi|Tishomingo|2022|14|0.69
+Mississippi|Tunica|4192|197|4.7
+Mississippi|Union|5473|364|6.65
+Mississippi|Unknown|1533|20|1.3
+Mississippi|Walthall|5278|35|0.66
+Mississippi|Warren|12908|552|4.28
+Mississippi|Washington|13761|442|3.21
+Mississippi|Wayne|13715|199|1.45
+Mississippi|Webster|4543|295|6.49
+Mississippi|Wilkinson|6549|676|10.32
+Mississippi|Winston|8106|77|0.95
+Mississippi|Yalobusha|6110|260|4.26
+Mississippi|Yazoo|18840|267|1.42
+Missouri|Adair|3530|0|0
+Missouri|Andrew|1636|0|0
+Missouri|Atchison|216|0|0
+Missouri|Audrain|4364|34|0.78
+Missouri|Barry|947|0|0
+Missouri|Barton|268|0|0
+Missouri|Bates|720|79|10.97
+Missouri|Benton|811|0|0
+Missouri|Bollinger|522|0|0
+Missouri|Boone|13524|124|0.92
+Missouri|Buchanan|39999|157|0.39
+Missouri|Butler|2956|0|0
+Missouri|Caldwell|402|0|0
+Missouri|Callaway|2543|86|3.38
+Missouri|Camden|3383|95|2.81
+Missouri|Cape Girardeau|5994|157|2.62
+Missouri|Carroll|481|0|0
+Missouri|Carter|380|88|23.16
+Missouri|Cass|7055|593|8.41
+Missouri|Cedar|683|0|0
+Missouri|Chariton|488|0|0
+Missouri|Christian|2162|0|0
+Missouri|Clark|98|0|0
+Missouri|Clay|14493|276|1.9
+Missouri|Clinton|1412|0|0
+Missouri|Cole|4906|97|1.98
+Missouri|Cooper|739|0|0
+Missouri|Crawford|669|0|0
+Missouri|Dade|16|0|0
+Missouri|Dallas|341|7|2.05
+Missouri|Daviess|325|0|0
+Missouri|DeKalb|462|0|0
+Missouri|Dent|67|0|0
+Missouri|Douglas|85|0|0
+Missouri|Dunklin|3249|173|5.32
+Missouri|Franklin|11671|1084|9.29
+Missouri|Gasconade|245|0|0
+Missouri|Gentry|1832|201|10.97
+Missouri|Greene|12991|747|5.75
+Missouri|Grundy|358|0|0
+Missouri|Harrison|674|0|0
+Missouri|Henry|903|174|19.27
+Missouri|Holt|82|0|0
+Missouri|Howard|230|0|0
+Missouri|Howell|984|0|0
+Missouri|Iron|160|0|0
+Missouri|Jackson|47699|1557|3.26
+Missouri|Jasper|6700|6|0.09
+Missouri|Jefferson|28139|1083|3.85
+Missouri|Johnson|6049|0|0
+Missouri|Joplin|734|11|1.5
+Missouri|Kansas City|92111|1796|1.95
+Missouri|Knox|42|0|0
+Missouri|Laclede|466|0|0
+Missouri|Lafayette|5383|134|2.49
+Missouri|Lawrence|568|3|0.53
+Missouri|Lewis|466|70|15.02
+Missouri|Lincoln|5795|84|1.45
+Missouri|Linn|642|79|12.31
+Missouri|Livingston|333|0|0
+Missouri|Macon|334|0|0
+Missouri|Madison|205|0|0
+Missouri|Maries|201|0|0
+Missouri|Marion|473|0|0
+Missouri|McDonald|7209|7|0.1
+Missouri|Mercer|136|0|0
+Missouri|Miller|344|0|0
+Missouri|Mississippi|3763|0|0
+Missouri|Moniteau|3353|46|1.37
+Missouri|Monroe|118|0|0
+Missouri|Montgomery|803|0|0
+Missouri|Morgan|600|0|0
+Missouri|New Madrid|1566|47|3
+Missouri|Newton|5294|84|1.59
+Missouri|Nodaway|754|0|0
+Missouri|Oregon|216|0|0
+Missouri|Osage|441|0|0
+Missouri|Ozark|12|0|0
+Missouri|Pemiscot|5320|275|5.17
+Missouri|Perry|5264|0|0
+Missouri|Pettis|5127|50|0.98
+Missouri|Phelps|403|0|0
+Missouri|Pike|1527|50|3.27
+Missouri|Platte|5274|122|2.31
+Missouri|Polk|319|0|0
+Missouri|Pulaski|4436|91|2.05
+Missouri|Putnam|40|0|0
+Missouri|Ralls|280|0|0
+Missouri|Randolph|813|0|0
+Missouri|Ray|1370|0|0
+Missouri|Reynolds|187|0|0
+Missouri|Ripley|674|0|0
+Missouri|Saline|17340|108|0.62
+Missouri|Schuyler|88|0|0
+Missouri|Scotland|460|21|4.57
+Missouri|Scott|7966|502|6.3
+Missouri|Shannon|179|0|0
+Missouri|Shelby|117|0|0
+Missouri|St. Charles|60395|4130|6.84
+Missouri|St. Clair|167|0|0
+Missouri|St. Francois|3523|132|3.75
+Missouri|St. Louis|354994|27079|7.63
+Missouri|St. Louis city|137800|8219|5.96
+Missouri|Ste. Genevieve|889|86|9.67
+Missouri|Stoddard|5391|243|4.51
+Missouri|Stone|463|0|0
+Missouri|Sullivan|3298|0|0
+Missouri|Taney|1417|144|10.16
+Missouri|Texas|59|0|0
+Missouri|Unknown|425|0|0
+Missouri|Vernon|627|0|0
+Missouri|Warren|2183|0|0
+Missouri|Washington|842|67|7.96
+Missouri|Wayne|31|0|0
+Missouri|Webster|1339|8|0.6
+Missouri|Worth|215|0|0
+Missouri|Wright|978|0|0
+Montana|Beaverhead|88|0|0
+Montana|Big Horn|1820|57|3.13
+Montana|Broadwater|396|0|0
+Montana|Carbon|628|0|0
+Montana|Cascade|1565|146|9.33
+Montana|Custer|357|0|0
+Montana|Dawson|57|0|0
+Montana|Deer Lodge|282|0|0
+Montana|Fergus|26|0|0
+Montana|Flathead|3497|149|4.26
+Montana|Gallatin|14812|64|0.43
+Montana|Glacier|503|0|0
+Montana|Golden Valley|231|0|0
+Montana|Granite|12|0|0
+Montana|Hill|98|0|0
+Montana|Jefferson|249|0|0
+Montana|Lake|581|0|0
+Montana|Lewis and Clark|1658|0|0
+Montana|Liberty|92|0|0
+Montana|Lincoln|655|96|14.66
+Montana|Madison|754|93|12.33
+Montana|Meagher|98|0|0
+Montana|Missoula|3677|88|2.39
+Montana|Musselshell|94|0|0
+Montana|Park|714|0|0
+Montana|Pondera|150|0|0
+Montana|Ravalli|893|0|0
+Montana|Richland|322|0|0
+Montana|Roosevelt|570|0|0
+Montana|Rosebud|113|5|4.42
+Montana|Silver Bow|1084|0|0
+Montana|Stillwater|133|0|0
+Montana|Toole|2512|493|19.63
+Montana|Treasure|14|0|0
+Montana|Valley|16|0|0
+Montana|Wheatland|68|0|0
+Montana|Yellowstone|8276|182|2.2
+Nebraska|Adams|18039|590|3.27
+Nebraska|Antelope|476|7|1.47
+Nebraska|Banner|22|0|0
+Nebraska|Boone|289|0|0
+Nebraska|Box Butte|143|0|0
+Nebraska|Boyd|30|0|0
+Nebraska|Buffalo|10865|92|0.85
+Nebraska|Burt|541|0|0
+Nebraska|Butler|2425|0|0
+Nebraska|Cass|2581|4|0.15
+Nebraska|Cedar|480|0|0
+Nebraska|Chase|38|0|0
+Nebraska|Cherry|88|0|0
+Nebraska|Cheyenne|729|0|0
+Nebraska|Clay|1400|0|0
+Nebraska|Colfax|33977|171|0.5
+Nebraska|Cuming|1686|0|0
+Nebraska|Custer|2630|282|10.72
+Nebraska|Dakota|100195|1315|1.31
+Nebraska|Dawes|68|0|0
+Nebraska|Dawson|52282|400|0.77
+Nebraska|Dixon|1873|31|1.66
+Nebraska|Dodge|26829|142|0.53
+Nebraska|Douglas|258678|2985|1.15
+Nebraska|Fillmore|446|30|6.73
+Nebraska|Franklin|411|0|0
+Nebraska|Frontier|63|0|0
+Nebraska|Furnas|476|21|4.41
+Nebraska|Gage|3380|271|8.02
+Nebraska|Garden|117|0|0
+Nebraska|Garfield|27|0|0
+Nebraska|Gosper|896|0|0
+Nebraska|Greeley|163|0|0
+Nebraska|Hall|102073|2749|2.69
+Nebraska|Hamilton|4147|756|18.23
+Nebraska|Harlan|15|0|0
+Nebraska|Hitchcock|62|0|0
+Nebraska|Holt|76|0|0
+Nebraska|Howard|2389|151|6.32
+Nebraska|Jefferson|432|0|0
+Nebraska|Johnson|409|0|0
+Nebraska|Kearney|743|0|0
+Nebraska|Keith|120|0|0
+Nebraska|Keya Paha|1|0|0
+Nebraska|Kimball|872|0|0
+Nebraska|Knox|683|0|0
+Nebraska|Lancaster|71711|489|0.68
+Nebraska|Lincoln|3427|157|4.58
+Nebraska|Loup|1|0|0
+Nebraska|Madison|19354|277|1.43
+Nebraska|Merrick|2065|0|0
+Nebraska|Morrill|730|0|0
+Nebraska|Nance|262|0|0
+Nebraska|Nemaha|238|0|0
+Nebraska|Nuckolls|46|0|0
+Nebraska|Otoe|553|0|0
+Nebraska|Phelps|1095|0|0
+Nebraska|Pierce|271|0|0
+Nebraska|Platte|32260|74|0.23
+Nebraska|Polk|736|0|0
+Nebraska|Red Willow|332|0|0
+Nebraska|Richardson|98|21|21.43
+Nebraska|Rock|7|0|0
+Nebraska|Saline|28411|81|0.29
+Nebraska|Sarpy|39675|244|0.61
+Nebraska|Saunders|2554|69|2.7
+Nebraska|Scotts Bluff|7333|51|0.7
+Nebraska|Seward|1657|71|4.28
+Nebraska|Sheridan|14|0|0
+Nebraska|Sherman|223|0|0
+Nebraska|Sioux|55|0|0
+Nebraska|Stanton|1103|0|0
+Nebraska|Thayer|33|0|0
+Nebraska|Thomas|56|0|0
+Nebraska|Thurston|2632|19|0.72
+Nebraska|Unknown|2706|17|0.63
+Nebraska|Valley|272|0|0
+Nebraska|Washington|2673|79|2.96
+Nebraska|Wayne|951|0|0
+Nebraska|Webster|369|0|0
+Nebraska|York|2118|0|0
+Nevada|Carson City|6529|231|3.54
+Nevada|Churchill|536|72|13.43
+Nevada|Clark|536119|23856|4.45
+Nevada|Douglas|2573|0|0
+Nevada|Elko|2627|88|3.35
+Nevada|Eureka|5|0|0
+Nevada|Humboldt|5206|253|4.86
+Nevada|Lander|1348|0|0
+Nevada|Lincoln|103|0|0
+Nevada|Lyon|4572|55|1.2
+Nevada|Mineral|266|0|0
+Nevada|Nye|4533|98|2.16
+Nevada|Pershing|144|0|0
+Nevada|Storey|51|0|0
+Nevada|Unknown|1804|225|12.47
+Nevada|Washoe|116835|3960|3.39
+Nevada|White Pine|247|0|0
+New Hampshire|Belknap|4556|19|0.42
+New Hampshire|Carroll|3658|0|0
+New Hampshire|Cheshire|4068|168|4.13
+New Hampshire|Coos|325|0|0
+New Hampshire|Grafton|5916|61|1.03
+New Hampshire|Hillsborough|157582|9228|5.86
+New Hampshire|Merrimack|22631|915|4.04
+New Hampshire|Rockingham|89028|4390|4.93
+New Hampshire|Strafford|17748|800|4.51
+New Hampshire|Sullivan|1460|91|6.23
+New Hampshire|Unknown|835|12|1.44
+New Jersey|Atlantic|139967|9176|6.56
+New Jersey|Bergen|1439612|113855|7.91
+New Jersey|Burlington|309235|19280|6.23
+New Jersey|Camden|427777|22031|5.15
+New Jersey|Cape May|40678|3267|8.03
+New Jersey|Cumberland|138161|4897|3.54
+New Jersey|Essex|1317272|118056|8.96
+New Jersey|Gloucester|148367|8670|5.84
+New Jersey|Hudson|1366496|81306|5.95
+New Jersey|Hunterdon|68224|4202|6.16
+New Jersey|Mercer|459678|30347|6.6
+New Jersey|Middlesex|1149581|67570|5.88
+New Jersey|Monmouth|615455|41276|6.71
+New Jersey|Morris|493178|43192|8.76
+New Jersey|Ocean|646862|49241|7.61
+New Jersey|Passaic|1178623|62175|5.28
+New Jersey|Salem|38500|2601|6.76
+New Jersey|Somerset|335096|28429|8.48
+New Jersey|Sussex|84779|10393|12.26
+New Jersey|Union|1174775|72786|6.2
+New Jersey|Unknown|114149|105|0.09
+New Jersey|Warren|84498|8774|10.38
+New Mexico|Bernalillo|104318|4709|4.51
+New Mexico|Catron|147|67|45.58
+New Mexico|Chaves|3453|125|3.62
+New Mexico|Cibola|9619|437|4.54
+New Mexico|Colfax|450|7|1.56
+New Mexico|Curry|4216|0|0
+New Mexico|Doña Ana|32241|251|0.78
+New Mexico|Eddy|2189|98|4.48
+New Mexico|Grant|1242|0|0
+New Mexico|Guadalupe|1238|0|0
+New Mexico|Harding|69|0|0
+New Mexico|Hidalgo|588|0|0
+New Mexico|Lea|2406|0|0
+New Mexico|Lincoln|308|0|0
+New Mexico|Los Alamos|519|0|0
+New Mexico|Luna|1385|75|5.42
+New Mexico|McKinley|154250|6575|4.26
+New Mexico|Otero|23621|166|0.7
+New Mexico|Quay|342|72|21.05
+New Mexico|Rio Arriba|3336|34|1.02
+New Mexico|Roosevelt|2277|16|0.7
+New Mexico|San Juan|109838|7459|6.79
+New Mexico|San Miguel|840|0|0
+New Mexico|Sandoval|42039|1696|4.03
+New Mexico|Santa Fe|11842|154|1.3
+New Mexico|Sierra|179|0|0
+New Mexico|Socorro|3841|267|6.95
+New Mexico|Taos|2210|8|0.36
+New Mexico|Torrance|2854|55|1.93
+New Mexico|Union|270|0|0
+New Mexico|Unknown|129|19|14.73
+New Mexico|Valencia|5468|92|1.68
+New York|Albany|128954|8944|6.94
+New York|Allegany|3735|7|0.19
+New York|Broome|37630|3017|8.02
+New York|Cattaraugus|6137|179|2.92
+New York|Cayuga|6078|86|1.41
+New York|Chautauqua|5602|223|3.98
+New York|Chemung|10385|346|3.33
+New York|Chenango|9806|134|1.37
+New York|Clinton|7027|308|4.38
+New York|Columbia|26139|2432|9.3
+New York|Cortland|2999|0|0
+New York|Delaware|6165|6|0.1
+New York|Dutchess|291865|9554|3.27
+New York|Erie|413105|33297|8.06
+New York|Essex|3268|0|0
+New York|Franklin|1716|0|0
+New York|Fulton|12532|779|6.22
+New York|Genesee|14653|322|2.2
+New York|Greene|15914|245|1.54
+New York|Hamilton|420|0|0
+New York|Herkimer|7953|106|1.33
+New York|Jefferson|5960|0|0
+New York|Lewis|1340|0|0
+New York|Livingston|8090|265|3.28
+New York|Madison|21382|284|1.33
+New York|Monroe|198694|13922|7.01
+New York|Montgomery|6336|265|4.18
+New York|Nassau|3246447|193354|5.96
+New York|New York City|16274975|1594985|9.8
+New York|Niagara|65208|3109|4.77
+New York|Oneida|69416|3521|5.07
+New York|Onondaga|139293|7958|5.71
+New York|Ontario|13406|993|7.41
+New York|Orange|796926|25919|3.25
+New York|Orleans|14016|1596|11.39
+New York|Oswego|8369|14|0.17
+New York|Otsego|5872|450|7.66
+New York|Putnam|91831|4350|4.74
+New York|Rensselaer|33332|2187|6.56
+New York|Rockland|1056707|33725|3.19
+New York|Saratoga|36405|303|0.83
+New York|Schenectady|49347|2245|4.55
+New York|Schoharie|3722|0|0
+New York|Schuyler|806|0|0
+New York|Seneca|4032|22|0.55
+New York|St. Lawrence|15436|168|1.09
+New York|Steuben|19088|1247|6.53
+New York|Suffolk|3104053|133243|4.29
+New York|Sullivan|93659|1846|1.97
+New York|Tioga|8577|1017|11.86
+New York|Tompkins|13211|160|1.21
+New York|Ulster|122348|2615|2.14
+New York|Warren|17197|1773|10.31
+New York|Washington|15627|615|3.94
+New York|Wayne|8523|56|0.66
+New York|Westchester|2710955|108350|4
+New York|Wyoming|6281|245|3.9
+New York|Yates|2296|321|13.98
+North Carolina|Alamance|30305|1235|4.08
+North Carolina|Alexander|2320|1|0.04
+North Carolina|Alleghany|1231|0|0
+North Carolina|Anson|4544|34|0.75
+North Carolina|Ashe|2070|21|1.01
+North Carolina|Avery|206|0|0
+North Carolina|Beaufort|2858|0|0
+North Carolina|Bertie|7247|240|3.31
+North Carolina|Bladen|9077|110|1.21
+North Carolina|Brunswick|11504|326|2.83
+North Carolina|Buncombe|20338|1332|6.55
+North Carolina|Burke|30692|1014|3.3
+North Carolina|Cabarrus|39688|1441|3.63
+North Carolina|Caldwell|11020|142|1.29
+North Carolina|Camden|414|0|0
+North Carolina|Carteret|3241|244|7.53
+North Carolina|Caswell|4852|54|1.11
+North Carolina|Catawba|18214|382|2.1
+North Carolina|Chatham|43110|1732|4.02
+North Carolina|Cherokee|1822|92|5.05
+North Carolina|Chowan|1059|0|0
+North Carolina|Clay|509|0|0
+North Carolina|Cleveland|8260|155|1.88
+North Carolina|Columbus|21544|1570|7.29
+North Carolina|Craven|12574|345|2.74
+North Carolina|Cumberland|44832|1379|3.08
+North Carolina|Currituck|851|0|0
+North Carolina|Dare|1632|89|5.45
+North Carolina|Davidson|31327|805|2.57
+North Carolina|Davie|6596|186|2.82
+North Carolina|Duplin|49028|842|1.72
+North Carolina|Durham|127291|3005|2.36
+North Carolina|Edgecombe|13778|531|3.85
+North Carolina|Forsyth|90852|1055|1.16
+North Carolina|Franklin|12896|1435|11.13
+North Carolina|Gaston|26913|507|1.88
+North Carolina|Gates|1315|55|4.18
+North Carolina|Graham|236|0|0
+North Carolina|Granville|27802|752|2.7
+North Carolina|Greene|5542|96|1.73
+North Carolina|Guilford|93380|4611|4.94
+North Carolina|Halifax|11508|111|0.96
+North Carolina|Harnett|22407|1500|6.69
+North Carolina|Haywood|2936|0|0
+North Carolina|Henderson|25013|2748|10.99
+North Carolina|Hertford|6590|248|3.76
+North Carolina|Hoke|14734|67|0.45
+North Carolina|Hyde|156|0|0
+North Carolina|Iredell|22161|383|1.73
+North Carolina|Jackson|2691|57|2.12
+North Carolina|Johnston|39161|1556|3.97
+North Carolina|Jones|1695|186|10.97
+North Carolina|Lee|29424|239|0.81
+North Carolina|Lenoir|14020|450|3.21
+North Carolina|Lincoln|6538|4|0.06
+North Carolina|Macon|6399|85|1.33
+North Carolina|Madison|235|0|0
+North Carolina|Martin|4399|205|4.66
+North Carolina|McDowell|6217|67|1.08
+North Carolina|Mecklenburg|339226|6534|1.93
+North Carolina|Mitchell|934|0|0
+North Carolina|Montgomery|8824|274|3.11
+North Carolina|Moore|15127|613|4.05
+North Carolina|Nash|15122|255|1.69
+North Carolina|New Hanover|19033|289|1.52
+North Carolina|Northampton|10729|756|7.05
+North Carolina|Onslow|8488|168|1.98
+North Carolina|Orange|27582|2370|8.59
+North Carolina|Pamlico|856|0|0
+North Carolina|Pasquotank|7409|602|8.13
+North Carolina|Pender|6104|57|0.93
+North Carolina|Perquimans|1679|117|6.97
+North Carolina|Person|3733|63|1.69
+North Carolina|Pitt|23495|186|0.79
+North Carolina|Polk|2970|188|6.33
+North Carolina|Randolph|43829|893|2.04
+North Carolina|Richmond|10284|228|2.22
+North Carolina|Robeson|48638|1343|2.76
+North Carolina|Rockingham|6458|173|2.68
+North Carolina|Rowan|49766|2333|4.69
+North Carolina|Rutherford|13665|528|3.86
+North Carolina|Sampson|31222|174|0.56
+North Carolina|Scotland|5267|1|0.02
+North Carolina|Stanly|7612|318|4.18
+North Carolina|Stokes|4170|10|0.24
+North Carolina|Surry|13383|93|0.69
+North Carolina|Swain|1292|0|0
+North Carolina|Transylvania|998|27|2.71
+North Carolina|Tyrrell|349|0|0
+North Carolina|Union|38635|1294|3.35
+North Carolina|Vance|19487|1434|7.36
+North Carolina|Wake|153311|2287|1.49
+North Carolina|Warren|4880|102|2.09
+North Carolina|Washington|2297|223|9.71
+North Carolina|Watauga|1950|0|0
+North Carolina|Wayne|79953|1221|1.53
+North Carolina|Wilkes|26522|267|1.01
+North Carolina|Wilson|26170|798|3.05
+North Carolina|Yadkin|10695|162|1.51
+North Carolina|Yancey|1115|0|0
+North Dakota|Barnes|580|0|0
+North Dakota|Benson|110|0|0
+North Dakota|Billings|11|0|0
+North Dakota|Bottineau|144|0|0
+North Dakota|Bowman|85|0|0
+North Dakota|Burke|365|0|0
+North Dakota|Burleigh|10677|0|0
+North Dakota|Cass|101591|3003|2.96
+North Dakota|Cavalier|21|0|0
+North Dakota|Dickey|79|0|0
+North Dakota|Divide|95|0|0
+North Dakota|Dunn|871|0|0
+North Dakota|Eddy|257|0|0
+North Dakota|Emmons|219|85|38.81
+North Dakota|Foster|106|0|0
+North Dakota|Grand Forks|22537|183|0.81
+North Dakota|Grant|146|0|0
+North Dakota|Griggs|50|0|0
+North Dakota|Hettinger|5|0|0
+North Dakota|Kidder|43|0|0
+North Dakota|LaMoure|221|0|0
+North Dakota|McHenry|162|93|57.41
+North Dakota|McIntosh|100|0|0
+North Dakota|McKenzie|1358|0|0
+North Dakota|McLean|548|0|0
+North Dakota|Mercer|289|0|0
+North Dakota|Morton|4154|172|4.14
+North Dakota|Mountrail|3244|0|0
+North Dakota|Nelson|79|0|0
+North Dakota|Oliver|95|0|0
+North Dakota|Pembina|388|0|0
+North Dakota|Pierce|277|0|0
+North Dakota|Ramsey|582|44|7.56
+North Dakota|Ransom|542|0|0
+North Dakota|Renville|138|0|0
+North Dakota|Richland|1501|0|0
+North Dakota|Rolette|356|0|0
+North Dakota|Sargent|232|0|0
+North Dakota|Sheridan|25|0|0
+North Dakota|Sioux|356|0|0
+North Dakota|Slope|260|0|0
+North Dakota|Stark|4890|165|3.37
+North Dakota|Steele|45|0|0
+North Dakota|Stutsman|2077|10|0.48
+North Dakota|Traill|652|0|0
+North Dakota|Unknown|165|166|100.61
+North Dakota|Walsh|928|0|0
+North Dakota|Ward|3112|80|2.57
+North Dakota|Wells|296|0|0
+North Dakota|Williams|1645|0|0
+Northern Mariana Islands|Unknown|1814|176|9.7
+Ohio|Adams|763|44|5.77
+Ohio|Allen|14163|2209|15.6
+Ohio|Ashland|1612|5|0.31
+Ohio|Ashtabula|20462|2102|10.27
+Ohio|Athens|1110|93|8.38
+Ohio|Auglaize|4711|228|4.84
+Ohio|Belmont|25632|934|3.64
+Ohio|Brown|2031|92|4.53
+Ohio|Butler|56917|1706|3
+Ohio|Carroll|2387|153|6.41
+Ohio|Champaign|1930|82|4.25
+Ohio|Clark|20467|363|1.77
+Ohio|Clermont|14042|342|2.44
+Ohio|Clinton|3331|3|0.09
+Ohio|Columbiana|46793|3293|7.04
+Ohio|Coshocton|2814|2|0.07
+Ohio|Crawford|7129|203|2.85
+Ohio|Cuyahoga|308165|16157|5.24
+Ohio|Darke|11577|1493|12.9
+Ohio|Defiance|2457|118|4.8
+Ohio|Delaware|23319|745|3.19
+Ohio|Erie|10334|782|7.57
+Ohio|Fairfield|20282|459|2.26
+Ohio|Fayette|2508|0|0
+Ohio|Franklin|394119|16157|4.1
+Ohio|Fulton|2910|0|0
+Ohio|Gallia|646|99|15.33
+Ohio|Geauga|19608|1976|10.08
+Ohio|Greene|7633|413|5.41
+Ohio|Guernsey|2377|80|3.37
+Ohio|Hamilton|188170|9701|5.16
+Ohio|Hancock|3916|83|2.12
+Ohio|Hardin|4143|170|4.1
+Ohio|Harrison|614|11|1.79
+Ohio|Henry|1018|0|0
+Ohio|Highland|1715|58|3.38
+Ohio|Hocking|3702|267|7.21
+Ohio|Holmes|3776|128|3.39
+Ohio|Huron|4718|94|1.99
+Ohio|Jackson|843|0|0
+Ohio|Jefferson|4710|126|2.68
+Ohio|Knox|1947|90|4.62
+Ohio|Lake|21616|864|4
+Ohio|Lawrence|2524|2|0.08
+Ohio|Licking|17687|664|3.75
+Ohio|Logan|2604|1|0.04
+Ohio|Lorain|50235|3817|7.6
+Ohio|Lucas|151664|15420|10.17
+Ohio|Madison|9254|456|4.93
+Ohio|Mahoning|100368|11891|11.85
+Ohio|Marion|186064|1541|0.83
+Ohio|Medina|23392|1667|7.13
+Ohio|Meigs|393|0|0
+Ohio|Mercer|11510|337|2.93
+Ohio|Miami|24292|2369|9.75
+Ohio|Monroe|3799|587|15.45
+Ohio|Montgomery|53457|1137|2.13
+Ohio|Morgan|406|0|0
+Ohio|Morrow|6662|65|0.98
+Ohio|Muskingum|3132|29|0.93
+Ohio|Noble|437|0|0
+Ohio|Ottawa|6062|771|12.72
+Ohio|Paulding|974|0|0
+Ohio|Perry|1412|57|4.04
+Ohio|Pickaway|144325|2162|1.5
+Ohio|Pike|582|0|0
+Ohio|Portage|24487|3908|15.96
+Ohio|Preble|2796|84|3
+Ohio|Putnam|6115|875|14.31
+Ohio|Richland|13653|214|1.57
+Ohio|Ross|4858|110|2.26
+Ohio|Sandusky|5224|693|13.27
+Ohio|Scioto|1231|0|0
+Ohio|Seneca|1655|139|8.4
+Ohio|Shelby|3311|152|4.59
+Ohio|Stark|50230|6027|12
+Ohio|Summit|92965|9921|10.67
+Ohio|Trumbull|40452|3295|8.15
+Ohio|Tuscarawas|20918|274|1.31
+Ohio|Union|3421|34|0.99
 Ohio|Unknown|2|0|0
-Ohio|Van Wert|439|0|0
-Ohio|Vinton|928|55|5.93
-Ohio|Warren|21384|1062|4.97
-Ohio|Washington|7659|1073|14.01
-Ohio|Wayne|15074|2823|18.73
-Ohio|Williams|3029|69|2.28
-Ohio|Wood|16790|2486|14.81
-Ohio|Wyandot|2447|170|6.95
-Oklahoma|Adair|5556|242|4.36
-Oklahoma|Alfalfa|71|0|0
-Oklahoma|Atoka|228|0|0
-Oklahoma|Beaver|1293|0|0
-Oklahoma|Beckham|420|0|0
-Oklahoma|Blaine|318|0|0
-Oklahoma|Bryan|1682|63|3.75
-Oklahoma|Caddo|8322|576|6.92
-Oklahoma|Canadian|9015|226|2.51
-Oklahoma|Carter|1755|57|3.25
-Oklahoma|Cherokee|2453|77|3.14
-Oklahoma|Choctaw|2610|26|1
-Oklahoma|Cimarron|63|0|0
-Oklahoma|Cleveland|35727|2507|7.02
-Oklahoma|Coal|127|0|0
-Oklahoma|Comanche|14923|172|1.15
-Oklahoma|Cotton|399|107|26.82
-Oklahoma|Craig|984|0|0
-Oklahoma|Creek|6850|475|6.93
-Oklahoma|Custer|1460|0|0
-Oklahoma|Delaware|7021|951|13.55
-Oklahoma|Dewey|185|0|0
-Oklahoma|Ellis|2|0|0
-Oklahoma|Garfield|1854|74|3.99
-Oklahoma|Garvin|1418|55|3.88
-Oklahoma|Grady|4970|161|3.24
-Oklahoma|Grant|154|0|0
-Oklahoma|Greer|4846|487|10.05
-Oklahoma|Harper|66|0|0
-Oklahoma|Haskell|348|0|0
-Oklahoma|Hughes|71|0|0
-Oklahoma|Jackson|1554|98|6.31
-Oklahoma|Jefferson|211|0|0
-Oklahoma|Johnston|246|0|0
-Oklahoma|Kay|4334|487|11.24
-Oklahoma|Kingfisher|747|0|0
-Oklahoma|Kiowa|383|0|0
-Oklahoma|Latimer|409|80|19.56
-Oklahoma|Le Flore|975|46|4.72
-Oklahoma|Lincoln|1395|101|7.24
-Oklahoma|Logan|1341|55|4.1
-Oklahoma|Love|722|0|0
-Oklahoma|Major|351|70|19.94
-Oklahoma|Marshall|497|0|0
-Oklahoma|Mayes|2343|284|12.12
-Oklahoma|McClain|5967|151|2.53
-Oklahoma|McCurtain|3767|36|0.96
-Oklahoma|McIntosh|674|35|5.19
-Oklahoma|Murray|273|0|0
-Oklahoma|Muskogee|3306|431|13.04
-Oklahoma|Noble|705|0|0
-Oklahoma|Nowata|1633|14|0.86
-Oklahoma|Okfuskee|219|0|0
-Oklahoma|Oklahoma|82845|3499|4.22
-Oklahoma|Okmulgee|1674|0|0
-Oklahoma|Osage|6814|612|8.98
-Oklahoma|Ottawa|2569|102|3.97
-Oklahoma|Pawnee|2607|167|6.41
-Oklahoma|Payne|4760|59|1.24
-Oklahoma|Pittsburg|2598|177|6.81
-Oklahoma|Pontotoc|1069|123|11.51
-Oklahoma|Pottawatomie|4134|290|7.01
-Oklahoma|Pushmataha|182|0|0
-Oklahoma|Rogers|5311|300|5.65
-Oklahoma|Seminole|1491|145|9.73
-Oklahoma|Sequoyah|1133|222|19.59
-Oklahoma|Stephens|2301|82|3.56
-Oklahoma|Texas|40521|266|0.66
-Oklahoma|Tillman|1131|42|3.71
-Oklahoma|Tulsa|69418|3199|4.61
-Oklahoma|Wagoner|10520|1116|10.61
-Oklahoma|Washington|20874|1937|9.28
-Oklahoma|Washita|77|0|0
-Oklahoma|Woods|227|0|0
-Oklahoma|Woodward|283|0|0
-Oregon|Baker|50|0|0
-Oregon|Benton|3689|362|9.81
-Oregon|Clackamas|22871|767|3.35
-Oregon|Clatsop|2207|0|0
-Oregon|Columbia|1246|0|0
-Oregon|Coos|1727|0|0
-Oregon|Crook|264|0|0
-Oregon|Curry|389|0|0
-Oregon|Deschutes|8010|0|0
-Oregon|Douglas|1998|0|0
-Oregon|Grant|95|0|0
-Oregon|Harney|56|0|0
-Oregon|Hood River|1922|0|0
-Oregon|Jackson|4788|0|0
-Oregon|Jefferson|2143|0|0
-Oregon|Josephine|1846|73|3.95
-Oregon|Klamath|3308|0|0
-Oregon|Lake|92|0|0
-Oregon|Lane|5113|181|3.54
-Oregon|Lincoln|3814|1|0.03
-Oregon|Linn|8148|602|7.39
-Oregon|Malheur|1565|16|1.02
-Oregon|Marion|59036|1711|2.9
-Oregon|Morrow|854|2|0.23
-Oregon|Multnomah|75103|3822|5.09
-Oregon|Polk|6148|523|8.51
-Oregon|Sherman|79|0|0
-Oregon|Tillamook|472|0|0
-Oregon|Umatilla|7303|140|1.92
-Oregon|Union|2270|0|0
-Oregon|Unknown|173|0|0
-Oregon|Wallowa|156|0|0
-Oregon|Wasco|1644|58|3.53
-Oregon|Washington|50729|1116|2.2
-Oregon|Yamhill|4701|549|11.68
-Pennsylvania|Adams|14226|411|2.89
-Pennsylvania|Allegheny|124043|9217|7.43
-Pennsylvania|Armstrong|4125|251|6.08
-Pennsylvania|Beaver|36076|4732|13.12
-Pennsylvania|Bedford|2422|108|4.46
-Pennsylvania|Berks|245567|15553|6.33
-Pennsylvania|Blair|2709|36|1.33
-Pennsylvania|Bradford|2919|249|8.53
-Pennsylvania|Bucks|299857|26253|8.76
-Pennsylvania|Butler|16222|678|4.18
-Pennsylvania|Cambria|3254|151|4.64
-Pennsylvania|Cameron|136|0|0
-Pennsylvania|Carbon|15487|1309|8.45
-Pennsylvania|Centre|9734|303|3.11
-Pennsylvania|Chester|159091|14256|8.96
-Pennsylvania|Clarion|1858|102|5.49
-Pennsylvania|Clearfield|2352|0|0
-Pennsylvania|Clinton|3063|81|2.64
-Pennsylvania|Columbia|22800|1662|7.29
-Pennsylvania|Crawford|1843|0|0
-Pennsylvania|Cumberland|36069|2589|7.18
-Pennsylvania|Dauphin|72774|3927|5.4
-Pennsylvania|Delaware|381567|30299|7.94
-Pennsylvania|Elk|361|11|3.05
-Pennsylvania|Erie|15680|275|1.75
-Pennsylvania|Fayette|6610|289|4.37
-Pennsylvania|Forest|532|0|0
-Pennsylvania|Franklin|39449|1599|4.05
-Pennsylvania|Fulton|743|37|4.98
-Pennsylvania|Greene|2148|15|0.7
-Pennsylvania|Huntingdon|10993|99|0.9
-Pennsylvania|Indiana|5798|317|5.47
-Pennsylvania|Jefferson|647|11|1.7
-Pennsylvania|Juniata|6570|170|2.59
-Pennsylvania|Lackawanna|90586|9286|10.25
-Pennsylvania|Lancaster|186203|17129|9.2
-Pennsylvania|Lawrence|5576|538|9.65
-Pennsylvania|Lebanon|62011|1589|2.56
-Pennsylvania|Lehigh|246871|11408|4.62
-Pennsylvania|Luzerne|183516|8417|4.59
-Pennsylvania|Lycoming|8832|665|7.53
-Pennsylvania|McKean|669|47|7.03
-Pennsylvania|Mercer|6559|229|3.49
-Pennsylvania|Mifflin|3452|36|1.04
-Pennsylvania|Monroe|94181|5632|5.98
-Pennsylvania|Montgomery|426669|37877|8.88
-Pennsylvania|Montour|4046|3|0.07
-Pennsylvania|Northampton|190401|11437|6.01
-Pennsylvania|Northumberland|10868|114|1.05
-Pennsylvania|Perry|3347|155|4.63
-Pennsylvania|Philadelphia|1369535|71806|5.24
-Pennsylvania|Pike|32013|1248|3.9
-Pennsylvania|Potter|484|0|0
-Pennsylvania|Schuylkill|37064|1573|4.24
-Pennsylvania|Snyder|2960|87|2.94
-Pennsylvania|Somerset|2389|41|1.72
-Pennsylvania|Sullivan|144|0|0
-Pennsylvania|Susquehanna|7479|853|11.41
-Pennsylvania|Tioga|1277|136|10.65
-Pennsylvania|Union|3790|66|1.74
-Pennsylvania|Venango|739|0|0
-Pennsylvania|Warren|205|29|14.15
-Pennsylvania|Washington|9780|286|2.92
-Pennsylvania|Wayne|8310|436|5.25
-Pennsylvania|Westmoreland|31494|2360|7.49
-Pennsylvania|Wyoming|2058|313|15.21
-Pennsylvania|York|62763|1412|2.25
-Puerto Rico|Unknown|229277|8287|3.61
-Rhode Island|Bristol|12646|343|2.71
-Rhode Island|Kent|59860|3006|5.02
-Rhode Island|Newport|14659|204|1.39
-Rhode Island|Providence|618518|24714|4
-Rhode Island|Unknown|115286|6456|5.6
-Rhode Island|Washington|29499|2307|7.82
-South Carolina|Abbeville|2928|0|0
-South Carolina|Aiken|11406|485|4.25
-South Carolina|Allendale|1900|156|8.21
-South Carolina|Anderson|16922|601|3.55
-South Carolina|Bamberg|1654|0|0
-South Carolina|Barnwell|2539|39|1.54
-South Carolina|Beaufort|28381|891|3.14
-South Carolina|Berkeley|17730|953|5.38
-South Carolina|Calhoun|1205|84|6.97
-South Carolina|Charleston|51025|755|1.48
-South Carolina|Cherokee|2770|137|4.95
-South Carolina|Chester|4492|23|0.51
-South Carolina|Chesterfield|9964|198|1.99
-South Carolina|Clarendon|18922|2057|10.87
-South Carolina|Colleton|6061|576|9.5
-South Carolina|Darlington|15747|429|2.72
-South Carolina|Dillon|8436|127|1.51
-South Carolina|Dorchester|11430|188|1.64
-South Carolina|Edgefield|2998|116|3.87
-South Carolina|Fairfield|9123|654|7.17
-South Carolina|Florence|36563|1981|5.42
-South Carolina|Georgetown|5886|204|3.47
-South Carolina|Greenville|103953|3246|3.12
-South Carolina|Greenwood|8682|103|1.19
-South Carolina|Hampton|2337|27|1.16
-South Carolina|Horry|36925|1627|4.41
-South Carolina|Jasper|2515|106|4.21
-South Carolina|Kershaw|24351|907|3.72
-South Carolina|Lancaster|10728|343|3.2
-South Carolina|Laurens|5099|193|3.79
-South Carolina|Lee|10665|855|8.02
-South Carolina|Lexington|45821|1881|4.11
-South Carolina|Marion|4212|256|6.08
-South Carolina|Marlboro|8155|72|0.88
-South Carolina|McCormick|579|77|13.3
-South Carolina|Newberry|3720|93|2.5
-South Carolina|Oconee|3449|3|0.09
-South Carolina|Orangeburg|12434|191|1.54
-South Carolina|Pickens|10244|154|1.5
-South Carolina|Richland|100550|3736|3.72
-South Carolina|Saluda|7317|25|0.34
-South Carolina|Spartanburg|37961|1302|3.43
-South Carolina|Sumter|27077|1052|3.89
-South Carolina|Union|2560|0|0
-South Carolina|Williamsburg|12047|579|4.81
-South Carolina|York|26421|460|1.74
-South Dakota|Aurora|981|0|0
-South Dakota|Beadle|12067|243|2.01
-South Dakota|Bennett|14|0|0
-South Dakota|Bon Homme|475|0|0
-South Dakota|Brookings|1363|0|0
-South Dakota|Brown|12602|39|0.31
-South Dakota|Brule|150|0|0
-South Dakota|Buffalo|1024|0|0
-South Dakota|Charles Mix|1024|0|0
-South Dakota|Clark|289|0|0
-South Dakota|Clay|1575|0|0
-South Dakota|Codington|1996|0|0
-South Dakota|Corson|288|0|0
-South Dakota|Custer|45|0|0
-South Dakota|Davison|1067|107|10.03
-South Dakota|Day|615|0|0
-South Dakota|Deuel|87|0|0
-South Dakota|Dewey|45|0|0
-South Dakota|Douglas|133|0|0
-South Dakota|Edmunds|82|0|0
-South Dakota|Fall River|248|0|0
-South Dakota|Faulk|337|0|0
-South Dakota|Grant|485|0|0
-South Dakota|Gregory|23|0|0
-South Dakota|Hamlin|314|0|0
-South Dakota|Hand|154|0|0
-South Dakota|Hanson|56|0|0
-South Dakota|Hughes|1153|0|0
-South Dakota|Hutchinson|344|0|0
-South Dakota|Hyde|100|0|0
-South Dakota|Jackson|125|4|3.2
-South Dakota|Jerauld|1373|60|4.37
-South Dakota|Kingsbury|94|0|0
-South Dakota|Lake|540|14|2.59
-South Dakota|Lawrence|850|0|0
-South Dakota|Lincoln|14233|6|0.04
-South Dakota|Lyman|935|0|0
-South Dakota|Marshall|194|0|0
-South Dakota|McCook|414|75|18.12
-South Dakota|McPherson|92|0|0
-South Dakota|Meade|913|18|1.97
-South Dakota|Mellette|17|0|0
-South Dakota|Miner|119|0|0
-South Dakota|Minnehaha|195413|2312|1.18
-South Dakota|Moody|925|0|0
-South Dakota|Oglala Lakota|1268|0|0
-South Dakota|Pennington|10571|160|1.51
-South Dakota|Roberts|1607|0|0
-South Dakota|Sanborn|528|0|0
-South Dakota|Spink|318|0|0
-South Dakota|Stanley|531|0|0
-South Dakota|Sully|72|0|0
-South Dakota|Todd|1391|27|1.94
-South Dakota|Tripp|233|0|0
-South Dakota|Turner|1391|0|0
-South Dakota|Union|4416|12|0.27
-South Dakota|Walworth|363|0|0
-South Dakota|Yankton|3115|0|0
-South Dakota|Ziebach|67|0|0
-Tennessee|Anderson|2859|95|3.32
-Tennessee|Bedford|17475|235|1.34
-Tennessee|Benton|525|61|11.62
-Tennessee|Bledsoe|36969|42|0.11
-Tennessee|Blount|6076|231|3.8
-Tennessee|Bradley|9023|90|1
-Tennessee|Campbell|1349|69|5.11
-Tennessee|Cannon|1386|0|0
-Tennessee|Carroll|1821|64|3.51
-Tennessee|Carter|1190|69|5.8
-Tennessee|Cheatham|6668|0|0
-Tennessee|Chester|871|0|0
-Tennessee|Claiborne|666|0|0
-Tennessee|Clay|507|0|0
-Tennessee|Cocke|1371|0|0
-Tennessee|Coffee|4226|0|0
-Tennessee|Crockett|862|85|9.86
-Tennessee|Cumberland|7244|81|1.12
-Tennessee|Davidson|327958|3675|1.12
-Tennessee|Decatur|460|0|0
-Tennessee|DeKalb|2110|0|0
-Tennessee|Dickson|7092|0|0
-Tennessee|Dyer|4012|0|0
-Tennessee|Fayette|7532|109|1.45
-Tennessee|Fentress|621|0|0
-Tennessee|Franklin|3314|94|2.84
-Tennessee|Gibson|3991|62|1.55
-Tennessee|Giles|881|0|0
-Tennessee|Grainger|703|0|0
-Tennessee|Greene|3542|153|4.32
-Tennessee|Grundy|2363|70|2.96
-Tennessee|Hamblen|2594|156|6.01
-Tennessee|Hamilton|54450|1206|2.21
-Tennessee|Hancock|44|0|0
-Tennessee|Hardeman|9424|4|0.04
-Tennessee|Hardin|1155|96|8.31
-Tennessee|Hawkins|2426|154|6.35
-Tennessee|Haywood|2023|105|5.19
-Tennessee|Henderson|825|0|0
-Tennessee|Henry|1607|0|0
-Tennessee|Hickman|3266|0|0
-Tennessee|Houston|511|0|0
-Tennessee|Humphreys|908|59|6.5
-Tennessee|Jackson|958|0|0
-Tennessee|Jefferson|2167|2|0.09
-Tennessee|Johnson|919|0|0
-Tennessee|Knox|27172|371|1.37
-Tennessee|Lake|24204|0|0
-Tennessee|Lauderdale|2999|36|1.2
-Tennessee|Lawrence|2240|17|0.76
-Tennessee|Lewis|241|0|0
-Tennessee|Lincoln|1715|0|0
-Tennessee|Loudon|7254|12|0.17
-Tennessee|Macon|7525|221|2.94
-Tennessee|Madison|11048|105|0.95
-Tennessee|Marion|2783|97|3.49
-Tennessee|Marshall|2075|74|3.57
-Tennessee|Maury|6314|53|0.84
-Tennessee|McMinn|7755|597|7.7
-Tennessee|McNairy|1184|0|0
-Tennessee|Meigs|1369|0|0
-Tennessee|Monroe|3485|139|3.99
-Tennessee|Montgomery|16412|213|1.3
-Tennessee|Moore|238|0|0
-Tennessee|Morgan|960|7|0.73
-Tennessee|Obion|2093|88|4.2
-Tennessee|Overton|1476|0|0
-Tennessee|Perry|1153|0|0
-Tennessee|Pickett|129|0|0
-Tennessee|Polk|1112|0|0
-Tennessee|Putnam|23901|346|1.45
-Tennessee|Rhea|7419|0|0
-Tennessee|Roane|1096|0|0
-Tennessee|Robertson|25304|175|0.69
-Tennessee|Rutherford|71233|1378|1.93
-Tennessee|Scott|919|0|0
-Tennessee|Sequatchie|826|0|0
-Tennessee|Sevier|7728|122|1.58
-Tennessee|Shelby|306221|6546|2.14
-Tennessee|Smith|2040|69|3.38
-Tennessee|Stewart|702|0|0
-Tennessee|Sullivan|4424|124|2.8
-Tennessee|Sumner|60805|3049|5.01
-Tennessee|Tipton|23073|134|0.58
-Tennessee|Trousdale|74552|218|0.29
-Tennessee|Unicoi|1202|0|0
-Tennessee|Union|335|0|0
-Tennessee|Unknown|6470|64|0.99
-Tennessee|Van Buren|213|0|0
-Tennessee|Warren|1262|0|0
-Tennessee|Washington|5287|0|0
-Tennessee|Wayne|2599|0|0
-Tennessee|Weakley|1696|0|0
-Tennessee|White|1709|21|1.23
-Tennessee|Williamson|40185|709|1.76
-Tennessee|Wilson|26203|505|1.93
-Texas|Anderson|10209|14|0.14
-Texas|Andrews|1772|0|0
-Texas|Angelina|11235|156|1.39
-Texas|Aransas|279|0|0
-Texas|Archer|71|0|0
-Texas|Armstrong|149|0|0
-Texas|Atascosa|2195|96|4.37
-Texas|Austin|1607|0|0
-Texas|Bailey|1104|0|0
-Texas|Bandera|441|0|0
-Texas|Bastrop|11720|185|1.58
-Texas|Baylor|20|0|0
-Texas|Bee|874|0|0
-Texas|Bell|24188|324|1.34
-Texas|Bexar|188510|4702|2.49
-Texas|Blanco|610|24|3.93
-Texas|Bosque|374|0|0
-Texas|Bowie|13783|776|5.63
-Texas|Brazoria|58617|728|1.24
-Texas|Brazos|32435|1432|4.41
-Texas|Brewster|229|0|0
-Texas|Briscoe|52|0|0
-Texas|Brooks|73|0|0
-Texas|Brown|3222|460|14.28
-Texas|Burleson|1652|0|0
-Texas|Burnet|2440|26|1.07
-Texas|Caldwell|4034|6|0.15
-Texas|Calhoun|2638|184|6.97
-Texas|Callahan|482|57|11.83
-Texas|Cameron|48929|1932|3.95
-Texas|Camp|3161|12|0.38
-Texas|Carson|278|0|0
-Texas|Cass|1654|95|5.74
-Texas|Castro|2084|80|3.84
-Texas|Chambers|4905|1|0.02
-Texas|Cherokee|2432|105|4.32
-Texas|Childress|163|0|0
-Texas|Clay|281|0|0
-Texas|Cochran|61|0|0
-Texas|Coke|83|0|0
-Texas|Coleman|128|0|0
-Texas|Collin|84649|2034|2.4
-Texas|Collingsworth|209|0|0
-Texas|Colorado|1461|0|0
-Texas|Comal|7639|493|6.45
-Texas|Comanche|525|54|10.29
-Texas|Concho|77|0|0
-Texas|Cooke|926|0|0
-Texas|Coryell|14801|123|0.83
-Texas|Cottle|206|45|21.84
-Texas|Crane|1020|116|11.37
-Texas|Crockett|73|0|0
-Texas|Crosby|218|69|31.65
-Texas|Culberson|3|0|0
-Texas|Dallam|1409|16|1.14
-Texas|Dallas|584628|12967|2.22
-Texas|Dawson|2380|75|3.15
-Texas|Deaf Smith|7956|481|6.05
-Texas|Delta|106|0|0
-Texas|Denton|87379|2015|2.31
-Texas|DeWitt|1410|63|4.47
-Texas|Dickens|89|0|0
-Texas|Dimmit|81|0|0
-Texas|Donley|1937|0|0
-Texas|Duval|272|0|0
-Texas|Eastland|392|0|0
-Texas|Ector|11785|331|2.81
-Texas|El Paso|148276|3811|2.57
-Texas|Ellis|19178|816|4.25
-Texas|Erath|1457|81|5.56
-Texas|Falls|557|0|0
-Texas|Fannin|2224|114|5.13
-Texas|Fayette|2233|100|4.48
-Texas|Fisher|74|31|41.89
-Texas|Floyd|553|4|0.72
-Texas|Fort Bend|119332|2646|2.22
-Texas|Franklin|765|0|0
-Texas|Freestone|591|0|0
-Texas|Frio|2489|0|0
-Texas|Gaines|434|0|0
-Texas|Galveston|61629|2179|3.54
-Texas|Garza|259|0|0
-Texas|Gillespie|362|0|0
-Texas|Glasscock|81|0|0
-Texas|Goliad|500|0|0
-Texas|Gonzales|5933|147|2.48
-Texas|Gray|5508|86|1.56
-Texas|Grayson|15008|96|0.64
-Texas|Gregg|12940|303|2.34
-Texas|Grimes|8121|78|0.96
-Texas|Guadalupe|8917|4|0.04
-Texas|Hale|3573|285|7.98
-Texas|Hall|64|12|18.75
-Texas|Hamilton|557|31|5.57
-Texas|Hansford|957|99|10.34
-Texas|Hardeman|83|0|0
-Texas|Hardin|9016|300|3.33
-Texas|Harris|771384|13738|1.78
-Texas|Harrison|12977|1152|8.88
-Texas|Hartley|585|97|16.58
-Texas|Haskell|110|0|0
-Texas|Hays|28845|206|0.71
-Texas|Hemphill|87|0|0
-Texas|Henderson|3445|70|2.03
-Texas|Hidalgo|42690|662|1.55
-Texas|Hill|1698|68|4
-Texas|Hockley|1818|81|4.46
-Texas|Hood|1847|233|12.62
-Texas|Hopkins|1316|6|0.46
-Texas|Houston|4588|0|0
-Texas|Howard|594|73|12.29
-Texas|Hudspeth|206|0|0
-Texas|Hunt|6280|239|3.81
-Texas|Hutchinson|1952|0|0
-Texas|Irion|21|0|0
-Texas|Jack|283|0|0
-Texas|Jackson|1058|40|3.78
-Texas|Jasper|1831|117|6.39
-Texas|Jefferson|40057|1720|4.29
-Texas|Jim Hogg|229|0|0
-Texas|Jim Wells|654|0|0
-Texas|Johnson|11237|230|2.05
-Texas|Jones|18107|0|0
-Texas|Karnes|326|0|0
-Texas|Kaufman|12402|108|0.87
-Texas|Kendall|1857|0|0
-Texas|Kerr|920|18|1.96
-Texas|Kimble|46|0|0
-Texas|Kinney|27|0|0
-Texas|Kleberg|976|71|7.27
-Texas|Knox|77|0|0
-Texas|La Salle|208|0|0
-Texas|Lamar|7317|418|5.71
-Texas|Lamb|806|0|0
-Texas|Lampasas|534|0|0
-Texas|Lavaca|992|59|5.95
-Texas|Lee|1047|46|4.39
-Texas|Leon|635|0|0
-Texas|Liberty|5652|127|2.25
-Texas|Limestone|1584|80|5.05
-Texas|Lipscomb|210|0|0
-Texas|Live Oak|517|0|0
-Texas|Llano|286|0|0
-Texas|Lubbock|49591|3335|6.73
-Texas|Lynn|611|63|10.31
-Texas|Madison|586|0|0
-Texas|Marion|988|27|2.73
-Texas|Martin|231|49|21.21
-Texas|Mason|1675|0|0
-Texas|Matagorda|5499|356|6.47
-Texas|Maverick|5762|51|0.89
-Texas|McCulloch|232|0|0
-Texas|McLennan|9616|304|3.16
-Texas|Medina|6067|143|2.36
-Texas|Menard|1|0|0
-Texas|Midland|9565|713|7.45
-Texas|Milam|1886|60|3.18
-Texas|Mills|35|0|0
-Texas|Mitchell|89|0|0
-Texas|Montague|593|63|10.62
-Texas|Montgomery|62494|1462|2.34
-Texas|Moore|37903|640|1.69
-Texas|Morris|1172|0|0
-Texas|Motley|71|0|0
-Texas|Nacogdoches|16088|1040|6.46
-Texas|Navarro|3564|181|5.08
-Texas|Newton|300|0|0
-Texas|Nolan|213|0|0
-Texas|Nueces|17134|198|1.16
-Texas|Ochiltree|2344|103|4.39
-Texas|Oldham|280|90|32.14
-Texas|Orange|6417|110|1.71
-Texas|Palo Pinto|735|121|16.46
-Texas|Panola|10284|987|9.6
-Texas|Parker|4499|33|0.73
-Texas|Parmer|3415|2|0.06
-Texas|Pecos|3180|0|0
-Texas|Polk|3121|0|0
-Texas|Potter|117246|1496|1.28
-Texas|Presidio|102|0|0
-Texas|Rains|219|0|0
-Texas|Randall|34974|341|0.98
-Texas|Reagan|52|0|0
-Texas|Real|18|0|0
-Texas|Red River|2808|238|8.48
-Texas|Reeves|333|0|0
-Texas|Refugio|168|0|0
-Texas|Roberts|137|0|0
-Texas|Robertson|641|0|0
-Texas|Rockwall|9245|523|5.66
-Texas|Runnels|121|0|0
-Texas|Rusk|4647|102|2.19
-Texas|Sabine|481|20|4.16
-Texas|San Augustine|2368|157|6.63
-Texas|San Jacinto|989|0|0
-Texas|San Patricio|1969|0|0
-Texas|San Saba|46|0|0
-Texas|Schleicher|71|0|0
-Texas|Scurry|764|0|0
-Texas|Shackelford|47|0|0
-Texas|Shelby|11514|332|2.88
-Texas|Sherman|1433|0|0
-Texas|Smith|14843|287|1.93
-Texas|Somervell|33|0|0
-Texas|Starr|3201|0|0
-Texas|Stephens|181|0|0
-Texas|Sutton|4|0|0
-Texas|Swisher|996|17|1.71
-Texas|Tarrant|317043|8837|2.79
-Texas|Taylor|22392|338|1.51
-Texas|Terry|925|0|0
+Ohio|Van Wert|606|0|0
+Ohio|Vinton|1104|71|6.43
+Ohio|Warren|26876|1223|4.55
+Ohio|Washington|8633|1233|14.28
+Ohio|Wayne|17836|3239|18.16
+Ohio|Williams|3525|78|2.21
+Ohio|Wood|19632|2894|14.74
+Ohio|Wyandot|2898|202|6.97
+Oklahoma|Adair|6450|274|4.25
+Oklahoma|Alfalfa|79|0|0
+Oklahoma|Atoka|364|0|0
+Oklahoma|Beaver|1533|0|0
+Oklahoma|Beckham|507|0|0
+Oklahoma|Blaine|431|0|0
+Oklahoma|Bryan|2340|71|3.03
+Oklahoma|Caddo|9790|660|6.74
+Oklahoma|Canadian|10958|250|2.28
+Oklahoma|Carter|2404|65|2.7
+Oklahoma|Cherokee|3028|85|2.81
+Oklahoma|Choctaw|3484|34|0.98
+Oklahoma|Cimarron|71|0|0
+Oklahoma|Cleveland|42122|2827|6.71
+Oklahoma|Coal|183|0|0
+Oklahoma|Comanche|18038|212|1.18
+Oklahoma|Cotton|444|123|27.7
+Oklahoma|Craig|1136|0|0
+Oklahoma|Creek|7930|531|6.7
+Oklahoma|Custer|1887|0|0
+Oklahoma|Delaware|8050|1079|13.4
+Oklahoma|Dewey|222|0|0
+Oklahoma|Ellis|10|0|0
+Oklahoma|Garfield|2366|89|3.76
+Oklahoma|Garvin|1902|63|3.31
+Oklahoma|Grady|6013|201|3.34
+Oklahoma|Grant|170|0|0
+Oklahoma|Greer|5374|543|10.1
+Oklahoma|Harper|74|0|0
+Oklahoma|Haskell|412|0|0
+Oklahoma|Hughes|132|0|0
+Oklahoma|Jackson|1832|122|6.66
+Oklahoma|Jefferson|253|0|0
+Oklahoma|Johnston|330|0|0
+Oklahoma|Kay|5038|543|10.78
+Oklahoma|Kingfisher|943|0|0
+Oklahoma|Kiowa|439|8|1.82
+Oklahoma|Latimer|477|88|18.45
+Oklahoma|Le Flore|1214|54|4.45
+Oklahoma|Lincoln|1623|117|7.21
+Oklahoma|Logan|1662|63|3.79
+Oklahoma|Love|949|0|0
+Oklahoma|Major|415|78|18.8
+Oklahoma|Marshall|705|0|0
+Oklahoma|Mayes|2946|317|10.76
+Oklahoma|McClain|7119|183|2.57
+Oklahoma|McCurtain|6992|61|0.87
+Oklahoma|McIntosh|1062|43|4.05
+Oklahoma|Murray|405|0|0
+Oklahoma|Muskogee|4148|511|12.32
+Oklahoma|Noble|987|0|0
+Oklahoma|Nowata|1894|22|1.16
+Oklahoma|Okfuskee|319|0|0
+Oklahoma|Oklahoma|103196|4045|3.92
+Oklahoma|Okmulgee|2113|0|0
+Oklahoma|Osage|8062|676|8.39
+Oklahoma|Ottawa|2954|118|3.99
+Oklahoma|Pawnee|3025|183|6.05
+Oklahoma|Payne|7406|67|0.9
+Oklahoma|Pittsburg|3035|201|6.62
+Oklahoma|Pontotoc|1340|139|10.37
+Oklahoma|Pottawatomie|4902|322|6.57
+Oklahoma|Pushmataha|259|0|0
+Oklahoma|Rogers|6552|341|5.2
+Oklahoma|Seminole|1782|169|9.48
+Oklahoma|Sequoyah|1383|246|17.79
+Oklahoma|Stephens|2735|90|3.29
+Oklahoma|Texas|48397|314|0.65
+Oklahoma|Tillman|1315|50|3.8
+Oklahoma|Tulsa|93852|3731|3.98
+Oklahoma|Unknown|1|1|100
+Oklahoma|Wagoner|12411|1264|10.18
+Oklahoma|Washington|23999|2245|9.35
+Oklahoma|Washita|101|0|0
+Oklahoma|Woods|269|0|0
+Oklahoma|Woodward|379|0|0
+Oregon|Baker|58|0|0
+Oregon|Benton|4311|402|9.32
+Oregon|Clackamas|28334|958|3.38
+Oregon|Clatsop|2591|0|0
+Oregon|Columbia|1466|0|0
+Oregon|Coos|2040|0|0
+Oregon|Crook|340|0|0
+Oregon|Curry|445|0|0
+Oregon|Deschutes|9311|0|0
+Oregon|Douglas|2294|0|0
+Oregon|Grant|103|0|0
+Oregon|Harney|64|0|0
+Oregon|Hood River|2627|0|0
+Oregon|Jackson|5591|0|0
+Oregon|Jefferson|2887|0|0
+Oregon|Josephine|2078|81|3.9
+Oregon|Klamath|4180|0|0
+Oregon|Lake|183|0|0
+Oregon|Lane|6132|205|3.34
+Oregon|Lincoln|6248|16|0.26
+Oregon|Linn|9239|674|7.3
+Oregon|Malheur|2199|24|1.09
+Oregon|Marion|70471|2032|2.88
+Oregon|Morrow|1244|11|0.88
+Oregon|Multnomah|91610|4382|4.78
+Oregon|Polk|7234|619|8.56
+Oregon|Sherman|87|0|0
+Oregon|Tillamook|532|0|0
+Oregon|Umatilla|10498|172|1.64
+Oregon|Union|4751|5|0.11
+Oregon|Wallowa|220|0|0
+Oregon|Wasco|2123|66|3.11
+Oregon|Washington|60618|1276|2.1
+Oregon|Yamhill|5583|613|10.98
+Pennsylvania|Adams|16842|507|3.01
+Pennsylvania|Allegheny|143720|10685|7.43
+Pennsylvania|Armstrong|4700|299|6.36
+Pennsylvania|Beaver|41225|5356|12.99
+Pennsylvania|Bedford|3031|130|4.29
+Pennsylvania|Berks|281432|18342|6.52
+Pennsylvania|Blair|3262|44|1.35
+Pennsylvania|Bradford|3352|273|8.14
+Pennsylvania|Bucks|345276|30742|8.9
+Pennsylvania|Butler|18531|782|4.22
+Pennsylvania|Cambria|3817|175|4.58
+Pennsylvania|Cameron|156|0|0
+Pennsylvania|Carbon|17672|1509|8.54
+Pennsylvania|Centre|11323|355|3.14
+Pennsylvania|Chester|188317|16829|8.94
+Pennsylvania|Clarion|2126|118|5.55
+Pennsylvania|Clearfield|2923|0|0
+Pennsylvania|Clinton|3663|111|3.03
+Pennsylvania|Columbia|25991|1927|7.41
+Pennsylvania|Crawford|2247|0|0
+Pennsylvania|Cumberland|42706|3090|7.24
+Pennsylvania|Dauphin|88189|4969|5.63
+Pennsylvania|Delaware|438891|35849|8.17
+Pennsylvania|Elk|455|11|2.42
+Pennsylvania|Erie|20277|364|1.8
+Pennsylvania|Fayette|7477|321|4.29
+Pennsylvania|Forest|588|0|0
+Pennsylvania|Franklin|46703|1936|4.15
+Pennsylvania|Fulton|887|45|5.07
+Pennsylvania|Greene|2442|15|0.61
+Pennsylvania|Huntingdon|12955|131|1.01
+Pennsylvania|Indiana|6611|364|5.51
+Pennsylvania|Jefferson|816|19|2.33
+Pennsylvania|Juniata|7450|211|2.83
+Pennsylvania|Lackawanna|103925|10900|10.49
+Pennsylvania|Lancaster|220523|19963|9.05
+Pennsylvania|Lawrence|6366|610|9.58
+Pennsylvania|Lebanon|72458|1930|2.66
+Pennsylvania|Lehigh|280335|13721|4.89
+Pennsylvania|Luzerne|206654|9818|4.75
+Pennsylvania|Lycoming|10246|817|7.97
+Pennsylvania|McKean|791|55|6.95
+Pennsylvania|Mercer|7597|277|3.65
+Pennsylvania|Mifflin|3947|44|1.11
+Pennsylvania|Monroe|105359|6497|6.17
+Pennsylvania|Montgomery|493150|44236|8.97
+Pennsylvania|Montour|4608|4|0.09
+Pennsylvania|Northampton|217365|13538|6.23
+Pennsylvania|Northumberland|13200|153|1.16
+Pennsylvania|Perry|4032|195|4.84
+Pennsylvania|Philadelphia|1574959|84500|5.37
+Pennsylvania|Pike|35944|1408|3.92
+Pennsylvania|Potter|600|0|0
+Pennsylvania|Schuylkill|42931|1922|4.48
+Pennsylvania|Snyder|3463|102|2.95
+Pennsylvania|Somerset|2833|49|1.73
+Pennsylvania|Sullivan|175|0|0
+Pennsylvania|Susquehanna|8918|1027|11.52
+Pennsylvania|Tioga|1467|152|10.36
+Pennsylvania|Union|4511|82|1.82
+Pennsylvania|Unknown|18|1|5.56
+Pennsylvania|Venango|879|0|0
+Pennsylvania|Warren|246|29|11.79
+Pennsylvania|Washington|11341|334|2.95
+Pennsylvania|Wayne|9399|508|5.4
+Pennsylvania|Westmoreland|36287|2652|7.31
+Pennsylvania|Wyoming|2355|369|15.67
+Pennsylvania|York|74281|1756|2.36
+Puerto Rico|Unknown|285551|9498|3.33
+Rhode Island|Bristol|14634|457|3.12
+Rhode Island|Kent|69272|3717|5.37
+Rhode Island|Newport|17039|246|1.44
+Rhode Island|Providence|720664|30360|4.21
+Rhode Island|Unknown|129435|6846|5.29
+Rhode Island|Washington|33701|2805|8.32
+South Carolina|Abbeville|3729|0|0
+South Carolina|Aiken|14053|558|3.97
+South Carolina|Allendale|2278|180|7.9
+South Carolina|Anderson|21244|683|3.22
+South Carolina|Bamberg|2350|4|0.17
+South Carolina|Barnwell|3107|47|1.51
+South Carolina|Beaufort|36805|1028|2.79
+South Carolina|Berkeley|24741|1120|4.53
+South Carolina|Calhoun|1844|92|4.99
+South Carolina|Charleston|75388|934|1.24
+South Carolina|Cherokee|3836|189|4.93
+South Carolina|Chester|5807|31|0.53
+South Carolina|Chesterfield|12751|302|2.37
+South Carolina|Clarendon|22098|2393|10.83
+South Carolina|Colleton|8384|742|8.85
+South Carolina|Darlington|19047|541|2.84
+South Carolina|Dillon|10561|185|1.75
+South Carolina|Dorchester|15771|212|1.34
+South Carolina|Edgefield|3586|133|3.71
+South Carolina|Fairfield|11346|822|7.24
+South Carolina|Florence|45269|2366|5.23
+South Carolina|Georgetown|8966|228|2.54
+South Carolina|Greenville|139632|3874|2.77
+South Carolina|Greenwood|12129|155|1.28
+South Carolina|Hampton|2842|39|1.37
+South Carolina|Horry|58830|1972|3.35
+South Carolina|Jasper|3377|130|3.85
+South Carolina|Kershaw|29246|1027|3.51
+South Carolina|Lancaster|13958|433|3.1
+South Carolina|Laurens|7974|228|2.86
+South Carolina|Lee|12863|1029|8
+South Carolina|Lexington|60236|2250|3.74
+South Carolina|Marion|5644|308|5.46
+South Carolina|Marlboro|10507|104|0.99
+South Carolina|McCormick|678|86|12.68
+South Carolina|Newberry|5314|124|2.33
+South Carolina|Oconee|5093|11|0.22
+South Carolina|Orangeburg|17509|267|1.52
+South Carolina|Pickens|15970|187|1.17
+South Carolina|Richland|125604|4382|3.49
+South Carolina|Saluda|8898|33|0.37
+South Carolina|Spartanburg|49231|1659|3.37
+South Carolina|Sumter|34716|1230|3.54
+South Carolina|Union|3153|0|0
+South Carolina|Williamsburg|15029|699|4.65
+South Carolina|York|34659|554|1.6
+South Dakota|Aurora|1253|0|0
+South Dakota|Beadle|16176|291|1.8
+South Dakota|Bennett|47|0|0
+South Dakota|Bon Homme|563|0|0
+South Dakota|Brookings|1827|0|0
+South Dakota|Brown|15293|55|0.36
+South Dakota|Brule|296|0|0
+South Dakota|Buffalo|1580|6|0.38
+South Dakota|Charles Mix|1539|0|0
+South Dakota|Clark|397|0|0
+South Dakota|Clay|2208|0|0
+South Dakota|Codington|2430|0|0
+South Dakota|Corson|423|0|0
+South Dakota|Custer|105|0|0
+South Dakota|Davison|1365|115|8.42
+South Dakota|Day|730|0|0
+South Dakota|Deuel|105|0|0
+South Dakota|Dewey|77|0|0
+South Dakota|Douglas|165|0|0
+South Dakota|Edmunds|134|0|0
+South Dakota|Fall River|326|0|0
+South Dakota|Faulk|520|6|1.15
+South Dakota|Grant|589|0|0
+South Dakota|Gregory|38|0|0
+South Dakota|Hamlin|402|0|0
+South Dakota|Hand|210|0|0
+South Dakota|Hanson|104|0|0
+South Dakota|Hughes|1515|0|0
+South Dakota|Hutchinson|431|0|0
+South Dakota|Hyde|124|0|0
+South Dakota|Jackson|173|12|6.94
+South Dakota|Jerauld|1685|68|4.04
+South Dakota|Kingsbury|141|0|0
+South Dakota|Lake|694|22|3.17
+South Dakota|Lawrence|994|0|0
+South Dakota|Lincoln|16905|14|0.08
+South Dakota|Lyman|1386|0|0
+South Dakota|Marshall|234|0|0
+South Dakota|McCook|489|83|16.97
+South Dakota|McPherson|125|0|0
+South Dakota|Meade|1278|26|2.03
+South Dakota|Mellette|40|0|0
+South Dakota|Miner|179|0|0
+South Dakota|Minnehaha|224031|2763|1.23
+South Dakota|Moody|1094|0|0
+South Dakota|Oglala Lakota|1857|0|0
+South Dakota|Pennington|14515|267|1.84
+South Dakota|Roberts|1940|0|0
+South Dakota|Sanborn|624|0|0
+South Dakota|Spink|400|0|0
+South Dakota|Stanley|627|0|0
+South Dakota|Sully|80|0|0
+South Dakota|Todd|1823|35|1.92
+South Dakota|Tripp|349|0|0
+South Dakota|Turner|1584|0|0
+South Dakota|Union|5371|20|0.37
+South Dakota|Walworth|434|0|0
+South Dakota|Yankton|3708|0|0
+South Dakota|Ziebach|85|0|0
+Tennessee|Anderson|3565|111|3.11
+Tennessee|Bedford|21249|271|1.28
+Tennessee|Benton|614|69|11.24
+Tennessee|Bledsoe|41895|50|0.12
+Tennessee|Blount|7306|255|3.49
+Tennessee|Bradley|12604|114|0.9
+Tennessee|Campbell|1589|77|4.85
+Tennessee|Cannon|1583|0|0
+Tennessee|Carroll|2119|72|3.4
+Tennessee|Carter|1550|77|4.97
+Tennessee|Cheatham|8182|2|0.02
+Tennessee|Chester|1017|0|0
+Tennessee|Claiborne|831|0|0
+Tennessee|Clay|614|0|0
+Tennessee|Cocke|1717|0|0
+Tennessee|Coffee|5051|0|0
+Tennessee|Crockett|1088|109|10.02
+Tennessee|Cumberland|8509|105|1.23
+Tennessee|Davidson|399868|4526|1.13
+Tennessee|Decatur|601|0|0
+Tennessee|DeKalb|2484|0|0
+Tennessee|Dickson|8360|0|0
+Tennessee|Dyer|5536|1|0.02
+Tennessee|Fayette|9455|125|1.32
+Tennessee|Fentress|747|0|0
+Tennessee|Franklin|3885|118|3.04
+Tennessee|Gibson|4695|70|1.49
+Tennessee|Giles|1239|2|0.16
+Tennessee|Grainger|928|0|0
+Tennessee|Greene|4104|170|4.14
+Tennessee|Grundy|2821|78|2.76
+Tennessee|Hamblen|4002|188|4.7
+Tennessee|Hamilton|73454|1440|1.96
+Tennessee|Hancock|68|0|0
+Tennessee|Hardeman|11621|12|0.1
+Tennessee|Hardin|1824|136|7.46
+Tennessee|Hawkins|2789|170|6.1
+Tennessee|Haywood|2514|121|4.81
+Tennessee|Henderson|1056|0|0
+Tennessee|Henry|1920|0|0
+Tennessee|Hickman|3811|0|0
+Tennessee|Houston|595|0|0
+Tennessee|Humphreys|1063|67|6.3
+Tennessee|Jackson|1139|0|0
+Tennessee|Jefferson|2852|2|0.07
+Tennessee|Johnson|1169|0|0
+Tennessee|Knox|33983|411|1.21
+Tennessee|Lake|29727|0|0
+Tennessee|Lauderdale|3766|50|1.33
+Tennessee|Lawrence|3103|47|1.51
+Tennessee|Lewis|282|0|0
+Tennessee|Lincoln|2131|0|0
+Tennessee|Loudon|9235|20|0.22
+Tennessee|Macon|9852|245|2.49
+Tennessee|Madison|12803|121|0.95
+Tennessee|Marion|3241|129|3.98
+Tennessee|Marshall|2533|82|3.24
+Tennessee|Maury|8450|73|0.86
+Tennessee|McMinn|9353|732|7.83
+Tennessee|McNairy|1592|0|0
+Tennessee|Meigs|1622|0|0
+Tennessee|Monroe|4428|171|3.86
+Tennessee|Montgomery|19877|266|1.34
+Tennessee|Moore|283|0|0
+Tennessee|Morgan|1142|15|1.31
+Tennessee|Obion|2755|102|3.7
+Tennessee|Overton|1874|0|0
+Tennessee|Perry|1384|0|0
+Tennessee|Pickett|175|0|0
+Tennessee|Polk|1414|0|0
+Tennessee|Putnam|29710|402|1.35
+Tennessee|Rhea|9508|0|0
+Tennessee|Roane|1429|0|0
+Tennessee|Robertson|31258|260|0.83
+Tennessee|Rutherford|89899|1648|1.83
+Tennessee|Scott|1031|0|0
+Tennessee|Sequatchie|1018|0|0
+Tennessee|Sevier|12027|146|1.21
+Tennessee|Shelby|378587|7980|2.11
+Tennessee|Smith|2567|77|3
+Tennessee|Stewart|857|0|0
+Tennessee|Sullivan|5074|140|2.76
+Tennessee|Sumner|71228|3456|4.85
+Tennessee|Tipton|27771|166|0.6
+Tennessee|Trousdale|86352|258|0.3
+Tennessee|Unicoi|1627|0|0
+Tennessee|Union|420|0|0
+Tennessee|Unknown|6744|61|0.9
+Tennessee|Van Buren|263|0|0
+Tennessee|Warren|1674|0|0
+Tennessee|Washington|6234|0|0
+Tennessee|Wayne|3177|0|0
+Tennessee|Weakley|2091|7|0.33
+Tennessee|White|2185|45|2.06
+Tennessee|Williamson|47528|821|1.73
+Tennessee|Wilson|31892|631|1.98
+Texas|Anderson|18343|30|0.16
+Texas|Andrews|2253|0|0
+Texas|Angelina|14853|204|1.37
+Texas|Aransas|397|0|0
+Texas|Archer|115|0|0
+Texas|Armstrong|173|0|0
+Texas|Atascosa|2903|112|3.86
+Texas|Austin|2105|0|0
+Texas|Bailey|1826|8|0.44
+Texas|Bandera|567|0|0
+Texas|Bastrop|14968|230|1.54
+Texas|Baylor|31|0|0
+Texas|Bee|1201|0|0
+Texas|Bell|32667|420|1.29
+Texas|Bexar|263857|5550|2.1
+Texas|Blanco|820|32|3.9
+Texas|Bosque|460|0|0
+Texas|Bowie|17114|904|5.28
+Texas|Brazoria|74879|889|1.19
+Texas|Brazos|45715|1656|3.62
+Texas|Brewster|881|1|0.11
+Texas|Briscoe|66|0|0
+Texas|Brooks|97|0|0
+Texas|Brown|3763|540|14.35
+Texas|Burleson|2219|0|0
+Texas|Burnet|3343|50|1.5
+Texas|Caldwell|6456|17|0.26
+Texas|Calhoun|3180|208|6.54
+Texas|Callahan|607|73|12.03
+Texas|Cameron|65032|2355|3.62
+Texas|Camp|4081|20|0.49
+Texas|Carson|326|0|0
+Texas|Cass|1950|111|5.69
+Texas|Castro|2652|88|3.32
+Texas|Chambers|6777|17|0.25
+Texas|Cherokee|3259|121|3.71
+Texas|Childress|219|0|0
+Texas|Clay|326|0|0
+Texas|Cochran|69|0|0
+Texas|Coke|123|8|6.5
+Texas|Coleman|152|0|0
+Texas|Collin|105788|2360|2.23
+Texas|Collingsworth|253|0|0
+Texas|Colorado|2054|0|0
+Texas|Comal|12033|549|4.56
+Texas|Comanche|640|62|9.69
+Texas|Concho|120|0|0
+Texas|Cooke|1194|0|0
+Texas|Coryell|17406|139|0.8
+Texas|Cottle|238|53|22.27
+Texas|Crane|1418|174|12.27
+Texas|Crockett|124|0|0
+Texas|Crosby|334|77|23.05
+Texas|Culberson|27|0|0
+Texas|Dallam|2036|20|0.98
+Texas|Dallas|739914|15726|2.13
+Texas|Dawson|2747|83|3.02
+Texas|Deaf Smith|10177|609|5.98
+Texas|Delta|147|0|0
+Texas|Denton|108058|2310|2.14
+Texas|DeWitt|1808|71|3.93
+Texas|Dickens|105|0|0
+Texas|Dimmit|147|0|0
+Texas|Donley|2153|0|0
+Texas|Duval|388|0|0
+Texas|Eastland|460|0|0
+Texas|Ector|18042|387|2.14
+Texas|Edwards|12|0|0
+Texas|El Paso|190580|4818|2.53
+Texas|Ellis|24722|968|3.92
+Texas|Erath|2002|89|4.45
+Texas|Falls|765|0|0
+Texas|Fannin|2871|170|5.92
+Texas|Fayette|2857|116|4.06
+Texas|Fisher|102|39|38.24
+Texas|Floyd|733|4|0.55
+Texas|Fort Bend|147753|3063|2.07
+Texas|Franklin|1074|0|0
+Texas|Freestone|771|0|0
+Texas|Frio|3847|0|0
+Texas|Gaines|553|0|0
+Texas|Galveston|83116|2499|3.01
+Texas|Garza|343|0|0
+Texas|Gillespie|621|0|0
+Texas|Glasscock|121|0|0
+Texas|Goliad|580|0|0
+Texas|Gonzales|7863|179|2.28
+Texas|Gray|6416|118|1.84
+Texas|Grayson|19422|136|0.7
+Texas|Gregg|15640|414|2.65
+Texas|Grimes|10958|94|0.86
+Texas|Guadalupe|13555|12|0.09
+Texas|Hale|5366|339|6.32
+Texas|Hall|80|20|25
+Texas|Hamilton|711|39|5.49
+Texas|Hansford|1170|115|9.83
+Texas|Hardeman|116|0|0
+Texas|Hardin|10721|340|3.17
+Texas|Harris|997453|16627|1.67
+Texas|Harrison|15270|1401|9.17
+Texas|Hartley|737|113|15.33
+Texas|Haskell|143|0|0
+Texas|Hays|48265|251|0.52
+Texas|Hemphill|132|0|0
+Texas|Henderson|4354|101|2.32
+Texas|Hidalgo|66278|918|1.39
+Texas|Hill|2156|76|3.53
+Texas|Hockley|2096|89|4.25
+Texas|Hood|2223|265|11.92
+Texas|Hopkins|1741|8|0.46
+Texas|Houston|5854|0|0
+Texas|Howard|865|81|9.36
+Texas|Hudspeth|323|0|0
+Texas|Hunt|9091|284|3.12
+Texas|Hutchinson|2403|0|0
+Texas|Irion|33|0|0
+Texas|Jack|340|0|0
+Texas|Jackson|1347|48|3.56
+Texas|Jasper|2193|133|6.06
+Texas|Jeff Davis|8|0|0
+Texas|Jefferson|52726|1977|3.75
+Texas|Jim Hogg|324|0|0
+Texas|Jim Wells|1324|0|0
+Texas|Johnson|14165|262|1.85
+Texas|Jones|22955|0|0
+Texas|Karnes|483|0|0
+Texas|Kaufman|16386|140|0.85
+Texas|Kendall|2325|0|0
+Texas|Kerr|1442|26|1.8
+Texas|Kimble|62|0|0
+Texas|Kinney|44|0|0
+Texas|Kleberg|1327|79|5.95
+Texas|Knox|87|0|0
+Texas|La Salle|282|0|0
+Texas|Lamar|9313|522|5.61
+Texas|Lamb|1081|0|0
+Texas|Lampasas|688|0|0
+Texas|Lavaca|1901|67|3.52
+Texas|Lee|1491|72|4.83
+Texas|Leon|806|0|0
+Texas|Liberty|7641|151|1.98
+Texas|Limestone|1939|88|4.54
+Texas|Lipscomb|282|0|0
+Texas|Live Oak|677|0|0
+Texas|Llano|351|0|0
+Texas|Lubbock|64907|3743|5.77
+Texas|Lynn|828|71|8.57
+Texas|Madison|811|0|0
+Texas|Marion|1184|35|2.96
+Texas|Martin|316|57|18.04
+Texas|Mason|1939|0|0
+Texas|Matagorda|6645|396|5.96
+Texas|Maverick|8042|67|0.83
+Texas|McCulloch|305|0|0
+Texas|McLennan|14879|356|2.39
+Texas|Medina|8101|159|1.96
+Texas|Menard|27|0|0
+Texas|Midland|14048|826|5.88
+Texas|Milam|2491|68|2.73
+Texas|Mills|43|0|0
+Texas|Mitchell|120|0|0
+Texas|Montague|727|71|9.77
+Texas|Montgomery|77968|1748|2.24
+Texas|Moore|44992|756|1.68
+Texas|Morris|1468|0|0
+Texas|Motley|79|0|0
+Texas|Nacogdoches|19058|1248|6.55
+Texas|Navarro|5000|223|4.46
+Texas|Newton|395|0|0
+Texas|Nolan|403|0|0
+Texas|Nueces|29658|251|0.85
+Texas|Ochiltree|2768|119|4.3
+Texas|Oldham|312|98|31.41
+Texas|Orange|7899|134|1.7
+Texas|Palo Pinto|870|137|15.75
+Texas|Panola|11903|1184|9.95
+Texas|Parker|6224|41|0.66
+Texas|Parmer|4860|47|0.97
+Texas|Pecos|4118|0|0
+Texas|Polk|3926|0|0
+Texas|Potter|140113|1808|1.29
+Texas|Presidio|222|0|0
+Texas|Rains|287|0|0
+Texas|Randall|41579|391|0.94
+Texas|Reagan|71|0|0
+Texas|Real|26|0|0
+Texas|Red River|3637|312|8.58
+Texas|Reeves|489|0|0
+Texas|Refugio|247|0|0
+Texas|Roberts|161|0|0
+Texas|Robertson|927|0|0
+Texas|Rockwall|11657|651|5.58
+Texas|Runnels|161|0|0
+Texas|Rusk|6742|123|1.82
+Texas|Sabine|656|28|4.27
+Texas|San Augustine|3173|210|6.62
+Texas|San Jacinto|1221|0|0
+Texas|San Patricio|2791|0|0
+Texas|San Saba|78|0|0
+Texas|Schleicher|182|0|0
+Texas|Scurry|1014|0|0
+Texas|Shackelford|55|0|0
+Texas|Shelby|13664|404|2.96
+Texas|Sherman|1673|0|0
+Texas|Smith|18798|324|1.72
+Texas|Somervell|72|0|0
+Texas|Starr|6770|24|0.35
+Texas|Stephens|236|0|0
+Texas|Sutton|31|0|0
+Texas|Swisher|1221|25|2.05
+Texas|Tarrant|403986|10605|2.63
+Texas|Taylor|25892|378|1.46
+Texas|Terrell|9|0|0
+Texas|Terry|1049|0|0
 Texas|Throckmorton|1|0|0
-Texas|Titus|19491|116|0.6
-Texas|Tom Green|5255|74|1.41
-Texas|Travis|203250|5125|2.52
-Texas|Trinity|937|0|0
-Texas|Tyler|739|0|0
-Texas|Upshur|1596|0|0
-Texas|Upton|5|0|0
-Texas|Uvalde|915|0|0
-Texas|Val Verde|1373|0|0
-Texas|Van Zandt|1968|94|4.78
-Texas|Victoria|11400|382|3.35
-Texas|Walker|57254|1100|1.92
-Texas|Waller|3750|0|0
-Texas|Ward|91|0|0
-Texas|Washington|11875|1341|11.29
-Texas|Webb|36298|1274|3.51
-Texas|Wharton|4178|19|0.45
-Texas|Wheeler|787|0|0
-Texas|Wichita|6716|135|2.01
-Texas|Wilbarger|295|0|0
-Texas|Willacy|1778|113|6.36
-Texas|Williamson|38554|1310|3.4
-Texas|Wilson|2734|271|9.91
-Texas|Winkler|230|0|0
-Texas|Wise|2553|197|7.72
-Texas|Wood|1865|107|5.74
-Texas|Yoakum|244|0|0
-Texas|Young|473|69|14.59
-Texas|Zapata|739|0|0
-Texas|Zavala|502|0|0
-Utah|Beaver|9|0|0
-Utah|Box Elder|2659|64|2.41
-Utah|Cache|21995|29|0.13
-Utah|Carbon|622|0|0
-Utah|Davis|32189|202|0.63
-Utah|Duchesne|570|0|0
-Utah|Emery|432|0|0
-Utah|Garfield|227|0|0
-Utah|Grand|446|0|0
-Utah|Iron|4944|0|0
-Utah|Juab|621|0|0
-Utah|Kane|255|0|0
-Utah|Millard|449|0|0
-Utah|Morgan|817|0|0
-Utah|Piute|75|0|0
-Utah|Rich|23|0|0
-Utah|Salt Lake|316089|4008|1.27
-Utah|San Juan|14219|259|1.82
-Utah|Sanpete|758|0|0
-Utah|Sevier|762|0|0
-Utah|Summit|32362|0|0
-Utah|Tooele|7619|0|0
-Utah|Uintah|762|0|0
-Utah|Unknown|344|305|88.66
-Utah|Utah|114359|869|0.76
-Utah|Wasatch|17367|100|0.58
-Utah|Washington|19787|0|0
-Utah|Weber|19656|320|1.63
-Vermont|Addison|5065|138|2.72
-Vermont|Bennington|4397|76|1.73
-Vermont|Caledonia|1092|0|0
-Vermont|Chittenden|36689|2642|7.2
-Vermont|Essex|175|0|0
-Vermont|Franklin|7417|357|4.81
-Vermont|Grand Isle|383|0|0
-Vermont|Lamoille|2196|76|3.46
-Vermont|Orange|644|0|0
-Vermont|Orleans|839|0|0
-Vermont|Rutland|3981|68|1.71
-Vermont|Unknown|720|121|16.81
-Vermont|Washington|2964|68|2.29
-Vermont|Windham|5872|198|3.37
-Vermont|Windsor|3753|172|4.58
-Virgin Islands|Unknown|5441|354|6.51
-Virginia|Accomack|42765|594|1.39
-Virginia|Albemarle|11802|366|3.1
-Virginia|Alexandria city|100474|2288|2.28
-Virginia|Alleghany|1010|64|6.34
-Virginia|Amelia|1695|63|3.72
-Virginia|Amherst|1538|4|0.26
-Virginia|Appomattox|1715|0|0
-Virginia|Arlington|114205|5495|4.81
-Virginia|Augusta|6099|82|1.34
-Virginia|Bedford|3573|79|2.21
-Virginia|Bland|6|0|0
-Virginia|Botetourt|2579|221|8.57
-Virginia|Bristol city|216|0|0
-Virginia|Brunswick|1952|39|2
-Virginia|Buchanan|1149|0|0
-Virginia|Buckingham|22239|117|0.53
-Virginia|Buena Vista city|688|0|0
-Virginia|Campbell|1178|40|3.4
-Virginia|Caroline|3884|128|3.3
-Virginia|Carroll|4980|94|1.89
-Virginia|Charles City|1630|88|5.4
-Virginia|Charlotte|1230|0|0
-Virginia|Charlottesville city|6729|171|2.54
-Virginia|Chesapeake city|29972|770|2.57
-Virginia|Chesterfield|84074|1942|2.31
-Virginia|Clarke|1498|0|0
-Virginia|Colonial Heights city|5307|656|12.36
-Virginia|Covington city|143|0|0
-Virginia|Craig|307|0|0
-Virginia|Culpeper|30878|348|1.13
-Virginia|Cumberland|1881|0|0
-Virginia|Danville city|3430|95|2.77
-Virginia|Dickenson|7|0|0
-Virginia|Dinwiddie|3717|0|0
-Virginia|Emporia city|4059|252|6.21
-Virginia|Essex|2139|0|0
-Virginia|Fairfax|555345|19095|3.44
-Virginia|Fairfax city|3218|249|7.74
-Virginia|Falls Church city|2844|331|11.64
-Virginia|Fauquier|16236|288|1.77
-Virginia|Floyd|336|19|5.65
-Virginia|Fluvanna|6011|366|6.09
-Virginia|Franklin|2288|43|1.88
-Virginia|Franklin city|2180|80|3.67
-Virginia|Frederick|17783|171|0.96
-Virginia|Fredericksburg city|7632|1|0.01
-Virginia|Galax city|5954|132|2.22
-Virginia|Giles|367|0|0
-Virginia|Gloucester|2237|63|2.82
-Virginia|Goochland|6428|331|5.15
-Virginia|Grayson|1891|27|1.43
-Virginia|Greene|1722|63|3.66
-Virginia|Greensville|8232|417|5.07
-Virginia|Halifax|1798|20|1.11
-Virginia|Hampton city|12257|207|1.69
-Virginia|Hanover|16519|1164|7.05
-Virginia|Harrisonburg city|43637|1216|2.79
-Virginia|Henrico|101814|8111|7.97
-Virginia|Henry|5777|128|2.22
-Virginia|Highland|147|0|0
-Virginia|Hopewell city|4887|41|0.84
-Virginia|Isle of Wight|8554|244|2.85
-Virginia|James City|15251|1013|6.64
-Virginia|King and Queen|733|26|3.55
-Virginia|King George|3818|250|6.55
-Virginia|King William|1286|13|1.01
-Virginia|Lancaster|496|0|0
-Virginia|Lee|688|0|0
-Virginia|Lexington city|430|0|0
-Virginia|Loudoun|129640|3020|2.33
-Virginia|Louisa|4854|32|0.66
-Virginia|Lunenburg|709|0|0
-Virginia|Lynchburg city|5259|63|1.2
-Virginia|Madison|1964|50|2.55
-Virginia|Manassas city|48767|452|0.93
-Virginia|Manassas Park city|14397|240|1.67
-Virginia|Mathews|352|0|0
-Virginia|Mecklenburg|11527|1053|9.14
-Virginia|Middlesex|727|0|0
-Virginia|Montgomery|5077|71|1.4
-Virginia|Nelson|913|0|0
-Virginia|New Kent|2290|67|2.93
-Virginia|Newport News city|16352|618|3.78
-Virginia|Norfolk city|27978|359|1.28
-Virginia|Northampton|11658|877|7.52
-Virginia|Northumberland|1229|47|3.82
-Virginia|Norton city|128|0|0
-Virginia|Nottoway|2031|0|0
-Virginia|Orange|5131|42|0.82
-Virginia|Page|11010|971|8.82
-Virginia|Patrick|925|0|0
-Virginia|Petersburg city|6529|153|2.34
-Virginia|Pittsylvania|2270|63|2.78
-Virginia|Poquoson city|614|0|0
-Virginia|Portsmouth city|17239|639|3.71
-Virginia|Powhatan|1996|8|0.4
-Virginia|Prince Edward|6670|149|2.23
-Virginia|Prince George|6100|0|0
-Virginia|Prince William|271934|4903|1.8
-Virginia|Pulaski|1122|17|1.52
-Virginia|Radford city|343|0|0
-Virginia|Rappahannock|699|0|0
-Virginia|Richmond|14407|215|1.49
-Virginia|Richmond city|67117|1385|2.06
-Virginia|Roanoke|6074|205|3.38
-Virginia|Roanoke city|9533|365|3.83
-Virginia|Rockbridge|898|0|0
-Virginia|Rockingham|28069|259|0.92
-Virginia|Russell|441|0|0
-Virginia|Salem city|2062|96|4.66
-Virginia|Scott|474|109|23
-Virginia|Shenandoah|21240|888|4.18
-Virginia|Smyth|1164|0|0
-Virginia|Southampton|8537|104|1.22
-Virginia|Spotsylvania|28428|444|1.56
-Virginia|Stafford|36684|241|0.66
-Virginia|Staunton city|2226|0|0
-Virginia|Suffolk city|17487|1498|8.57
-Virginia|Surry|539|63|11.69
-Virginia|Sussex|6721|89|1.32
-Virginia|Tazewell|516|0|0
-Virginia|Unknown|1544|936|60.62
-Virginia|Virginia Beach city|43733|1301|2.97
-Virginia|Warren|8624|123|1.43
-Virginia|Washington|3381|224|6.63
-Virginia|Waynesboro city|2198|0|0
-Virginia|Westmoreland|3439|26|0.76
-Virginia|Williamsburg city|2792|233|8.35
-Virginia|Winchester city|9154|80|0.87
-Virginia|Wise|1675|114|6.81
-Virginia|Wythe|1535|63|4.1
-Virginia|York|4930|162|3.29
-Washington|Adams|4654|0|0
-Washington|Asotin|1272|120|9.43
-Washington|Benton|59607|4199|7.04
-Washington|Chelan|13669|538|3.94
-Washington|Clallam|1727|0|0
-Washington|Clark|34901|1855|5.32
-Washington|Columbia|107|0|0
-Washington|Cowlitz|5222|0|0
-Washington|Douglas|9069|160|1.76
-Washington|Ferry|90|0|0
-Washington|Franklin|44443|1143|2.57
-Washington|Grant|18182|205|1.13
-Washington|Grays Harbor|1186|0|0
-Washington|Island|15018|782|5.21
-Washington|Jefferson|2539|0|0
-Washington|King|581220|40320|6.94
-Washington|Kitsap|13024|147|1.13
-Washington|Kittitas|4014|0|0
-Washington|Klickitat|2060|223|10.83
-Washington|Lewis|2566|217|8.46
-Washington|Lincoln|173|0|0
-Washington|Mason|2404|58|2.41
-Washington|Okanogan|3103|110|3.54
-Washington|Pacific|528|42|7.95
-Washington|Pend Oreille|181|0|0
-Washington|Pierce|148352|4848|3.27
-Washington|San Juan|1197|0|0
-Washington|Skagit|30316|1001|3.3
-Washington|Skamania|246|0|0
-Washington|Snohomish|242552|9920|4.09
-Washington|Spokane|40562|2158|5.32
-Washington|Stevens|851|71|8.34
-Washington|Thurston|10815|143|1.32
-Washington|Unknown|5671|0|0
-Washington|Wahkiakum|248|0|0
-Washington|Walla Walla|6849|101|1.47
-Washington|Whatcom|29027|2604|8.97
-Washington|Whitman|1590|0|0
-Washington|Yakima|210080|5607|2.67
-West Virginia|Barbour|551|61|11.07
-West Virginia|Berkeley|18140|354|1.95
-West Virginia|Boone|642|0|0
-West Virginia|Braxton|147|0|0
-West Virginia|Brooke|287|0|0
-West Virginia|Cabell|4040|0|0
-West Virginia|Calhoun|95|0|0
-West Virginia|Clay|233|0|0
-West Virginia|Fayette|2415|136|5.63
-West Virginia|Gilmer|458|0|0
-West Virginia|Grant|528|0|0
-West Virginia|Greenbrier|833|0|0
-West Virginia|Hampshire|1352|65|4.81
-West Virginia|Hancock|1085|0|0
-West Virginia|Hardy|1737|0|0
-West Virginia|Harrison|2936|78|2.66
-West Virginia|Jackson|9166|1033|11.27
-West Virginia|Jefferson|9693|110|1.13
-West Virginia|Kanawha|14663|909|6.2
-West Virginia|Lewis|424|32|7.55
-West Virginia|Lincoln|266|0|0
-West Virginia|Logan|1157|72|6.22
-West Virginia|Marion|3690|156|4.23
-West Virginia|Marshall|1730|0|0
-West Virginia|Mason|1040|0|0
-West Virginia|McDowell|449|0|0
-West Virginia|Mercer|934|0|0
-West Virginia|Mineral|2238|42|1.88
-West Virginia|Mingo|378|80|21.16
-West Virginia|Monongalia|9329|351|3.76
-West Virginia|Monroe|451|0|0
-West Virginia|Morgan|1115|0|0
-West Virginia|Nicholas|515|43|8.35
-West Virginia|Ohio|3028|71|2.34
-West Virginia|Pendleton|532|18|3.38
-West Virginia|Pleasants|219|0|0
-West Virginia|Pocahontas|781|0|0
-West Virginia|Preston|1444|53|3.67
-West Virginia|Putnam|2237|3|0.13
-West Virginia|Raleigh|1067|0|0
-West Virginia|Randolph|4123|0|0
-West Virginia|Ritchie|67|0|0
-West Virginia|Roane|564|19|3.37
-West Virginia|Summers|76|0|0
-West Virginia|Taylor|584|0|0
-West Virginia|Tucker|366|0|0
-West Virginia|Tyler|225|0|0
-West Virginia|Upshur|455|0|0
-West Virginia|Wayne|6620|524|7.92
-West Virginia|Wetzel|475|0|0
-West Virginia|Wirt|255|0|0
-West Virginia|Wood|3370|131|3.89
-West Virginia|Wyoming|180|0|0
-Wisconsin|Adams|362|78|21.55
-Wisconsin|Ashland|174|0|0
-Wisconsin|Barron|1017|0|0
-Wisconsin|Bayfield|267|66|24.72
-Wisconsin|Brown|123597|1565|1.27
-Wisconsin|Buffalo|393|97|24.68
-Wisconsin|Burnett|53|40|75.47
-Wisconsin|Calumet|3569|57|1.6
-Wisconsin|Chippewa|3139|0|0
-Wisconsin|Clark|2215|243|10.97
-Wisconsin|Columbia|3070|78|2.54
-Wisconsin|Crawford|1249|0|0
-Wisconsin|Dane|48680|1875|3.85
-Wisconsin|Dodge|12595|138|1.1
-Wisconsin|Door|1963|177|9.02
-Wisconsin|Douglas|1128|0|0
-Wisconsin|Dunn|1430|0|0
-Wisconsin|Eau Claire|5805|1|0.02
-Wisconsin|Florence|157|0|0
-Wisconsin|Fond du Lac|11536|328|2.84
-Wisconsin|Forest|1004|53|5.28
-Wisconsin|Grant|5013|606|12.09
-Wisconsin|Green|3169|9|0.28
-Wisconsin|Green Lake|850|0|0
-Wisconsin|Iowa|890|0|0
-Wisconsin|Iron|161|88|54.66
-Wisconsin|Jackson|1165|71|6.09
-Wisconsin|Jefferson|6060|135|2.23
-Wisconsin|Juneau|1447|72|4.98
-Wisconsin|Kenosha|60856|1484|2.44
-Wisconsin|Kewaunee|1887|70|3.71
-Wisconsin|La Crosse|4746|0|0
-Wisconsin|Lafayette|1409|0|0
-Wisconsin|Langlade|136|0|0
-Wisconsin|Lincoln|249|0|0
-Wisconsin|Manitowoc|1894|58|3.06
-Wisconsin|Marathon|3109|73|2.35
-Wisconsin|Marinette|1667|126|7.56
-Wisconsin|Marquette|336|66|19.64
-Wisconsin|Menominee|170|0|0
-Wisconsin|Milwaukee|420004|18306|4.36
-Wisconsin|Monroe|1400|56|4
-Wisconsin|Oconto|1951|0|0
-Wisconsin|Oneida|692|0|0
-Wisconsin|Outagamie|12208|361|2.96
-Wisconsin|Ozaukee|10559|919|8.7
-Wisconsin|Pepin|40|0|0
-Wisconsin|Pierce|2169|0|0
-Wisconsin|Polk|1098|34|3.1
-Wisconsin|Portage|1607|0|0
-Wisconsin|Price|106|0|0
-Wisconsin|Racine|78566|1932|2.46
-Wisconsin|Richland|937|195|20.81
-Wisconsin|Rock|33646|984|2.92
-Wisconsin|Rusk|390|0|0
-Wisconsin|Sauk|5119|243|4.75
-Wisconsin|Sawyer|392|0|0
-Wisconsin|Shawano|2393|0|0
-Wisconsin|Sheboygan|6383|214|3.35
-Wisconsin|St. Croix|4160|4|0.1
-Wisconsin|Taylor|98|0|0
-Wisconsin|Trempealeau|1598|0|0
-Wisconsin|Vernon|828|0|0
-Wisconsin|Vilas|462|0|0
-Wisconsin|Walworth|20913|835|3.99
-Wisconsin|Washburn|124|0|0
-Wisconsin|Washington|13636|467|3.42
-Wisconsin|Waukesha|41713|1768|4.24
-Wisconsin|Waupaca|2167|123|5.68
-Wisconsin|Waushara|531|0|0
-Wisconsin|Winnebago|15202|261|1.72
-Wisconsin|Wood|665|31|4.66
-Wyoming|Albany|1136|0|0
-Wyoming|Big Horn|349|0|0
-Wyoming|Campbell|2205|0|0
-Wyoming|Carbon|898|36|4.01
-Wyoming|Converse|1618|0|0
-Wyoming|Crook|373|0|0
-Wyoming|Fremont|15090|382|2.53
-Wyoming|Goshen|367|0|0
-Wyoming|Hot Springs|592|0|0
-Wyoming|Johnson|1294|71|5.49
-Wyoming|Laramie|12450|105|0.84
-Wyoming|Lincoln|936|0|0
-Wyoming|Natrona|4957|26|0.52
-Wyoming|Niobrara|148|0|0
-Wyoming|Park|196|0|0
-Wyoming|Platte|34|0|0
-Wyoming|Sheridan|1412|0|0
-Wyoming|Sublette|242|0|0
-Wyoming|Sweetwater|1899|0|0
-Wyoming|Teton|7655|61|0.8
-Wyoming|Uinta|1869|0|0
-Wyoming|Washakie|1497|96|6.41
-Wyoming|Weston|27|0|0
+Texas|Titus|25709|156|0.61
+Texas|Tom Green|7197|82|1.14
+Texas|Travis|265736|6066|2.28
+Texas|Trinity|1171|0|0
+Texas|Tyler|918|0|0
+Texas|Upshur|1969|0|0
+Texas|Upton|22|0|0
+Texas|Uvalde|1389|6|0.43
+Texas|Val Verde|2168|0|0
+Texas|Van Zandt|2534|118|4.66
+Texas|Victoria|14719|446|3.03
+Texas|Walker|72942|1324|1.82
+Texas|Waller|4840|0|0
+Texas|Ward|192|0|0
+Texas|Washington|13899|1577|11.35
+Texas|Webb|45910|1462|3.18
+Texas|Wharton|5511|27|0.49
+Texas|Wheeler|915|0|0
+Texas|Wichita|9047|151|1.67
+Texas|Wilbarger|367|0|0
+Texas|Willacy|2809|137|4.88
+Texas|Williamson|53337|1587|2.98
+Texas|Wilson|3414|311|9.11
+Texas|Winkler|331|0|0
+Texas|Wise|3254|237|7.28
+Texas|Wood|2493|147|5.9
+Texas|Yoakum|401|0|0
+Texas|Young|646|77|11.92
+Texas|Zapata|1083|0|0
+Texas|Zavala|645|0|0
+Utah|Beaver|63|0|0
+Utah|Box Elder|3691|72|1.95
+Utah|Cache|33110|37|0.11
+Utah|Carbon|736|0|0
+Utah|Davis|40584|236|0.58
+Utah|Duchesne|668|0|0
+Utah|Emery|504|0|0
+Utah|Garfield|327|0|0
+Utah|Grand|546|0|0
+Utah|Iron|7058|0|0
+Utah|Juab|748|0|0
+Utah|Kane|303|0|0
+Utah|Millard|669|0|0
+Utah|Morgan|963|0|0
+Utah|Piute|94|0|0
+Utah|Rich|51|0|0
+Utah|Salt Lake|398100|4855|1.22
+Utah|San Juan|17379|320|1.84
+Utah|Sanpete|1123|0|0
+Utah|Sevier|1110|0|0
+Utah|Summit|36201|0|0
+Utah|Tooele|9401|0|0
+Utah|Uintah|994|0|0
+Utah|Unknown|321|393|122.43
+Utah|Utah|144027|1045|0.73
+Utah|Wasatch|20542|124|0.6
+Utah|Washington|28090|0|0
+Utah|Weber|26194|409|1.56
+Vermont|Addison|5609|154|2.75
+Vermont|Bennington|4962|84|1.69
+Vermont|Caledonia|1242|0|0
+Vermont|Chittenden|41494|2954|7.12
+Vermont|Essex|199|0|0
+Vermont|Franklin|8243|405|4.91
+Vermont|Grand Isle|460|0|0
+Vermont|Lamoille|2436|84|3.45
+Vermont|Orange|716|0|0
+Vermont|Orleans|951|0|0
+Vermont|Rutland|4549|76|1.67
+Vermont|Unknown|609|122|20.03
+Vermont|Washington|3292|76|2.31
+Vermont|Windham|6617|222|3.35
+Vermont|Windsor|4209|188|4.47
+Virgin Islands|Unknown|6081|402|6.61
+Virginia|Accomack|51065|706|1.38
+Virginia|Albemarle|14824|430|2.9
+Virginia|Alexandria city|118795|2721|2.29
+Virginia|Alleghany|1258|80|6.36
+Virginia|Amelia|2035|71|3.49
+Virginia|Amherst|1808|4|0.22
+Virginia|Appomattox|2018|0|0
+Virginia|Arlington|133831|6534|4.88
+Virginia|Augusta|7531|98|1.3
+Virginia|Bedford|4441|103|2.32
+Virginia|Bland|22|0|0
+Virginia|Botetourt|3202|253|7.9
+Virginia|Bristol city|248|0|0
+Virginia|Brunswick|2735|47|1.72
+Virginia|Buchanan|1345|0|0
+Virginia|Buckingham|26679|149|0.56
+Virginia|Buena Vista city|801|0|0
+Virginia|Campbell|1491|48|3.22
+Virginia|Caroline|4899|160|3.27
+Virginia|Carroll|6599|149|2.26
+Virginia|Charles City|1942|113|5.82
+Virginia|Charlotte|1474|0|0
+Virginia|Charlottesville city|8308|195|2.35
+Virginia|Chesapeake city|36699|916|2.5
+Virginia|Chesterfield|106418|2335|2.19
+Virginia|Clarke|1885|0|0
+Virginia|Colonial Heights city|6434|792|12.31
+Virginia|Covington city|171|0|0
+Virginia|Craig|357|0|0
+Virginia|Culpeper|37323|424|1.14
+Virginia|Cumberland|2286|0|0
+Virginia|Danville city|4052|111|2.74
+Virginia|Dickenson|25|0|0
+Virginia|Dinwiddie|4798|0|0
+Virginia|Emporia city|5086|322|6.33
+Virginia|Essex|2584|0|0
+Virginia|Fairfax|664972|22817|3.43
+Virginia|Fairfax city|3773|305|8.08
+Virginia|Falls Church city|3296|389|11.8
+Virginia|Fauquier|19568|336|1.72
+Virginia|Floyd|459|27|5.88
+Virginia|Fluvanna|6880|415|6.03
+Virginia|Franklin|2786|51|1.83
+Virginia|Franklin city|2559|96|3.75
+Virginia|Frederick|21585|208|0.96
+Virginia|Fredericksburg city|9553|2|0.02
+Virginia|Galax city|7897|234|2.96
+Virginia|Giles|447|0|0
+Virginia|Gloucester|2603|71|2.73
+Virginia|Goochland|7375|379|5.14
+Virginia|Grayson|2554|43|1.68
+Virginia|Greene|2203|71|3.22
+Virginia|Greensville|11055|473|4.28
+Virginia|Halifax|2164|28|1.29
+Virginia|Hampton city|14640|247|1.69
+Virginia|Hanover|19854|1368|6.89
+Virginia|Harrisonburg city|50987|1403|2.75
+Virginia|Henrico|122082|9232|7.56
+Virginia|Henry|7706|160|2.08
+Virginia|Highland|171|0|0
+Virginia|Hopewell city|6212|57|0.92
+Virginia|Isle of Wight|9932|308|3.1
+Virginia|James City|17269|1133|6.56
+Virginia|King and Queen|920|34|3.7
+Virginia|King George|4592|282|6.14
+Virginia|King William|1603|13|0.81
+Virginia|Lancaster|585|0|0
+Virginia|Lee|762|0|0
+Virginia|Lexington city|510|0|0
+Virginia|Loudoun|160290|3706|2.31
+Virginia|Louisa|5772|40|0.69
+Virginia|Lunenburg|948|0|0
+Virginia|Lynchburg city|6294|71|1.13
+Virginia|Madison|2308|58|2.51
+Virginia|Manassas city|59808|580|0.97
+Virginia|Manassas Park city|17773|281|1.58
+Virginia|Mathews|393|0|0
+Virginia|Mecklenburg|13437|1259|9.37
+Virginia|Middlesex|847|0|0
+Virginia|Montgomery|6093|87|1.43
+Virginia|Nelson|1057|0|0
+Virginia|New Kent|2725|75|2.75
+Virginia|Newport News city|20233|698|3.45
+Virginia|Norfolk city|34614|425|1.23
+Virginia|Northampton|13813|1101|7.97
+Virginia|Northumberland|1503|55|3.66
+Virginia|Norton city|160|0|0
+Virginia|Nottoway|2892|16|0.55
+Virginia|Orange|6283|62|0.99
+Virginia|Page|13140|1163|8.85
+Virginia|Patrick|1254|7|0.56
+Virginia|Petersburg city|8274|177|2.14
+Virginia|Pittsylvania|3097|71|2.29
+Virginia|Poquoson city|755|0|0
+Virginia|Portsmouth city|20844|767|3.68
+Virginia|Powhatan|2597|24|0.92
+Virginia|Prince Edward|8114|173|2.13
+Virginia|Prince George|7901|4|0.05
+Virginia|Prince William|328970|6009|1.83
+Virginia|Pulaski|1444|31|2.15
+Virginia|Radford city|430|0|0
+Virginia|Rappahannock|856|0|0
+Virginia|Richmond|16797|255|1.52
+Virginia|Richmond city|84188|1626|1.93
+Virginia|Roanoke|7762|246|3.17
+Virginia|Roanoke city|12527|444|3.54
+Virginia|Rockbridge|1119|0|0
+Virginia|Rockingham|33592|334|0.99
+Virginia|Russell|518|0|0
+Virginia|Salem city|2491|120|4.82
+Virginia|Scott|549|125|22.77
+Virginia|Shenandoah|25674|1114|4.34
+Virginia|Smyth|1440|7|0.49
+Virginia|Southampton|9777|122|1.25
+Virginia|Spotsylvania|36079|664|1.84
+Virginia|Stafford|44418|281|0.63
+Virginia|Staunton city|2779|0|0
+Virginia|Suffolk city|20646|1770|8.57
+Virginia|Surry|651|71|10.91
+Virginia|Sussex|8265|105|1.27
+Virginia|Tazewell|622|0|0
+Virginia|Unknown|2135|951|44.54
+Virginia|Virginia Beach city|52462|1526|2.91
+Virginia|Warren|10826|160|1.48
+Virginia|Washington|3876|256|6.6
+Virginia|Waynesboro city|2788|0|0
+Virginia|Westmoreland|4225|39|0.92
+Virginia|Williamsburg city|3236|279|8.62
+Virginia|Winchester city|11606|104|0.9
+Virginia|Wise|1892|130|6.87
+Virginia|Wythe|1917|71|3.7
+Virginia|York|5810|186|3.2
+Washington|Adams|5601|0|0
+Washington|Asotin|1435|136|9.48
+Washington|Benton|73890|4813|6.51
+Washington|Chelan|16160|594|3.68
+Washington|Clallam|2003|0|0
+Washington|Clark|41036|2095|5.11
+Washington|Columbia|171|0|0
+Washington|Cowlitz|6539|0|0
+Washington|Douglas|10824|184|1.7
+Washington|Ferry|98|0|0
+Washington|Franklin|57581|1398|2.43
+Washington|Grant|22582|245|1.08
+Washington|Grays Harbor|1385|0|0
+Washington|Island|16543|878|5.31
+Washington|Jefferson|2829|0|0
+Washington|King|659399|45197|6.85
+Washington|Kitsap|14679|163|1.11
+Washington|Kittitas|4942|0|0
+Washington|Klickitat|2514|247|9.82
+Washington|Lewis|3031|241|7.95
+Washington|Lincoln|194|0|0
+Washington|Mason|2771|66|2.38
+Washington|Okanogan|3845|126|3.28
+Washington|Pacific|633|50|7.9
+Washington|Pend Oreille|207|0|0
+Washington|Pierce|170442|5624|3.3
+Washington|San Juan|1350|0|0
+Washington|Skagit|34310|1121|3.27
+Washington|Skamania|277|0|0
+Washington|Snohomish|273763|11250|4.11
+Washington|Spokane|50070|2468|4.93
+Washington|Stevens|983|79|8.04
+Washington|Thurston|12719|199|1.56
+Washington|Unknown|9060|0|0
+Washington|Wahkiakum|286|0|0
+Washington|Walla Walla|8083|125|1.55
+Washington|Whatcom|33700|2924|8.68
+Washington|Whitman|1879|0|0
+Washington|Yakima|266504|6810|2.56
+West Virginia|Barbour|671|69|10.28
+West Virginia|Berkeley|21716|434|2
+West Virginia|Boone|800|0|0
+West Virginia|Braxton|173|0|0
+West Virginia|Brooke|359|0|0
+West Virginia|Cabell|4926|0|0
+West Virginia|Calhoun|111|0|0
+West Virginia|Clay|313|8|2.56
+West Virginia|Fayette|2925|168|5.74
+West Virginia|Gilmer|550|0|0
+West Virginia|Grant|656|0|0
+West Virginia|Greenbrier|1283|4|0.31
+West Virginia|Hampshire|1675|73|4.36
+West Virginia|Hancock|1254|0|0
+West Virginia|Hardy|2078|0|0
+West Virginia|Harrison|3393|86|2.53
+West Virginia|Jackson|10303|1177|11.42
+West Virginia|Jefferson|11463|142|1.24
+West Virginia|Kanawha|16996|1069|6.29
+West Virginia|Lewis|553|48|8.68
+West Virginia|Lincoln|314|0|0
+West Virginia|Logan|1332|80|6.01
+West Virginia|Marion|4135|172|4.16
+West Virginia|Marshall|2055|0|0
+West Virginia|Mason|1171|0|0
+West Virginia|McDowell|497|0|0
+West Virginia|Mercer|1190|0|0
+West Virginia|Mineral|2676|66|2.47
+West Virginia|Mingo|512|96|18.75
+West Virginia|Monongalia|10648|391|3.67
+West Virginia|Monroe|534|0|0
+West Virginia|Morgan|1275|0|0
+West Virginia|Nicholas|582|51|8.76
+West Virginia|Ohio|3685|79|2.14
+West Virginia|Pendleton|636|26|4.09
+West Virginia|Pleasants|259|0|0
+West Virginia|Pocahontas|974|0|0
+West Virginia|Preston|2020|69|3.42
+West Virginia|Putnam|2638|3|0.11
+West Virginia|Raleigh|1428|0|0
+West Virginia|Randolph|5363|0|0
+West Virginia|Ritchie|84|0|0
+West Virginia|Roane|652|27|4.14
+West Virginia|Summers|87|0|0
+West Virginia|Taylor|704|0|0
+West Virginia|Tucker|414|0|0
+West Virginia|Tyler|253|0|0
+West Virginia|Unknown|2|1|50
+West Virginia|Upshur|577|0|0
+West Virginia|Wayne|7498|596|7.95
+West Virginia|Webster|6|0|0
+West Virginia|Wetzel|552|0|0
+West Virginia|Wirt|287|0|0
+West Virginia|Wood|3948|147|3.72
+West Virginia|Wyoming|236|0|0
+Wisconsin|Adams|478|94|19.67
+Wisconsin|Ashland|198|0|0
+Wisconsin|Barron|1280|1|0.08
+Wisconsin|Bayfield|291|74|25.43
+Wisconsin|Brown|145615|1895|1.3
+Wisconsin|Buffalo|449|113|25.17
+Wisconsin|Burnett|73|48|65.75
+Wisconsin|Calumet|4357|73|1.68
+Wisconsin|Chippewa|3766|0|0
+Wisconsin|Clark|2751|291|10.58
+Wisconsin|Columbia|3687|86|2.33
+Wisconsin|Crawford|1507|0|0
+Wisconsin|Dane|60702|2131|3.51
+Wisconsin|Dodge|16189|178|1.1
+Wisconsin|Door|2299|201|8.74
+Wisconsin|Douglas|1305|0|0
+Wisconsin|Dunn|1703|0|0
+Wisconsin|Eau Claire|7347|9|0.12
+Wisconsin|Florence|180|0|0
+Wisconsin|Fond du Lac|13969|376|2.69
+Wisconsin|Forest|1303|77|5.91
+Wisconsin|Grant|6155|706|11.47
+Wisconsin|Green|3847|17|0.44
+Wisconsin|Green Lake|1082|0|0
+Wisconsin|Iowa|1104|0|0
+Wisconsin|Iron|192|96|50
+Wisconsin|Jackson|1370|79|5.77
+Wisconsin|Jefferson|7771|167|2.15
+Wisconsin|Juneau|1704|80|4.69
+Wisconsin|Kenosha|72559|1818|2.51
+Wisconsin|Kewaunee|2300|78|3.39
+Wisconsin|La Crosse|7705|0|0
+Wisconsin|Lafayette|1940|0|0
+Wisconsin|Langlade|195|0|0
+Wisconsin|Lincoln|319|0|0
+Wisconsin|Manitowoc|2579|66|2.56
+Wisconsin|Marathon|4261|81|1.9
+Wisconsin|Marinette|2066|150|7.26
+Wisconsin|Marquette|429|74|17.25
+Wisconsin|Menominee|212|0|0
+Wisconsin|Milwaukee|507300|21376|4.21
+Wisconsin|Monroe|1867|64|3.43
+Wisconsin|Oconto|2377|0|0
+Wisconsin|Oneida|837|0|0
+Wisconsin|Outagamie|15739|426|2.71
+Wisconsin|Ozaukee|12360|1046|8.46
+Wisconsin|Pepin|48|0|0
+Wisconsin|Pierce|2674|0|0
+Wisconsin|Polk|1448|42|2.9
+Wisconsin|Portage|2566|0|0
+Wisconsin|Price|122|0|0
+Wisconsin|Racine|95680|2421|2.53
+Wisconsin|Richland|1057|227|21.48
+Wisconsin|Rock|41133|1169|2.84
+Wisconsin|Rusk|478|0|0
+Wisconsin|Sauk|5923|267|4.51
+Wisconsin|Sawyer|480|0|0
+Wisconsin|Shawano|2984|0|0
+Wisconsin|Sheboygan|7937|246|3.1
+Wisconsin|St. Croix|5356|12|0.22
+Wisconsin|Taylor|184|0|0
+Wisconsin|Trempealeau|2448|0|0
+Wisconsin|Unknown|55058|136|0.25
+Wisconsin|Vernon|1085|0|0
+Wisconsin|Vilas|543|0|0
+Wisconsin|Walworth|25372|979|3.86
+Wisconsin|Washburn|156|0|0
+Wisconsin|Washington|16414|593|3.61
+Wisconsin|Waukesha|50599|2072|4.09
+Wisconsin|Waupaca|2994|172|5.74
+Wisconsin|Waushara|703|0|0
+Wisconsin|Winnebago|20349|349|1.72
+Wisconsin|Wood|1001|39|3.9
+Wyoming|Albany|1391|0|0
+Wyoming|Big Horn|452|0|0
+Wyoming|Campbell|2640|0|0
+Wyoming|Carbon|1075|44|4.09
+Wyoming|Converse|1822|0|0
+Wyoming|Crook|429|0|0
+Wyoming|Fremont|17881|454|2.54
+Wyoming|Goshen|407|0|0
+Wyoming|Hot Springs|696|0|0
+Wyoming|Johnson|1451|79|5.44
+Wyoming|Laramie|14362|121|0.84
+Wyoming|Lincoln|1074|0|0
+Wyoming|Natrona|5846|34|0.58
+Wyoming|Niobrara|164|0|0
+Wyoming|Park|434|0|0
+Wyoming|Platte|51|0|0
+Wyoming|Sheridan|1599|0|0
+Wyoming|Sublette|286|0|0
+Wyoming|Sweetwater|2514|0|0
+Wyoming|Teton|8617|69|0.8
+Wyoming|Uinta|3191|0|0
+Wyoming|Unknown|37|0|0
+Wyoming|Washakie|1801|136|7.55
+Wyoming|Weston|37|0|0

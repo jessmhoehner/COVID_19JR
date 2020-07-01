@@ -66,13 +66,9 @@ nyt_df <-as.data.frame(read_delim(files$NYT_data, delim = ","),na.rm = FALSE) %>
 # unit tests
 index_nyt <- as.Date("2020-01-21")
 
-# unit tests
-index_nyt <- as.Date("2020-01-21")
-
 nyt_df <- nyt_df %>%
-  verify(ncol(nyt_df) == 7 & (nrow(nyt_df) == 261070)) %>%
+  verify(ncol(nyt_df) == 7 & (nrow(nyt_df) == 285609)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 111375905) %>%
   verify(min(date_rec) == index_nyt) %>%
   write_delim(files$nyt_clean, delim = "|")
 
@@ -85,20 +81,17 @@ nyt_df <- nyt_df %>%
 #	Pennsylvania	Unknown	0	  3	  Inf
 #	South Dakota	Unknown	0	  10	Inf
 
-nyt_counts <- as.data.frame(count(nyt_df, county, state, 
-                                  cases, deaths, date_rec)) %>%
+nyt_cfr <- nyt_df %>%
   group_by(state, county) %>%
-  summarise(agg_cases = sum(cases), 
-            agg_deaths = sum(deaths)) %>%
-  mutate(county_cfr = as.numeric(round(((agg_deaths/agg_cases)*100), 
-                                       digits = 2))) %>%
+  summarise_at(vars(cases, deaths), list(sum)) %>%
+  mutate(county_cfr = as.numeric(round(((deaths/cases)*100),digits = 2))) %>%
   filter(county_cfr != "Inf")
 
-# unit tests
-
-nyt_counts <- nyt_counts %>%
-  verify(ncol(nyt_counts) == 5 & (nrow(nyt_counts) == 3065)) %>%
-  verify(sum(agg_cases) == 111375905) %>%
+nyt_cfr <- nyt_df %>%
+  verify(ncol(cvt_filt) == 5 & (nrow(cvt_filt) == 3093)) %>%
+  verify(is.na(date_rec) == FALSE) %>%
+  verify(mean(nyt_cfr$county_cfr) == 3.729434) %>%
+  verify(min(date_rec) == index_nyt) %>%
   write_delim(files$nyt_county_cfrs, delim = "|")
 
 ## COVID tracking Project by The Atlantic data at the state level ##
@@ -141,9 +134,9 @@ cvt_filt <-
 # unit tests
 
 cvt_filt <- cvt_filt %>%
-  verify(ncol(cvt_filt) == 8 & (nrow(cvt_filt) == 4943)) %>%
+  verify(ncol(cvt_filt) == 8 & (nrow(cvt_filt) == 5208)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(max(total_daily_cases_cvt) == 3694345) %>%
+  verify(max(total_daily_cases_cvt) == 4167139) %>%
   verify(min(date_rec) == index_cvt) %>%
   write_delim(files$clean_cvt, delim = "|")
 
@@ -152,7 +145,7 @@ cvt_filt <- cvt_filt %>%
 # create state level data sets from nyt and ppos data from cvt
 
 nyt_inc <- nyt_df %>%
-  select(date_rec, state, cases, deaths)
+  select(-c(fips, date))
 
 ###############################################################
 
@@ -188,10 +181,10 @@ va_state_data <- left_join(va_inc, va_ppos, by = "date_rec") %>%
 # unit tests
 
 index_va <- as.Date("2020-03-07")
-max_date <- as.Date("2020-06-22")
+max_date <- as.Date("2020-06-30")
 
 va_state_data  <- va_state_data  %>%
-  verify(ncol(va_state_data ) == 10 & (nrow(va_state_data ) == 108)) %>%
+  verify(ncol(va_state_data ) == 10 & (nrow(va_state_data ) == 116)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_va)%>%
@@ -220,7 +213,7 @@ ga_state_data <- left_join(ga_inc, ga_ppos, by = "date_rec") %>%
 index_ga <- as.Date("2020-03-02")
 
 ga_state_data  <- ga_state_data  %>%
-  verify(ncol(ga_state_data ) == 10 & (nrow(ga_state_data ) == 113)) %>%
+  verify(ncol(ga_state_data ) == 10 & (nrow(ga_state_data ) == 121)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ga)%>%
@@ -252,7 +245,7 @@ ny_state_data <- left_join(ny_inc, ny_ppos, by = "date_rec") %>%
 index_ny <- as.Date("2020-03-01")
 
 ny_state_data  <- ny_state_data  %>%
-  verify(ncol(ny_state_data ) == 10 & (nrow(ny_state_data ) == 114)) %>%
+  verify(ncol(ny_state_data ) == 10 & (nrow(ny_state_data ) == 122)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_ny)%>%
@@ -282,7 +275,7 @@ fl_state_data <- left_join(fl_inc, fl_ppos, by = "date_rec") %>%
 index_fl <- as.Date("2020-03-01")
 
 fl_state_data  <- fl_state_data  %>%
-  verify(ncol(fl_state_data ) == 10 & (nrow(fl_state_data ) == 114)) %>%
+  verify(ncol(fl_state_data ) == 10 & (nrow(fl_state_data ) == 122)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_fl)%>%
@@ -312,7 +305,7 @@ nc_state_data <- left_join(nc_inc, nc_ppos, by = "date_rec")  %>%
 index_nc <- as.Date("2020-03-03")
 
 nc_state_data  <- nc_state_data  %>%
-  verify(ncol(nc_state_data ) == 10 & (nrow(nc_state_data ) == 112)) %>%
+  verify(ncol(nc_state_data ) == 10 & (nrow(nc_state_data ) == 120)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_nc)%>%
@@ -342,7 +335,7 @@ tx_state_data <- left_join(tx_inc, tx_ppos, by = "date_rec") %>%
 index_tx <- as.Date("2020-02-12")
 
 tx_state_data  <- tx_state_data  %>%
-  verify(ncol(tx_state_data ) == 10 & (nrow(tx_state_data ) == 132)) %>%
+  verify(ncol(tx_state_data ) == 10 & (nrow(tx_state_data ) == 140)) %>%
   verify(is.na(date_rec) == FALSE) %>%
   verify(max(date_rec) == max_date) %>%
   verify(min(date_rec) == index_tx)%>%
@@ -372,9 +365,9 @@ mi_state_data <- left_join(mi_inc, mi_ppos, by = "date_rec") %>%
 index_mi <- as.Date("2020-03-10")
 
 mi_state_data  <- mi_state_data  %>%
-  verify(ncol(mi_state_data ) == 10 & (nrow(mi_state_data ) == 105)) %>%
+  verify(ncol(mi_state_data ) == 10 & (nrow(mi_state_data ) == 113)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(max(date_rec) == max_date) %>%
+  verify(max(mi_state_data$date_rec) == max_date) %>%
   verify(min(date_rec) == index_mi)%>%
   write_delim(files$mi, delim = "|")
 
@@ -387,9 +380,9 @@ dc_inc <- nyt_df %>%
                                              digits = 2)))
 
 dc_inc <- dc_inc  %>%
-  verify(ncol(dc_inc) == 8 & (nrow(dc_inc) == 108)) %>%
+  verify(ncol(dc_inc) == 8 & (nrow(dc_inc) == 116)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 499158) %>%
+  verify(sum(dc_inc$cases) == 580807) %>%
   write_delim(files$dc_dc, delim = "|")
 
 # va
@@ -399,9 +392,8 @@ fx_inc <- nyt_df %>%
                                              digits = 2)))
 
 fx_inc <- fx_inc  %>%
-  verify(ncol(fx_inc) == 8 & (nrow(fx_inc) == 108)) %>%
+  verify(ncol(fx_inc) == 8 & (nrow(fx_inc) == 116)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 555345) %>%
   write_delim(files$va_fx, delim = "|")
 
 st_inc <- nyt_df %>%
@@ -410,20 +402,17 @@ st_inc <- nyt_df %>%
                                              digits = 2)))
 
 st_inc <- st_inc  %>%
-  verify(ncol(st_inc) == 8 & (nrow(st_inc) == 99)) %>%
+  verify(ncol(st_inc) == 8 & (nrow(st_inc) == 107)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 36684) %>%
   write_delim(files$va_st, delim = "|")
 
 mn_inc <- nyt_df %>%
   filter(state == "Virginia" & county == "Manassas city") %>%
-  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), 
-                                             digits = 2)))
+  mutate(daily_county_cfr = as.numeric(round(((deaths/cases)*100), digits = 2)))
 
 mn_inc <- mn_inc  %>%
-  verify(ncol(mn_inc) == 8 & (nrow(mn_inc) == 90)) %>%
+  verify(ncol(mn_inc) == 8 & (nrow(mn_inc) == 98)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 48767) %>%
   write_delim(files$va_mn, delim = "|")
 
 #ga
@@ -433,9 +422,8 @@ ft_inc <- nyt_df %>%
                                              digits = 2)))
 
 ft_inc <- ft_inc  %>%
-  verify(ncol(ft_inc) == 8 & (nrow(ft_inc) == 113)) %>%
+  verify(ncol(ft_inc) == 8 & (nrow(ft_inc) == 121)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 284413) %>%
   write_delim(files$ga_ft, delim = "|")
 
 gt_inc <- nyt_df %>%
@@ -444,9 +432,8 @@ gt_inc <- nyt_df %>%
                                              digits = 2)))
 
 gt_inc <- gt_inc  %>%
-  verify(ncol(gt_inc) == 8 & (nrow(gt_inc) == 108)) %>%
+  verify(ncol(gt_inc) == 8 & (nrow(gt_inc) == 116)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 224822) %>%
   write_delim(files$ga_gw, delim = "|")
 
 # fl
@@ -456,9 +443,8 @@ mt_inc <- nyt_df %>%
                                              digits = 2)))
 
 mt_inc <- mt_inc  %>%
-  verify(ncol(mt_inc) == 8 & (nrow(mt_inc) == 114)) %>%
+  verify(ncol(mt_inc) == 8 & (nrow(mt_inc) == 122)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 66239) %>%
   write_delim(files$fl_mt, delim = "|")
 
 # ny 
@@ -468,9 +454,8 @@ md_inc <- nyt_df %>%
                                              digits = 2)))
 
 md_inc <- md_inc  %>%
-  verify(ncol(md_inc) == 8 & (nrow(md_inc) == 93)) %>%
+  verify(ncol(md_inc) == 8 & (nrow(md_inc) == 101)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 18575) %>%
   write_delim(files$ny_md, delim = "|")
 
 #tx 
@@ -480,9 +465,8 @@ ty_inc <- nyt_df %>%
                                              digits = 2)))
 
 ty_inc <- ty_inc  %>%
-  verify(ncol(ty_inc) == 8 & (nrow(ty_inc) == 88)) %>%
+  verify(ncol(ty_inc) == 8 & (nrow(ty_inc) == 96)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 22392) %>%
   write_delim(files$tx_ty, delim = "|")
 
 # nc
@@ -492,9 +476,8 @@ rn_inc <- nyt_df %>%
                                              digits = 2)))
 
 rn_inc <- rn_inc  %>%
-  verify(ncol(rn_inc) == 8 & (nrow(rn_inc) == 91)) %>%
+  verify(ncol(rn_inc) == 8 & (nrow(rn_inc) == 99)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 34863) %>%
   write_delim(files$nc_rn, delim = "|")
 
 # mi 
@@ -504,9 +487,8 @@ gn_inc <- nyt_df %>%
                                              digits = 2)))
 
 gn_inc <- gn_inc  %>%
-  verify(ncol(gn_inc) == 8 & (nrow(gn_inc) == 96)) %>%
+  verify(ncol(gn_inc) == 8 & (nrow(gn_inc) == 104)) %>%
   verify(is.na(date_rec) == FALSE) %>%
-  verify(sum(cases) == 143328) %>%
   write_delim(files$mi_gn, delim = "|")
 
 

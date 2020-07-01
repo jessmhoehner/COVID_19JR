@@ -9,7 +9,8 @@
 # COVID19/graph/src/graph.R
 
 pacman::p_load("tidyverse", "knitr", "here", "assertr",
-               "scales", "forcats", "readr", "janitor")
+               "scales", "forcats", "readr", "janitor", 
+               "colorspace")
 
 # pull in _state_data and _inc datasets
 
@@ -103,7 +104,6 @@ ggsave(filename = files$ppos_facetplot,
 # subset list of clean data frames
 
 states <- dfs[1:7]
-counties <- dfs[8:18]
 
 ### state level cases/day with percent positive tests ###
 
@@ -114,24 +114,25 @@ for (j in seq_along(states)){
   
   df_b <- as.data.frame(pluck(states, j))
 
-  #plot observed cases
+  #plot pos cases
   ggplot(df_b) +
     geom_line(aes(date_rec, p_pos), 
-              color = "#b2182b", 
+              color = "#fdae61", 
               size = 2, 
               show.legend = TRUE) +
-    labs(x ="Time (Days)", y = "Percentage of Cases", 
-         title = names(states)[j]) +
+    labs(x ="Time (Days)", y = "Percentage", 
+         title = names(states)[j], 
+         subtitle = "Percentage of Positive Cases") +
     theme_minimal() +
     ylim(c(0, 100))
-
+  
   # save each graph individually
   ggsave(filename = here(paste0("graph/output/plots/", names(states)[j],
                                 "_ppos.png", sep = "")), 
          plot = last_plot(),
          device = "png",
          dpi = 600)
-
+  
   #message to let the user know that each iteration has completed
   print(paste0("Plot for ",names(states)[j], " created successfully"))
 
@@ -139,10 +140,12 @@ for (j in seq_along(states)){
 
 ### county level cases by day ###
 
+counties <- dfs[8:18]
+
 for (i in seq_along(counties)){
   
   #messages for the user to keep them aware of model progress
-  print(paste0("Creating plot for ",names(counties)[i]))
+  print(paste0("Creating plots for ",names(counties)[i]))
   
   df_c <- as.data.frame(pluck(counties, i))
   
@@ -160,48 +163,56 @@ for (i in seq_along(counties)){
          plot = last_plot(),
          device = "png",
          dpi = 600)
-  
   #message to let the user know that each iteration has completed
-  print(paste0("Plot for ",names(counties)[i], " created successfully"))
+  print(paste0("Plots for ",names(counties)[i], " created successfully"))
   
 }
 
 # case fatality rates #########################################################
 
+# under construction
+
 # what are the county specific cfrs in known counties?
-cfr_df <- as.data.frame(pluck(dfs, 21)) %>%
-  filter(county != "Unknown")
+# remove rows where there are counties with the same name in multiple states
+# keep only those state and counties of interest
 
-va_cfr <- cfr_df %>%
-  filter(state == "Virginia") %>%
-  filter(county == "Stafford" | county == "Fairfax" | county == "Manassas City" |
-           county == "Arlington") 
+is_outlier <- function(x) {
+  return(x < quantile(x, 0.25) - 1.58 * IQR(x) | x > quantile(x, 0.75) + 
+           1.58 * IQR(x))
+}
 
-(cfr_plot <- ggplot(va_cfr, aes(county, county_cfr, 
-                                color = county , 
-                                fill = county)) +
-  geom_dotplot(binaxis = "y", stackdir = "center") +
-  theme_minimal() +
-  labs(title = "Case-Fatality Rates by County"))
+nyt_cfrs <- as.data.frame(pluck(dfs, 21))
+
+nyt_plot <- as.data.frame(nyt_cfrs) %>%
+  filter(county != "Unknown") %>%
+  filter(state == "Georgia" | state == "Virginia" | state == "Florida"| 
+         state == "New York" | state == "Texas" | state == "North Carolina"|
+         state == "Michigan" | state == "California") %>%
+  mutate(county_cfr = as.numeric(county_cfr),
+         outlier = ifelse(is_outlier(county_cfr), county, as.numeric(NA)))
+
+outliers <- as.data.frame(nyt_plot$outlier) %>%
+  drop_na()
   
-# how have cfrs changed over time for each state?
-cases_ga <- as.data.frame(pluck(dfs, 1))
+# box plot of county level cfrs overall
 
-(ga_cfr_plot <- ggplot(cases_ga, aes(date_rec, daily_cfr)) +
-    geom_line(color = "red") +
-    theme_minimal() +
-    ylim(0, 5) +
-    labs(title = "Case-Fatality Rates Over Time (Georgia)"))
-
-cases_ny <- as.data.frame(pluck(dfs, 2))
-
-(ny_cfr_plot <- ggplot(cases_ny, aes(date_rec, daily_cfr)) +
-    geom_line(color = "red") +
-    theme_minimal() +
-    ylim(0, 10) +
-    labs(title = "Case-Fatality Rates Over Time (New York)"))
-
-
+(nyt_cfr_plot <- ggplot(nyt_plot) +
+    geom_boxplot(aes(factor(state), county_cfr,
+                     color = county_cfr, 
+                     fill = state)) +
+    scale_fill_brewer(type = "qual", palette = 3) +
+    geom_text(aes(label= outlier, x = state, y = county_cfr), 
+              na.rm=TRUE, nudge_x = 0.2) +
+    labs(x ="State", y = "Case Fatality Rate", 
+         title = "Case Fatality Rate in States of Interest") +
+    theme_minimal()+
+    ylim(c(0, (max(nyt_plot$county_cfr) + 5))))
+  
+  # save each graph individually
+ # ggsave(filename = files
+ #        plot = last_plot(),
+  #       device = "png",
+  #       dpi = 600)
 
 # snippets
 
